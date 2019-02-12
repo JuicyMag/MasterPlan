@@ -34,17 +34,33 @@ public class Advisor {
 	 */
 	public Advisor(String name, String[] tags, String[] advisees){
 		this.name = name;
-
-		this.tags = new Vector<String> ();
-		this.tags = this.tags.addAll(tags);
-
-		this.advisees = new Vector<String> ();
-		this.advisees = this.advisees.addAll(advisees);
-
+		this.tags = this.addAll(tags);
+		this.advisees = this.addAll(advisees);
 	}
 
 	public Advisor(String name){
-		this.Advisor(name, new String[] {} , new String[] {});
+		this(name, new String[] {} , new String[] {});
+	}
+
+     /*
+	  * helper function to add all values in a string array into a vector
+	  *
+	  * @param - String array
+	  *
+	  * return String vector
+     */
+	private Vector<String> addAll(String[] all){
+		Vector<String> result = new Vector<String> ();
+
+		if(all.length == 0){
+			return result;
+		}
+
+		for(int i = 0; i < all.length;i++){
+			result.add(all[i]);
+		}
+
+		return result; 
 	}
 
 	/*
@@ -135,7 +151,7 @@ public class Advisor {
 	 * return the list of students in an array under this advisor
 	*/
 	public String[] getStudents(){
-		return advisees.toArray();
+		return (String[]) advisees.toArray();
 	}
 
 	/* 
@@ -147,7 +163,7 @@ public class Advisor {
 	 *
 	*/
 	public String[] getTags(){
-		return tags.toArray();
+		return (String[]) tags.toArray();
 	}
 
 	/*
