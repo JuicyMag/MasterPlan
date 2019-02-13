@@ -1,6 +1,6 @@
 /**
-* This class is designed to represent a student accessing this program.
-*/
+ * This class is designed to represent a student accessing this program.
+ */
 
 public class Student{
 
