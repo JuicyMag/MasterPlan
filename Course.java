@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
 * This class is designed to represent a course from the course catalog.
 */
@@ -5,7 +7,7 @@ public class Course{
 
   private String name; //Holds the name of the course
   private String[] tags; //Holds the tags associated with the course
-  private String[] timeslots; //Holds the timeslots of the course
+  private int[] timeslots; //Holds the timeslots of the course parsed into integers.
   private String[] preReqs; //Holds the list of preReqs of the course.
 
   /**
@@ -16,14 +18,83 @@ public class Course{
    *
    * @param name Name of Course.
    * @param tags Tags associated to the Course.
-   * @param timeslots Timeslots associated to the Course.
+   * @param timeslotsString Unparsed timeslots associated to the Course.
    * @param preReqs Pre-requisite courses required by the Course.
    */
-  public Course(String name, String[] tags, String[] timeslots, String[] preReqs){
+  public Course(String name, String[] tags, String[] timeslotsString, String[] preReqs){
     this.name = name;
     this.tags = tags;
-    this.timeslots = timeslots;
+    this.timeslots = parseTimeSlots(timeslotsString);
     this.preReqs = preReqs;
+  }
+
+  /**
+   * Parses the raw timeslots into an array of integers.
+   *
+   * @post returns an array of integers which represent timeslots of the course.
+   *
+   * @param toBeParsed the string array representing all the timeslots of the course.
+   * @return an array of integers which represent timeslots of the course.
+   */
+  private int[] parseTimeSlots(String[] toBeParsed){
+    ArrayList<Integer> result = new ArrayList<Integer>();
+
+    for(int i = 0; i < toBeParsed.length; i++){
+        String days = toBeParsed[i].split(" ", 2)[0];
+        //This has to be parsable - edge cases might happen
+        //TODO DEAL WITH EDGE CASES
+        String[] times = toBeParsed[i].split(" ", 2)[1].split(" - ");
+
+        for(int j = 0; j < days.length(); j++){
+          char day = days.charAt(j);
+          int dayToInt;
+          switch(day){
+            case 'M':
+              dayToInt = 0;
+              break;
+            case 'T':
+              dayToInt = 1440;
+              break;
+            case 'W':
+              dayToInt = 1440 * 2;
+              break;
+            case 'R':
+              dayToInt = 1440 * 3;
+              break;
+            case 'F':
+              dayToInt = 1440 * 4;
+              break;
+            default:
+              dayToInt = 0;
+              break;
+          }
+
+          result.add(dayToInt + parseTime(times[0]));
+          result.add(dayToInt + parseTime(times[1]));
+        }
+    }
+
+    //Converting ArrayList to primative Array
+    int[] resultArray = new int[result.size()];
+
+    for(int i = 0; i < result.size(); i++){
+      resultArray[i] = result.get(i);
+    }
+
+    return resultArray;
+  }
+
+  /**
+   * Parses the time from hh:ss format to an integer in terms of number
+   * of minutes out the day.
+   *
+   * @post returns the integer representation of the time
+   *
+   * @return the integer representation of time
+   */
+  private int parseTime(String time){
+    String[] hoursAndMins = time.split(":");
+    return Integer.parseInt(hoursAndMins[0]) * 60 +Integer.parseInt(hoursAndMins[1]);
   }
 
   /**
@@ -57,7 +128,7 @@ public class Course{
    *
    * @return timeslots
    */
-  public String[] getTimeslots(){
+  public int[] getTimeslots(){
     return timeslots;
   }
 

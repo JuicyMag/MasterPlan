@@ -171,7 +171,7 @@ public class Runner{
       }
     }
 
-    // Bubblesorts the result according to relevance. 
+    // Bubblesorts the result according to relevance.
     for(int i = 0; i < result.length - 1; i++){
       for(int j = 0; j < result.length - 1; j++){
         if(shadow[j] < shadow[j + 1]){
