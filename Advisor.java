@@ -192,4 +192,18 @@ public class Advisor {
 		return advisees.size();
 	}
 
+
+	/*
+	 * answers the question of whether the advisor has a maximum number
+	 * of students being advised
+	 * 
+	 * @param - none
+	 *
+	 * return a boolean value representing whether the advisor has a maximum 
+	 * number of students
+	*/
+	public boolean hasEnoughStudents(){
+		return (advisees.size() >= NUM_STUDENTS);
+	}
+
 }
