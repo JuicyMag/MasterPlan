@@ -1,0 +1,39 @@
+$color1: #fecb00;
+$color2: #e2c2c6;
+$color3: #b9929f;
+$color4: #A25F94;
+$color5: #330064;
+
+body {
+	font-family: Helvetica;
+	text-transform: uppercase;
+	overflow-x: hidden;
+	background-color: $color2;
+	padding-top: 45px;
+}
+
+nav, .navbar {
+	background-color: $color5;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 500;
+	letter-spacing: .2em;
+
+	a {
+		padding: 6px 12px 0px 12px;
+		text-decoration: none;
+		color: white;
+		font-weight: lighter;
+	}
+
+	.navbar-brand {
+		font-weight: 500;
+	}
+}
+
+.lower {
+	padding: 20px;
+	//height: 2000px;
+}

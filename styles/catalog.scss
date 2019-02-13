@@ -1,56 +1,18 @@
-$color1: #fecb00;
-$color2: #e2c2c6;
-$color3: #b9929f;
-$color4: #A25F94;
-$color5: #330064;
-
-body {
-	font-family: Helvetica;
-	text-transform: uppercase;
-	overflow-x: hidden;
-	background-color: $color2;
-	padding-top: 45px;
-}
-
-nav, .navbar {
-	background-color: $color5;
-	overflow: hidden;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: 500;
-	letter-spacing: .2em;
-
-	a {
-		padding: 6px 12px 0px 12px;
-		text-decoration: none;
-		color: white;
-		font-weight: lighter;
-	}
-
-	.navbar-brand {
-		font-weight: 500;
-	}
-}
-
-.lower {
-	padding: 20px;
-	//height: 2000px;
-}
+@import 'navbar';
 
 .search {
 	background-color: $color3;
-	margin: 20px;
 	padding: 20px;
 	height: 680px;
+	position: fixed;
 
 	.searchbar {
 		background-color: $color1;
 		color: black;
-		font-size: 1.5em;
 		letter-spacing: .4em;
 		font-weight: lighter;
 		text-indent: 2em;
+		text-transform: uppercase;
 	}
 
 	.dropdown-button{
@@ -61,6 +23,12 @@ nav, .navbar {
 
 	.schedule {
 		background-color: $color2;
+		margin: 0px 1px;
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		align-elements: center;
 
 		.time {
 			ul {
@@ -74,6 +42,12 @@ nav, .navbar {
 			width: 50px;
 			text-align: right;
 			padding: 15px 5px 1px 0;
+		}
+
+		.day {
+			border-right-style: solid;
+			border-width: 1px;
+			border-color: $color3;
 		}
 	}
 }
@@ -89,6 +63,7 @@ nav, .navbar {
 
 	.left {
 		text-align: right;
+		letter-spacing: 1px;
 
 		.number {
 			background-color: $color1;
@@ -96,7 +71,6 @@ nav, .navbar {
 			padding: 3px;
 			font-size: 20px;
 			text-align: center;
-			letter-spacing: 1px;
 			font-weight: lighter;
 		}
 
@@ -104,7 +78,10 @@ nav, .navbar {
 			color: $color2;
 			text-transform: none;
 			font-variant: small-caps;
-			letter-spacing: 1px;
+		}
+
+		.classTime {
+			font-size: 14px;
 		}
 	}
 
@@ -118,20 +95,26 @@ nav, .navbar {
 		}
 		.classDescr {
 			font-weight: lighter;
+			letter-spacing: 1px;
 		}
 	}
 }
 
 .tags {
-	float: right;
+
+	justify-content: flex-end;
+
 	text-transform: uppercase;
 	color: $color4;
+	font-size: 13px;
+	margin: 0px 1px;
 
 	.tag {
 		background-color: $color1;
 		padding-right: .5em;
 		letter-spacing: .2em;
-		margin: .3em;
+		margin-left: 13px;
+		margin-bottom: .3em;
 	}
 	.btn {
 		margin-right: 10px;

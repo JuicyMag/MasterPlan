@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #e2c2c6;
+  padding-top: 45px;
+}
+
+nav, .navbar {
+  background-color: #330064;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
+}
+nav a, .navbar a {
+  padding: 6px 12px 0px 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-weight: 500;
+}
+
+.lower {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
