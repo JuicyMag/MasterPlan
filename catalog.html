@@ -16,26 +16,44 @@
 </title>
 
 <body>
-	<nav class="container.fluid">
-		<a class="logo" href="#">MasterPlan</a>
+	<nav class="navbar navbar-default">
+		<a class="navbar-brand" href="#">MasterPlan</a>
 		<a class="menubarButton" href="#">Advisors</a>
 		<a class="menubarButton" href="#">Courses</a>
 		<a class="menubarButton" href="#">Scheduler</a>
 	</nav>
 	<div class="row container.fluid lower">
-		<div class="col-sm search">
+		<div class="col col-lg-4 search">
 			<div class="searchbar">search</div>
 			<div class="row">
-				<div class="dropdown">dropdown</div>
-				<div class="dropdown">dropdown</div>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+					    Dropdown button
+					</button>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Action</a>
+					    <a class="dropdown-item" href="#">Another action</a>
+					    <a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+					    Dropdown button
+					</button>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Action</a>
+					    <a class="dropdown-item" href="#">Another action</a>
+					    <a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="tag">tag</div>
-				<div class="tag">tag</div>
-				<div class="tag">tag</div>
+			<div class="row tags">
+				<div class="tag"><button class="btn">X</button>tag</div>
+				<div class="tag"><button class="btn">X</button>tag</div>
+				<div class="tag"><button class="btn">X</button>tag</div>
 			</div>
-			<div class="schedule">
-				<div class="time">
+			<div class="row schedule">
+				<div class="time col">
 					<ul>8:30</ul>
 					<ul>9:00</ul>
 					<ul>9:30</ul>
@@ -53,22 +71,43 @@
 					<ul>3:30</ul>
 					<ul>4:00</ul>
 				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
 			</div>
 		</div>
-		<div class="col-sm">
+		<div class="col classes">
 			<div class="row class">
-				<div class="left">
+				<div class="col col-lg-2 left">
 					<div class="number">CSCI 334</div>
 					<div class="professor">S. Freund</div>
 					<div class="classTime">TR 9:55-11:10</div>
 				</div>
-				<div class="right">
+				<div class="col right">
 					<div class="className">Programming Languages</div>
 					<div class="classDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</div>
-					<div class="row">
-						<div class="tag">tag</div>
-						<div class="tag">tag</div>
-						<div class="tag">tag</div>
+					<div class="row tags">
+						<div class="tag"><button class="btn">X</button>tag</div>
+						<div class="tag"><button class="btn">X</button>tag</div>
+						<div class="tag"><button class="btn">X</button>tag</div>
+					</div>
+				</div>
+			</div>
+			<div class="row class">
+				<div class="col col-lg-2 left">
+					<div class="number">CSCI 334</div>
+					<div class="professor">S. Freund</div>
+					<div class="classTime">TR 9:55-11:10</div>
+				</div>
+				<div class="col right">
+					<div class="className">Programming Languages</div>
+					<div class="classDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</div>
+					<div class="row tags">
+						<div class="tag"><button class="btn">X</button>tag</div>
+						<div class="tag"><button class="btn">X</button>tag</div>
+						<div class="tag"><button class="btn">X</button>tag</div>
 					</div>
 				</div>
 			</div>

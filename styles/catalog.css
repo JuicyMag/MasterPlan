@@ -3,52 +3,119 @@ body {
   text-transform: uppercase;
   overflow-x: hidden;
   background-color: #e2c2c6;
+  padding-top: 45px;
 }
 
-nav {
+nav, .navbar {
   background-color: #330064;
   overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
 }
-nav a {
-  padding: 6px 12px;
+nav a, .navbar a {
+  padding: 6px 12px 0px 12px;
   text-decoration: none;
   color: white;
+  font-weight: lighter;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-weight: 500;
 }
 
 .lower {
-  padding: 10px;
+  padding: 20px;
 }
 
 .search {
   background-color: #b9929f;
+  margin: 20px;
+  padding: 20px;
+  height: 680px;
 }
 .search .searchbar {
   background-color: #fecb00;
   color: black;
+  font-size: 1.5em;
+  letter-spacing: 0.4em;
+  font-weight: lighter;
+  text-indent: 2em;
 }
-.search .dropdown {
+.search .dropdown-button {
   color: #fecb00;
   text-transform: lowercase;
+  margin: 10px;
 }
 .search .schedule {
   background-color: #e2c2c6;
 }
 .search .schedule .time {
   background-color: #fecb00;
-  width: 100px;
+  width: 50px;
+  text-align: right;
+  padding: 15px 5px 1px 0;
+}
+.search .schedule .time ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.classes {
+  margin: 20px;
+}
+.classes .class {
+  background-color: #A25F94;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.classes .left {
   text-align: right;
 }
-
-.class {
-  background-color: #9c528b;
+.classes .left .number {
+  background-color: #fecb00;
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
-.class .classDescr {
+.classes .left .professor {
+  color: #e2c2c6;
+  text-transform: none;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+.classes .right {
   text-transform: none;
 }
+.classes .right .className {
+  font-variant: small-caps;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+.classes .right .classDescr {
+  font-weight: lighter;
+}
 
-.tag {
+.tags {
+  float: right;
+  text-transform: uppercase;
+  color: #A25F94;
+}
+.tags .tag {
   background-color: #fecb00;
-  color: #330064;
+  padding-right: 0.5em;
+  letter-spacing: 0.2em;
+  margin: 0.3em;
+}
+.tags .btn {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=catalog.css.map */

@@ -1,7 +1,7 @@
 $color1: #fecb00;
 $color2: #e2c2c6;
 $color3: #b9929f;
-$color4: #9c528b;
+$color4: #A25F94;
 $color5: #330064;
 
 body {
@@ -9,56 +9,131 @@ body {
 	text-transform: uppercase;
 	overflow-x: hidden;
 	background-color: $color2;
+	padding-top: 45px;
 }
 
-nav {
+nav, .navbar {
 	background-color: $color5;
 	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 500;
+	letter-spacing: .2em;
 
 	a {
-		padding: 6px 12px;
+		padding: 6px 12px 0px 12px;
 		text-decoration: none;
 		color: white;
+		font-weight: lighter;
+	}
+
+	.navbar-brand {
+		font-weight: 500;
 	}
 }
 
 .lower {
-	padding: 10px;
+	padding: 20px;
+	//height: 2000px;
 }
 
 .search {
 	background-color: $color3;
+	margin: 20px;
+	padding: 20px;
+	height: 680px;
 
 	.searchbar {
 		background-color: $color1;
 		color: black;
+		font-size: 1.5em;
+		letter-spacing: .4em;
+		font-weight: lighter;
+		text-indent: 2em;
 	}
 
-	.dropdown {
+	.dropdown-button{
 		color: $color1;
 		text-transform: lowercase;
+		margin: 10px;
 	}
 
 	.schedule {
 		background-color: $color2;
 
 		.time {
+			ul {
+				list-style: none;
+				padding: 0;
+				line-height: 1px;
+				font-size: 13px;
+				letter-spacing: 1px;
+			}
 			background-color: $color1;
-			width: 100px;
+			width: 50px;
 			text-align: right;
+			padding: 15px 5px 1px 0;
 		}
 	}
 }
 
-.class {
-	background-color: $color4;
+.classes {
+	margin: 20px;
 
-	.classDescr {
+	.class {
+		background-color: $color4;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+
+	.left {
+		text-align: right;
+
+		.number {
+			background-color: $color1;
+			margin-bottom: 5px;
+			padding: 3px;
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: 1px;
+			font-weight: lighter;
+		}
+
+		.professor {
+			color: $color2;
+			text-transform: none;
+			font-variant: small-caps;
+			letter-spacing: 1px;
+		}
+	}
+
+	.right {
 		text-transform: none;
+
+		.className {
+			font-variant: small-caps;
+			font-size: 26px;
+			letter-spacing: 3px;
+		}
+		.classDescr {
+			font-weight: lighter;
+		}
 	}
 }
 
-.tag {
-	background-color: $color1;
-	color: $color5;
+.tags {
+	float: right;
+	text-transform: uppercase;
+	color: $color4;
+
+	.tag {
+		background-color: $color1;
+		padding-right: .5em;
+		letter-spacing: .2em;
+		margin: .3em;
+	}
+	.btn {
+		margin-right: 10px;
+	}
 }
