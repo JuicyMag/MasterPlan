@@ -1,0 +1,64 @@
+$color1: #fecb00;
+$color2: #e2c2c6;
+$color3: #b9929f;
+$color4: #9c528b;
+$color5: #330064;
+
+body {
+	font-family: Helvetica;
+	text-transform: uppercase;
+	overflow-x: hidden;
+	background-color: $color2;
+}
+
+nav {
+	background-color: $color5;
+	overflow: hidden;
+
+	a {
+		padding: 6px 12px;
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.lower {
+	padding: 10px;
+}
+
+.search {
+	background-color: $color3;
+
+	.searchbar {
+		background-color: $color1;
+		color: black;
+	}
+
+	.dropdown {
+		color: $color1;
+		text-transform: lowercase;
+	}
+
+	.schedule {
+		background-color: $color2;
+
+		.time {
+			background-color: $color1;
+			width: 100px;
+			text-align: right;
+		}
+	}
+}
+
+.class {
+	background-color: $color4;
+
+	.classDescr {
+		text-transform: none;
+	}
+}
+
+.tag {
+	background-color: $color1;
+	color: $color5;
+}

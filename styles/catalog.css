@@ -1,0 +1,54 @@
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #e2c2c6;
+}
+
+nav {
+  background-color: #330064;
+  overflow: hidden;
+}
+nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.lower {
+  padding: 10px;
+}
+
+.search {
+  background-color: #b9929f;
+}
+.search .searchbar {
+  background-color: #fecb00;
+  color: black;
+}
+.search .dropdown {
+  color: #fecb00;
+  text-transform: lowercase;
+}
+.search .schedule {
+  background-color: #e2c2c6;
+}
+.search .schedule .time {
+  background-color: #fecb00;
+  width: 100px;
+  text-align: right;
+}
+
+.class {
+  background-color: #9c528b;
+}
+.class .classDescr {
+  text-transform: none;
+}
+
+.tag {
+  background-color: #fecb00;
+  color: #330064;
+}
+
+/*# sourceMappingURL=catalog.css.map */
