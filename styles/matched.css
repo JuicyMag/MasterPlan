@@ -69,11 +69,11 @@ nav .navbar-brand, .navbar .navbar-brand {
   letter-spacing: 15px;
   line-height: 60px;
   -webkit-text-stroke: 2px #330064;
-  -webkit-text-fill-color: #fecb00;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
-}
-.matchSuccess .outlines #filled {
-  -webkit-text-fill-color: white;
+  /*#m1{
+  	-webkit-text-fill-color: white;
+  }*/
 }
 
 .profile1, .profile2 {

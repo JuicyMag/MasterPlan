@@ -37,13 +37,13 @@
 		<div class="matchSuccess col align-middle">
 			<div class="highlighted">you've been</div>
 			<ul class="outlines list-unstyled">
-				<li>matched</li>
-				<li>matched</li>
-				<li>matched</li>
-				<li id="filled">matched</li>
-				<li>matched</li>
-				<li>matched</li>
-				<li>matched</li>
+				<li class="match" id="m1">matched</li>
+				<li class="match" id="m2">matched</li>
+				<li class="match" id="m3">matched</li>
+				<li class="match" id="m4">matched</li>
+				<li class="match" id="m5">matched</li>
+				<li class="match" id="m6">matched</li>
+				<li class="match" id="m7">matched</li>
 			</ul>
 		</div>
 		<div class="profile2 col">
@@ -53,5 +53,28 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	/*window.onload = function() {
+		var matches = document.getElementsByClassName("match");
+		for (var i = 0; i < matches.length; i++){
+			setTimeout(function timer() {
+				matches[i].style.color= "White";
+			}, i* 1000);
+		}
+	}*/
+window.onload = function() {
+	var matches = document.getElementsByClassName("match");
+	let myVar = setInterval(changeColor, 100);
+	var i = 7;
+	function changeColor() {
+		matches[i % matches.length].style.webkitTextFillColor = "White";
+		matches[(i - 1) % matches.length].style.webkitTextFillColor = "Transparent";
+		i++;
+	}
+	setTimeout(() => {clearInterval(myVar)}, 2400);
+}
+
+</script>
 
 </html>
