@@ -1,0 +1,138 @@
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #e2c2c6;
+  padding-top: 45px;
+}
+
+nav, .navbar {
+  background-color: #330064;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
+}
+nav a, .navbar a {
+  padding: 6px 12px 0px 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-weight: 500;
+}
+
+.lower {
+  padding: 20px;
+}
+
+.search {
+  background-color: #b9929f;
+  padding: 20px;
+  height: 680px;
+  position: fixed;
+}
+.search .searchbar {
+  background-color: #fecb00;
+  color: black;
+  letter-spacing: 0.4em;
+  font-weight: lighter;
+  text-indent: 2em;
+  text-transform: uppercase;
+}
+.search .dropdown-button {
+  color: #fecb00;
+  text-transform: lowercase;
+  margin: 10px;
+}
+.search .schedule {
+  background-color: #e2c2c6;
+  margin: 0px 1px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  align-elements: center;
+}
+.search .schedule .time {
+  background-color: #fecb00;
+  width: 50px;
+  text-align: right;
+  padding: 15px 5px 1px 0;
+}
+.search .schedule .time ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.search .schedule .day {
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #b9929f;
+}
+
+.classes {
+  margin: 20px;
+}
+.classes .class {
+  background-color: #A25F94;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.classes .left {
+  text-align: right;
+  letter-spacing: 1px;
+}
+.classes .left .number {
+  background-color: #fecb00;
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+.classes .left .professor {
+  color: #e2c2c6;
+  text-transform: none;
+  font-variant: small-caps;
+}
+.classes .left .classTime {
+  font-size: 14px;
+}
+.classes .right {
+  text-transform: none;
+}
+.classes .right .className {
+  font-variant: small-caps;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+.classes .right .classDescr {
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.tags {
+  justify-content: flex-end;
+  text-transform: uppercase;
+  color: #A25F94;
+  font-size: 13px;
+  margin: 0px 1px;
+}
+.tags .tag {
+  background-color: #fecb00;
+  padding-right: 0.5em;
+  letter-spacing: 0.2em;
+  margin-left: 13px;
+  margin-bottom: 0.3em;
+}
+.tags .btn {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=catalog.css.map */

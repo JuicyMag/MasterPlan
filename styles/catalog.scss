@@ -1,0 +1,122 @@
+@import 'navbar';
+
+.search {
+	background-color: $color3;
+	padding: 20px;
+	height: 680px;
+	position: fixed;
+
+	.searchbar {
+		background-color: $color1;
+		color: black;
+		letter-spacing: .4em;
+		font-weight: lighter;
+		text-indent: 2em;
+		text-transform: uppercase;
+	}
+
+	.dropdown-button{
+		color: $color1;
+		text-transform: lowercase;
+		margin: 10px;
+	}
+
+	.schedule {
+		background-color: $color2;
+		margin: 0px 1px;
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		align-elements: center;
+
+		.time {
+			ul {
+				list-style: none;
+				padding: 0;
+				line-height: 1px;
+				font-size: 13px;
+				letter-spacing: 1px;
+			}
+			background-color: $color1;
+			width: 50px;
+			text-align: right;
+			padding: 15px 5px 1px 0;
+		}
+
+		.day {
+			border-right-style: solid;
+			border-width: 1px;
+			border-color: $color3;
+		}
+	}
+}
+
+.classes {
+	margin: 20px;
+
+	.class {
+		background-color: $color4;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+
+	.left {
+		text-align: right;
+		letter-spacing: 1px;
+
+		.number {
+			background-color: $color1;
+			margin-bottom: 5px;
+			padding: 3px;
+			font-size: 20px;
+			text-align: center;
+			font-weight: lighter;
+		}
+
+		.professor {
+			color: $color2;
+			text-transform: none;
+			font-variant: small-caps;
+		}
+
+		.classTime {
+			font-size: 14px;
+		}
+	}
+
+	.right {
+		text-transform: none;
+
+		.className {
+			font-variant: small-caps;
+			font-size: 26px;
+			letter-spacing: 3px;
+		}
+		.classDescr {
+			font-weight: lighter;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+.tags {
+
+	justify-content: flex-end;
+
+	text-transform: uppercase;
+	color: $color4;
+	font-size: 13px;
+	margin: 0px 1px;
+
+	.tag {
+		background-color: $color1;
+		padding-right: .5em;
+		letter-spacing: .2em;
+		margin-left: 13px;
+		margin-bottom: .3em;
+	}
+	.btn {
+		margin-right: 10px;
+	}
+}
