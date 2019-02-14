@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -65,22 +66,20 @@ public class Runner{
 
    /* Check whether or not a student has taken all the preReqs for a class
    *
+   * @pre requires you to import java.util.Arrays
    * @post - return a boolean representing whether or not a student has
    * all the preReqs for a particular Class
+   *
+   * @param Course whose prereqs are to be checked(can be optimized by passing in just the String Arrays themselves.) 
+   * @param Student who wants to take a given course
+   * @return a boolean representing whether all prerequisites are met for a given course. 
   */
-  /*
   public boolean checkPrereqs(Course course, Student student){
       String[] preReqs = course.getPreReqs();
       String[] classesTaken = student.getClassesTaken();
-
-      for(int i = 0; i < preReqs.length; i++){
-        if(!classesTaken.contains(preReqs[i])){
-          return false;
-        }
-      }
-      return true;
+      
+      return Arrays.asList(outer).containsAll(Arrays.asList(inner));
   }
-  */
 
   /**
    * Returns an array with the compatibility calues of each course.
