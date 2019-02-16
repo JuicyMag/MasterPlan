@@ -78,7 +78,7 @@ public class Runner{
       String[] preReqs = course.getPreReqs();
       String[] classesTaken = student.getClassesTaken();
       
-      return Arrays.asList(outer).containsAll(Arrays.asList(inner));
+      return Arrays.asList(classesTaken).containsAll(Arrays.asList(preReqs));
   }
 
   /**
