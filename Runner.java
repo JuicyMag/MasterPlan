@@ -29,8 +29,10 @@ public class Runner{
    * @post constructs a Runner instance and runs the program.
    */
   public Runner(){
-    initStudents();
     initCourses();
+    
+    initStudents();
+
     Scanner scan = new Scanner(System.in);
 
     System.out.println("Welcome to the Course Recommender!");
@@ -59,11 +61,33 @@ public class Runner{
       for(int j = 0; j < mostCompatible.length; j++){
         System.out.println(courses.get(mostCompatible[j]).getName());
       }
+
+           
     }
+      //checking if checkPrereqs works - Done(Working now)
+    /*
+      String[] bobTags = {"Programming","Compiler"};
+      String[] bobClassesTaken = {"CSCI 134", "CSCI 136"};
+      Student Bob = new Student("Bob", bobTags, 2021, bobClassesTaken);
+      String[] AlgorithmsPrereqs = {"CSCI 134", "CSCI 136"};
+      String[] AlgorithmsTags = {"ProblemSolving","Proofs"};
+      String[] AlgorithmsTimeslot = {"MWF 10:00 - 1:00"};
+      Course Algorithms = new Course("Algorithms",AlgorithmsTags, AlgorithmsTimeslot, AlgorithmsPrereqs);
+      System.out.println("Bob can take this course:" + checkPrereqs(Algorithms, Bob));
+      
 
+      //checking if getCompatibility works - Done(Working now) 
+      int [] bobsCompatibility = getCompatibility(bobTags, Bob);
+      for(int i = 0; i < bobsCompatibility.length; i++){
+	  System.out.println("Bob's compatibility + " + bobsCompatibility[i]);
+      }
+      int [] bobsMostCompatible = getMostCompatible(bobsCompatibility, Bob);
+      for(int i=0; i < bobsMostCompatible.length; i++){
+	  System.out.println("Bob's Most Compatible is course # + " + bobsMostCompatible[i] + " in master courses array"); 
+    
+	  }*/
   }
-
-
+    
    /* Check whether or not a student has taken all the preReqs for a class
    *
    * @pre requires you to import java.util.Arrays
@@ -97,7 +121,7 @@ public class Runner{
     //for every course available
     for(int i = 0; i < courses.size(); i++){
       int compatibility = 0;
-      if(!checkPrereqs(courses.get(i), student)) continue;
+      if(checkPrereqs(courses.get(i), student)){
       String[] courseTags = courses.get(i).getTags();
 
       // get compatibility value via number of matching tags
@@ -106,6 +130,7 @@ public class Runner{
           int result = studentTags[k].compareTo(courseTags[j]);
           if(result == 0) compatibility++;
         }
+      }
       }
       compatibilityValues[i] = compatibility;
     }
@@ -135,14 +160,14 @@ public class Runner{
     int count = 0;
     for(int i = 0; i < result.length; i++){
       //TODO
-      /*
-      for(int j = count; j < result.length; j++){
-        if(checkPrereqs(course.get(j), student)){
+      
+      for(int j = 0; j < result.length; j++){
+        if(checkPrereqs(courses.get(j), student)){
           count = j;
           break;
         }
       }
-      */
+      
       result[i] = count;
       count ++;
     }
@@ -182,10 +207,26 @@ public class Runner{
         }
       }
     }
-
-    return result;
+    ArrayList<Integer> maxCompatible = new ArrayList<Integer>(3);
+ 
+    for(int i=0; i < 3; i++){
+	if(checkPrereqs(courses.get(result[i]),student)){
+	    if(!Arrays.asList(student.getClassesTaken()).contains(courses.get(result[i]).getName())){
+		if(!maxCompatible.contains(result[i])){
+		    maxCompatible.add(result[i]);
+		}
+	    }
+	}
+    }
+  
+    int[] finalResult = new int[maxCompatible.size()];
+    int index = 0;
+    for(int val:maxCompatible){
+	finalResult[index++] = val;
+    }
+    return finalResult;
   }
-
+    
   /**
    * Initialize the @students ArrayList from the input csv file.
    *
