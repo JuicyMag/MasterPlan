@@ -76,8 +76,7 @@ public class Runner{
   */
   public boolean checkPrereqs(Course course, Student student){
       String[] preReqs = course.getPreReqs();
-      String[] classesTaken = student.getClassesTaken();
-      
+      String[] classesTaken = student.getClassesTaken();      
       return Arrays.asList(classesTaken).containsAll(Arrays.asList(preReqs));
   }
 
@@ -98,7 +97,7 @@ public class Runner{
     //for every course available
     for(int i = 0; i < courses.size(); i++){
       int compatibility = 0;
-      //TODO if(!checkPrereqs(course.get(i), student)) continue;
+      if(!checkPrereqs(courses.get(i), student)) continue;
       String[] courseTags = courses.get(i).getTags();
 
       // get compatibility value via number of matching tags
