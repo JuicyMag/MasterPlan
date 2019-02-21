@@ -105,7 +105,7 @@ public class Runner{
   }
 
   /**
-   * Returns an array with the compatibility calues of each course.
+   * Returns an array with the compatibility values of each course.
    *
    * @pre studentTags is of the proper data format
    * @post initialize the @students ArrayList from the input csv file.
