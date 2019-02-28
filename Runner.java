@@ -12,6 +12,9 @@ import java.io.FileNotFoundException;
   //5. Debugging
   //6. Frontend(Daniel)
 
+  //EDGE CASES TO FIX
+  //1. Empty student tag shouldn't inhibit prereq based recommendation.
+
 /**
   * This class is designed to run the necessary logic for a Course Recommender.
   */
