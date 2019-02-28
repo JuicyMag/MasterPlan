@@ -483,8 +483,9 @@ public class Runner{
    * @post - returns a list of students who have been assigned advisors
    *
   */
-  public ArrayList<Student> adviseeAssigned(){
-    ArrayList<Student> matchedStudents = new ArrayList<Student> ();
+  public Student[] adviseeAssigned(){
+    Student[] matchedStudents; //final matched students
+    int count; //no student is matched yet
 
     ArrayList<AdvStudCompat> compatibilities = new ArrayList<AdvStudCompat> ();
 
@@ -493,6 +494,8 @@ public class Runner{
     ArrayList<Student> students = initStudentsmatch();
     ArrayList<Advisor> advisors = initAdvisorsmatch();
 
+    matchedStudents = new Student[students.size()];
+    count = 0;
 
     //calculate compatibility between each student and professor
 
@@ -515,18 +518,20 @@ public class Runner{
       Student student = compat.getStudent();
       Advisor advisor = compat.getAdvisor();
 
+      //make sure that the student has no advisor or the advisor has no enough students
       if(!student.hasAdvisor() || !advisor.hasEnoughStudents()){
         student.assignAdvisor(advisor);
         advisor.addStudent(student);
-
-
+        matchedStudents[count] = student;
+        count++;
       }
     }
 
-    //return the list of students assigned
+    //print the name of Students with advisors
+    System.out.println(Arrays.toString(matchedStudents));
 
-    //change this
-    return null;
+    //return the list of students assigned
+    return matchedStudents;
   }
 
   public static void main(String[] args){
