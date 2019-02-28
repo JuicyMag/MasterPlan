@@ -30,6 +30,13 @@ public class Student{
   }
 
 
+  public Student(String name, String[] tags){
+    this.name = name;
+    this.tags = tags;
+    studentAdvisor = null;
+  }
+
+
   /**
    * Fetch the name variable of the Student instance.
    *

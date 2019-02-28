@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.HashSet;
+import java.util.Collections;
+import java.Lang.*;
 
   //TO DO LIST
   //1. scanf and printf (adding student realtime)(Garett) - Done
@@ -62,7 +65,7 @@ public class Runner{
         System.out.println(courses.get(mostCompatible[j]).getName());
       }
 
-           
+
     }
       //checking if checkPrereqs works - Done(Working now)
     /*
@@ -85,9 +88,9 @@ public class Runner{
       for(int i=0; i < bobsMostCompatible.length; i++){
 	  System.out.println("Bob's Most Compatible is course # + " + bobsMostCompatible[i] + " in master courses array"); 
     
-	  }*/
-  }
-    
+ }*/
+}
+
    /* Check whether or not a student has taken all the preReqs for a class
    *
    * @pre requires you to import java.util.Arrays
@@ -98,10 +101,10 @@ public class Runner{
    * @param Student who wants to take a given course
    * @return a boolean representing whether all prerequisites are met for a given course. 
   */
-  public boolean checkPrereqs(Course course, Student student){
-      String[] preReqs = course.getPreReqs();
-      String[] classesTaken = student.getClassesTaken();      
-      return Arrays.asList(classesTaken).containsAll(Arrays.asList(preReqs));
+   public boolean checkPrereqs(Course course, Student student){
+    String[] preReqs = course.getPreReqs();
+    String[] classesTaken = student.getClassesTaken();      
+    return Arrays.asList(classesTaken).containsAll(Arrays.asList(preReqs));
   }
 
   /**
@@ -122,15 +125,15 @@ public class Runner{
     for(int i = 0; i < courses.size(); i++){
       int compatibility = 0;
       if(checkPrereqs(courses.get(i), student)){
-      String[] courseTags = courses.get(i).getTags();
+        String[] courseTags = courses.get(i).getTags();
 
       // get compatibility value via number of matching tags
-      for(int k = 0; k < studentTags.length; k++){
-        for(int j = 0; j < courseTags.length; j++){
-          int result = studentTags[k].compareTo(courseTags[j]);
-          if(result == 0) compatibility++;
+        for(int k = 0; k < studentTags.length; k++){
+          for(int j = 0; j < courseTags.length; j++){
+            int result = studentTags[k].compareTo(courseTags[j]);
+            if(result == 0) compatibility++;
+          }
         }
-      }
       }
       compatibilityValues[i] = compatibility;
     }
@@ -160,7 +163,7 @@ public class Runner{
     int count = 0;
     for(int i = 0; i < result.length; i++){
       //TODO
-      
+
       for(int j = 0; j < result.length; j++){
         if(checkPrereqs(courses.get(j), student)){
           count = j;
@@ -208,25 +211,25 @@ public class Runner{
       }
     }
     ArrayList<Integer> maxCompatible = new ArrayList<Integer>(3);
- 
+
     for(int i=0; i < 3; i++){
-	if(checkPrereqs(courses.get(result[i]),student)){
-	    if(!Arrays.asList(student.getClassesTaken()).contains(courses.get(result[i]).getName())){
-		if(!maxCompatible.contains(result[i])){
-		    maxCompatible.add(result[i]);
-		}
-	    }
-	}
+     if(checkPrereqs(courses.get(result[i]),student)){
+       if(!Arrays.asList(student.getClassesTaken()).contains(courses.get(result[i]).getName())){
+        if(!maxCompatible.contains(result[i])){
+          maxCompatible.add(result[i]);
+        }
+      }
     }
-  
-    int[] finalResult = new int[maxCompatible.size()];
-    int index = 0;
-    for(int val:maxCompatible){
-	finalResult[index++] = val;
-    }
-    return finalResult;
   }
-    
+  
+  int[] finalResult = new int[maxCompatible.size()];
+  int index = 0;
+  for(int val:maxCompatible){
+   finalResult[index++] = val;
+ }
+ return finalResult;
+}
+
   /**
    * Initialize the @students ArrayList from the input csv file.
    *
@@ -275,22 +278,250 @@ public class Runner{
     }
   }
 
+  /**
+   * @pre have a file name of the students file present in the folder
+   *
+   * @post return a list of student objects in the
+   * @return a list of students from the csv file
+   * 
+   *
+  */
+  private ArrayList<Student> initStudentsmatch(){
+    ArrayList<Student> studentsToMatch = new ArrayList<Student> ();
+
+    try{
+      Scanner csvScan = new Scanner(new File("studentsmatch.csv"));
+
+        //put ; in the csv file to separate
+      while(csvScan.hasNextLine()){
+        String oneStudent = csvScan.nextLine();
+        String[] attributes = oneStudent.split(",");
+        Student student = new Student(attributes[0], attributes[1].split(";"));
+        studentsToMatch.add(student);
+      }
+
+      csvScan.close();
+    } 
+    catch(Exception e){
+      System.out.println(e);
+    }
+
+    return studentsToMatch;
+
+  }
+
+
+  /**
+   * @post an Array of advisors 
+   * 
+   * @pre have a file name of the advisors and the interests
+   * present in the folder
+   *
+   * @return an array of advisors
+   *
+  */
+  private ArrayList<Advisor> initAdvisorsmatch(){
+    ArrayList<Advisor> advisorsToMatch = new ArrayList<Advisor> ();
+
+    try{
+      Scanner csvScan = new Scanner(new File("professorsmatch.csv"));
+
+        //put ; in the csv file to separate
+      while(csvScan.hasNextLine()){
+        String oneAdvisor = csvScan.nextLine();
+        String[] attributes = oneAdvisor.split(",");
+        Advisor advisor = new Advisor(attributes[0], attributes[1].split(";"), new Student[]{});
+        advisorsToMatch.add(advisor);
+      }
+
+      csvScan.close();
+    } 
+    catch(Exception e){
+      System.out.println(e);
+    }
+
+    return advisorsToMatch;
+  }
+
+
+  /*
+   * //get matchCompat
+  */
+  private int getmatchCompat(Student student, Advisor advisor){
+
+    //String[]
+    //String[]
+
+    return 1;
+
+  }
+
+
+  /**
+   * @param - student and advisor (non null)
+   * 
+   * @post - calculates the compatibility fraction and returns a compatibility object
+   * @return - AdvStudCompat object
+   *
+  */
+  private AdvStudCompat calculateCompat(Student student, Advisor advisor){
+
+    //get students' and advisors' tags
+    String[] studentTags = student.getTags();
+
+    //initiate a hash set to put an advisor's tags
+    //possibly change it to arraylist?
+    HashSet <String> advisorTags = new HashSet<String> (Arrays.asList(advisor.getTags()));
+
+    float count = 0;
+
+    for(int i = 0; i < studentTags.length; i++){
+      if(advisorTags.contains(studentTags[i])){
+        count = count + 1.0f;
+      }
+    }
+
+    // the match percentage fraction
+    float matchNum = count/ ((float) advisorTags.size());
+
+    //return a new AdvStudCompat object
+    return new AdvStudCompat(student,advisor, matchNum);
+  }
 
 
 
+  // Merges two subarrays of arr[]. 
+    // First subarray is arr[l..m] 
+    // Second subarray is arr[m+1..r] 
+  private void merge(AdvStudCompat[] arr, int l, int m, int r) { 
+        // Find sizes of two subarrays to be merged 
+    int n1 = m - l + 1; 
+    int n2 = r - m; 
+
+    /* Create temp arrays */
+    AdvStudCompat L[] = new AdvStudCompat [n1]; 
+    AdvStudCompat R[] = new AdvStudCompat [n2]; 
+
+    /*Copy data to temp arrays*/
+    for (int i=0; i<n1; ++i) 
+      L[i] = arr[l + i]; 
+    for (int j=0; j<n2; ++j) 
+      R[j] = arr[m + 1+ j]; 
+
+
+    /* Merge the temp arrays */
+
+        // Initial indexes of first and second subarrays 
+    int i = 0, j = 0; 
+
+        // Initial index of merged subarry array 
+    int k = l; 
+    while (i < n1 && j < n2) 
+    { 
+      if (this.compareCompat(L[i], R[j]) <= 0)
+      { 
+        arr[k] = L[i]; 
+        i++; 
+      } 
+      else
+      { 
+        arr[k] = R[j]; 
+        j++; 
+      } 
+      k++; 
+    } 
+
+    /* Copy remaining elements of L[] if any */
+    while (i < n1) 
+    { 
+      arr[k] = L[i]; 
+      i++; 
+      k++; 
+    } 
+
+    /* Copy remaining elements of R[] if any */
+    while (j < n2) 
+    { 
+      arr[k] = R[j]; 
+      j++; 
+      k++; 
+    } 
+  } 
+  
+    // Main function that sorts arr[l..r] using 
+    // merge() 
+  private void sort(AdvStudCompat[] arr, int l, int r) { 
+    if (l < r) 
+    { 
+            // Find the middle point 
+      int m = (l+r)/2; 
+
+            // Sort first and second halves 
+      sort(arr, l, m); 
+      sort(arr , m+1, r); 
+
+            // Merge the sorted halves 
+      merge(arr, l, m, r); 
+    }
+  }
+
+
+  private int compareCompat(AdvStudCompat a, AdvStudCompat b){
+    //get compatibilities first
+    float aCompat = a.getCompatibility();
+    float bCompat = b.getCompatibility();
+
+    //compare compatibilities
+    return Float.compare(aCompat,bCompat);
+  }
+
+
+
+  /**
+   * @param - a list of students and advisors 
+   *
+   * @post - returns a list of students who have been assigned advisors
+   *
+  */
   public ArrayList<Student> adviseeAssigned(){
     ArrayList<Student> matchedStudents = new ArrayList<Student> ();
+
+    ArrayList<AdvStudCompat> compatibilities = new ArrayList<AdvStudCompat> ();
+
     //init advisees and their tags
       //init Students waiting for advisors
+    ArrayList<Student> students = initStudentsmatch();
+    ArrayList<Advisor> advisors = initAdvisorsmatch();
 
-    //init advisors and their tags
-      //init Advisors waiting for advisee
 
     //calculate compatibility between each student and professor
 
+    for(int i = 0; i < students.size(); i++){
+      for ( int j = 0; j < advisors.size(); j++){
+        compatibilities.add(this.calculateCompat(students.get(i), advisors.get(j)));
+      }
+    }
+
+    //put them in an array
+    AdvStudCompat[] compatibilitiesArray = (AdvStudCompat[]) compatibilities.toArray();
+
     //sort the compatibilities
+    sort(compatibilitiesArray, 0, compatibilitiesArray.length-1);
 
     //assign and mark off advisors and students matched by adding all the matched students to the final array list
+
+    for(int i = compatibilitiesArray.length-1; i >= 0; i--){
+      AdvStudCompat compat = compatibilitiesArray[i];
+      Student student = compat.getStudent();
+      Advisor advisor = compat.getAdvisor();
+
+      if(!student.hasAdvisor() || !advisor.hasEnoughStudents()){
+        student.assignAdvisor(advisor);
+        advisor.addStudent(student);
+
+
+      }
+    }
 
     //return the list of students assigned
 

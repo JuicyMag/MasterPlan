@@ -1,5 +1,4 @@
 
-
 /***
  * 
  * This class is designed to represent the compatibility between a 
@@ -14,7 +13,7 @@ public class AdvStudCompat{
 	private Advisor advisor;
 
 	// the compatibility between the student and the advisor 
-	private double compatibility;
+	private float compatibility;
 
 	/**
 	 * @param : 
@@ -24,7 +23,7 @@ public class AdvStudCompat{
 	 * 
 	 * @return - instantiates a compatibility class object
 	*/
-	public AdvStudCompat(Student student, Advisor advisor, double compatibility){
+	public AdvStudCompat(Student student, Advisor advisor, float compatibility){
 		this.student = student;
 		this.advisor = advisor;
 		this.compatibility = compatibility;
@@ -37,7 +36,7 @@ public class AdvStudCompat{
 	 *
 	 * @return the compatibility between the student and the advisor 
 	*/
-	public double getCompatibility(){
+	public float getCompatibility(){
 		return compatibility;
 	}
 
@@ -62,5 +61,6 @@ public class AdvStudCompat{
 	public Student getStudent(){
 		return student;
 	}
+
 	
 }

@@ -1,5 +1,6 @@
 import java.util.Vector;
-
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * This is class has been designed to represent a single advisor 
@@ -13,13 +14,13 @@ public class Advisor {
 	// current number of interests of this advisor
 
 	// names of students being advised by this advisor
-	private Vector<String> advisees;
+	private Vector<Student> advisees;
 
 	//maximum number of students this advisor can have
-	private static final int NUM_STUDENTS = 8;
+	private static final int NUM_STUDENTS = 2;
 
 	// the maximum number of tags a single advisor can have
-	private static final int NUM_TAGS = 10;
+	private static final int NUM_TAGS = 7;
 
 	// advisor name
 	private String name;
@@ -32,36 +33,36 @@ public class Advisor {
 	 * 		tags - interests(String array) of the advisor
 	 *		advisees - students(String array) currently assigned to this advisor
 	 */
-	public Advisor(String name, String[] tags, String[] advisees){
+	public Advisor(String name, String[] tags, Student[] advisees){
 		this.name = name;
-		this.tags = this.addAll(tags);
-		this.advisees = this.addAll(advisees);
+		this.tags.addAll(Arrays.asList(tags));
+		this.advisees.addAll(Arrays.asList(advisees));
 	}
 
 	public Advisor(String name){
-		this(name, new String[] {} , new String[] {});
+		this(name, new String[] {} , new Student[] {});
 	}
 
-     /*
-	  * helper function to add all values in a string array into a vector
-	  *
-	  * @param - String array
-	  *
-	  * return String vector
-     */
-	private Vector<String> addAll(String[] all){
-		Vector<String> result = new Vector<String> ();
+ //     /* I don't need this here
+	//   * helper function to add all values in a string array into a vector
+	//   *
+	//   * @param - String array
+	//   *
+	//   * return String vector
+ //     */
+	// private Vector<Object> addAll(Object[] all){
+	// 	Vector<Object> result = new Vector<Object> ();
 
-		if(all.length == 0){
-			return result;
-		}
+	// 	if(all.length == 0){
+	// 		return result;
+	// 	}
 
-		for(int i = 0; i < all.length;i++){
-			result.add(all[i]);
-		}
+	// 	for(int i = 0; i < all.length;i++){
+	// 		result.add(all[i]);
+	// 	}
 
-		return result; 
-	}
+	// 	return result; 
+	// }
 
 	/*
 	 * add an interest of the advisor
@@ -86,9 +87,9 @@ public class Advisor {
 	 *
 	 * return a boolean of whether or not the student was added
 	*/
-	public boolean addStudent(String name){
+	public boolean addStudent(Student student){
 		if(advisees.size() < NUM_STUDENTS){
-			advisees.add(name);
+			advisees.add(student);
 			return true;
 		}
 
@@ -122,9 +123,9 @@ public class Advisor {
 	 * return a boolean of whether the student was removed
 	 * 
 	*/
-	public boolean removeStudent(String name){
+	public boolean removeStudent(Student student){
 		if(advisees.size() > 0){
-			advisees.remove(name);
+			advisees.remove(student);
 			return true;
 		}
 
@@ -150,8 +151,8 @@ public class Advisor {
 	 *
 	 * return the list of students in an array under this advisor
 	*/
-	public String[] getStudents(){
-		return (String[]) advisees.toArray();
+	public Student[] getStudents(){
+		return (Student[]) advisees.toArray();
 	}
 
 	/* 
