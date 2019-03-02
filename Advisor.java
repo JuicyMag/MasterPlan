@@ -24,10 +24,10 @@ public class Advisor {
 	// advisor name
 	private String name;
 
-	/**
+	/*
 	 * initialize the advisor object
 	 *
-	 * @param:
+	 * @params:
 	 *      name - name(String) of the advisor
 	 * 		tags - interests(String array) of the advisor
 	 *		advisees - students(String array) currently assigned to this advisor
@@ -205,4 +205,5 @@ public class Advisor {
 	public boolean hasEnoughStudents(){
 		return (advisees.size() >= NUM_STUDENTS);
 	}
+
 }

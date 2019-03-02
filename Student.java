@@ -8,7 +8,6 @@ public class Student{
   private String[] tags; //Holds the tags associated to the Student.
   private int classYear; //Holds the class year of the Student.
   private String[] classesTaken; //Holds the classes taken by the student.
-  private Advisor studentAdvisor; //this student's advisor
 
   /**
    * Construct a Student instance.
@@ -26,7 +25,6 @@ public class Student{
     this.tags = tags;
     this.classYear = classYear;
     this.classesTaken = classesTaken;
-    studentAdvisor = null;
   }
 
 
@@ -74,46 +72,5 @@ public class Student{
    */
   public String[] getClassesTaken(){
     return classesTaken;
-  }
-
-  /**
-   * @param - the advisor being assigned to this student
-   *
-   * @return nothing
-  */
-  public void assignAdvisor(Advisor advisor){
-    studentAdvisor = advisor;
-  }
-
-
-  /**
-   * @param - none
-   *
-   * @return the advisor who was just unassigned to this student
-  */
-  public Advisor unAssignAdvisor(){
-    Advisor temp = studentAdvisor;
-    studentAdvisor = null;
-
-    return temp;
-  }
-
-
-  /**
-   * @param  none
-   *
-   * @return the advisor for this student or null if none exists  
-  */
-  public Advisor getAdvisor(){
-      return studentAdvisor;
-  }
-
-  /**
-   * @param none
-   *
-   * @return a boolean representing whether the student has an advisor
-  */
-  public boolean hasAdvisor(){
-    return (studentAdvisor != null); 
   }
 }
