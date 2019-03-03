@@ -52,7 +52,7 @@ nav .navbar-brand, .navbar .navbar-brand {
   background-color: #e2c2c6;
   margin: 0px 1px;
   position: absolute;
-  bottom: 10px;
+  bottom: 50px;
   left: 10px;
   right: 10px;
   align-elements: center;
@@ -74,6 +74,14 @@ nav .navbar-brand, .navbar .navbar-brand {
   border-right-style: solid;
   border-width: 1px;
   border-color: #b9929f;
+}
+
+.search .expand{
+  position: absolute;
+  background-color: #e2c2c6;
+  left:10px;
+  right: 10px;
+  bottom: 20px;
 }
 
 .classes {
@@ -133,6 +141,23 @@ nav .navbar-brand, .navbar .navbar-brand {
 }
 .tags .btn {
   margin-right: 10px;
+}
+
+#expanded-schedule{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(60, 60, 60, 0.5);
+  padding: 5%;
+  overflow: scroll;
+}
+
+#weekly-calendar{
+  background-color: #ffffff;
+  padding: 5%;
 }
 
 /*# sourceMappingURL=catalog.css.map */
