@@ -12,6 +12,9 @@ import java.io.FileNotFoundException;
   //5. Debugging
   //6. Frontend(Daniel)
 
+  //EDGE CASES TO FIX
+  //1. Empty student tag shouldn't inhibit prereq based recommendation.
+
 /**
   * This class is designed to run the necessary logic for a Course Recommender.
   */
@@ -105,7 +108,7 @@ public class Runner{
   }
 
   /**
-   * Returns an array with the compatibility calues of each course.
+   * Returns an array with the compatibility values of each course.
    *
    * @pre studentTags is of the proper data format
    * @post initialize the @students ArrayList from the input csv file.
