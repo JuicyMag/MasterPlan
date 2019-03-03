@@ -1,0 +1,284 @@
+//colors
+$white: #ffffff;
+$color_jagger_approx: #310753;
+$color_victoria_approx: #563d7c;
+$white_70: rgba(255,255,255,0.7);
+$black: black;
+$color_pink_flare_approx: #e2c2c6;
+$color_thatch_approx: #b9929f;
+$color_martinique_approx: #3f2953;
+$color_medium_purple_approx: #a56ddf;
+$color_flush_mahogany_approx: #c0392b;
+
+//fonts
+$font_0: Helvetica;
+$font_1: Noto Sans;
+$font_2: sans-serif;
+
+//@extend-elements
+//original selectors
+//nav, .navbar
+%extend_1 {
+	background-color: $color_jagger_approx;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+	letter-spacing: 0.2em;
+}
+
+//original selectors
+//nav a, .navbar a
+%extend_2 {
+	padding: 6px 12px 0;
+	text-decoration: none;
+	color: $white;
+	font-weight: lighter;
+}
+
+
+body {
+	font-family: $font_0;
+	text-transform: uppercase;
+	overflow-x: hidden;
+	background-color: $white;
+	padding-top: 45px;
+}
+nav {
+	@extend %extend_1;
+	a {
+		@extend %extend_2;
+	}
+	.navbar-brand {
+		font-weight: 500;
+	}
+}
+.navbar {
+	@extend %extend_1;
+	a {
+		@extend %extend_2;
+	}
+	.navbar-brand {
+		font-weight: 500;
+	}
+}
+.search {
+	background-color: $color_victoria_approx;
+	height: 100%;
+	margin-top: 6px;
+	.searchbar {
+		background-color: $white_70;
+		color: $black;
+		letter-spacing: 0.4em;
+		font-weight: lighter;
+		text-indent: 2em;
+		text-transform: uppercase;
+	}
+	.row {
+		margin: 0;
+		height: 4em;
+	}
+}
+.classes {
+	margin: 20px;
+	.class {
+		border: 1px solid $color_martinique_approx;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+	.left {
+		text-align: right;
+		letter-spacing: 1px;
+		.number {
+			margin-bottom: 5px;
+			padding: 3px;
+			font-size: 20px;
+			text-align: center;
+			font-weight: lighter;
+		}
+		.professor {
+			color: $color_pink_flare_approx;
+			text-transform: none;
+			font-variant: small-caps;
+		}
+		.classTime {
+			font-size: 14px;
+		}
+	}
+	.right {
+		text-transform: none;
+		.className {
+			font-variant: small-caps;
+			font-size: 26px;
+			letter-spacing: 3px;
+		}
+		.classDescr {
+			font-weight: lighter;
+			letter-spacing: 1px;
+		}
+	}
+}
+.tags {
+	justify-content: flex-start;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 10px;
+	.tag {
+		padding-right: 0.5em;
+		letter-spacing: 0.2em;
+		margin: 6px;
+		color: $white;
+		background-color: $color_martinique_approx;
+		font-family: $font_1, $font_2;
+	}
+	.btn {
+		margin-right: 10px;
+		color: $white;
+	}
+}
+.courses-nav-btn {
+	width: 100%;
+	font-size: 16px;
+	margin: 0;
+	font-family: $font_1, $font_2;
+	height: 50px;
+	padding: 0;
+	border: none;
+	background-color: $white;
+}
+#all-courses-button {
+	border-top: 1px solid $color_martinique_approx;
+	border-left: 1px solid $color_martinique_approx;
+	border-right: 1px solid $color_martinique_approx;
+}
+.hide {
+	display: none;
+}
+#weekly-calendar {
+	margin-top: 30px;
+	width: 100%;
+}
+.course-list {
+	border: 1px solid $color_martinique_approx;
+}
+.course-list-container {
+	margin: 20px 30px 0 0;
+}
+#selected-tags-title {
+	color: $white;
+}
+#tag-options {
+	padding: 0;
+}
+.select-hidden {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+.select {
+	cursor: pointer;
+	position: relative;
+	font-size: 16px;
+	color: $white;
+	width: 90%;
+	height: 40px;
+	margin-left: 5%;
+	font-family: $font_1, $font_2;
+}
+.select-styled {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $color_martinique_approx;
+	padding: 8px 15px;
+	transition: all 0.2s ease-in;
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border: 7px solid transparent;
+		border-color: $white transparent transparent transparent;
+		position: absolute;
+		top: 16px;
+		right: 10px;
+	}
+	&:hover {
+		background-color: $color_martinique_approx;
+	}
+	&:active {
+		background-color: $color_martinique_approx;
+		&:after {
+			top: 9px;
+			border-color: transparent transparent $white transparent;
+		}
+	}
+	&.active {
+		background-color: $color_martinique_approx;
+		&:after {
+			top: 9px;
+			border-color: transparent transparent $white transparent;
+		}
+	}
+}
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: $color_martinique_approx;
+	li {
+		margin: 0;
+		padding: 12px 0;
+		text-indent: 15px;
+		border-top: 1px solid $color_medium_purple_approx;
+		transition: all 0.15s ease-in;
+		&:hover {
+			color: $color_flush_mahogany_approx;
+			background: $white;
+		}
+	}
+	li[rel="hide"] {
+		display: none;
+	}
+}
+.header {
+	color: $white;
+	background-color: $color_victoria_approx;
+	height: 3em;
+	font-family: $font_1, $font_2;
+}
+.full-width {
+	width: 100%;
+}
+.full-height {
+	height: 100%;
+}
+span {
+	width: 100%;
+	padding: 5px;
+	display: inline-flex;
+	align-items: center;
+}
+#add-tags-button {
+	width: 90%;
+	margin-left: 5%;
+	font-family: $font_1, $font_2;
+	text-transform: uppercase;
+	background-color: $color_martinique_approx;
+	color: $white;
+	border: none;
+}
+#selected-tags {
+	margin-left: 5%;
+}
+#course-list-nav .col {
+	padding: 0;
+}
