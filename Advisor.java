@@ -43,26 +43,6 @@ public class Advisor {
 		this(name, tags, new Student[] {});
 	}
 
- //     /* I don't need this here
-	//   * helper function to add all values in a string array into a vector
-	//   *
-	//   * @param - String array
-	//   *
-	//   * return String vector
- //     */
-	// private Vector<Object> addAll(Object[] all){
-	// 	Vector<Object> result = new Vector<Object> ();
-
-	// 	if(all.length == 0){
-	// 		return result;
-	// 	}
-
-	// 	for(int i = 0; i < all.length;i++){
-	// 		result.add(all[i]);
-	// 	}
-
-	// 	return result; 
-	// }
 
 	/*
 	 * add an interest of the advisor
@@ -96,23 +76,6 @@ public class Advisor {
 		System.out.println("You have reached the maximum number of tags, you can't add any more tag");
 		return false;
 	}
-
-	// /*
-	//  * add a student to the list of students being advised by this advisor
-	//  *
-	//  * @param - name(String) of the student 
-	//  *
-	//  * return a boolean of whether or not the student was added
-	// */
-	// public boolean addAllStudents(String[] name){
-	// 	if(advisee.size() < NUM_STUDENTS){
-	// 		advisee.add(name);
-	// 		return true;
-	// 	}
-
-	// 	System.out.println("You have reached the maximum number of tags, you can't add any more tag");
-	// 	return false;
-	// }
 
 
 	/*

@@ -334,7 +334,6 @@ public class Runner{
         String oneAdvisor = csvScan.nextLine();
         String[] attributes = oneAdvisor.split(",");
         Advisor advisor = new Advisor(attributes[0], attributes[1].split(";"), new Student[0]);
-        System.out.println(advisor);
         advisorsToMatch.add(advisor);
       }
 
@@ -344,7 +343,6 @@ public class Runner{
       System.out.println(e);
     }
 
-    System.out.println(advisorsToMatch.size());
     return advisorsToMatch;
   }
 
@@ -367,16 +365,16 @@ public class Runner{
     //possibly change it to arraylist?
     HashSet <String> advisorTags = new HashSet<String> (Arrays.asList(advisor.getTags()));
 
-    float count = 0;
+    int count = 0;
 
     for(int i = 0; i < studentTags.length; i++){
       if(advisorTags.contains(studentTags[i])){
-        count = count + 1.0f;
+        count = count + 1;
       }
     }
 
     // the match percentage fraction
-    float matchNum = count/ ((float) advisorTags.size());
+    float matchNum = ((float) count)/ ((float) advisorTags.size());
 
     //return a new AdvStudCompat object
     return new AdvStudCompat(student,advisor, matchNum);
