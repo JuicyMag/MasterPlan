@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Collections;
-import java.Lang.*;
+import java.lang.*;
 
   //TO DO LIST
   //1. scanf and printf (adding student realtime)(Garett) - Done
@@ -32,41 +32,44 @@ public class Runner{
    * @post constructs a Runner instance and runs the program.
    */
   public Runner(){
-    initCourses();
+
+    adviseeAssigned();
+
+    // initCourses();
     
-    initStudents();
+    // initStudents();
 
-    Scanner scan = new Scanner(System.in);
+    // Scanner scan = new Scanner(System.in);
 
-    System.out.println("Welcome to the Course Recommender!");
-    System.out.println("Please key in your name:");
-    String studentName = scan.nextLine();
-    System.out.println("Please choose the tags you think best describes your interest:");
-    String studentTags = scan.nextLine();
+    // System.out.println("Welcome to the Course Recommender!");
+    // System.out.println("Please key in your name:");
+    // String studentName = scan.nextLine();
+    // System.out.println("Please choose the tags you think best describes your interest:");
+    // String studentTags = scan.nextLine();
 
-    System.out.println("Please enter your class year:");
-    int classYear = Integer.parseInt(scan.nextLine());
-    System.out.println("Please enter your pre-requisite courses:");
-    String studentPrereqs = scan.nextLine();
+    // System.out.println("Please enter your class year:");
+    // int classYear = Integer.parseInt(scan.nextLine());
+    // System.out.println("Please enter your pre-requisite courses:");
+    // String studentPrereqs = scan.nextLine();
 
-    Student toBeAdded = new Student(studentName, studentTags.split(";"), classYear, studentPrereqs.split(";"));
-    students.add(toBeAdded);
+    // Student toBeAdded = new Student(studentName, studentTags.split(";"), classYear, studentPrereqs.split(";"));
+    // students.add(toBeAdded);
 
-    System.out.println("\n\n");
-    for(int i = 0; i < students.size(); i++){
-      Student student = students.get(i);
+    // System.out.println("\n\n");
+    // for(int i = 0; i < students.size(); i++){
+    //   Student student = students.get(i);
 
-      int[] compatibilityValues = getCompatibility(student.getTags(), student);
-      //TODO: bubblesort
-      int[] mostCompatible = getMostCompatible(compatibilityValues, student);
+    //   int[] compatibilityValues = getCompatibility(student.getTags(), student);
+    //   //TODO: bubblesort
+    //   int[] mostCompatible = getMostCompatible(compatibilityValues, student);
 
-      System.out.println("\nHello " + student.getName() +", the top " + numRecommended + " recommended courses for you are:");
-      for(int j = 0; j < mostCompatible.length; j++){
-        System.out.println(courses.get(mostCompatible[j]).getName());
-      }
+    //   System.out.println("\nHello " + student.getName() +", the top " + numRecommended + " recommended courses for you are:");
+    //   for(int j = 0; j < mostCompatible.length; j++){
+    //     System.out.println(courses.get(mostCompatible[j]).getName());
+    //   }
 
 
-    }
+    //}
       //checking if checkPrereqs works - Done(Working now)
     /*
       String[] bobTags = {"Programming","Compiler"};
@@ -330,7 +333,8 @@ public class Runner{
       while(csvScan.hasNextLine()){
         String oneAdvisor = csvScan.nextLine();
         String[] attributes = oneAdvisor.split(",");
-        Advisor advisor = new Advisor(attributes[0], attributes[1].split(";"), new Student[]{});
+        Advisor advisor = new Advisor(attributes[0], attributes[1].split(";"), new Student[0]);
+        System.out.println(advisor);
         advisorsToMatch.add(advisor);
       }
 
@@ -340,21 +344,11 @@ public class Runner{
       System.out.println(e);
     }
 
+    System.out.println(advisorsToMatch.size());
     return advisorsToMatch;
   }
 
 
-  /*
-   * //get matchCompat
-  */
-  private int getmatchCompat(Student student, Advisor advisor){
-
-    //String[]
-    //String[]
-
-    return 1;
-
-  }
 
 
   /**
@@ -398,6 +392,8 @@ public class Runner{
     int n1 = m - l + 1; 
     int n2 = r - m; 
 
+    System.out.println("in merge");
+
     /* Create temp arrays */
     AdvStudCompat L[] = new AdvStudCompat [n1]; 
     AdvStudCompat R[] = new AdvStudCompat [n2]; 
@@ -418,7 +414,7 @@ public class Runner{
     int k = l; 
     while (i < n1 && j < n2) 
     { 
-      if (this.compareCompat(L[i], R[j]) <= 0)
+      if (this.compareCompat(L[i], R[j]) < 0)
       { 
         arr[k] = L[i]; 
         i++; 
@@ -451,17 +447,18 @@ public class Runner{
     // Main function that sorts arr[l..r] using 
     // merge() 
   private void sort(AdvStudCompat[] arr, int l, int r) { 
+    System.out.println("in sort");
     if (l < r) 
     { 
             // Find the middle point 
       int m = (l+r)/2; 
 
             // Sort first and second halves 
-      sort(arr, l, m); 
-      sort(arr , m+1, r); 
+      this.sort(arr, l, m); 
+      this.sort(arr , m+1, r); 
 
             // Merge the sorted halves 
-      merge(arr, l, m, r); 
+      this.merge(arr, l, m, r); 
     }
   }
 
@@ -470,6 +467,8 @@ public class Runner{
     //get compatibilities first
     float aCompat = a.getCompatibility();
     float bCompat = b.getCompatibility();
+    System.out.println(aCompat);
+    System.out.println(bCompat);
 
     //compare compatibilities
     return Float.compare(aCompat,bCompat);
@@ -498,22 +497,39 @@ public class Runner{
     count = 0;
 
     //calculate compatibility between each student and professor
+    System.out.println(students.size());
+    System.out.println("advisors" + advisors.size());
 
     for(int i = 0; i < students.size(); i++){
       for ( int j = 0; j < advisors.size(); j++){
         compatibilities.add(this.calculateCompat(students.get(i), advisors.get(j)));
       }
     }
+    System.out.println(compatibilities.size());
 
     //put them in an array
-    AdvStudCompat[] compatibilitiesArray = (AdvStudCompat[]) compatibilities.toArray();
+    //AdvStudCompat[] compatibilitiesArray = compatibilities.toArray();
+    Object[] objectArray = compatibilities.toArray();
+    //AdvStudCompat[] compatibilitiesArray = new AdvStudCompat[objectArray.length];
+    AdvStudCompat[] compatibilitiesArray = Arrays.stream(objectArray).toArray(AdvStudCompat[]::new);
+    //int len = compatibilities.toArray().length;
+    //Arrays.asList(objectArray).toArray(compatibilitiesArray);
 
+    //String[] strings = Arrays.stream(objects).toArray(String[]::new);
+    System.out.println(objectArray.length);
+    System.out.println(compatibilitiesArray.length);
+
+    System.out.println("before sort");
     //sort the compatibilities
-    sort(compatibilitiesArray, 0, compatibilitiesArray.length-1);
+    this.sort(compatibilitiesArray, 0, compatibilitiesArray.length-1);
 
+    System.out.println("after sort");
     //assign and mark off advisors and students matched by adding all the matched students to the final array list
 
+    System.out.println(compatibilitiesArray.length);
+
     for(int i = compatibilitiesArray.length-1; i >= 0; i--){
+      System.out.println("here");
       AdvStudCompat compat = compatibilitiesArray[i];
       Student student = compat.getStudent();
       Advisor advisor = compat.getAdvisor();

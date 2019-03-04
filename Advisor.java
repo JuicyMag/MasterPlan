@@ -39,8 +39,8 @@ public class Advisor {
 		this.advisees.addAll(Arrays.asList(advisees));
 	}
 
-	public Advisor(String name){
-		this(name, new String[] {} , new Student[] {});
+	public Advisor(String name, String[] tags){
+		this(name, tags, new Student[] {});
 	}
 
  //     /* I don't need this here
@@ -178,7 +178,7 @@ public class Advisor {
 
 	public String toString(){
 		String output = "Name: " + this.getName() + "\n" + "Interests: " + 
-						tags.toString() + "\n" + "Students: " + advisees.toString();
+		tags.toString() + "\n" + "Students: " + advisees.toString();
 		return output;
 	}
 
