@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles/catalog0.css">
+</head>
+
+<title>
+	Williams College Course Recommender
+</title>
+
+<body>
+	<nav class="navbar navbar-default">
+		<a class="navbar-brand" href="#">Williams</a>
+		<a class="menubarButton" href="#">Advisors</a>
+		<a class="menubarButton" href="#">Profile</a>
+	</nav>
+	<div class="row container.fluid lower">
+		<div class="col col-lg-3 ">
+		 <div class="search">
+       <div class = "fixed-container">
+
+       <div class="row header">
+         <span>1. Select a Category</span>
+       </div>
+
+			<input class="form-control searchbar hide" type="text" placeholder="Search">
+			<div id = "subject" class="row">
+
+          <select  size="1" title="" name="subject">
+                  <option value="please">Select a category</option>
+                  <option value="math">Mathematics</option>
+                  <option value="econ">Economics</option>
+                  <option value="cs">Computer Science</option>
+          </select>
+
+      </div>
+
+       <div class="row header">
+         <span>2. Select a specific tag and add it</span>
+       </div>
+        <div id = "tag-options" class = "container row">
+          <div class = "please full-width">
+            <select>
+              <option value = "nil">Choose a category!</option>
+            </select>
+          </div>
+          <div class = "math full-width full-height hide">
+            <select size="1">
+                  <option value="lin-alg">Linear Algebra</option>
+                  <option value="de">Differential Calculus</option>
+                  <option value="gt">Game Theory</option>
+                  <option value="prob">Probability</option>
+            </select>
+          </div>
+          <div class = "econ full-width full-height hide">
+            <select size="1" >
+                  <option value="micro">Microeconomics</option>
+                  <option value="macro">Macroeconomics</option>
+                  <option value="econometrics">Econometrics</option>
+            </select>
+          </div>
+
+          <div class = "cs full-width full-height hide">
+            <select size="1" >
+                  <option value="compiler">Compiler</option>
+                  <option value="programming">Programming</option>
+                  <option value="ai">Artificial Intelligence</option>
+            </select>
+          </div>
+        </div>
+
+      <div id = "add-tags" class = "row">
+        <button id = "add-tags-button" class = "full-width">Add Tag</button>
+      </div>
+
+       <div class="row header">
+         <span>3. Choose all the tags that describe you!</span>
+       </div>
+
+
+
+			<div id ="selected-tags" class="row tags">
+			</div>
+
+    </div>
+		</div>
+		</div>
+
+    <div class = "col col-lg-1">
+    </div>
+
+    <div class = "col course-list-container">
+
+      <div id = "course-list-nav" class = "row">
+        <div class = "col">
+          <button id = "all-courses-button" class = "courses-nav-btn">All courses</btn>
+        </div>
+        <div class = "col">
+          <button id = "shopping-cart-button" class = "courses-nav-btn">Shopping Cart</btn>
+        </div>
+      </div>
+
+      <div class = "row course-list">
+    		<div id = "all-courses" class="col classes">
+    		</div>
+
+        <div id = "shopping-cart" class="col classes hide">
+
+          <div id = "selected-courses">
+            <h5>Selected Courses:</h5>
+
+      			<div class="row class">
+      				<div class="col col-lg-2 left">
+      					<div class="number">CSCI 334</div>
+      					<div class="professor">S. Freund</div>
+      					<div class="classTime">TR 9:55-11:10</div>
+      				</div>
+      				<div class="col right">
+      					<div class="className">Programming Languages</div>
+      					<div class="classDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</div>
+      					<div class="row tags">
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      					</div>
+      				</div>
+      			</div>
+          </div>
+
+          <div id = "recommended-courses">
+            <h5>Recommended Courses:</h5>
+            <div class="row class">
+      				<div class="col col-lg-2 left">
+      					<div class="number">CSCI 334</div>
+      					<div class="professor">S. Freund</div>
+      					<div class="classTime">TR 9:55-11:10</div>
+      				</div>
+      				<div class="col right">
+      					<div class="className">Programming Languages</div>
+      					<div class="classDescr">Lorem ipsum dolor sit scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</div>
+      					<div class="row tags">
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      					</div>
+      				</div>
+      			</div>
+      			<div class="row class">
+      				<div class="col col-lg-2 left">
+      					<div class="number">CSCI 334</div>
+      					<div class="professor">S. Freund</div>
+      					<div class="classTime">TR 9:55-11:10</div>
+      				</div>
+      				<div class="col right">
+      					<div class="className">Programming Languages</div>
+      					<div class="classDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</div>
+      					<div class="row tags">
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      						<div class="tag"><button class="btn btn-sm">X</button>tag</div>
+      					</div>
+      				</div>
+      			</div>
+          </div>
+
+
+
+
+        <div id = "expanded-schedule" class = "row">
+          <div id = "weekly-calendar">
+             <h1>Weekly Schedule</h1>
+               <table class = "table top-buffer" id = "calendar">
+                 <thead>
+                   <tr id = "day-headers">
+                     <th scope = "col">Time</th>
+                     <th scope = "col">Monday</th>
+                     <th scope = "col">Tuesday</th>
+                     <th scope = "col">Wednesday</th>
+                     <th scope = "col">Thursday</th>
+                     <th scope = "col">Friday</th>
+                   </tr>
+                 </thead>
+
+                 <tbody>
+                    <tr><th>8:30</th></tr>
+          					<tr><th>9:00</th></tr>
+          					<tr><th>9:30</th></tr>
+          					<tr><th>10:00</th></tr>
+          					<tr><th>10:30</th></tr>
+          					<tr><th>11:00</th></tr>
+          					<tr><th>11:30</th></tr>
+          					<tr><th>12:00</th></tr>
+          					<tr><th>12:30</th></tr>
+          					<tr><th>1:00</th></tr>
+          					<tr><th>1:30</th></tr>
+          					<tr><th>2:00</th></tr>
+          					<tr><th>2:30</th></tr>
+          					<tr><th>3:00</th></tr>
+          					<tr><th>3:30</th></tr>
+          					<tr><th>4:00</th></tr>
+                </tbody>
+              </table>
+           </div>
+        </div>
+    		</div>
+
+
+      </div>
+
+    </div>
+
+
+	</div>
+
+    <!-- Bootstrap scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src = "scripts/script.js"></script>
+</body>
+
+
+</html>
