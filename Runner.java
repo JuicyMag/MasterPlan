@@ -281,26 +281,6 @@ public class Runner{
 
 
 
-  public ArrayList<Student> adviseeAssigned(){
-    ArrayList<Student> matchedStudents = new ArrayList<Student> ();
-    //init advisees and their tags
-      //init Students waiting for advisors
-
-    //init advisors and their tags
-      //init Advisors waiting for advisee
-
-    //calculate compatibility between each student and professor
-
-    //sort the compatibilities
-
-    //assign and mark off advisors and students matched by adding all the matched students to the final array list
-
-    //return the list of students assigned
-
-    //change this
-    return null;
-  }
-
   public static void main(String[] args){
     Runner r = new Runner();
   }
