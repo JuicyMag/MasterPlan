@@ -382,15 +382,20 @@ public class Runner{
 
 
 
-  // Merges two subarrays of arr[]. 
-    // First subarray is arr[l..m] 
-    // Second subarray is arr[m+1..r] 
+  /**
+   * @post - Merges two subarrays of arr[]. First subarray is arr[l..m]
+   * 
+   * @param - array with two subarrays to merge, 
+   *        - left int pointer
+   *        - right int pointer
+   *
+   * @return - a merged array
+   * 
+  */
   private void merge(AdvStudCompat[] arr, int l, int m, int r) { 
         // Find sizes of two subarrays to be merged 
     int n1 = m - l + 1; 
     int n2 = r - m; 
-
-    System.out.println("in merge");
 
     /* Create temp arrays */
     AdvStudCompat L[] = new AdvStudCompat [n1]; 
@@ -442,36 +447,43 @@ public class Runner{
     } 
   } 
   
-    // Main function that sorts arr[l..r] using 
-    // merge() 
+    /**
+     * @post - sort an array
+     * 
+     * @param - array, left and right pointers for positions
+                to sort between
+     *
+     * @return - a sorted array
+    */
   private void sort(AdvStudCompat[] arr, int l, int r) { 
-    System.out.println("in sort");
-    if (l < r) 
-    { 
-            // Find the middle point 
-      int m = (l+r)/2; 
+    if (l < r) { 
+      // Find the middle point 
+       int m = (l+r)/2; 
 
-            // Sort first and second halves 
-      this.sort(arr, l, m); 
-      this.sort(arr , m+1, r); 
+      // Sort first and second halves 
+        this.sort(arr, l, m); 
+        this.sort(arr , m+1, r); 
 
-            // Merge the sorted halves 
-      this.merge(arr, l, m, r); 
+      // Merge the sorted halves 
+        this.merge(arr, l, m, r); 
     }
   }
 
-
+  /**
+   * @post - return an integer representing the comparison between two floats
+   *       
+   * @param - two floats
+   *
+   * @return - 0 if a == b, +ve int if a > b, -ve int if a < b
+  */
   private int compareCompat(AdvStudCompat a, AdvStudCompat b){
     //get compatibilities first
     float aCompat = a.getCompatibility();
     float bCompat = b.getCompatibility();
-    System.out.println(aCompat);
-    System.out.println(bCompat);
 
     //compare compatibilities
     return Float.compare(aCompat,bCompat);
   }
-
 
 
   /**
@@ -486,54 +498,37 @@ public class Runner{
 
     ArrayList<AdvStudCompat> compatibilities = new ArrayList<AdvStudCompat> ();
 
-    //init advisees and their tags
-      //init Students waiting for advisors
+    //initialize advisees and their tags
+    //initialize Students and their tags
     ArrayList<Student> students = initStudentsmatch();
     ArrayList<Advisor> advisors = initAdvisorsmatch();
 
     matchedStudents = new Student[students.size()];
     count = 0;
 
-    //calculate compatibility between each student and professor
-    System.out.println(students.size());
-    System.out.println("advisors" + advisors.size());
 
     for(int i = 0; i < students.size(); i++){
       for ( int j = 0; j < advisors.size(); j++){
         compatibilities.add(this.calculateCompat(students.get(i), advisors.get(j)));
       }
     }
-    System.out.println(compatibilities.size());
 
     //put them in an array
-    //AdvStudCompat[] compatibilitiesArray = compatibilities.toArray();
     Object[] objectArray = compatibilities.toArray();
-    //AdvStudCompat[] compatibilitiesArray = new AdvStudCompat[objectArray.length];
     AdvStudCompat[] compatibilitiesArray = Arrays.stream(objectArray).toArray(AdvStudCompat[]::new);
-    //int len = compatibilities.toArray().length;
-    //Arrays.asList(objectArray).toArray(compatibilitiesArray);
 
-    //String[] strings = Arrays.stream(objects).toArray(String[]::new);
-    System.out.println(objectArray.length);
-    System.out.println(compatibilitiesArray.length);
-
-    System.out.println("before sort");
     //sort the compatibilities
     this.sort(compatibilitiesArray, 0, compatibilitiesArray.length-1);
 
-    System.out.println("after sort");
-    //assign and mark off advisors and students matched by adding all the matched students to the final array list
-
-    System.out.println(compatibilitiesArray.length);
-
+    //assign and mark off advisors and students matched by adding all the matched students 
+    //to the final matched students' array
     for(int i = compatibilitiesArray.length-1; i >= 0; i--){
-      System.out.println("here");
       AdvStudCompat compat = compatibilitiesArray[i];
       Student student = compat.getStudent();
       Advisor advisor = compat.getAdvisor();
 
       //make sure that the student has no advisor or the advisor has no enough students
-      if(!student.hasAdvisor() || !advisor.hasEnoughStudents()){
+      if(!student.hasAdvisor() && !advisor.hasEnoughStudents()){
         student.assignAdvisor(advisor);
         advisor.addStudent(student);
         matchedStudents[count] = student;

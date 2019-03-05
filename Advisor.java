@@ -34,6 +34,9 @@ public class Advisor {
 	 *		advisees - students(String array) currently assigned to this advisor
 	 */
 	public Advisor(String name, String[] tags, Student[] advisees){
+		this.tags = new Vector<String> ();
+		this.advisees = new Vector<Student> ();
+
 		this.name = name;
 		this.tags.addAll(Arrays.asList(tags));
 		this.advisees.addAll(Arrays.asList(advisees));
@@ -127,7 +130,8 @@ public class Advisor {
 	 *
 	*/
 	public String[] getTags(){
-		return (String[]) tags.toArray();
+		return tags.toArray(new String[tags.size()]);
+
 	}
 
 	/*
