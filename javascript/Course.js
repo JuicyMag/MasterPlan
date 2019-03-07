@@ -39,33 +39,32 @@ var Course = (function () {
     //if(false){
     Course.prototype.parseTimeSlots = function (toBeParsed) {
 	var result = ([]);
-  //console.log(toBeParsed);
-  //toBeParsed = toBeParsed.toString();
-  //var toBeParsedArr = toBeParsed.split(" ");
-  //console.log(toBeParsedArr);
+
 	for (var i = 0; i < toBeParsed.length; i++) {
 	    {
-    //console.log(typeof toBeParsed[i]);
 
-    console.log(toBeParsed[i]);
+    //Get rid of numbers to parse out days.
     var days = toBeParsed[i].split(/([0-9]+)/)[0];
+
 		var timeArr = toBeParsed[i].split("-");
+    //Get rid of letters to parse out times. Obtain starting time.
     var startTime = timeArr[0].split(/[a-zA-Z]+/)[1];
-    console.log(startTime);
+
+    //Obtain ending time.
     var endTime = timeArr[1];
+
+    //Array to hold starting and ending times.
     var times = new Array();
     times.push(startTime);
     times.push(endTime);
 
-    console.log(times);
 		for (var j = 0; j < days.length; j++) {
-		    {
-      //console.log(days.charAt(j));
 
       //Takes string containing days of the week and iterates through each day.
       var day = days.charAt(j);
 			var dayToInt = void 0;
-      //console.log(days.charAt(j).charCodeAt(0));
+
+      //Looks at UTF-16 representations of days of the week.
 			switch (day.charCodeAt(0)) {
 			case 77 /* 'M' */:
 			    dayToInt = 0;
@@ -86,14 +85,9 @@ var Course = (function () {
 			    dayToInt = 0;
 			    break;
 			}
-      //var foo = times[0]) > 0;
-      //console.log("day to int stuff" : dayToInt + foo);
+
 			/* add */ (result.push(dayToInt + this.parseTime(times[0])) > 0);
-      console.log("push 1: " + result);
       /* add */ (result.push(dayToInt + this.parseTime(times[1])) > 0);
-      console.log("push 2: " + result);
-		    }
-		    ;
 		}
 	    }
 	    ;
@@ -126,12 +120,8 @@ var Course = (function () {
      * @private
      */
 	Course.prototype.parseTime = function (time) {
-  console.log("time: " + time);
   var hoursAndMins = time.split(":");
-  console.log("hours and mins: " + hoursAndMins);
-  console.log("hour: " + hoursAndMins[0]);
   var minutes = parseInt(hoursAndMins[0]) * 60 + parseInt(hoursAndMins[1]);
-  console.log("minutes: " + minutes);
 	return minutes;
     };
 
