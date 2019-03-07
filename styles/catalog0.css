@@ -224,4 +224,28 @@ span {
 #course-list-nav .col {
   padding: 0; }
 
+.fright {
+  float:right;
+}
+
+.select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+
+.selected{
+  background-color: #ffffff !important;
+  border: 1px solid #a56ddf;
+  border-radius: 3px;
+  color: #a56ddf !important;
+}
+
+.highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=catalog0.css.map */
