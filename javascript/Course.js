@@ -45,18 +45,22 @@ var Course = (function () {
 
     //Get rid of numbers to parse out days.
     var days = toBeParsed[i].split(/([0-9]+)/)[0];
+    console.log(days);
 
 		var timeArr = toBeParsed[i].split("-");
     //Get rid of letters to parse out times. Obtain starting time.
     var startTime = timeArr[0].split(/[a-zA-Z]+/)[1];
 
+    startTime = startTime.replace(/ +/g, '');
     //Obtain ending time.
     var endTime = timeArr[1];
 
+    endTime = endTime.replace(/ +/g, '');
     //Array to hold starting and ending times.
     var times = new Array();
     times.push(startTime);
     times.push(endTime);
+    console.log(times);
 
 		for (var j = 0; j < days.length; j++) {
 
@@ -97,7 +101,6 @@ var Course = (function () {
       console.log(s);
       while (s-- > 0){
         a.push(0);
-        console.log(a);
       }
 	     return a; })(/* size */ result.length);
 	for (var i = 0; i < result.length; i++) {
