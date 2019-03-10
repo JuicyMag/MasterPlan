@@ -22,7 +22,7 @@ var Course = (function () {
 	    this.preReqs = null;
 	this.name = name;
 	this.tags = tags;
-	this.timeslots =  timeslotsString;//this.parseTimeSlots(timeslotsString);
+	this.timeslots =  this.parseTimeSlots(timeslotsString);
 	this.preReqs = preReqs;
     }
         /**
@@ -36,18 +36,40 @@ var Course = (function () {
      */
 
     /* PARSING TIME CURRENTLY NOT WORKING*/
-    if(false){
+    //if(false){
     Course.prototype.parseTimeSlots = function (toBeParsed) {
 	var result = ([]);
+
 	for (var i = 0; i < toBeParsed.length; i++) {
 	    {
-		var days = toBeParsed[i].split(" ", 2)[0];
-		var times = toBeParsed[i].split(" ", 2)[1].split(" - ");
+
+    //Get rid of numbers to parse out days.
+    var days = toBeParsed[i].split(/([0-9]+)/)[0];
+    console.log(days);
+
+		var timeArr = toBeParsed[i].split("-");
+    //Get rid of letters to parse out times. Obtain starting time.
+    var startTime = timeArr[0].split(/[a-zA-Z]+/)[1];
+
+    startTime = startTime.replace(/ +/g, '');
+    //Obtain ending time.
+    var endTime = timeArr[1];
+
+    endTime = endTime.replace(/ +/g, '');
+    //Array to hold starting and ending times.
+    var times = new Array();
+    times.push(startTime);
+    times.push(endTime);
+    console.log(times);
+
 		for (var j = 0; j < days.length; j++) {
-		    {
-			var day = days.charAt(j);
+
+      //Takes string containing days of the week and iterates through each day.
+      var day = days.charAt(j);
 			var dayToInt = void 0;
-			switch ((day).charCodeAt(0)) {
+
+      //Looks at UTF-16 representations of days of the week.
+			switch (day.charCodeAt(0)) {
 			case 77 /* 'M' */:
 			    dayToInt = 0;
 			    break;
@@ -67,22 +89,27 @@ var Course = (function () {
 			    dayToInt = 0;
 			    break;
 			}
+
 			/* add */ (result.push(dayToInt + this.parseTime(times[0])) > 0);
-			/* add */ (result.push(dayToInt + this.parseTime(times[1])) > 0);
-		    }
-		    ;
+      /* add */ (result.push(dayToInt + this.parseTime(times[1])) > 0);
 		}
 	    }
 	    ;
 	}
-	var resultArray = (function (s) { var a = []; while (s-- > 0)
-	    a.push(0); return a; })(/* size */ result.length);
+	var resultArray = (function (s){
+      var a = new Array();
+      console.log(s);
+      while (s-- > 0){
+        a.push(0);
+      }
+	     return a; })(/* size */ result.length);
 	for (var i = 0; i < result.length; i++) {
 	    {
-		resultArray[i] = result[i];
+		      resultArray[i] = result[i];
 	    }
 	    ;
 	}
+  console.log(resultArray);
 	return resultArray;
     };
         /**
@@ -96,12 +123,13 @@ var Course = (function () {
      * @private
      */
 	Course.prototype.parseTime = function (time) {
-	var hoursAndMins = time.split(":");
-	return parseInt(hoursAndMins[0]) * 60 + parseInt(hoursAndMins[1]);
+  var hoursAndMins = time.split(":");
+  var minutes = parseInt(hoursAndMins[0]) * 60 + parseInt(hoursAndMins[1]);
+	return minutes;
     };
 
-    } //END OF COMMENTED FALSE JUMP STATEMENT
-    
+    //} //END OF COMMENTED FALSE JUMP STATEMENT
+
     /**
      * Fetch the name of the Course.
      *

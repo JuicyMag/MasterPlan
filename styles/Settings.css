@@ -1,0 +1,308 @@
+.navbar, nav {
+  background-color: #310753;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
+}
+
+.navbar a, nav a {
+  padding: 6px 12px 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding-top: 45px;
+}
+
+nav .navbar-brand {
+  font-weight: 500;
+}
+
+.navbar .navbar-brand {
+  font-weight: 500;
+}
+
+.search {
+  background-color: #563d7c;
+  height: 100%;
+  margin-top: 6px;
+}
+.search .searchbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  letter-spacing: 0.4em;
+  font-weight: lighter;
+  text-indent: 2em;
+  text-transform: uppercase;
+}
+.search .row {
+  margin: 0;
+  height: 4em;
+}
+
+.classes {
+  margin: 20px;
+}
+.classes .class {
+  border: 1px solid #3f2953;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.classes .left {
+  text-align: right;
+  letter-spacing: 1px;
+}
+.classes .left .number {
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+.classes .left .professor {
+  color: #e2c2c6;
+  text-transform: none;
+  font-variant: small-caps;
+}
+.classes .left .classTime {
+  font-size: 14px;
+}
+.classes .right {
+  text-transform: none;
+}
+.classes .right .className {
+  font-variant: small-caps;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+.classes .right .classDescr {
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.tags {
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 10px;
+}
+.tags .tag {
+  padding-right: 0.5em;
+  letter-spacing: 0.2em;
+  margin: 6px;
+  color: #ffffff;
+  background-color: #3f2953;
+  font-family: Noto Sans, sans-serif;
+}
+.tags .btn {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.courses-nav-btn {
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  font-family: Noto Sans, sans-serif;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+}
+
+#all-courses-button {
+  border-top: 1px solid #3f2953;
+  border-left: 1px solid #3f2953;
+  border-right: 1px solid #3f2953;
+}
+
+.hide {
+  display: none;
+}
+
+#weekly-calendar {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.course-list {
+  border: 1px solid #3f2953;
+}
+
+.course-list-container {
+  margin: 20px 30px 0 0;
+}
+
+#selected-tags-title {
+  color: #ffffff;
+}
+
+#tag-options {
+  padding: 0;
+}
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #ffffff;
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  font-family: Noto Sans, sans-serif;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f2953;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #3f2953;
+}
+.select-styled:active {
+  background-color: #3f2953;
+}
+.select-styled:active:after {
+  top: 9px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.select-styled.active {
+  background-color: #3f2953;
+}
+.select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #3f2953;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #a56ddf;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #c0392b;
+  background: #ffffff;
+}
+.select-options li[rel=hide] {
+  display: none;
+}
+
+.header {
+  color: #ffffff;
+  background-color: #563d7c;
+  height: 3em;
+  font-family: Noto Sans, sans-serif;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+span {
+  width: 100%;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+#add-tags-button {
+  width: 90%;
+  margin-left: 5%;
+  font-family: Noto Sans, sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+}
+
+#selected-tags {
+  margin-left: 5%;
+}
+
+#course-list-nav .col {
+  padding: 0;
+}
+
+.imgBorder {
+  clip-path: circle(120px);
+}
+
+img {
+  width: 250px;
+  height: auto;
+}
+
+.profile {
+  padding: 25px;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.info {
+  margin: 0px 300px;
+}
+.info .text {
+  padding-right: 250px;
+}
+.info .text .topic {
+  text-align: right;
+  text-transform: uppercase;
+}
+.info .text .descr {
+  text-align: left;
+  text-transform: none;
+}
+
+/*# sourceMappingURL=Settings.css.map */

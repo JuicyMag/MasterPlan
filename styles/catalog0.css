@@ -224,4 +224,68 @@ span {
 #course-list-nav .col {
   padding: 0; }
 
+.fright {
+  float:right;
+}
+
+.select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+
+.selected{
+  background-color: #ffffff !important;
+  border: 1px solid #a56ddf;
+  border-radius: 3px;
+  color: #a56ddf !important;
+}
+
+.highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
+
+.time{
+  height: 60px;
+}
+
+.empty-timeslot{
+  height: 5px;
+  padding: 0;
+}
+
+.empty-timeslot td{
+  padding: 0;
+  border: 0;
+}
+
+#calendar-hours td{
+  padding: 0;
+}
+
+#calendar-hours td table{
+  width:100%
+}
+
+.odd{
+  background-color: #eee;
+}
+
+.time td{
+  border: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.course-timeslot td{
+  background-color: #a184cc;
+  text-align: center;
+  vertical-align: middle
+}
+
+
 /*# sourceMappingURL=catalog0.css.map */
