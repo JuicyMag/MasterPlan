@@ -116,4 +116,19 @@ public class Student{
   public boolean hasAdvisor(){
     return (studentAdvisor != null); 
   }
+
+  /** 
+   * //change this later to something more meaning full
+   * String representation of a student
+   * @param none
+   *
+   * @return name of the student 
+   *
+  */
+  public String toString(){
+    if(hasAdvisor()){
+      return (getName() + " Advisor: " + getAdvisor().getName());
+    }
+    return (getName() + "No advisor yet");
+  }
 }

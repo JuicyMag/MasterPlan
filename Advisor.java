@@ -96,23 +96,6 @@ public class Advisor {
 		return false;
 	}
 
-	// /*
-	//  * add a student to the list of students being advised by this advisor
-	//  *
-	//  * @param - name(String) of the student 
-	//  *
-	//  * return a boolean of whether or not the student was added
-	// */
-	// public boolean addAllStudents(String[] name){
-	// 	if(advisee.size() < NUM_STUDENTS){
-	// 		advisee.add(name);
-	// 		return true;
-	// 	}
-
-	// 	System.out.println("You have reached the maximum number of tags, you can't add any more tag");
-	// 	return false;
-	// }
-
 
 	/*
 	 * remove a student to the list of students being advised by this advisor
