@@ -1,0 +1,38 @@
+@import 'navbar';
+
+.imgBorder {
+	background: $color3;
+	clip-path: circle(120px);
+}
+
+img {
+	width: 250px;
+	height: auto;
+}
+
+.profile {
+	padding: 25px;
+	text-align: center;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+.info {
+	margin: 0px 300px;
+
+	.text {
+		padding-right: 250px;
+
+		.topic {
+			text-align: right;
+			text-transform: uppercase;
+		}
+
+		.descr {
+			text-align: left;
+			text-transform: none;
+		}
+	}
+}
