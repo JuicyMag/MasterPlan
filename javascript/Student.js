@@ -35,6 +35,11 @@ var Student = (function () {
     Student.prototype.getName = function () {
 	return this.name;
     };
+
+    //TODO: Update comments
+    Student.prototype.updateStudentTags = function (tags) {
+	     this.tags = tags;
+    };
         /**
      * Fetch the list of tags assoicated to the student.
      *

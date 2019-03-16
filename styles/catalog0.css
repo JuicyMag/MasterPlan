@@ -29,6 +29,7 @@ nav .navbar-brand {
 .search {
   background-color: #563d7c;
   height: 100%;
+  min-height: 960px;
   margin-top: 6px; }
   .search .searchbar {
     background-color: rgba(255, 255, 255, 0.7);
@@ -42,6 +43,7 @@ nav .navbar-brand {
     height: 4em; }
 
 .classes {
+  font-family: "Source Sans Pro", sans-serif;
   margin: 20px; }
   .classes .class {
     border: 1px solid #3f2953;
@@ -75,8 +77,9 @@ nav .navbar-brand {
 .tags {
   justify-content: flex-start;
   text-transform: uppercase;
-  color: #ffffff;
-  font-size: 10px; }
+  color: #000000;
+  margin-top: 12px;
+  font-size: 14px; }
   .tags .tag {
     padding-right: 0.5em;
     letter-spacing: 0.2em;
@@ -92,16 +95,19 @@ nav .navbar-brand {
   width: 100%;
   font-size: 16px;
   margin: 0;
-  font-family: Noto Sans, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   height: 50px;
   padding: 0;
-  border: none;
-  background-color: #ffffff; }
+  border:none;
+  background-color:  #332449;
+  color: #ffffff;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
 
-#all-courses-button {
-  border-top: 1px solid #3f2953;
-  border-left: 1px solid #3f2953;
-  border-right: 1px solid #3f2953; }
+#search-options{
+  background-color: #563D7C;
+}
 
 .hide {
   display: none; }
@@ -110,9 +116,12 @@ nav .navbar-brand {
   margin-top: 30px;
   width: 100%; }
 
-.course-list {
-  border: 1px solid #3f2953; }
+.shortclassName {
+    font-family: "Source Sans Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
 
+    }
 .course-list-container {
   margin: 20px 30px 0 0; }
 
@@ -192,10 +201,10 @@ nav .navbar-brand {
     display: none; }
 
 .header {
-  color: #ffffff;
-  background-color: #563d7c;
+  color: #fff;
+  background-color: #563D7C;
   height: 3em;
-  font-family: Noto Sans, sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
 
 .full-width {
   width: 100%; }
@@ -203,20 +212,34 @@ nav .navbar-brand {
 .full-height {
   height: 100%; }
 
+#shopping-cart-button{
+  color:#888;
+}
+
 span {
   width: 100%;
   padding: 5px;
   display: inline-flex;
   align-items: center; }
 
-#add-tags-button {
+#add-tags-button, #clear-tags-button, #expand-schedule {
   width: 90%;
   margin-left: 5%;
-  font-family: Noto Sans, sans-serif;
+  margin-bottom: 5%;
+  font-family: "Noto Sans", sans-serif;
   text-transform: uppercase;
   background-color: #3f2953;
   color: #ffffff;
-  border: none; }
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding:auto;}
+
+#selected-tags{
+  height: auto;
+  min-height: 4em;
+  padding-bottom: 2em;
+}
 
 #selected-tags {
   margin-left: 5%; }
@@ -235,6 +258,12 @@ span {
   color: #ffffff;
 }
 
+.mini-select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
 .selected{
   background-color: #ffffff !important;
   border: 1px solid #a56ddf;
@@ -249,6 +278,12 @@ span {
   color: #ffffff;
 }
 
+.mini-highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
 .time{
   height: 60px;
 }
@@ -258,17 +293,29 @@ span {
   padding: 0;
 }
 
+#mini-calendar-hours tr{
+  height: 2.5px;
+}
+
 .empty-timeslot td{
   padding: 0;
   border: 0;
 }
 
-#calendar-hours td{
+#mini-calendar-hours td{
   padding: 0;
 }
 
-#calendar-hours td table{
-  width:100%
+#mini-calendar-hours td table{
+  width:100%;
+  height: 362px;
+}
+
+#calendar-hours table{
+  width: 100%;
+}
+#calendar-hours td{
+  padding: 0;
 }
 
 .odd{
@@ -282,10 +329,98 @@ span {
 }
 
 .course-timeslot td{
-  background-color: #a184cc;
+  background-color: #C9A5FF;
   text-align: center;
   vertical-align: middle
 }
 
+.navbar-brand{
+  font-size: 30px;
+}
+
+
+.course-tag{
+    padding: 0.5em;
+    letter-spacing: 0.2em;
+    margin: 6px;
+    color: #ffffff;
+    background-color: #3f2953;
+    font-family: Noto Sans, sans-serif;
+}
+
+.d1{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/1.png");
+}
+.d2{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/2.png");
+}
+.d3{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/3.png");
+}
+.wi{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/pencil.png");
+}
+.qfr{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/hash.png");
+}
+.dpe{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/globe.png");
+}
+
+#expanded-schedule-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(60,60,60,0.5);
+  padding: 5%;
+  left: 15px;
+}
+
+#expanded-schedule{
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+
+  overflow: auto;
+}
+
+
+#mini-schedule{
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  font-family: "Noto Sans", sans-serif;
+  overflow: auto;
+}
+
+#day-headers{
+  color: #ffffff;
+  background-color: #3f2953;
+}
+
+#close-button{
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+#mini-week{
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+#selected-courses, #highlighted-courses{
+  padding: 30px;
+  border: 1px solid #000;
+  min-height: 500px;
+}
+
+#highlighted-courses{
+  border: 1px solid #000;
+}
 
 /*# sourceMappingURL=catalog0.css.map */

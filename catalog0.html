@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/catalog0.css">
 </head>
 
@@ -26,69 +26,127 @@
 		<div class="col col-lg-3 ">
 		 <div class="search">
        <div class = "fixed-container">
+        <div class = "row subnav">
+          <button id = "all-courses-button" class = "courses-nav-btn">All courses</btn>
+        </div>
 
-       <div class="row header">
-         <span>1. Select a Category</span>
-       </div>
+        <div id = "search-options">
 
-			<input class="form-control searchbar hide" type="text" placeholder="Search">
-			<div id = "subject" class="row">
+           <div class="row header">
+             <span>1. Select a Category</span>
+           </div>
 
-          <select  size="1" title="" name="subject">
-                  <option value="please">Select a category</option>
-                  <option value="math">Mathematics</option>
-                  <option value="econ">Economics</option>
-                  <option value="cs">Computer Science</option>
-          </select>
+    			<div id = "subject" class="row">
 
-      </div>
+              <select  size="1" title="" name="subject">
+                      <option value="please">Select a category</option>
+                      <option value="math">Mathematics</option>
+                      <option value="econ">Economics</option>
+                      <option value="cs">Computer Science</option>
+                      <option value="general">General</option>
+              </select>
 
-       <div class="row header">
-         <span>2. Select a specific tag and add it</span>
-       </div>
-        <div id = "tag-options" class = "container row">
-          <div class = "please full-width">
-            <select>
-              <option value = "nil">Choose a category!</option>
-            </select>
-          </div>
-          <div class = "math full-width full-height hide">
-            <select size="1">
-                  <option value="lin-alg">Linear Algebra</option>
-                  <option value="de">Differential Calculus</option>
-                  <option value="gt">Game Theory</option>
-                  <option value="prob">Probability</option>
-            </select>
-          </div>
-          <div class = "econ full-width full-height hide">
-            <select size="1" >
-                  <option value="micro">Microeconomics</option>
-                  <option value="macro">Macroeconomics</option>
-                  <option value="econometrics">Econometrics</option>
-            </select>
           </div>
 
-          <div class = "cs full-width full-height hide">
-            <select size="1" >
-                  <option value="compiler">Compiler</option>
-                  <option value="programming">Programming</option>
-                  <option value="ai">Artificial Intelligence</option>
-            </select>
+           <div class="row header">
+             <span>2. Select a specific tag and add it</span>
+           </div>
+            <div id = "tag-options" class = "container row">
+              <div class = "please full-width">
+                <select>
+                  <option value = "nil">Choose a category!</option>
+                </select>
+              </div>
+              <div class = "math full-width full-height hide">
+                <select size="1">
+                      <option value="lin-alg">Linear Algebra</option>
+                      <option value="de">Differential Calculus</option>
+                      <option value="gt">Game Theory</option>
+                      <option value="prob">Probability</option>
+                </select>
+              </div>
+              <div class = "econ full-width full-height hide">
+                <select size="1" >
+                      <option value="econ">Economics</option>
+                      <option value="micro">Microeconomics</option>
+                      <option value="macro">Macroeconomics</option>
+                      <option value="econometrics">Econometrics</option>
+                </select>
+              </div>
+
+              <div class = "cs full-width full-height hide">
+                <select size="1" >
+                      <option value="compiler">Compiler</option>
+                      <option value="programming">Programming</option>
+                      <option value="ai">Artificial Intelligence</option>
+                </select>
+              </div>
+
+              <div class = "general full-width full-height hide">
+                <select size="1" >
+                      <option value="essential">Essential</option>
+                      <option value="law">Law</option>
+                      <option value="graduate">Graduate School</option>
+                      <option value="social justice">Social Justice</option>
+                      <option value="race">Race</option>
+                </select>
+              </div>
+            </div>
+
+          <div id = "add-tags" class = "row">
+            <button id = "add-tags-button" class = "full-width">Add Tag</button>
+          </div>
+
+           <div class="row header">
+             <span>3. Choose all the tags that suit your interests!</span>
+           </div>
+
+
+
+    			<div id ="selected-tags" class="row tags">
+
+    			</div>
+
+          <div id = "clear-tags" class = "row">
+              <button id = "clear-tags-button" class = "full-width">Clear All Tags</button>
           </div>
         </div>
 
-      <div id = "add-tags" class = "row">
-        <button id = "add-tags-button" class = "full-width">Add Tag</button>
-      </div>
+        <div class = "row subnav">
+          <button id = "shopping-cart-button" class = "courses-nav-btn">Shopping Cart</btn>
+        </div>
 
-       <div class="row header">
-         <span>3. Choose all the tags that describe you!</span>
-       </div>
+        <div id = "schedule" class = "hide">
+
+          <div id = "mini-schedule" >
+            <div id = "mini-weekly-calendar" >
+               <h5>Weekly Schedule</h5>
+                 <table id = "mini-week" class = "table top-buffer" >
+                   <thead>
+                     <tr id = "day-headers">
+                       <th scope = "col"></th>
+                       <th scope = "col">M</th>
+                       <th scope = "col">T</th>
+                       <th scope = "col">W</th>
+                       <th scope = "col">T</th>
+                       <th scope = "col">F</th>
+                     </tr>
+                   </thead>
 
 
+                   <tbody>
+                      <tr id = "mini-calendar-hours">
+                      </tr>
 
-			<div id ="selected-tags" class="row tags">
-			</div>
+                  </tbody>
+                </table>
+             </div>
+          </div>
+
+          <div class = "row">
+              <button id = "expand-schedule" class = "full-width">Expand Schedule</btn>
+          </div>
+        </div>
 
     </div>
 		</div>
@@ -98,7 +156,7 @@
     </div>
 
     <div class = "col course-list-container">
-
+<!--
       <div id = "course-list-nav" class = "row">
         <div class = "col">
           <button id = "all-courses-button" class = "courses-nav-btn">All courses</btn>
@@ -106,7 +164,7 @@
         <div class = "col">
           <button id = "shopping-cart-button" class = "courses-nav-btn">Shopping Cart</btn>
         </div>
-      </div>
+      </div> -->
 
       <div class = "row course-list">
     		<div id = "all-courses" class="col classes">
@@ -114,46 +172,20 @@
 
         <div id = "shopping-cart" class="col classes hide">
 
-          <div id = "selected-courses">
-            <h5>Selected Courses:</h5>
-            <div id = "selected-course-container">
-            </div>
+          <div class = "row">
+
+          <div id = "selected-courses" class = "col col-lg-6">
+            <h5 class = "shopping-header">Added Courses:</h5>
+              <div id = "selected-course-container">
+              </div>
           </div>
 
-          <div id = "highlighted-courses">
-            <h5>Highlighted Courses:</h5>
+          <div id = "highlighted-courses" class = "col col-lg-6">
+            <h5 class = "shopping-header">Starred Courses:</h5>
             <div id = "highlighted-course-container">
             </div>
           </div>
 
-
-
-
-        <div id = "expanded-schedule" class = "row">
-          <div id = "weekly-calendar">
-             <h1>Weekly Schedule</h1>
-               <table class = "table top-buffer" id = "calendar">
-                 <thead>
-                   <tr id = "day-headers">
-                     <th scope = "col">Time</th>
-                     <th scope = "col">Monday</th>
-                     <th scope = "col">Tuesday</th>
-                     <th scope = "col">Wednesday</th>
-                     <th scope = "col">Thursday</th>
-                     <th scope = "col">Friday</th>
-                   </tr>
-                 </thead>
-
-
-                 <tbody>
-                    <tr id = "calendar-hours">
-
-                    </tr>
-
-
-                </tbody>
-              </table>
-           </div>
         </div>
     		</div>
 
@@ -162,14 +194,49 @@
 
     </div>
 
+      <div id = "expanded-schedule-container" class = "row hide">
+        <div id = "expanded-schedule">
+           <h1>Weekly Schedule</h1>
+             <table class = "table top-buffer" >
+               <thead>
+                 <tr id = "day-headers">
+                   <th scope = "col">Time</th>
+                   <th scope = "col">Monday</th>
+                   <th scope = "col">Tuesday</th>
+                   <th scope = "col">Wednesday</th>
+                   <th scope = "col">Thursday</th>
+                   <th scope = "col">Friday</th>
+                 </tr>
+               </thead>
+
+
+               <tbody>
+                  <tr id = "calendar-hours">
+                  </tr>
+
+              </tbody>
+            </table>
+         </div>
+
+         <button id = "close-button">Close></btn>
+      </div>
+
 
 	</div>
 
     <!-- Bootstrap scripts -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src = "scripts/script.js"></script>
+    <script src = "javascript/Course.js"></script>
+    <script src = "javascript/Schedule.js"></script>
+    <script src = "javascript/Scheduler.js"></script>
+    <script src = "javascript/Student.js"></script>
+    <script src = "javascript/script.js"></script>
 
 </body>
 
