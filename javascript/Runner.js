@@ -379,8 +379,7 @@ var Runner = (function () {
                     }
                     ;
                 }
-            }
-            ;
+            };
         }
         var compatibilitiesArray = (function (s) { var a = []; while (s-- > 0)
             a.push(null); return a; })(compatibilities.length);
