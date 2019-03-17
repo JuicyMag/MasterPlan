@@ -69,7 +69,7 @@ var Advisor = (function() {
 	*/
 	Advisor.prototype.getAdvisees = function(){
 		return this.advisees;
-	}
+	};
 
 	/**
 	 * get important information about an advisor: 
@@ -126,7 +126,7 @@ var Advisor = (function() {
 		}
 		console.log("You have reached the maximum number of students, you can't add any more students");
 		return false;
-	}
+	};
 
 	/**
 	 * answers the question of whether the advisor has a maximum number
@@ -139,7 +139,7 @@ var Advisor = (function() {
 	*/
 	Advisor.prototype.hasEnoughStudents = function(){
 		return (this.advisees.length >= MAX_STUDENTS);
-	}
+	};
 
 	/**
 	 * remove a student from the list of students being advised by this advisor
@@ -158,6 +158,7 @@ var Advisor = (function() {
 
 		console.log("There are no more students advised by this advisor or the student is not an advisee of the advisor");
 		return false;
-	}
-}}());
+	};
+	return Advisor;
+}());
 Advisor["__class"] = "Advisor";
