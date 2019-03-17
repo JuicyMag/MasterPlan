@@ -514,9 +514,11 @@ public class Runner{
     }
 
     //put them in an array
-    Object[] objectArray = compatibilities.toArray();
-    AdvStudCompat[] compatibilitiesArray = Arrays.stream(objectArray).toArray(AdvStudCompat[]::new);
-
+    AdvStudCompat[] compatibilitiesArray = new AdvStudCompat[compatibilities.size()];
+    for(int i = 0; i < compatibilities.size();i++){
+         compatibilitiesArray[i] = compatibilities.get(i);
+    }
+    
     //sort the compatibilities
     this.sort(compatibilitiesArray, 0, compatibilitiesArray.length-1);
 
