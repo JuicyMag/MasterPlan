@@ -210,6 +210,204 @@ var Runner = (function () {
 	var Algorithms = new Course("Algorithms", AlgorithmsTags, AlgorithmsTimeslot, AlgorithmsPrereqs);
 	/* add */ (this.courses.push(Algorithms) > 0);
     };
+	/**
+     * @pre have a file name of the students file present in the folder
+     *
+     * @post return a list of student objects in the
+     * @return {Student[]} a list of students from the csv file
+     *
+     * @private
+     */
+    /*private*/ Runner.prototype.initStudentsmatch = function () {
+        var studentsToMatch = ([]);
+        return studentsToMatch;
+    };
+	 /**
+     * @post an Array of advisors
+     *
+     * @pre have a file name of the advisors and the interests
+     * present in the folder
+     *
+     * @return {Advisor[]} an array of advisors
+     * @private
+     */
+    /*private*/ Runner.prototype.initAdvisorsmatch = function () {
+        var advisorsToMatch = ([]);
+        return advisorsToMatch;
+    };
+	/**
+     * @param - student and advisor (non null)
+     *
+     * @post - calculates the compatibility fraction and returns a compatibility object
+     * @return {AdvStudCompat} - AdvStudCompat object
+     * @param {Student} student
+     * @param {Advisor} advisor
+     * @private
+     */
+    /*private*/ Runner.prototype.calculateCompat = function (student, advisor) {
+        var studentTags = student.getTags();
+        var advisorTags = (advisor.getTags().slice(0).slice(0));
+        var count = 0;
+        for (var i = 0; i < studentTags.length; i++) {
+            {
+                if ((advisorTags.indexOf((studentTags[i])) >= 0)) {
+                    count = count + 1;
+                }
+            }
+            ;
+        }
+        var matchNum = count / advisorTags.length;
+        return new AdvStudCompat(student, advisor, matchNum);
+    };
+	    /**
+     * @post - Merges two subarrays of arr[]. First subarray is arr[l..m]
+     *
+     * @param - array with two subarrays to merge,
+     * - left int pointer
+     * - right int pointer
+     *
+     * @return {void} - a merged array
+     *
+     * @param {Array} arr
+     * @param {number} l
+     * @param {number} m
+     * @param {number} r
+     * @private
+     */
+    /*private*/ Runner.prototype.merge = function (arr, l, m, r) {
+        var n1 = m - l + 1;
+        var n2 = r - m;
+        var L = (function (s) { var a = []; while (s-- > 0)
+            a.push(null); return a; })(n1);
+        var R = (function (s) { var a = []; while (s-- > 0)
+            a.push(null); return a; })(n2);
+        for (var i_1 = 0; i_1 < n1; ++i_1) {
+            L[i_1] = arr[l + i_1];
+        }
+        for (var j_1 = 0; j_1 < n2; ++j_1) {
+            R[j_1] = arr[m + 1 + j_1];
+        }
+        var i = 0;
+        var j = 0;
+        var k = l;
+        while ((i < n1 && j < n2)) {
+            {
+                if (this.compareCompat(L[i], R[j]) < 0) {
+                    arr[k] = L[i];
+                    i++;
+                }
+                else {
+                    arr[k] = R[j];
+                    j++;
+                }
+                k++;
+            }
+        }
+        ;
+        while ((i < n1)) {
+            {
+                arr[k] = L[i];
+                i++;
+                k++;
+            }
+        }
+        ;
+        while ((j < n2)) {
+            {
+                arr[k] = R[j];
+                j++;
+                k++;
+            }
+        }
+        ;
+    };
+	/**
+     * @post - sort an array
+     *
+     * @param - array, left and right pointers for positions
+     * to sort between
+     *
+     * @return {void} - a sorted array
+     * @param {Array} arr
+     * @param {number} l
+     * @param {number} r
+     * @private
+     */
+    /*private*/ Runner.prototype.sort = function (arr, l, r) {
+        if (l < r) {
+            var m = ((l + r) / 2 | 0);
+            this.sort(arr, l, m);
+            this.sort(arr, m + 1, r);
+            this.merge(arr, l, m, r);
+        }
+    };
+	/**
+     * @post - return an integer representing the comparison between two floats
+     *
+     * @param - two floats
+     *
+     * @return {number} - 0 if a == b, +ve int if a > b, -ve int if a < b
+     * @param {AdvStudCompat} a
+     * @param {AdvStudCompat} b
+     * @private
+     */
+    /*private*/ Runner.prototype.compareCompat = function (a, b) {
+        var aCompat = a.getCompatibility();
+        var bCompat = b.getCompatibility();
+        return (aCompat - bCompat);
+    };
+	    /**
+     * @param - a list of students and advisors
+     *
+     * @post - returns a list of students who have been assigned advisors
+     * @return {Array}
+     */
+    Runner.prototype.adviseeAssigned = function () {
+        var matchedStudents;
+        var count;
+        var compatibilities = ([]);
+        var students = this.initStudentsmatch();
+        var advisors = this.initAdvisorsmatch();
+        matchedStudents = (function (s) { var a = []; while (s-- > 0)
+            a.push(null); return a; })(students.length);
+        count = 0;
+        for (var i = 0; i < students.length; i++) {
+            {
+                for (var j = 0; j < advisors.length; j++) {
+                    {
+                        (compatibilities.push(this.calculateCompat(students[i],advisors[j])) > 0);
+                    }
+                    ;
+                }
+            }
+            ;
+        }
+        var compatibilitiesArray = (function (s) { var a = []; while (s-- > 0)
+            a.push(null); return a; })(compatibilities.length);
+        for (var i = 0; i < compatibilities.length; i++) {
+            {
+                compatibilitiesArray[i] = compatibilities[i];
+            }
+            ;
+        }
+        this.sort(compatibilitiesArray, 0, compatibilitiesArray.length - 1);
+        for (var i = compatibilitiesArray.length - 1; i >= 0; i--) {
+            {
+                var compat = compatibilitiesArray[i];
+                var student = compat.getStudent();
+                var advisor = compat.getAdvisor();
+                if (!student.hasAdvisor() && !advisor.hasEnoughStudents()) {
+                    student.assignAdvisor(advisor);
+                    advisor.addStudent(student);
+                    matchedStudents[count] = student;
+                    count++;
+                }
+            }
+            ;
+        }
+        console.info(java.util.Arrays.toString(matchedStudents));
+        return matchedStudents;
+    };
     Runner.main = function (args) {
 	var r = new Runner();
     };
