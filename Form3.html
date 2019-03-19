@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Form2</title>
+  <title>Form3</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -27,7 +27,9 @@
 		<form class="col-4">
 			
 
-			<div id="space"></div>
+			<div id="space" data-toggle="buttons">
+
+			</div>
 	
 
 			<button id="submitBtn" type="submit" value=" Send" class="btn btn-primary">Continue</button>
@@ -53,22 +55,10 @@
 		var tagList = ["Journalism", "Big Data", "Banking", "Consulting"];
 
 		function createTag(input){
-			var newTag = document.createElement('div');
+			var newTag = document.createElement('label');
 				newTag.setAttribute("id", input);
-				newTag.className = "tag form-check";
-
-				var newBox = document.createElement('input');
-					newBox.setAttribute("id", "box" + input);
-					newBox.className = "form-check-input";
-					newBox.type = "checkbox";
-					newBox.value = "";
-				var newLabel = document.createElement('label');
-					newLabel.className = "form-check-label";
-					newLabel.for = "box" + input;
-					newLabel.innerHTML = input;
-
-				newTag.appendChild(newBox);
-				newTag.appendChild(newLabel);
+				newTag.className = "tag btn btn-light";
+				newTag.innerHTML = input;
 
 			return newTag;
 		}
