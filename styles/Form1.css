@@ -48,4 +48,12 @@ nav .navbar-brand, .navbar .navbar-brand {
   margin-top: 60px;
 }
 
+.tag {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px;
+  letter-spacing: 3px;
+}
+
 /*# sourceMappingURL=Form1.css.map */
