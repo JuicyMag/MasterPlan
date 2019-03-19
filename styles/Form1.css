@@ -1,0 +1,51 @@
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  padding-top: 45px;
+}
+
+nav, .navbar {
+  background-color: #330064;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
+}
+nav a, .navbar a {
+  padding: 6px 12px 0px 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-weight: 500;
+}
+
+.lower {
+  padding: 20px;
+}
+
+.form-group {
+  padding-top: 90px;
+}
+.form-group .form-control {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: solid 1px;
+  border-radius: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: solid 1px;
+  border-color: Black;
+  border-radius: 0;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+/*# sourceMappingURL=Form1.css.map */
