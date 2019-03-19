@@ -1,0 +1,497 @@
+nav, .navbar {
+  background-color: #310753;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em; }
+
+nav a, .navbar a {
+  padding: 6px 12px 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter; }
+
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding-top: 45px; }
+
+nav .navbar-brand {
+  font-weight: 500; }
+
+.navbar .navbar-brand {
+  font-weight: 500; }
+
+.search {
+  background-color: #563d7c;
+  height: 100%;
+  min-height: 960px;
+  margin-top: 6px; }
+  .search .searchbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    letter-spacing: 0.4em;
+    font-weight: lighter;
+    text-indent: 2em;
+    text-transform: uppercase; }
+  .search .row {
+    margin: 0;
+    height: 4em; }
+
+.classes {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 20px; }
+  .classes .class {
+    border: 1px solid #3f2953;
+    padding: 10px;
+    margin-bottom: 15px; }
+  .classes .left {
+    text-align: right;
+    letter-spacing: 1px; }
+    .classes .left .number {
+      margin-bottom: 5px;
+      padding: 3px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter; }
+    .classes .left .professor {
+      color: #e2c2c6;
+      text-transform: none;
+      font-variant: small-caps; }
+    .classes .left .classTime {
+      font-size: 14px; }
+  .classes .right {
+    text-transform: none; }
+    .classes .right .className {
+      font-variant: small-caps;
+      font-size: 26px;
+      letter-spacing: 3px; }
+    .classes .right .classDescr {
+      font-weight: lighter;
+      letter-spacing: 1px; }
+
+#next{ /* changed from Garret's version */
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+/* start of inserted part */
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+/*end of inserted part*/
+
+.tags {
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 12px;
+  font-size: 14px; }
+  .tags .tag {
+    padding-right: 0.5em;
+    letter-spacing: 0.2em;
+    margin: 6px;
+    color: #ffffff;
+    background-color: #3f2953;
+    font-family: Noto Sans, sans-serif; }
+  .tags .btn {
+    margin-right: 10px;
+    color: #ffffff; }
+
+.courses-nav-btn {
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  height: 50px;
+  padding: 0;
+  border:none;
+  background-color:  #332449;
+  color: #ffffff;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+#search-options{
+  background-color: #563D7C;
+}
+
+.hide {
+  display: none; }
+
+#weekly-calendar {
+  margin-top: 30px;
+  width: 100%; }
+
+.shortclassName {
+    font-family: "Source Sans Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+
+    }
+.course-list-container {
+  margin: 20px 30px 0 0; }
+
+#selected-tags-title {
+  color: #ffffff; }
+
+#tag-options {
+  padding: 0; }
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px; }
+
+.select {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #ffffff;
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  font-family: Noto Sans, sans-serif; }
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f2953;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in; }
+  .select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px; }
+  .select-styled:hover {
+    background-color: #3f2953; }
+  .select-styled:active {
+    background-color: #3f2953; }
+    .select-styled:active:after {
+      top: 9px;
+      border-color: transparent transparent #ffffff transparent; }
+  .select-styled.active {
+    background-color: #3f2953; }
+    .select-styled.active:after {
+      top: 9px;
+      border-color: transparent transparent #ffffff transparent; }
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #3f2953; }
+  .select-options li {
+    margin: 0;
+    padding: 12px 0;
+    text-indent: 15px;
+    border-top: 1px solid #a56ddf;
+    transition: all 0.15s ease-in; }
+    .select-options li:hover {
+      color: #c0392b;
+      background: #ffffff; }
+  .select-options li[rel="hide"] {
+    display: none; }
+
+.header {
+  color: #fff;
+  background-color: #563D7C;
+  height: 3em;
+  font-family: "Noto Sans", sans-serif; }
+
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+#shopping-cart-button{
+  color:#888;
+}
+
+span {
+  width: 100%;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center; }
+
+#add-tags-button, #clear-tags-button, #expand-schedule {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding:auto;}
+
+#selected-tags{
+  height: auto;
+  min-height: 4em;
+  padding-bottom: 2em;
+}
+
+#selected-tags {
+  margin-left: 5%; }
+
+#course-list-nav .col {
+  padding: 0; }
+
+.fright {
+  float:right;
+}
+
+.select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+
+.mini-select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+.selected{
+  background-color: #ffffff !important;
+  border: 1px solid #a56ddf;
+  border-radius: 3px;
+  color: #a56ddf !important;
+}
+
+.highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
+
+.mini-highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
+.time{
+  height: 60px;
+}
+
+.empty-timeslot{
+  height: 5px;
+  padding: 0;
+}
+
+#mini-calendar-hours tr{
+  height: 2.5px;
+}
+
+.empty-timeslot td{
+  padding: 0;
+  border: 0;
+}
+
+#mini-calendar-hours td{
+  padding: 0;
+}
+
+#mini-calendar-hours td table{
+  width:100%;
+  height: 362px;
+}
+
+#calendar-hours table{
+  width: 100%;
+}
+#calendar-hours td{
+  padding: 0;
+}
+
+.odd{
+  background-color: #eee;
+}
+
+.time td{
+  border: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.course-timeslot td{
+  background-color: #C9A5FF;
+  text-align: center;
+  vertical-align: middle
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+
+.course-tag{
+    padding: 0.5em;
+    letter-spacing: 0.2em;
+    margin: 6px;
+    color: #ffffff;
+    background-color: #3f2953;
+    font-family: Noto Sans, sans-serif;
+}
+
+.d1{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/1.png");
+}
+.d2{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/2.png");
+}
+.d3{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/3.png");
+}
+.wi{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/pencil.png");
+}
+.qfr{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/hash.png");
+}
+.dpe{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/globe.png");
+}
+
+#expanded-schedule-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(60,60,60,0.5);
+  padding: 5%;
+  left: 15px;
+}
+
+#expanded-schedule{
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+
+  overflow: auto;
+}
+
+
+#mini-schedule{
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  font-family: "Noto Sans", sans-serif;
+  overflow: auto;
+}
+
+#day-headers{
+  color: #ffffff;
+  background-color: #3f2953;
+}
+
+#close-button{
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+#mini-week{
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+#selected-courses, #highlighted-courses{
+  padding: 30px;
+  border: 1px solid #000;
+  min-height: 500px;
+}
+
+#highlighted-courses{
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=catalog0.css.map 
