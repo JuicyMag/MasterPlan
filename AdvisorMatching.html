@@ -2,18 +2,18 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>Advisor Matching</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+	<title>Advisor Matching</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
 
 
-  <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -24,37 +24,40 @@
 
 	<link rel="stylesheet" href="styles/Form1.css">
 	<style>
-		#circle {
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%,-50%);
-			width: 150px;
-		    height: 150px;	
-		}
+	#circle {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 150px;
+		height: 150px;	
+	}
 
-		.loader {
-		    width: calc(100% - 0px);
-			height: calc(100% - 0px);
-			border: 8px solid white;
-			border-top: 8px solid #09f;
-			border-radius: 50%;
-			animation: rotate 5s linear infinite;
-		}
+	.loader {
+		width: calc(100% - 0px);
+		height: calc(100% - 0px);
+		border: 8px solid white;
+		border-top: 8px solid #09f;
+		border-radius: 50%;
+		animation: rotate 5s linear infinite;
+	}
 
-		@keyframes rotate {
+	@keyframes rotate {
 		100% {transform: rotate(360deg);}
-		} 
+	} 
 
-		h1 {
-			margin-top: 100px;
-			padding-top: 300px;
-		}
-	</style>
+	h1 {
+		margin-top: 100px;
+		padding-top: 300px;
+	}
+</style>
 
 </head>
 
 <body>
+	<nav class= "navbar navbar-default">
+		<a class="navbar-brand" href="#">Williams</a>
+	</nav><br>
 	<div class="row justify-content-center">
 		<div class="col-4">
 			<!-- <div class="progress">
@@ -63,14 +66,14 @@
 			</div> -->
 			<div>
 				<div id="circle">
-				  <div class="loader">
-				    <div class="loader">
-				        <div class="loader">
-				           <div class="loader">
-				           </div>
-				        </div>
-				    </div>
-				  </div>
+					<div class="loader">
+						<div class="loader">
+							<div class="loader">
+								<div class="loader">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div> 
 			</div>
 			<h1 class="display-4">Currently Matching</h1>

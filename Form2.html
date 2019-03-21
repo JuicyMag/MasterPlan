@@ -2,18 +2,18 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>Form2</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+	<title>Form2</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
 
 
-  <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -22,19 +22,18 @@
 </head>
 
 <body>
+	<nav class= "navbar navbar-default">
+		<a class="navbar-brand" href="#">Williams</a>
+	</nav><br>
 
 	<div class="row justify-content-center">
-		<form class="col-4">
+		<form >
 			
-
 			<div id="space" data-toggle="buttons"></div>
-	
 
-			<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Continue</button>
-
-
-
-
+			<div class="text-center"> 
+				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
+			</div>
 
 		</form>
 	</div>
@@ -51,26 +50,26 @@
 	<script>
 		
 		var tagList = ["ENGL", "CHIN", "ECON", "CSCI", "MATH", "PHIL", "WGSS", 
-						"PSCI", "ENVI", "HIST", "AMST", "COGS", "COMP", "DANC", 
-						"RLIT", "CLLA", "JAPN"];
+		"PSCI", "ENVI", "HIST", "AMST", "COGS", "COMP", "DANC", 
+		"RLIT", "CLLA", "JAPN"];
 
 		function createTag(input){
 			var newTag = document.createElement('label');
-				newTag.setAttribute("id", input);
-				newTag.className = "tag btn btn-light";
-				newTag.innerHTML = input;
+			newTag.setAttribute("id", input);
+			newTag.className = "tag btn btn-success";
+			newTag.innerHTML = input;
 
 			return newTag;
 		}
 
-	    for(var i = 0; i < tagList.length; i++){
+		for(var i = 0; i < tagList.length; i++){
 			$("#space")[0].appendChild(createTag(tagList[i]));
 		}
 
 		submitBtn.addEventListener("click", function (evt) {
-		    evt.preventDefault();  
+			evt.preventDefault();  
 			window.location.replace("Form3.html");
-		  	return false;
+			return false;
 		});
 	</script>
 
