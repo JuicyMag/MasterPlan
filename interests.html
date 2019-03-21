@@ -26,7 +26,8 @@
 					<p class="text-center">Select the tags you find interesting</p>
 				</div>
 				<br>
-				<input class="btn success" id="button" type="button" value="Input" onclick="setColor('button', '#101010')">
+				<input type = "checkbox" class="btn success my-div activate-div" id="button" type="button" value="Input">
+
 				<input class="btn success" id="button1" type="button" value="Journalism" onclick="setColor('button1', '#101010')">
 				<input class="btn success" id="button2" type="button" value="Technology" onclick="setColor('button2', '#101010')">
 				<input class="btn success" id="button3" type="button" value="Artificial intelligence" onclick="setColor('button3', '#101010')">
@@ -36,10 +37,6 @@
 				<input class="btn success" id="button7" type="button" value="Information Technology" onclick="setColor('button7', '#101010')">
 			</div>
 
-
-			<div id="next" class="fixed-bottom text-right">
-				<button type="button" class="mt-auto btn btn-lg  btn-primary">Next</button>
-			</div>
 
 			<!-- Bootstrap scripts -->
 			<script
@@ -66,9 +63,8 @@
 					// }
 					//if(count == 0){
 //						window.alert(property.style.backgroundColor);
-					if (property.style.backgroundColor === "#4CAF50") {
-						window.alert("Correctly entered");
-						property.style.backgroundColor = " #4CAF50";
+if (property.style.backgroundColor === "#FFFFFF") {
+	property.style.backgroundColor = " #4CAF50";
 
 						//property.style.color = green;
 					}

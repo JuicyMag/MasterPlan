@@ -134,19 +134,6 @@ nav .navbar-brand {
     margin-right: 10px;
     color: #ffffff; }
 
-
-.shortclassName {
-    font-family: "Source Sans Pro", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-.course-list-container {
-  margin: 20px 30px 0 0; }
-
-#selected-tags-title {
-  color: #ffffff; }
-
 #tag-options {
   padding: 0; }
 
@@ -207,10 +194,6 @@ nav .navbar-brand {
 
 .full-height {
   height: 100%; }
-
-#shopping-cart-button{
-  color:#888;
-}
 
 span {
   width: 100%;
@@ -294,15 +277,6 @@ span {
 }
 
 
-.course-tag{
-    padding: 0.5em;
-    letter-spacing: 0.2em;
-    margin: 6px;
-    color: #ffffff;
-    background-color: #3f2953;
-    font-family: Noto Sans, sans-serif;
-}
-
 .d1{
   background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/1.png");
 }
@@ -334,5 +308,15 @@ span {
 #highlighted-courses{
   border: 1px solid #000;
 }
+
+.activate-div{
+  color:green;
+  background-color: "#f2f";
+}
+.activate-div:checked{
+  color:red;
+  background-color:"#ff2";
+}
+.my-div{background-color:"#f2f";}
 
 /*# sourceMappingURL=catalog0.css.map 
