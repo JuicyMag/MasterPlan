@@ -1,0 +1,364 @@
+nav, .navbar {
+  background-color: #310753;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em; }
+
+nav a, .navbar a {
+  padding: 6px 12px 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter; }
+
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding-top: 45px; }
+
+nav .navbar-brand {
+  font-weight: 500; }
+
+.navbar .navbar-brand {
+  font-weight: 500; }
+
+
+#next{ /* changed from Garret's version */
+  padding: 10px;
+  padding: 10px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 6px;
+  cursor: pointer;
+}
+
+/* start of inserted part */
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  /*color: black;*/
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  background-color: white;
+  color: green;
+  margin: 6px;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: green; 
+  /*changed from white => green*/
+}
+
+
+
+/*Toggle Buttons*/
+#button0 {
+  display:none;
+}
+#button0:checked ~ * .success{
+  background-color:#4cAF50;
+  color: green;
+}
+
+#input-btn{  
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #4CAF50;
+  background-color: white;
+  color: green;
+  margin: 6px;
+  border: 2px solid green;
+  background-color: white;
+  /*color: black;*/
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+/*Hover feature still in progress*/
+/*
+#button0:checked ~ * .success:hover {
+  background-color: white;
+  color: green;
+}
+*/
+#button0:checked ~ #input-btn{
+ color: white;
+ background-color: green;		 
+}
+
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+/*end of inserted part*/
+
+.tags {
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 12px;
+  font-size: 14px; }
+  .tags .tag {
+    padding-right: 0.5em;
+    letter-spacing: 0.2em;
+    margin: 6px;
+    color: #ffffff;
+    background-color: #3f2953;
+    font-family: Noto Sans, sans-serif; }
+  .tags .btn {
+    margin-right: 10px;
+    color: #ffffff; }
+
+#tag-options {
+  padding: 0; }
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px; }
+
+.select {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #ffffff;
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  font-family: Noto Sans, sans-serif; }
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f2953;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in; }
+  .select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px; }
+  .select-styled:hover {
+    background-color: #3f2953; }
+  .select-styled:active {
+    background-color: #3f2953; }
+    .select-styled:active:after {
+      top: 9px;
+      border-color: transparent transparent #ffffff transparent; }
+  .select-styled.active {
+    background-color: #3f2953; }
+    .select-styled.active:after {
+      top: 9px;
+      border-color: transparent transparent #ffffff transparent; }
+
+.header {
+  color: #fff;
+  background-color: #563D7C;
+  height: 3em;
+  font-family: "Noto Sans", sans-serif; }
+
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+span {
+  width: 100%;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center; }
+
+#add-tags-button, #clear-tags-button, #expand-schedule {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding:auto;}
+
+#selected-tags{
+  height: auto;
+  min-height: 4em;
+  padding-bottom: 2em;
+}
+
+#selected-tags {
+  margin-left: 5%; }
+
+#course-list-nav .col {
+  padding: 0; }
+
+.fright {
+  float:right;
+}
+
+.select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+
+.mini-select-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+.selected{
+  background-color: #ffffff !important;
+  border: 1px solid #a56ddf;
+  border-radius: 3px;
+  color: #a56ddf !important;
+}
+
+.highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
+
+.mini-highlight-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 100px;
+  color: #ffffff;
+}
+
+
+
+
+.odd{
+  background-color: #eee;
+}
+
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+
+.d1{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/1.png");
+}
+.d2{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/2.png");
+}
+.d3{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/3.png");
+}
+.wi{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/pencil.png");
+}
+.qfr{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/hash.png");
+}
+.dpe{
+  background-image: url("https://www.williams.edu/wp-content/themes/meerkat16-cc/assets/build/imgs/globe.png");
+}
+
+
+
+
+#selected-courses, #highlighted-courses{
+  padding: 30px;
+  border: 1px solid #000;
+  min-height: 500px;
+}
+
+#highlighted-courses{
+  border: 1px solid #000;
+}
+
+.activate-div{
+  color:green;
+  background-color: "#f2f";
+}
+.activate-div:checked{
+  color:red;
+  background-color:"#ff2";
+}
+.my-div{background-color:"#f2f";}
+
+/*# sourceMappingURL=catalog0.css.map 
