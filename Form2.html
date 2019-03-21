@@ -49,14 +49,12 @@
 
 	<script>
 		
-		var tagList = ["ENGL", "CHIN", "ECON", "CSCI", "MATH", "PHIL", "WGSS", 
-		"PSCI", "ENVI", "HIST", "AMST", "COGS", "COMP", "DANC", 
-		"RLIT", "CLLA", "JAPN"];
+		var tagList = ["English", "Chinese", "Economics", "Computer Science", "Mathematics", "Philosophy", "Womens & Gender Studies", "Political Science", "Environmental Science", "History", "American Studies", "Cognitive Science", "Comparative Literature", "Dance", "Russian", "Chemistry", "Japanese"];
 
 		function createTag(input){
 			var newTag = document.createElement('label');
 			newTag.setAttribute("id", input);
-			newTag.className = "tag btn btn-light";
+			newTag.className = "tag btn btn-outline-dark";
 			newTag.innerHTML = input;
 
 			return newTag;

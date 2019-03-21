@@ -49,13 +49,16 @@ nav .navbar-brand, .navbar .navbar-brand {
 }
 
 .tag {
-  background-color: transparent;
   text-decoration: none;
-  font-size: 20px;
-  margin: 5px;
+  font-size: 18px;
+  margin: 10px;
   border-style: none;
   letter-spacing: 3px;
-  border-radius: 30px;
+  border-radius: 0.25rem;
+}
+
+.tag:hover, .tag:focus, .tag:active {
+  background-color: #330064;
 }
 
 #tag-space {
