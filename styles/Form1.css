@@ -30,27 +30,22 @@ nav .navbar-brand, .navbar .navbar-brand {
 
 .form-group {
   padding-top: 90px;
-  border-radius: 0px;
 }
 .form-group .form-control {
   background-color: transparent;
   border-style: none;
   border-bottom: solid 1px;
-  border-radius: 0px;
+  border-radius: 0;
 }
-
 
 .btn {
   background-color: transparent;
   border: solid 1px;
   border-color: Black;
-  border-radius: 0px;
+  border-radius: 0;
   color: black;
   text-transform: uppercase;
   margin-top: 60px;
-  margin-left: 10px;
-  margin-right:10px;
-  padding: 10px
 }
 
 .tag {
@@ -60,6 +55,11 @@ nav .navbar-brand, .navbar .navbar-brand {
   margin: 5px;
   border-style: none;
   letter-spacing: 3px;
+  border-radius: 0.25rem;
+}
+
+#tag-space {
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=Form1.css.map */
