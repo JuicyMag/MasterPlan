@@ -55,7 +55,7 @@ nav .navbar-brand, .navbar .navbar-brand {
   margin: 5px;
   border-style: none;
   letter-spacing: 3px;
-  border-radius: 0.25rem;
+  border-radius: 30px;
 }
 
 #tag-space {
