@@ -33,14 +33,15 @@
 			<div id="space" data-toggle="buttons">
 
 			</div>
-
-			<div class="text-center"> 
-				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
-			</div>
 			
 
 		</form>
 	</div>
+	<div class=container-fluid>  
+				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
+
+				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
+			</div>
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -67,6 +68,11 @@
 		submitBtn.addEventListener("click", function (evt) {
 			evt.preventDefault();  
 			window.location.replace("AdvisorMatching.html");
+			return false;
+		});
+		prevBtn.addEventListener("click", function (evt) {
+			evt.preventDefault();  
+			window.location.replace("Form2.html");
 			return false;
 		});
 	</script>

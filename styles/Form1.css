@@ -65,4 +65,10 @@ nav .navbar-brand, .navbar .navbar-brand {
   margin-left: 40px;
 }
 
+#prevBtn{
+  float:left;
+}
+#submitBtn{
+  float:right;
+}
 /*# sourceMappingURL=Form1.css.map */

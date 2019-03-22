@@ -31,12 +31,14 @@
 			
 			<div id="space" data-toggle="buttons"></div>
 
-			<div class="text-center"> 
-				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
-			</div>
-
 		</form>
 	</div>
+
+		<div class=container-fluid>  
+				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
+
+				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
+			</div>
 
 
 
@@ -67,6 +69,11 @@
 		submitBtn.addEventListener("click", function (evt) {
 			evt.preventDefault();  
 			window.location.replace("Form3.html");
+			return false;
+		});
+		prevBtn.addEventListener("click", function (evt) {
+			evt.preventDefault();  
+			window.location.replace("Form1.html");
 			return false;
 		});
 	</script>
