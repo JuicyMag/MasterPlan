@@ -5,6 +5,9 @@ body {
   padding-top: 45px;
 }
 
+.bg {
+  height: 400px;
+}
 nav, .navbar {
   background-color: #330064;
   overflow: hidden;
@@ -45,7 +48,6 @@ nav .navbar-brand, .navbar .navbar-brand {
   border-radius: 0;
   color: black;
   text-transform: uppercase;
-  margin-top: 60px;
 }
 
 .tag {
