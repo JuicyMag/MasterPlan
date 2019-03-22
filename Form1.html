@@ -25,40 +25,47 @@
 	<nav class= "navbar navbar-default">
 		<a class="navbar-brand" href="#">Williams</a>
 	</nav><br>
-	<div class="row justify-content-center">
-		<form>
-			<div class="form-group">
-				<label for="Name">Name</label>
-				<input class="form-control" type="text" id="Name" required>
+	<div class="progress" style="height:30px">
+     <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 25%;">
+       Step 1
+     </div>
+
+   </div>
+
+	<div class="container-fluid login-section">
+		<div class="row justify-content-center">
+			<div>
+				<form class="form-inline">
+					<div class="form-row">
+						<div class="col">
+							<input type="text" class="form-control input-box" id="inputName" placeholder="Name" required>
+						</div>
+						<div class="col">
+							<input type="text" class="form-control input-box" id="inputClassYear" placeholder="Class Year" required>
+						</div>
+						<div class="col">
+							<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> </div>
+
+						</form>
+					</div>
+				</div>
 			</div>
-			<div class="form-group">
-				<label for="ClassYear">Class Year</label>
-				<input class="form-control" type="text" id="ClassYear" required>
-			</div>
 
 
 
-			<div class="text-center"> 
-				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
-			</div>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-		</form>
-	</div>
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-		submitBtn.addEventListener("click", function (evt) {
-			evt.preventDefault();  
-			window.location.replace("Form2.html");
-			return false;
-		});
-	</script>
-</body>
-</html>
+			<script type="text/javascript">
+				submitBtn.addEventListener("click", function (evt) {
+					evt.preventDefault();  
+					window.location.replace("Form2.html");
+					return false;
+				});
+			</script>
+		</body>
+		</html>
 
 
 

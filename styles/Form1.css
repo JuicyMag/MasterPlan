@@ -71,4 +71,54 @@ nav .navbar-brand, .navbar .navbar-brand {
 #submitBtn{
   float:right;
 }
+
+/*.center{
+  text-align: center;
+}*/
+
+/* input sections */
+
+.login-section {
+  padding-top: 90px;
+  text-decoration: none;
+  display: inline-block;
+}
+.login-section .row-centered {
+  text-align: center;
+  display: inline-block;
+}
+.login-section .col-centered {
+  display: inline-block;
+  float: none;
+}
+.login-section .input-box {
+  text-decoration: none;
+  border-style: none;
+  border-radius: 0;
+  border-bottom-style: solid;
+  background-color: transparent;
+  padding-right: 70px;
+  color: grey;
+  border-color: black;
+}
+.login-section input::-webkit-input-placeholder {
+  color: grey;
+}
+.login-section input:-moz-placeholder {
+  /* Firefox 18- */
+  color: grey;
+}
+.login-section input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: grey;
+}
+.login-section input:-ms-input-placeholder {
+  color: grey;
+}
+/*.login-section .btn {
+  border-radius: 0;
+  background-color: #fecb00;
+  border-style: none;
+  color: #330064;
+}*/
 /*# sourceMappingURL=Form1.css.map */
