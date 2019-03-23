@@ -4,9 +4,12 @@ body {
   overflow-x: hidden;
   padding-top: 45px;
 }
+html,body{
+  height:100%;
+}
 
 .bg {
-  height: 280px;
+  height: 30%;
 }
 nav, .navbar {
   background-color: #330064;
