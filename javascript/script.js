@@ -3,13 +3,26 @@
 //Css variables
 var shoppingCart = $("#shopping-cart");
 var allCourses = $("#all-courses");
+var allCoursesContainer = $("#all-courses-container");
 var shoppingCartBtn = $("#shopping-cart-button");
 var allCoursesBtn = $("#all-courses-button");
 var searchoptions = $("#search-options");
 var schedule = $("#schedule");
+var recommended = $('#recommended-courses');
+var recommendedBtn = $('#recommended-button');
+var byTags = $(".by-tags");
+
+
+var searchByTags = true;
+
 
 var selectedCourses = []; //Selected Courses
+var recommendedCourses = [1,6,8,28,35] //Recommended Courses: TODO: remove hardcode.
 var highlightedCourses = []; //Highlighted Courses
+var searchedCourses = [];
+
+var allTags = ["Programming", "Essential", "Law", "Economics", "Intro Class", "Banking", "Microeconomics", "Macroeconomics", "Mathematics", "Research", "Modeling", "Calculus", "Psychology", "Music", "Politics"];
+var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ARTS","ASPH","ASST","ASTR","BIMO","BIOL","CHEM","CHIN","CLAS","CLGR","CLLA","CMAJ","COGS","COMP","CRHE","CRHI","CRKO","CRLA","CRPO","CRSW","CSCI","DANC","ECON","ENGL","ENVI","EXPR","GBST","GEOS","GERM","HIST","HSCI","INTR","JAPN","JLST","JWST","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHLH","PHYS","POEC","PSCI","PSYC","REL","RLFR","RLIT","RLSP","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
 
 //Initializing the Schedule variables.
 var scheduler = new Scheduler([]);
@@ -20,19 +33,52 @@ var courseData = [];
 //Number of Courses to Recommend.
 const numRecommended = 5;
 
+var tags = [];
+var subjects = [];
+var tagRow = $("#selected-tags");
+
 //Dummy Student
 var bobTags = ["Programming", "Compiler"];
-var bobClassesTaken = ["CSCI 134", "CSCI 136"];
+var bobClassesTaken = ["CSCI 134", "CSCI 136", "CSCI 237", "ECON 110", "ECON 120", "MATH 130", "ECON 255", "ECON 251",
+  "ECON 505", "POEC 253", "MATH 102", "MATH 130", "MATH 140", "MATH 151", "MATH 200", "MATH 250", "MATH 209", "MATH 150",
+  "PHYS 131"];
 var Bob = new Student("Bob", null, 2021, bobClassesTaken);
 
 updateCalendar();
+
+function createSubject(input){
+	var newTag = document.createElement('button');
+	newTag.className = "tag btn btn-outline-dark subject-element";
+	newTag.innerHTML = input;
+
+	return newTag;
+}
+
+function createTag(input){
+	var newTag = document.createElement('button');
+	newTag.className = "tag btn btn-outline-dark tag-element";
+	newTag.innerHTML = input;
+
+	return newTag;
+}
+
+
+for(var i = 0; i < allTags.length; i++){
+  $("#tag-container")[0].appendChild(createTag(allTags[i]));
+}
+
+for(var i = 0; i < allSubjects.length; i++){
+  $("#subject-container")[0].appendChild(createSubject(allSubjects[i]));
+}
 
 //Initialize the courses from JSON file.
 loadJSON(function(json) {
   courseData = json;
   for(var i = 0; i < courseData.length; i ++){
-    courseArray.push(new Course(courseData[i].Title, courseData[i].Professor, courseData[i].Description,courseData[i].Tags.split(";"),courseData[i].Timeslot,courseData[i].Prereqs));
+    courseArray.push(new Course(courseData[i].Subject, courseData[i].Number, courseData[i].Attributes, courseData[i].Professor,courseData[i].Title,courseData[i].Description,courseData[i].Tags.split(";"),courseData[i].Timeslot,courseData[i].Prereqs));
   }
+  updateFull(searchByTags);
+  updateRecommended();
 });
 
 function loadJSON(callback) {
@@ -94,7 +140,7 @@ function getCompatibility(studentTags, student) {
 	for (var i = 0; i < courseArray.length; i++) {
 		var compatibility = 0;
 		if (checkPrereqs(/* get */ courseArray[i], student)) {
-      compatibility ++; //added so that courses whose pre-reqs are fulfilled are prioritized.
+      //compatibility ++; //added so that courses whose pre-reqs are fulfilled are prioritized.
 	    var courseTags = courseArray[i].getTags();
 
       //Compares tags, adds 1 for every matching tag.
@@ -126,14 +172,15 @@ function getMostCompatible(values, student) {
   //Creates a result array to store the indices of the courses, and a
   //shadow array to store the corresponding compatibility values.
 	var result = (function (s) { var a = []; while (s-- > 0)
-	    a.push(0); return a; })(numRecommended);
+	    a.push(0); return a; })(courseArray.length);
 	var shadow = (function (s) { var a = []; while (s-- > 0)
-	    a.push(0); return a; })(numRecommended);
+	    a.push(0); return a; })(courseArray.length);
 	var count = 0;
+
 
   //Loops through all courses
 	for (var i = 0; i < values.length; i++) {
-    //Compares each course with current most compatible course
+    //Compares each course with current least compatible course
 		for (var j = 0; j < result.length; j++) {
       // if new course is more compatible, look for course with lowest
       // compatibility and replace it.
@@ -166,11 +213,10 @@ function getMostCompatible(values, student) {
 			}
 		}
 	}
-  console.log(result);
 
 	var maxCompatible = ([]);
-	for (var i = 0; i < 5; i++) {
-		if (checkPrereqs(/* get */ courseArray[result[i]], Bob)) {
+	for (var i = 0; i < courseArray.length; i++) {
+		if (checkPrereqs(/* get */ courseArray[result[i]], Bob) && shadow[i]>0) {
 
 		    if (!(Bob.getClassesTaken().slice(0).indexOf((courseArray[result[i]].getName())) >= 0)) {
     			if (!(maxCompatible.indexOf((result[i])) >= 0)) {
@@ -317,7 +363,7 @@ function createShortClass(course){
 
       newClassDescription.appendChild(selectButtonDiv);
       newClassDescription.appendChild(highlightButtonDiv);
-            newClassDescription.appendChild(newClassName);
+      newClassDescription.appendChild(newClassName);
       newClassDescription.appendChild(newClassProf);
       newClassDescription.appendChild(newClassTime);
       newClassDescription.appendChild(newRowTags);
@@ -328,8 +374,7 @@ function createShortClass(course){
     return newClass;
 }
 
-var tags = [];
-var tagRow = $("#selected-tags");
+
 
 
 function updateTags(){
@@ -352,26 +397,122 @@ function updateTags(){
   }
 
   Bob.updateStudentTags(tags);
-  updateFull();
+  updateFull(searchByTags);
 }
 
 
 
 $("#all-courses-button").click(function(){
-  allCourses.removeClass("hide");
+  $('#notice').text("");
+  allCoursesContainer.removeClass("hide");
   searchoptions.removeClass("hide");
   shoppingCart.addClass("hide");
   schedule.addClass("hide");
+  recommended.addClass("hide");
+  recommendedBtn.css('color', '#888');
   shoppingCartBtn.css('color', '#888');
   allCoursesBtn.css('color', '#fff');
 });
 
+$("#search-button").click(function(){
+  $('#notice').text("");
+  searchedCourses = searchClasses($("#search-box input")[0].value);
+  //console.log(searchedCourses);
+  updateFull(searchByTags);
+});
+
+function searchClasses(input){
+  var clone = [];
+
+  for(var i = 0; i < courseArray.length; i++){
+    if(subjects.includes(courseArray[i].getSubject())){
+      clone.push(courseArray[i]);
+    }
+  }
+
+  //console.log(clone.length);
+  if(clone.length == 0) clone = courseArray.slice(0);
+  //console.log(clone.length);
+
+  var cloneArray = [];
+  var attributes = []
+
+  if($('#dpe').is(':checked')) attributes.push("DPE_DPE");
+  if($('#qfr').is(':checked')) attributes.push("QFR_QFR");
+  if($('#wi').is(':checked')) attributes.push("WAC_WAC");
+
+  for(var i = 0; i < clone.length; i++){
+    var check = false;
+    for(var j = 0; j < attributes.length; j++){
+      if(clone[i].getAttributes().includes(attributes[j])) check = true;
+    }
+    if(check) cloneArray.push(clone[i]);
+  }
+
+  if(attributes.length == 0) cloneArray = clone.slice(0);
+
+  //console.log(input);
+  var result = [];
+  for(var i = 0; i < cloneArray.length; i++){
+    var courseTitle = cloneArray[i].getName();
+    //console.log(courseTitle);
+    //console.log(courseTitle.toUpperCase().includes(input.toUpperCase()));
+    if(courseTitle.toUpperCase().includes(input.toUpperCase())) {
+      result.push(findCourse(courseArray,courseTitle));
+    }
+  }
+
+
+  return result;
+
+}
+
+$(".tag-element").click(function(){
+  if(!$(this)[0].classList.contains('selected')){
+    tags.push($(this)[0].innerHTML);
+  }
+  else{
+    tags.splice(tags.indexOf($(this)[0].innerHTML),1);
+  }
+  $(this).toggleClass('selected');
+  console.log(tags);
+  Bob.updateStudentTags(tags);
+  updateFull(searchByTags);
+});
+
+$(".subject-element").click(function(){
+  if(!$(this)[0].classList.contains('selected')){
+    subjects.push($(this)[0].innerHTML);
+  }
+  else{
+    subjects.splice(tags.indexOf($(this)[0].innerHTML),1);
+  }
+  $(this).toggleClass('selected');
+  console.log(subjects);
+  Bob.updateStudentTags(subjects);
+  updateFull(searchByTags);
+});
+
+$("#recommended-button").click(function(){
+  $('#notice').text("");
+  allCoursesContainer.addClass("hide");
+  searchoptions.addClass("hide");
+  shoppingCart.addClass("hide");
+  recommended.removeClass("hide");
+  recommendedBtn.css('color', '#fff');
+  shoppingCartBtn.css('color', '#888');
+  allCoursesBtn.css('color', '#888');
+});
+
 
 $("#shopping-cart-button").click(function(){
+  $('#notice').text("");
   shoppingCart.removeClass("hide");
   schedule.removeClass("hide");
   searchoptions.addClass("hide");
-  allCourses.addClass("hide");
+  allCoursesContainer.addClass("hide");
+  recommended.addClass("hide");
+  recommendedBtn.css('color', '#888');
   shoppingCartBtn.css('color', '#fff');
   allCoursesBtn.css('color', '#888');
 });
@@ -380,12 +521,37 @@ $("#expand-schedule").click(function(){
   $("#expanded-schedule-container").removeClass("hide");
 });
 
-$("#close-button").click(function(){
+$(".close-button").click(function(){
   $("#expanded-schedule-container").addClass("hide");
+  $("#view-tags-container").addClass("hide");
+  $("#view-subjects-container").addClass("hide");
 });
 
 
+function checkConflicts(thisCourse, otherCourse) {
+    var thisTimeslots = thisCourse.getTimeslots();
+    var otherTimeslots = otherCourse.getTimeslots();
+    for (var i = 0; i < thisTimeslots.length; i += 2) {
+        {
+            for (var j = 0; j < otherTimeslots.length; j += 2) {
+                {
+                    if (thisTimeslots[i] <= otherTimeslots[i + 1] && thisTimeslots[i + 1] > otherTimeslots[j])
+                        return true;
+                    else if (otherTimeslots[j] <= thisTimeslots[i] && otherTimeslots[j + 1] > thisTimeslots[i])
+                        return true;
+                }
+                ;
+            }
+        }
+        ;
+    }
+    return false;
+}
+
 $(document).on('click', '.select-button',function(){
+  $('#notice').text("");
+
+
   var $this = $(this);
   $this.toggleClass('selected');
   if($this.text() === "Added"){
@@ -393,17 +559,41 @@ $(document).on('click', '.select-button',function(){
     selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().parent().find(".right").find(".className").text()));
   }
   else{
-    $this.text("Added");
-    selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".right").find(".className").text())]);
-    if(!$this.parent().parent().find(".highlight-button").hasClass('selected'))
-      $this.parent().parent().find(".highlight-button").trigger("click");
+    var conflict = false;
+    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".className").text())];
+    var count = 0;
+
+    for(count = 0; count < selectedCourses.length; count++){
+
+      if(checkConflicts(thisCourse, selectedCourses[count])){
+        conflict = true;
+        break;
+      }
+    }
+
+    if(conflict){
+      var s = "Failed to add " + thisCourse.getSubject() + " " + thisCourse.getNumber() + " due to conflict with " +
+                        selectedCourses[count].getSubject() + " " + selectedCourses[count].getNumber() + "!";
+      $('#notice').text(s);
+
+    }
+    else{
+      $this.text("Added");
+      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".right").find(".className").text())]);
+      if(!$this.parent().parent().find(".highlight-button").hasClass('selected'))
+        $this.parent().parent().find(".highlight-button").trigger("click");
+    }
+
   }
   updateSelected();
   updateHighlighted();
-  updateFull();
+  updateFull(searchByTags);
+  updateRecommended();
 });
 
 $(document).on('click', '.highlight-button',function(){
+  $('#notice').text("");
+
   var $this = $(this);
   $this.toggleClass('selected');
   if($this.text() === "Starred"){
@@ -415,10 +605,13 @@ $(document).on('click', '.highlight-button',function(){
     highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".className").text())]);
   }
   updateHighlighted();
-  updateFull();
+  updateFull(searchByTags);
+  updateRecommended();
 });
 
 $(document).on('click', '.mini-select-button',function(){
+  $('#notice').text("");
+
   var $this = $(this);
   $this.toggleClass('selected');
   if($this.text() === "Added"){
@@ -435,10 +628,13 @@ $(document).on('click', '.mini-select-button',function(){
   }
   updateSelected();
   updateHighlighted();
-  updateFull();
+  updateRecommended();
+  updateFull(searchByTags);
 });
 
 $(document).on('click', '.mini-highlight-button',function(){
+  $('#notice').text("");
+
   var $this = $(this);
   $this.toggleClass('selected');
   if($this.text() === "Starred"){
@@ -450,7 +646,36 @@ $(document).on('click', '.mini-highlight-button',function(){
     highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().find(".shortclassName").text())]);
   }
   updateHighlighted();
-  updateFull();
+  updateFull(searchByTags);
+  updateRecommended();
+});
+
+
+$(document).on('click', '#search-class-button',function(){
+  $('#notice').text("");
+
+  $("#by-classes").removeClass('hide');
+  $("#by-tags").addClass('hide');
+  $(".search-options-home").addClass('hide');
+  searchByTags = false;
+});
+
+$(document).on('click', '#search-tags-button',function(){
+  $('#notice').text("");
+
+  $("#by-classes").addClass('hide');
+  $("#by-tags").removeClass('hide');
+  $(".search-options-home").addClass('hide');
+  searchByTags = true;
+});
+
+
+$(document).on('click', '.back',function(){
+  $('#notice').text("");
+
+  $("#by-classes").addClass('hide');
+  $("#by-tags").addClass('hide');
+  $(".search-options-home").removeClass('hide');
 });
 
 
@@ -475,17 +700,55 @@ function updateHighlighted(){
     $("#highlighted-course-container")[0].appendChild(createShortClass(highlightedCourses[i]));
   }
 }
-function updateFull(){
-  //console.log(Bob.getTags());
-  var compatibilityValues = getCompatibility(Bob.getTags(), Bob);
-  console.log(compatibilityValues);
-  var mostCompatible = getMostCompatible(compatibilityValues, Bob);
-  //console.log(mostCompatible);
+function updateFull(withTags){
+  //console.log(withTags);
   $("#all-courses").empty();
-  if(tags.length !== 0){
-    for(var i = 0; i < mostCompatible.length; i++){
-      $("#all-courses")[0].appendChild(createClass(courseArray[mostCompatible[i]]));
+  if(withTags){
+    if(tags.length === 0){
+      //console.log(courseArray.length);
+      for(var i = 0; i < courseArray.length; i++){
+        $("#all-courses")[0].appendChild(createClass(courseArray[i]));
+      }
+      $("#num-courses").text(courseArray.length + " courses found!");
     }
+
+    else {
+      //console.log(Bob.getTags());
+      var compatibilityValues = getCompatibility(Bob.getTags(), Bob);
+      //console.log(compatibilityValues);
+      var mostCompatible = getMostCompatible(compatibilityValues, Bob);
+      //console.log(mostCompatible);
+
+      for(var i = 0; i < mostCompatible.length; i++){
+        $("#all-courses")[0].appendChild(createClass(courseArray[mostCompatible[i]]));
+      }
+
+      $("#num-courses").text(mostCompatible.length + " courses found!");
+    }
+  }
+
+  else {
+    if($("#search-box input")[0].value === ""){
+      for(var i = 0; i < courseArray.length; i++){
+        $("#all-courses")[0].appendChild(createClass(courseArray[i]));
+      }
+      $("#num-courses").text(courseArray.length + " courses found!");
+    }
+    else{
+      for(var i = 0; i < searchedCourses.length; i++){
+        $("#all-courses")[0].appendChild(createClass(courseArray[searchedCourses[i]]));
+      }
+      $("#num-courses").text(searchedCourses.length + " courses found!");
+    }
+
+  }
+}
+
+
+function updateRecommended(){
+  $("#recommended-courses").empty();
+  for(var i = 0; i < recommendedCourses.length; i++){
+    $("#recommended-courses")[0].appendChild(createClass(courseArray[recommendedCourses[i]]));
   }
 }
 
@@ -587,6 +850,13 @@ $('#clear-tags-button').on('click', function(){
     updateTags();
 });
 
+$('#choose-tags-button').on('click', function(){
+    $("#view-tags-container").removeClass("hide");
+});
+
+$('#expand-subject-button').on('click', function(){
+    $("#view-subjects-container").removeClass("hide");
+});
 
 var counter = 1;
 

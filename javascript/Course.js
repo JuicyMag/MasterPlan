@@ -12,7 +12,13 @@
  * @class
  */
 var Course = (function () {
-    function Course(name, prof, description, tags, timeslotsString, preReqs) {
+    function Course(subject, number, attributes, prof, name, description, tags, timeslotsString, preReqs) {
+      if (this.subject === undefined)
+    	    this.subject = null;
+      if (this.number === undefined)
+    	    this.number = null;
+    	if (this.attributes === undefined)
+    	    this.attributes = null;
     	if (this.name === undefined)
     	    this.name = null;
       if (this.prof === undefined)
@@ -25,6 +31,9 @@ var Course = (function () {
     	    this.timeslots = null;
     	if (this.preReqs === undefined)
     	    this.preReqs = null;
+      this.subject = subject;
+      this.number = number;
+      this.attributes = attributes.split(",");
     	this.name = name;
       this.prof = prof;
       this.description = description;
@@ -32,6 +41,7 @@ var Course = (function () {
       this.timeslotsString = timeslotsString;
     	this.timeslots =  this.parseTimeSlots(timeslotsString);
     	this.preReqs = preReqs.split("; ");
+//      console.log(this.attributes);
     }
    /**
      * Parses the raw timeslots into an array of integers.
@@ -90,12 +100,16 @@ var Course = (function () {
     			    dayToInt = 1440 * 4;
     			    break;
     			default:
-    			    dayToInt = 0;
+    			    dayToInt = -1;
     			    break;
     			}
 
-    			/* add */ (result.push(dayToInt + this.parseTime(times[0])) > 0);
+          if(dayToInt != -1){
+          /* add */ (result.push(dayToInt + this.parseTime(times[0])) > 0);
           /* add */ (result.push(dayToInt + this.parseTime(times[1])) > 0);
+          }
+
+
     		}
     	    };
     	}
@@ -130,6 +144,45 @@ var Course = (function () {
     };
 
     //} //END OF COMMENTED FALSE JUMP STATEMENT
+
+
+    /**
+     * Fetch the name of the Course.
+     *
+     * @post returns the name variable
+     *TODO
+     * @return {string} name
+     */
+    Course.prototype.getSubject = function () {
+	return this.subject;
+    };
+
+          /**
+     * Fetch the name of the Course.
+     *
+     * @post returns the name variable
+     *TODO
+     * @return {string} name
+     */
+    Course.prototype.getNumber = function () {
+	return this.number;
+    };
+
+          /**
+     * Fetch the name of the Course.
+     *
+     * @post returns the name variable
+     *TODO
+     * @return {string} name
+     */
+    Course.prototype.getAttributes = function () {
+	return this.attributes;
+    };
+
+
+
+
+
 
     /**
      * Fetch the name of the Course.
