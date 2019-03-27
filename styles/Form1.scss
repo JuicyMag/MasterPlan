@@ -1,0 +1,41 @@
+@import "navbar";
+
+
+.form-group {
+	padding-top: 90px;
+
+	.form-control {
+		background-color: transparent;
+		border-style: none;
+		border-bottom: solid 1px;
+		border-radius: 0;
+	}
+
+}
+
+.btn {
+	background-color: transparent;
+	border: solid 1px;
+	border-color: Black;
+	border-radius: 0;
+	color: black;
+	text-transform: uppercase;
+	margin-top: 60px;
+}
+
+.tag {
+	text-decoration: none;
+	font-size: 18px;
+	margin: 10px;
+	border-style: none;
+	letter-spacing: 3px;
+	border-radius: .25rem;
+}
+
+.tag:hover, .tag:focus, .tag:active {
+	background-color: $color5;
+}
+
+#tag-space {
+	margin-left: 40px;
+}

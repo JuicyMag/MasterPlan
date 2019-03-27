@@ -1,0 +1,129 @@
+body {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  padding-top: 45px;
+}
+html,body{
+  height:100%;
+}
+
+.bg {
+  height: 30%;
+}
+nav, .navbar {
+  background-color: #330064;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  letter-spacing: 0.2em;
+}
+nav a, .navbar a {
+  padding: 6px 12px 0px 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-weight: 500;
+}
+
+.lower {
+  padding: 20px;
+}
+
+.form-group {
+  padding-top: 90px;
+}
+.form-group .form-control {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: solid 1px;
+  border-radius: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: solid 1px;
+  border-color: Black;
+  border-radius: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+.tag {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px;
+  border-style: none;
+  letter-spacing: 3px;
+  border-radius: 0.25rem;
+}
+
+.tag:hover, .tag:focus, .tag:active {
+  background-color: #330064;
+}
+
+#tag-space {
+  margin-left: 40px;
+}
+
+#prevBtn{
+  float:left;
+}
+#submitBtn{
+  float:right;
+}
+
+/*.center{
+  text-align: center;
+}*/
+
+/* input sections */
+
+.login-section {
+  padding-top: 90px;
+  text-decoration: none;
+  display: inline-block;
+}
+.login-section .row-centered {
+  text-align: center;
+  display: inline-block;
+}
+.login-section .col-centered {
+  display: inline-block;
+  float: none;
+}
+.login-section .input-box {
+  text-decoration: none;
+  border-style: none;
+  border-radius: 0;
+  border-bottom-style: solid;
+  background-color: transparent;
+  padding-right: 70px;
+  color: grey;
+  border-color: black;
+}
+.login-section input::-webkit-input-placeholder {
+  color: grey;
+}
+.login-section input:-moz-placeholder {
+  /* Firefox 18- */
+  color: grey;
+}
+.login-section input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: grey;
+}
+.login-section input:-ms-input-placeholder {
+  color: grey;
+}
+/*.login-section .btn {
+  border-radius: 0;
+  background-color: #fecb00;
+  border-style: none;
+  color: #330064;
+}*/
+/*# sourceMappingURL=Form1.css.map */
