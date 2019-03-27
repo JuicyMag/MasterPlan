@@ -226,6 +226,13 @@ nav .navbar-brand {
   color:#888;
 }
 
+.tag-element{
+  background-color: white;
+}
+
+#ygf{
+  background-color: white !important;
+}
 
 
 span {
@@ -245,7 +252,8 @@ span {
   border: none;
   text-align: center;
   vertical-align: middle;
-  padding:auto;}
+  padding:auto;
+  line-height: 3em;}
 
 #selected-tags{
   height: auto;

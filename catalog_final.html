@@ -23,7 +23,7 @@
 		<a class="menubarButton" href="#">Profile</a>
 	</nav>
 	<div class="row container.fluid lower">
-		<div class="col col-lg-3 ">
+		<div class="col col-lg-4 ">
 		 <div class="search">
        <div class = "fixed-container">
 
@@ -102,9 +102,17 @@
                <span>Choose all the tags that suit your interests!</span>
              </div>
 
-            <div id = "choose-tags" class = "row">
-                <button id = "choose-tags-button" class = "full-width">View Tags</button>
+            <div id = "tag-container">
+              <div class = "row">
+                <button class = " tag btn btn-outline-dark selected" disabled>Selected</button>
+                <button id = "ygf" class = " tag btn btn-outline-dark" disabled>Unselected</button>
+              </div>
             </div>
+           <button id = "unselect-tags">Unselect All</button>
+
+            <!-- <div id = "choose-tags" class = "row">
+                <button id = "choose-tags-button" class = "full-width">View Tags</button>
+            </div> -->
           </div>
 
 
@@ -147,8 +155,8 @@
 		</div>
 		</div>
 
-    <div class = "col col-lg-1">
-    </div>
+    <!-- <div class = "col col-lg-1">
+    </div> -->
 
     <div class = "col course-list-container">
 <!--
@@ -250,12 +258,7 @@
       <div id = "view-tags-container" class = "row hide">
         <div id = "view-tags">
            <h1>All Tags</h1>
-            <div id = "tag-container">
-              <div class = "row">
-                <button class = "tag btn btn-outline-dark selected" disabled>Selected</button>
-                <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
-              </div>
-            </div>
+
          </div>
 
          <button class = "close-button">Close</button>
@@ -270,7 +273,10 @@
                 <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
               </div>
             </div>
+           <button id = "unselect-subjects">Unselect All</button>
          </div>
+
+
 
          <button class = "close-button">Close</button>
       </div>

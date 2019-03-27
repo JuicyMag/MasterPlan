@@ -23,12 +23,14 @@ var searchedCourses = [];
 
 var allTags = ["Programming", "Essential", "Law", "Economics", "Intro Class", "Banking", "Microeconomics", "Macroeconomics", "Mathematics", "Research", "Modeling", "Calculus", "Psychology", "Music", "Politics"];
 var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ARTS","ASPH","ASST","ASTR","BIMO","BIOL","CHEM","CHIN","CLAS","CLGR","CLLA","CMAJ","COGS","COMP","CRHE","CRHI","CRKO","CRLA","CRPO","CRSW","CSCI","DANC","ECON","ENGL","ENVI","EXPR","GBST","GEOS","GERM","HIST","HSCI","INTR","JAPN","JLST","JWST","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHLH","PHYS","POEC","PSCI","PSYC","REL","RLFR","RLIT","RLSP","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
+var allSubjectsNames = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History", "Studio Art", "Astrophysics", "Asian Studies", "Astronomy", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Greek", "Latin", "Contract Major", "Cognitive Science", "Comparative Literature", "Hebrew", "Hindi", "Korean", "Critical Languages", "Portugese", "Swahili", "Computer Science", "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "Global Studies", "Geosciences", "German", "History", "History of Science", "Interdisciplinary Studies", "Japanese", "Justice & Law Studies", "Jewish Studies", "Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy", "Public Health", "Physics", "Political Economy", "Political Science", "Psychology", "Religion", "French", "Italian", "Spanish", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
 //Initializing the Schedule variables.
 var scheduler = new Scheduler([]);
 //Initializing the array of courses.
 var courseArray = [];
 var courseData = [];
+var attributes = [];
 
 //Number of Courses to Recommend.
 const numRecommended = 5;
@@ -67,8 +69,8 @@ for(var i = 0; i < allTags.length; i++){
   $("#tag-container")[0].appendChild(createTag(allTags[i]));
 }
 
-for(var i = 0; i < allSubjects.length; i++){
-  $("#subject-container")[0].appendChild(createSubject(allSubjects[i]));
+for(var i = 0; i < allSubjectsNames.length; i++){
+  $("#subject-container")[0].appendChild(createSubject(allSubjectsNames[i]));
 }
 
 //Initialize the courses from JSON file.
@@ -417,7 +419,8 @@ $("#all-courses-button").click(function(){
 $("#search-button").click(function(){
   $('#notice').text("");
   searchedCourses = searchClasses($("#search-box input")[0].value);
-  //console.log(searchedCourses);
+
+  console.log(searchedCourses);
   updateFull(searchByTags);
 });
 
@@ -432,11 +435,11 @@ function searchClasses(input){
 
   //console.log(clone.length);
   if(clone.length == 0) clone = courseArray.slice(0);
-  //console.log(clone.length);
+  console.log(clone.length);
 
   var cloneArray = [];
-  var attributes = []
 
+  attributes = [];
   if($('#dpe').is(':checked')) attributes.push("DPE_DPE");
   if($('#qfr').is(':checked')) attributes.push("QFR_QFR");
   if($('#wi').is(':checked')) attributes.push("WAC_WAC");
@@ -450,6 +453,7 @@ function searchClasses(input){
   }
 
   if(attributes.length == 0) cloneArray = clone.slice(0);
+  console.log(cloneArray.length);
 
   //console.log(input);
   var result = [];
@@ -461,6 +465,8 @@ function searchClasses(input){
       result.push(findCourse(courseArray,courseTitle));
     }
   }
+
+  console.log(result.length);
 
 
   return result;
@@ -480,12 +486,48 @@ $(".tag-element").click(function(){
   updateFull(searchByTags);
 });
 
+$("#unselect-tags").click(function(){
+
+  tags = [];
+
+  var tagElements = $(".tag-element");
+  //console.log(tagElements);
+  for(var i = 0 ; i < tagElements.length; i ++){
+    //console.log(subjectElements[i]);
+    tagElements[i].classList.remove('selected');
+  }
+
+  Bob.updateStudentTags(tags);
+  updateFull(searchByTags);
+});
+
+
+$("#unselect-subjects").click(function(){
+
+  subjects = [];
+
+  var subjectElements = $(".subject-element");
+  console.log(subjectElements);
+  for(var i = 0 ; i < subjectElements.length; i ++){
+    console.log(subjectElements[i]);
+    subjectElements[i].classList.remove('selected');
+  }
+
+  updateFull(searchByTags);
+});
+
 $(".subject-element").click(function(){
+
+  var code = allSubjects[allSubjectsNames.indexOf($(this)[0].innerHTML.replace("&amp;","&"))];
+  console.log($(this)[0].innerHTML.replace("&amp;","&"));
+  console.log(allSubjectsNames.indexOf($(this)[0].innerHTML.replace("&amp;","&")));
+  console.log(code);
+
   if(!$(this)[0].classList.contains('selected')){
-    subjects.push($(this)[0].innerHTML);
+    subjects.push(code);
   }
   else{
-    subjects.splice(tags.indexOf($(this)[0].innerHTML),1);
+    subjects.splice(code,1);
   }
   $(this).toggleClass('selected');
   console.log(subjects);
@@ -728,7 +770,7 @@ function updateFull(withTags){
   }
 
   else {
-    if($("#search-box input")[0].value === ""){
+    if($("#search-box input")[0].value === "" && attributes.length == 0 && subjects.length == 0){
       for(var i = 0; i < courseArray.length; i++){
         $("#all-courses")[0].appendChild(createClass(courseArray[i]));
       }
