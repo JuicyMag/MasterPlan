@@ -17,15 +17,13 @@ public class CSVReader
         File csvFile = new File("Courses.csv");
         Scanner scanner = new Scanner(csvFile);
 
-        //Set the delimiter used in file
-
+        //Represent CSV file as HashMap.
         HashMap<Integer, String> entries = new HashMap<Integer,String>();
         int lineNum = 1;
         while (scanner.hasNextLine())
         {
             entries.put(lineNum,scanner.nextLine());
             lineNum++;
-            //System.out.println(scanner.next());
         }
 
         // close the scanner
@@ -52,48 +50,17 @@ public class CSVReader
                 tags.add(tagsArr[j]);
               }
             }
-
-            /*
-            try {
-              for(String tag: tags){
-                strBuild.append(tag);
-              }
-              output.write(strBuild.toString());
-
-              Object[] tagsSet = tags.toArray();
-
-              for(int k = 0; k < tagsSet.length; k++)
-              {
-                output.write(tagsSet[k].toString());
-                output.flush();
-                System.out.println(output);
-              }
-
-            }
-            catch(Exception e){
-              System.out.println(e);
-            }
-            */
-            /*
-            finally {
-              if(csvWrite!=null){
-                  csvWrite.close();
-              }
-              if(output!=null){
-                  output.close();
-              }
-            }
-            */
           }
         }
         FileWriter csvWrite = new FileWriter(csvFile,true);
         BufferedWriter output = new BufferedWriter(csvWrite);
         StringBuilder strBuild = new StringBuilder();
-        strBuild.append("List of Tags: ");
+        strBuild.append("List of Tags in CSV: ");
         strBuild.append("[");
         try {
           for(String tag: tags){
             if(tag.isEmpty()){
+              //Don't include in the StringBuilder
               System.out.println("Empty");
             }
             else{
@@ -103,31 +70,20 @@ public class CSVReader
           }
           strBuild.append("]");
           output.write(strBuild.toString());
-          /*
-          Object[] tagsSet = tags.toArray();
-
-          for(int k = 0; k < tagsSet.length; k++)
-          {
-            output.write(tagsSet[k].toString());
-            output.flush();
-            System.out.println(output);
-          }
-          */
         }
         catch(Exception e){
           System.out.println(e);
         }
         finally {
-          if(output!=null){
+          if(output != null){
               output.close();
           }
-          if(csvWrite!=null){
+          if(csvWrite != null){
               csvWrite.close();
           }
         }
 
 
         System.out.println(tags);
-        //System.out.println(entries.get(2).split(";"));
     }
 }
