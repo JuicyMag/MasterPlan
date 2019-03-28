@@ -55,6 +55,7 @@ public class CSVReader
         FileWriter csvWrite = new FileWriter(csvFile,true);
         BufferedWriter output = new BufferedWriter(csvWrite);
         StringBuilder strBuild = new StringBuilder();
+        strBuild.append("\n");
         strBuild.append("List of Tags in CSV: ");
         strBuild.append("[");
         try {
@@ -69,6 +70,7 @@ public class CSVReader
             }
           }
           strBuild.append("]");
+          strBuild.append("\n");
           output.write(strBuild.toString());
         }
         catch(Exception e){
