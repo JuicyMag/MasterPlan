@@ -62,4 +62,4 @@ var AdvStudCompat = (function () {
   };
   return AdvStudCompat;
 }());
-AdvStudCompat["__class"] = "Course";
+AdvStudCompat["__class"] = "AdvStudCompat";

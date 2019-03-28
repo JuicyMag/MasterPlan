@@ -13,8 +13,8 @@ var Runner = (function () {
 	if (this.students === undefined)
 	    this.students = null;
     this.adviseeAssigned();    
-	 this.initCourses();
-	 this.initStudents();
+	 // this.initCourses();
+	 // this.initStudents();
 
 	for (var i = 0; i < this.students.length; i++) {
 	    {
@@ -224,20 +224,29 @@ var Runner = (function () {
     /*private*/ Runner.prototype.initStudentsmatch = function () {
         var studentsToMatch = ([]);
         this.students = ([]);
-    var bobTags = ["Programming", "Compiler"];
-    var bobClassesTaken = ["CSCI 134", "CSCI 136"];
-    var Bob = new Student("Bob", bobTags, 2021, bobClassesTaken);
+    var chrispineTags = ["Software","Finance","Bitcoin","Entrepreneurship","Startup","Artificial Intelligence"];
+    var chrispineClassesTaken = ["CSCI 134", "CSCI 136"];
+    var Chrispine = new Student("Chrispine", chrispineTags, 2021, chrispineClassesTaken);
 
-    var aliceTags = ["Artificial Intelligence", "Journalism"];
-    var aliceClassesTaken = ["CSCI 237", "CSCI 256"];
-    var Alice = new Student("Alice", aliceTags, 2021, aliceClassesTaken);
-    /* add */ (studentsToMatch.push(Bob) > 0);
-                (studentsToMatch.push(Alice) > 0)
+    var victorTags = ["Pre-Med","Surgeon","Doctor","Physician","Research","Medical School"];
+    var victorClassesTaken = ["CSCI 237", "CSCI 256"];
+    var Victor = new Student("Victor", victorTags, 2021, victorClassesTaken);
+    
 
-//         Chrispine,Software;Finance;Bitcoin;Entrepreneurship;Startup;Artificial Intelligence
-// Victor,Pre-Med;Surgeon;Doctor;Physician;Research;Medical School
-// Sophie,Finance;Bitcoin;Surgeon;Doctor;Physician;Agriculture
-// Eliza,Media;Advertisement;Social Worker;Chef;CEO;Engineer
+    var sophieTags = ["Finance","Bitcoin","Surgeon","Doctor","Physician","Agriculture"];
+    var sophieClassesTaken = ["CSCI 134", "CSCI 136"];
+    var Sophie = new Student("Sophie", sophieTags, 2021, sophieClassesTaken);
+
+    var elizaTags = ["Media","Advertisement","Social Worker","Chef","CEO","Engineer"];
+    var elizaClassesTaken = ["CSCI 237", "CSCI 256"];
+    var Eliza = new Student("Eliza", elizaTags, 2021, elizaClassesTaken);
+
+    /* add */ (studentsToMatch.push(Chrispine) > 0);
+                (studentsToMatch.push(Victor) > 0);
+
+    (studentsToMatch.push(Sophie) > 0);
+    (studentsToMatch.push(Eliza) > 0);
+
 
         return studentsToMatch;
     };
@@ -258,13 +267,24 @@ var Runner = (function () {
 // Muta,Finance;Bitcoin;Surgeon;Doctor;Physician;Agriculture
 // Koku,Media;Advertisement;Social Worker;Chef;CEO;Engineer
 
-        var duaneTags = ["Artificial Intelligence", "Journalism"];
-        var Duane = new Advisor("Duane", duaneTags, []);
-        (advisorsToMatch.push(Duane) > 0);
+        
 
-        var billTags = ["Programming", "Compiler"];
+        var billTags = ["Software","Finance","Bitcoin","Entrepreneurship","Startup","Artificial Intelligence"];
         var Bill = new Advisor("Bill", billTags,[]);
         (advisorsToMatch.push(Bill) > 0);
+
+
+        var melindaTags = ["Pre-Med","Surgeon","Doctor","Physician","Research","Medical School"];
+        var Melinda = new Advisor("Melinda", billTags,[]);
+        (advisorsToMatch.push(Melinda) > 0);
+
+        var mutaTags = ["Finance","Bitcoin","Surgeon","Doctor","Physician","Agriculture"];
+        var Muta = new Advisor("Muta", mutaTags, []);
+        (advisorsToMatch.push(Muta) > 0);
+
+        var kokuTags = ["Media","Advertisement","Social Worker","Chef","CEO","Engineer"];
+        var Koku = new Advisor("Koku", kokuTags, []);
+        (advisorsToMatch.push(Koku) > 0);
 
         return advisorsToMatch;
     };
@@ -430,14 +450,14 @@ var Runner = (function () {
                 var advisor = compat.getAdvisor();
                 if (!student.hasAdvisor() && !advisor.hasEnoughStudents()) {
                     student.assignAdvisor(advisor);
-                    advisor.addStudent(student);
+                    advisor.addAdvisee(student);
                     matchedStudents[count] = student;
                     count++;
                 }
             }
             ;
         }
-        console.info(java.util.Arrays.toString(matchedStudents));
+        console.log(matchedStudents.toString());
         return matchedStudents;
     };
     Runner.main = function (args) {

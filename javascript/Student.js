@@ -74,7 +74,7 @@ var Student = (function () {
 	return this.classesTaken;
     };
 	
-    Student.prototype.assignAdvisor = function () {
+    Student.prototype.assignAdvisor = function (advisor) {
 	this.studentAdvisor = advisor;
     };
 	
