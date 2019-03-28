@@ -416,32 +416,27 @@ var Runner = (function () {
      * @return {Array}
      */
     Runner.prototype.adviseeAssigned = function () {
-        var matchedStudents;
+        var matchedStudents = ([]);
         var count;
-        var compatibilities = ([]);
+        var compatibilitiesArray = ([]);
         var students = this.initStudentsmatch();
         var advisors = this.initAdvisorsmatch();
-        matchedStudents = (function (s) { var a = []; while (s-- > 0)
-            a.push(null); return a; })(students.length);
+
         count = 0;
         for (var i = 0; i < students.length; i++) {
             {
                 for (var j = 0; j < advisors.length; j++) {
                     {
-                        (compatibilities.push(this.calculateCompat(students[i],advisors[j])) > 0);
+                        //console.log("" + this.calculateCompat(students[i],advisors[j]));
+                        (compatibilitiesArray.push(this.calculateCompat(students[i],advisors[j])) > 0);
                     }
                     ;
                 }
             };
         }
-        var compatibilitiesArray = (function (s) { var a = []; while (s-- > 0)
-            a.push(null); return a; })(compatibilities.length);
-        for (var i = 0; i < compatibilities.length; i++) {
-            {
-                compatibilitiesArray[i] = compatibilities[i];
-            }
-            ;
-        }
+        console.log(compatibilitiesArray.toString());
+
+        
         this.sort(compatibilitiesArray, 0, compatibilitiesArray.length - 1);
         for (var i = compatibilitiesArray.length - 1; i >= 0; i--) {
             {
@@ -451,8 +446,7 @@ var Runner = (function () {
                 if (!student.hasAdvisor() && !advisor.hasEnoughStudents()) {
                     student.assignAdvisor(advisor);
                     advisor.addAdvisee(student);
-                    matchedStudents[count] = student;
-                    count++;
+                    (matchedStudents.push(student) > 0);
                 }
             }
             ;
