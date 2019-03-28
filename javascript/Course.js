@@ -12,35 +12,35 @@
  * @class
  */
 var Course = (function () {
-    function Course(subject, number, attributes, prof, name, description, tags, timeslotsString, preReqs) {
-      if (this.subject === undefined)
-    	    this.subject = null;
-      if (this.number === undefined)
-    	    this.number = null;
-    	if (this.attributes === undefined)
-    	    this.attributes = null;
+    function Course(name, tags, timeslotsString, preReqs) {
+     //  if (this.subject === undefined)
+    	//     this.subject = null;
+     //  if (this.number === undefined)
+    	//     this.number = null;
+    	// if (this.attributes === undefined)
+    	//     this.attributes = null;
     	if (this.name === undefined)
     	    this.name = null;
-      if (this.prof === undefined)
-    	    this.prof = null;
-      if (this.description === undefined)
-    	    this.description = null;
+      // if (this.prof === undefined)
+    	 //    this.prof = null;
+      // if (this.description === undefined)
+    	 //    this.description = null;
     	if (this.tags === undefined)
     	    this.tags = null;
     	if (this.timeslots === undefined)
     	    this.timeslots = null;
     	if (this.preReqs === undefined)
     	    this.preReqs = null;
-      this.subject = subject;
-      this.number = number;
-      this.attributes = attributes.split(",");
+      // this.subject = subject;
+      // this.number = number;
+      // this.attributes = attributes.split(",");
     	this.name = name;
-      this.prof = prof;
-      this.description = description;
+      // this.prof = prof;
+      // this.description = description;
     	this.tags = tags;
-      this.timeslotsString = timeslotsString;
-    	this.timeslots =  this.parseTimeSlots(timeslotsString);
-    	this.preReqs = preReqs.split("; ");
+      this.timeslots = this.parseTimeSlots(timeslotsString);
+    	// this.timeslots =  this.parseTimeSlots(timeslotsString);
+    	this.preReqs = preReqs;
 //      console.log(this.attributes);
     }
    /**
@@ -55,7 +55,6 @@ var Course = (function () {
 
     Course.prototype.parseTimeSlots = function (toBeParsed) {
       //TODO make it less hacky.
-      toBeParsed = [toBeParsed.split(";")[0]];
     	var result = ([]);
 
     	for (var i = 0; i < toBeParsed.length; i++) {
@@ -68,6 +67,8 @@ var Course = (function () {
 
         //Get rid of letters to parse out times. Obtain starting time.
         var startTime = timeArr[0].split(/[a-zA-Z]+/)[1];
+
+        startTime = startTime.replace(/ +/g,'');
 
         //Obtain ending time.
         var endTime = timeArr[1];
@@ -100,7 +101,7 @@ var Course = (function () {
     			    dayToInt = 1440 * 4;
     			    break;
     			default:
-    			    dayToInt = -1;
+    			    dayToInt = 0;
     			    break;
     			}
 
@@ -116,7 +117,7 @@ var Course = (function () {
 
     	var resultArray = (function (s){
           var a = new Array();
-          //console.log(s);
+          console.log(s);
           while (s-- > 0){
             a.push(0);
             //console.log(a);
@@ -124,7 +125,7 @@ var Course = (function () {
     	     return a; })(/* size */ result.length);
     	for (var i = 0; i < result.length; i++) resultArray[i] = result[i];
 
-      //console.log(resultArray);
+      console.log(resultArray);
     	return resultArray;
     };
         /**

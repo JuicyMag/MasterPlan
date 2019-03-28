@@ -12,8 +12,10 @@ var Runner = (function () {
 	    this.courses = null;
 	if (this.students === undefined)
 	    this.students = null;
-	this.initCourses();
-	this.initStudents();
+    this.adviseeAssigned();    
+	 this.initCourses();
+	 this.initStudents();
+
 	for (var i = 0; i < this.students.length; i++) {
 	    {
 		var student = this.students[i];
@@ -91,7 +93,8 @@ var Runner = (function () {
      * in @courses
      * @private
      */
-    /*private*/ Runner.prototype.getMostCompatible = function (values, student) {
+    /*private*/ 
+    Runner.prototype.getMostCompatible = function (values, student) {
 	var result = (function (s) { var a = []; while (s-- > 0)
 	    a.push(0); return a; })(Runner.numRecommended);
 	var shadow = (function (s) { var a = []; while (s-- > 0)
@@ -220,6 +223,22 @@ var Runner = (function () {
      */
     /*private*/ Runner.prototype.initStudentsmatch = function () {
         var studentsToMatch = ([]);
+        this.students = ([]);
+    var bobTags = ["Programming", "Compiler"];
+    var bobClassesTaken = ["CSCI 134", "CSCI 136"];
+    var Bob = new Student("Bob", bobTags, 2021, bobClassesTaken);
+
+    var aliceTags = ["Artificial Intelligence", "Journalism"];
+    var aliceClassesTaken = ["CSCI 237", "CSCI 256"];
+    var Alice = new Student("Alice", aliceTags, 2021, aliceClassesTaken);
+    /* add */ (studentsToMatch.push(Bob) > 0);
+                (studentsToMatch.push(Alice) > 0)
+
+//         Chrispine,Software;Finance;Bitcoin;Entrepreneurship;Startup;Artificial Intelligence
+// Victor,Pre-Med;Surgeon;Doctor;Physician;Research;Medical School
+// Sophie,Finance;Bitcoin;Surgeon;Doctor;Physician;Agriculture
+// Eliza,Media;Advertisement;Social Worker;Chef;CEO;Engineer
+
         return studentsToMatch;
     };
 	 /**
@@ -233,6 +252,20 @@ var Runner = (function () {
      */
     /*private*/ Runner.prototype.initAdvisorsmatch = function () {
         var advisorsToMatch = ([]);
+
+//         Bill,Software;Finance;Bitcoin;Entrepreneurship;Startup;Artificial Intelligence
+// Melinda,Pre-Med;Surgeon;Doctor;Physician;Research;Medical School
+// Muta,Finance;Bitcoin;Surgeon;Doctor;Physician;Agriculture
+// Koku,Media;Advertisement;Social Worker;Chef;CEO;Engineer
+
+        var duaneTags = ["Artificial Intelligence", "Journalism"];
+        var Duane = new Advisor("Duane", duaneTags, []);
+        (advisorsToMatch.push(Duane) > 0);
+
+        var billTags = ["Programming", "Compiler"];
+        var Bill = new Advisor("Bill", billTags,[]);
+        (advisorsToMatch.push(Bill) > 0);
+
         return advisorsToMatch;
     };
 	/**
