@@ -434,7 +434,8 @@ var Runner = (function () {
                 }
             };
         }
-        console.log(compatibilitiesArray.toString());
+
+        //console.log(compatibilitiesArray);
 
         
         this.sort(compatibilitiesArray, 0, compatibilitiesArray.length - 1);
@@ -451,7 +452,7 @@ var Runner = (function () {
             }
             ;
         }
-        console.log(matchedStudents.toString());
+        console.log(matchedStudents);
         return matchedStudents;
     };
     Runner.main = function (args) {
