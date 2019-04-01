@@ -6,7 +6,7 @@ body {
   padding-top: 45px;
 }
 
-nav, .navbar {
+/*nav, .navbar {
   background-color: #330064;
   overflow: hidden;
   position: fixed;
@@ -23,7 +23,7 @@ nav a, .navbar a {
 }
 nav .navbar-brand, .navbar .navbar-brand {
   font-weight: 500;
-}
+}*/
 
 .lower {
   padding: 20px;
