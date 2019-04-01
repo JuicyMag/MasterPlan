@@ -48,7 +48,7 @@ nav .navbar-brand, .navbar .navbar-brand {
   background-color: transparent;
   border: solid 1px;
   border-color: Black;
-  border-radius: 0;
+  border-radius: 0.25rem;
   color: black;
   text-transform: uppercase;
 }
@@ -57,7 +57,7 @@ nav .navbar-brand, .navbar .navbar-brand {
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
-  border-style: none;
+  //border-style: none;
   letter-spacing: 3px;
   border-radius: 0.25rem;
 }
@@ -70,11 +70,11 @@ nav .navbar-brand, .navbar .navbar-brand {
   margin-left: 40px;
 }
 
-#prevBtn{
-  float:left;
+#submitBtn {
+  float: right;
 }
-#submitBtn{
-  float:right;
+#deselectBtn {
+  margin-left: 33%;
 }
 
 /*.center{
