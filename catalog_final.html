@@ -66,17 +66,23 @@
              </div>
 
       			<div class="row">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="dpe">
-                <label class="custom-control-label" for="dpe">Diversity, Power, Equality</label>
+              <div class = "full-width"style = "margin-left: 10%">
+                <div class="fleft custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="dpe">
+                  <label class="custom-control-label" for="dpe">Diversity, Power, Equality</label>
+                </div>
               </div>
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="wi">
-                <label class="custom-control-label" for="wi">Writing Intensive</label>
+              <div class = "full-width"style = "margin-left: 10%">
+                <div class="fleft custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="wi">
+                  <label class="custom-control-label" for="wi">Writing Intensive</label>
+                </div>
               </div>
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="qfr">
-                <label class="custom-control-label" for="qfr">Quantitative/Formal Reasoning</label>
+              <div class = "full-width"style = "margin-left: 10%">
+                <div class="fleft custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="qfr">
+                  <label class="custom-control-label" for="qfr">Quantitative/Formal Reasoning</label>
+                </div>
               </div>
             </div>
 
@@ -108,7 +114,7 @@
                 <button id = "ygf" class = " tag btn btn-outline-dark" disabled>Unselected</button>
               </div>
             </div>
-           <button id = "unselect-tags">Unselect All</button>
+           <button class = "full-width unselect-button" id = "unselect-tags">Unselect All</button>
 
             <!-- <div id = "choose-tags" class = "row">
                 <button id = "choose-tags-button" class = "full-width">View Tags</button>
@@ -273,7 +279,8 @@
                 <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
               </div>
             </div>
-           <button id = "unselect-subjects">Unselect All</button>
+           <button class = "mt-5" id = "unselect-subjects">Unselect All</button>
+           <button class = "mt-5 fright" id = "okay-button"> Okay</button>
          </div>
 
 
@@ -297,28 +304,6 @@
     <script src = "javascript/Student.js"></script>
     <script src = "javascript/script.js"></script>
 
-    <script>
-      // collects tags from previous pages
-      var inputTags = decodeURIComponent(window.location.search);
-      inputTags = inputTags.substring(1);
-      var input = inputTags.split("&");
-      // console.log(input);
-
-      var departmentTags = [];
-      var careerTags = [];
-      var career = false;
-      for(var i = 0; i<input.length; i++){
-        // console.log(career);
-        if(input[i] == '*') {
-          career = true;
-          i++;
-        }
-        if(career) careerTags.push(input[i]);
-        else departmentTags.push(input[i]);
-      }
-      // console.log(departmentTags);
-      // console.log(careerTags);
-    </script>
 
 </body>
 

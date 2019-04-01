@@ -234,6 +234,9 @@ nav .navbar-brand {
   background-color: white !important;
 }
 
+.fleft{
+  float:left;
+}
 
 span {
   width: 100%;
@@ -426,9 +429,15 @@ span {
   position: fixed;
   right: 100px;
   top: 100px;
-  background-color: #3f2953;
-  color: #fff;
   font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 3em;
 }
 
 #mini-week{
@@ -452,5 +461,32 @@ span {
   text-align: center;
 }
 
+
+.unselect-button{
+  width: 90%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding:auto;
+  line-height: 3em;
+}
+
+#unselect-subjects, #okay-button{
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #3f2953;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 3em;
+}
 
 /*# sourceMappingURL=catalog0.css.map */

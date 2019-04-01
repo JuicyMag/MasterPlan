@@ -21,9 +21,9 @@ var recommendedCourses = [1,6,8,28,35] //Recommended Courses: TODO: remove hardc
 var highlightedCourses = []; //Highlighted Courses
 var searchedCourses = [];
 
-var allTags = ["Programming", "Essential", "Law", "Economics", "Intro Class", "Banking", "Microeconomics", "Macroeconomics", "Mathematics", "Research", "Modeling", "Calculus", "Psychology", "Music", "Politics"];
-var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ASST","ASTR","ASPH","BIMO","BIOL","CHEM","CHIN","CLAS","COGS","COMP","CSCI","CMAJ","CRLA","DANC","ECON","ENGL","ENVI","EXPR","RLFR","GEOS","GERM","GBST","CLGR","CRHE","CRHI","HIST","HSCI","INTR","RLIT","JAPN","JWST","JLST","CRKO","CLLA","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHLH","PHYS","POEC","PSCI","CRPO","PSYC","REL","RLSP","ARTS","CRSW","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
-var allSubjectsNames = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy", "Public Health", "Physics", "Political Economy", "Political Science","Portugese", "Psychology", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
+var allTags ="network engineering , mathematical science , education , ESSENTIALS , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , math graduate school , us politics ,  microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , Tags ,  systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , finacial markets , science , integration , shakespeare , social justice , performance analysis , inequalities , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up ,  quantitative trading , asset managment , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , entrepreneur , contemporary metaphysics ,  private equity , Women’s Gender and Sexuality Studies , social sciences ,  ESSENTIAL , logic , intro class , statistics , number theory , physics gradute school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , mathematics graudate school , ethics , research , finace , sustainibility , publication , global economics , women gender sexuality studies , africana studies , big data , programming , climate change , law , quantitative trading , political economy , history , engineering , datascience , micro economics , modelling , public policy , political science , macroeconomics ,  global economics , systems engineering , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , sociology , renaissance , cost benefit analysis , corporate finance , banking , playwrighting , Sociology  ,  business , critical thinking , psychology , advanced macroeconomics , applied math , data analysis , race , political science graduate school , private equity , gender studies , quantum theory , technology , meritocracy , app development , economics , statistician , behavioral psychology , social psychology , regression , ecosystems , macroecnomics , feminism , arguments , monetary economics , finance , applied mathematics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
+var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ASST","ASTR","ASPH","BIMO","BIOL","CHEM","CHIN","CLAS","COGS","COMP","CSCI","CMAJ","CRLA","DANC","ECON","ENGL","ENVI","EXPR","RLFR","GEOS","GERM","GBST","CLGR","CRHE","CRHI","HIST","HSCI","INTR","RLIT","JAPN","JWST","JLST","CRKO","CLLA","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHYS","POEC","PSCI","CRPO","PSYC","PHLH","REL","RLSP","ARTS","CRSW","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
+var allSubjectsNames = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy",  "Physics", "Political Economy", "Political Science","Portugese", "Psychology","Public Health", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
 //Initializing the Schedule variables.
 var scheduler = new Scheduler([]);
@@ -45,6 +45,32 @@ var bobClassesTaken = ["CSCI 134", "CSCI 136", "CSCI 237", "ECON 110", "ECON 120
   "ECON 505", "POEC 253", "MATH 102", "MATH 130", "MATH 140", "MATH 151", "MATH 200", "MATH 250", "MATH 209", "MATH 150",
   "PHYS 131"];
 var Bob = new Student("Bob", null, 2021, bobClassesTaken);
+
+
+// collects tags from previous pages
+var inputTags = decodeURIComponent(window.location.search);
+inputTags = inputTags.substring(1);
+var input = inputTags.split("&");
+//console.log(input);
+
+var departmentTags = [];
+var careerTags = [];
+var career = false;
+for(var i = 0; i<input.length; i++){
+  // console.log(career);
+  if(input[i] == '*') {
+    career = true;
+    i++;
+  }
+  if(career) careerTags.push(input[i]);
+  else departmentTags.push(input[i]);
+}
+// console.log(departmentTags);
+// console.log(careerTags);
+
+
+
+
 
 updateCalendar();
 
@@ -79,6 +105,7 @@ loadJSON(function(json) {
   for(var i = 0; i < courseData.length; i ++){
     courseArray.push(new Course(courseData[i].Subject, courseData[i].Number, courseData[i].Attributes, courseData[i].Professor,courseData[i].Title,courseData[i].Description,courseData[i].Tags.split(";"),courseData[i].Timeslot,courseData[i].Prereqs));
   }
+  recommendedCourses = getMostCompatible(getCompatibility(departmentTags.concat(careerTags),Bob),Bob);
   updateFull(searchByTags);
   updateRecommended();
 });
@@ -94,7 +121,6 @@ function loadJSON(callback) {
   };
   xobj.send(null);
 }
-
 
 /**
  * Returns true if the pre-requisites for the course has been fulfilled, false otherwise.
@@ -134,10 +160,11 @@ function checkPrereqs(course, student) {
  */
 function getCompatibility(studentTags, student) {
 
+
   //Initializes an array with the same length as the total number of courses to 0.
 	var compatibilityValues = (function (s) { var a = []; while (s-- > 0)
 	    a.push(0); return a; })(/* size */ courseArray.length);
-
+  console.log(courseArray.length);
   //For each course,
 	for (var i = 0; i < courseArray.length; i++) {
 		var compatibility = 0;
@@ -532,6 +559,7 @@ $(".subject-element").click(function(){
   $(this).toggleClass('selected');
   console.log(subjects);
   Bob.updateStudentTags(subjects);
+  searchedCourses = searchClasses($("#search-box input")[0].value);
   updateFull(searchByTags);
 });
 
@@ -564,6 +592,12 @@ $("#expand-schedule").click(function(){
 });
 
 $(".close-button").click(function(){
+  $("#expanded-schedule-container").addClass("hide");
+  $("#view-tags-container").addClass("hide");
+  $("#view-subjects-container").addClass("hide");
+});
+
+$("#okay-button").click(function(){
   $("#expanded-schedule-container").addClass("hide");
   $("#view-tags-container").addClass("hide");
   $("#view-subjects-container").addClass("hide");
@@ -777,6 +811,7 @@ function updateFull(withTags){
       $("#num-courses").text(courseArray.length + " courses found!");
     }
     else{
+      console.log(searchedCourses);
       for(var i = 0; i < searchedCourses.length; i++){
         $("#all-courses")[0].appendChild(createClass(courseArray[searchedCourses[i]]));
       }
