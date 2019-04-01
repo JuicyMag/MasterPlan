@@ -27,8 +27,8 @@
 	</nav><br>
 
 	 <div class="progress" style="height:30px">
-     <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Step 1</div>
-  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Step 2</div>
+     <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Welcome!</div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Department Interests</div>
 
    </div>
 	<div style="text-align:center" class="mt-5">
@@ -43,7 +43,7 @@
 		</form>
 	</div>
 
-		<div class="container-fluid mt-3 row"> 
+		<div class=" container-fluid mt-3 row"> 
 			<div class="col"> 
 				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
 			</div>
@@ -63,14 +63,20 @@
 
 	<script>
 		
-		var tagList = ["English", "Chinese", "Economics", "Computer Science", "Mathematics", "Philosophy", "Womens & Gender Studies", "Political Science", "Environmental Science", "History", "American Studies", "Cognitive Science", "Comparative Literature", "Dance", "Russian", "Chemistry", "Japanese"];
+		var tagList = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy", "Public Health", "Physics", "Political Economy", "Political Science","Portugese", "Psychology", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
 		function createTag(input){
 			var newTag = document.createElement('label');
 			newTag.setAttribute("id", input);
 			newTag.className = "tag btn btn-outline-dark";
 			newTag.innerHTML = input;
+			newTag.addEventListener("click", function (evt) {
 
+				if(newTag.hasClass("active")) {
+					newTag.classList.remove("active")
+				} else newTag.className += "active";
+
+			});
 			return newTag;
 		}
 
@@ -87,6 +93,12 @@
 			evt.preventDefault();  
 			window.location.replace("Form1.html");
 			return false;
+		});
+		deselectBtn.addEventListener("click", function (evt){
+			var tags = document.getElementById("tag-space").querySelectorAll(".tag");
+			for (var i = 0; i < tags.length; i++) {
+				tags[i].classList.remove("active");
+			}
 		});
 	</script>
 

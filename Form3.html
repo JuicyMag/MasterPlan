@@ -27,9 +27,9 @@
 	</nav><br>
 
 	<div class="progress" style="height:30px">
-   <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Step 1</div>
-  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Step 2</div>
-    <div class="progress-bar bg-info" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Final Step</div>
+   <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Welcome!</div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Deparment Interests</div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div>
 
 
    </div>
@@ -74,7 +74,13 @@
 			newTag.setAttribute("id", input);
 			newTag.className = "tag btn btn-outline-dark"
 			newTag.innerHTML = input;
+			newTag.addEventListener("click", function (evt) {
 
+				if(newTag.hasClass("active")) {
+					newTag.classList.remove("active")
+				} else newTag.className += "active";
+
+			});
 			return newTag;
 		}
 
@@ -91,6 +97,12 @@
 			evt.preventDefault();  
 			window.location.replace("Form2.html");
 			return false;
+		});
+		deselectBtn.addEventListener("click", function (evt){
+			var tags = document.getElementById("tag-space").querySelectorAll(".tag");
+			for (var i = 0; i < tags.length; i++) {
+				tags[i].classList.remove("active");
+			}
 		});
 	</script>
 

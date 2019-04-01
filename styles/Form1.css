@@ -62,12 +62,24 @@ nav .navbar-brand, .navbar .navbar-brand {
   border-radius: 0.25rem;
 }
 
-.tag:hover, .tag:focus, .tag:active {
+.tag:hover, .tag:focus, .tag:active, [role="button"][aria-pressed="true"]{
   background-color: #330064;
+  color: white;
+}
+
+.active {
+  background-color: orange;
 }
 
 #tag-space {
   margin-left: 40px;
+  //margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1em;
 }
 
 #submitBtn {
