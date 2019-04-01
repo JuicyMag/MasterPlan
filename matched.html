@@ -10,6 +10,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="styles/matched.css">
+
+	<style>
+		#nextBtn {
+			text-transform: uppercase;
+		}
+	</style>
 </head>
 
 <title>
@@ -45,6 +51,8 @@
 				<li class="match" id="m6">matched</li>
 				<li class="match" id="m7">matched</li>
 			</ul>
+				<button id="nextBtn" class="btn btn-dark btn-lg">next</button>
+
 		</div>
 		<div class="profile2 col">
 			<div class="imgBorder">
@@ -52,6 +60,7 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 
 <script>
@@ -72,8 +81,13 @@ window.onload = function() {
 		matches[(i - 1) % matches.length].style.webkitTextFillColor = "Transparent";
 		i++;
 	}
-	setTimeout(() => {clearInterval(myVar)}, 2400);
+	//setTimeout(() => {clearInterval(myVar)}, 2400);
 }
+nextBtn.addEventListener("click", function (evt) {
+			evt.preventDefault();  
+			window.location.replace("catalog_final.html");
+			return false;
+		});
 
 </script>
 
