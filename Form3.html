@@ -68,6 +68,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script>
+		// var departmentTags = decodeURIComponent(window.location.search);
+		// 	deparmentTags = departmentTags.substring(1);
+		// var departments = departmentTags.split("&");
+		// console.log(departments);
 		
 		var tagList = ["Journalism", "Big Data", "Banking", "Consulting"];
 
@@ -91,13 +95,15 @@
 		}
 
 		submitBtn.addEventListener("click", function (evt) {
+			var departmentTags = decodeURIComponent(window.location.search);
+			var careerTags = getTags();
 			evt.preventDefault();  
-			window.location.replace("AdvisorMatching.html");
+			window.location = "AdvisorMatching.html" + departmentTags + careerTags;
 			return false;
 		});
 		prevBtn.addEventListener("click", function (evt) {
 			evt.preventDefault();  
-			window.location.replace("Form2.html");
+			window.location = "Form2.html";
 			return false;
 		});
 		deselectBtn.addEventListener("click", function (evt){
@@ -106,6 +112,17 @@
 				tags[i].classList.remove("active");
 			}
 		});
+
+		function getTags(){
+			var activeTags = document.getElementById("tag-space").querySelectorAll(".active");
+			var tagList = "&*&";
+			for (var i = 0; i < activeTags.length; i++){
+				tagList += activeTags[i].id;
+				if(i < activeTags.length - 1) tagList += "&";
+			}
+			return tagList;
+		}
+
 	</script>
 
 </body>

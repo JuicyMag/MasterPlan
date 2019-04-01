@@ -84,9 +84,10 @@ window.onload = function() {
 	}
 	//setTimeout(() => {clearInterval(myVar)}, 2400);
 }
-nextBtn.addEventListener("click", function (evt) {
+	nextBtn.addEventListener("click", function (evt) {
+		var tags = decodeURIComponent(window.location.search);
 			evt.preventDefault();  
-			window.location.replace("catalog_final.html");
+			window.location = "catalog_final.html" + tags;
 			return false;
 		});
 

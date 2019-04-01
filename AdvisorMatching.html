@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="2;url=matched.html" />
-
+<!-- 	<meta http-equiv="refresh" content="2;url=matched.html" />
+ -->
 
 	<title>Advisor Matching</title>
 	<meta name="description" content="The HTML5 Herald">
@@ -92,7 +92,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script>
-		
+		var tags = decodeURIComponent(window.location.search);
+		var url = "matched.html" + tags;
+		setTimeout("location.href = url", 3000);
 	</script>
 
 </body>

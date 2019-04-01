@@ -63,7 +63,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script>
-		
+
 		var tagList = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy", "Public Health", "Physics", "Political Economy", "Political Science","Portugese", "Psychology", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
 		function createTag(input){
@@ -75,7 +75,8 @@
 
 				if(newTag.hasClass("active")) {
 					newTag.classList.remove("active")
-				} else newTag.className += "active";
+				} else 
+				newTag.className += "active";
 
 			});
 			return newTag;
@@ -86,13 +87,14 @@
 		}
 
 		submitBtn.addEventListener("click", function (evt) {
+			var tagList = getTags();
 			evt.preventDefault();  
-			window.location.replace("Form3.html");
+			window.location = "Form3.html" + tagList;
 			return false;
 		});
 		prevBtn.addEventListener("click", function (evt) {
 			evt.preventDefault();  
-			window.location.replace("Form1.html");
+			window.location = "Form1.html";
 			return false;
 		});
 		deselectBtn.addEventListener("click", function (evt){
@@ -101,6 +103,17 @@
 				tags[i].classList.remove("active");
 			}
 		});
+
+		function getTags(){
+			var activeTags = document.getElementById("tag-space").querySelectorAll(".active");
+			var tagList = "?";
+			for (var i = 0; i < activeTags.length; i++){
+				tagList += activeTags[i].id;
+				if(i < activeTags.length - 1) tagList += "&";
+			}
+			return tagList;
+		}
+
 	</script>
 
 </body>
