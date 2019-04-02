@@ -108,13 +108,9 @@
                <span>Choose all the tags that suit your interests!</span>
              </div>
 
-            <div id = "tag-container">
-              <div class = "row">
-                <button class = " tag btn btn-outline-dark selected" disabled>Selected</button>
-                <button id = "ygf" class = " tag btn btn-outline-dark" disabled>Unselected</button>
-              </div>
-            </div>
-           <button class = "full-width unselect-button" id = "unselect-tags">Unselect All</button>
+             <div class = "row">
+               <button class = "full-width " id = "choose-tags-button">Show Tags</button>
+             </div>
 
             <!-- <div id = "choose-tags" class = "row">
                 <button id = "choose-tags-button" class = "full-width">View Tags</button>
@@ -261,14 +257,6 @@
       </div>
 
 
-      <div id = "view-tags-container" class = "row hide">
-        <div id = "view-tags">
-           <h1>All Tags</h1>
-
-         </div>
-
-         <button class = "close-button">Close</button>
-      </div>
 
       <div id = "view-subjects-container" class = "row hide">
         <div id = "view-subjects">
@@ -280,6 +268,24 @@
               </div>
             </div>
            <button class = "mt-5" id = "unselect-subjects">Unselect All</button>
+           <button class = "mt-5 fright" id = "okay-button"> Okay</button>
+         </div>
+
+
+
+         <button class = "close-button">Close</button>
+      </div>
+
+      <div id = "view-tags-container" class = "row hide">
+        <div id = "view-tags">
+           <h1>All Tags</h1>
+            <div id = "tag-container">
+              <div class = "row">
+                <button class = "tag btn btn-outline-dark selected" disabled>Selected</button>
+                <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
+              </div>
+            </div>
+           <button class = "mt-5" id = "unselect-tags">Unselect All</button>
            <button class = "mt-5 fright" id = "okay-button"> Okay</button>
          </div>
 
