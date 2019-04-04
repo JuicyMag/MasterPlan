@@ -23,15 +23,7 @@
 		<a class="menubarButton" href="#">Profile</a>
 	</nav>
 
-  <div class = "row mt-5 mb-2">
-		<div class="col col-lg-2 ">
-		</div>
-    <div class = "row" id = "title">
-      Course Scheduler
-    </div>
-    <div class="col col-lg-2 ">
-		</div>
-  </div>
+
 
 	<div id = "content-container" class="row container.fluid lower">
 
@@ -105,6 +97,8 @@
               </div> -->
                 <div id = "num-courses"style = "text-align:center;">
                 </div>
+                <div id = "notice" class = "" style = "color:#000">
+                </div>
 
             </div>
 
@@ -120,9 +114,6 @@
 
     <div class = "row full-width ">
 
-  		<div class="col col-lg-2 ">
-  		</div>
-
       <!-- <div class = "col col-lg-1">
       </div> -->
 
@@ -137,25 +128,30 @@
           </div>
         </div> -->
 
-
-
-        <div id = "notice" class = "row">
-        </div>
-
-
         <div class = "row course-list">
 
-          <div id = "all-courses-container" class = "col">
+          <div id = "all-courses-container" class = "col row">
+        		<div class="col col-lg-2 ">
+              </div>
         		<div id = "all-courses" class="col classes">
 
         		</div>
+        		<div class="col col-lg-2 ">
+      		  </div>
           </div>
 
-          <div id = "recommended-courses" class = "col classes hide">
+          <div id = "recommended-courses-container" class = "col hide row">
+            <div class="col col-lg-2 ">
+        		</div>
+            <div id = "recommended-courses" class = "col classes">
+            </div>
+        		<div class="col col-lg-2 ">
+        		</div>
           </div>
 
           <div id = "shopping-cart" class="col classes hide">
             <div class = "row">
+              <div class = "col">
                     <div id = "schedule" class = "hide full-width">
                       <div id = "mini-schedule" >
                         <div id = "mini-weekly-calendar" >
@@ -181,32 +177,33 @@
                             </table>
                          </div>
                       </div>
+                    </div>
               </div>
-            </div>
 
-            <div class = "row">
-
-            <div id = "selected-courses" class = "col col-lg-6">
-              <h5 class = "shopping-header">Added Courses:</h5>
-                <div id = "selected-course-container">
+              <div class = "col">
+  `              <div id = "selected-courses" class = "row">
+                  <div class = "full-width" style= "height:30px"><h5 class = "shopping-header">Added Courses:</h5></div>
+                    <div id = "selected-course-container" class = "full-width">
+                    </div>
                 </div>
+
+                <div id = "highlighted-courses" class = "row">
+                  <div class = "full-width" style= "height:30px"><h5 class = "shopping-header">Starred Courses:</h5></div>
+                  <div id = "highlighted-course-container" class = "full-width">
+                  </div>
+                </div>
+
+              </div>`
             </div>
 
-            <div id = "highlighted-courses" class = "col col-lg-6">
-              <h5 class = "shopping-header">Starred Courses:</h5>
-              <div id = "highlighted-course-container">
-              </div>
-            </div>
 
-          </div>
       		</div>
 
 
         </div>
 
       </div>
-      <div class="col col-lg-2 ">
-  		</div>
+
     </div>
 
 

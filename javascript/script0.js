@@ -8,7 +8,7 @@ var shoppingCartBtn = $("#shopping-cart-button");
 var allCoursesBtn = $("#all-courses-button");
 var searchoptions = $("#search-options");
 var schedule = $("#schedule");
-var recommended = $('#recommended-courses');
+var recommended = $('#recommended-courses-container');
 var recommendedBtn = $('#recommended-button');
 var byTags = $(".by-tags");
 
