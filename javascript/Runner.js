@@ -8,11 +8,12 @@
  */
  var Runner = (function () {
     function Runner() {
-       if (this.courses === undefined)
-           this.courses = null;
-       if (this.students === undefined)
-           this.students = null;
-       this.adviseeAssigned();    
+	if (this.courses === undefined)
+	    this.courses = null;
+	if (this.students === undefined)
+	    this.students = null;
+    this.adviseeAssigned();
+
 	 // this.initCourses();
 	 // this.initStudents();
 
@@ -93,97 +94,99 @@ Runner.prototype.checkPrereqs = function (course, student) {
      * in @courses
      * @private
      */
-     /*private*/ 
-     Runner.prototype.getMostCompatible = function (values, student) {
-       var result = (function (s) { var a = []; while (s-- > 0)
-           a.push(0); return a; })(Runner.numRecommended);
-           var shadow = (function (s) { var a = []; while (s-- > 0)
-               a.push(0); return a; })(Runner.numRecommended);
-               var count = 0;
-               for (var i = 0; i < result.length; i++) {
-                   {
-                      for (var j = 0; j < result.length; j++) {
-                          {
-                             if (this.checkPrereqs(/* get */ this.courses[j], student)) {
-                                 count = j;
-                                 break;
-                             }
-                         }
-                         ;
-                     }
-                     result[i] = count;
-                     count++;
-                 }
-                 ;
-             }
-             for (var i = 0; i < values.length; i++) {
-               {
-                  for (var j = 0; j < result.length; j++) {
-                      {
-                         if (values[i] > shadow[j]) {
-                             var min = 2147483647;
-                             var minIndex = 0;
-                             for (var k = 0; k < result.length; k++) {
-                                {
-                                    if (shadow[k] < min) {
-                                       minIndex = k;
-                                       min = shadow[k];
-                                   }
-                               }
-                               ;
-                           }
-                           result[minIndex] = i;
-                           shadow[minIndex] = values[i];
-                           break;
-                       }
-                   }
-                   ;
-               }
-           }
-           ;
-       }
-       for (var i = 0; i < result.length - 1; i++) {
-           {
-              for (var j = 0; j < result.length - 1; j++) {
-                  {
-                     if (shadow[j] < shadow[j + 1]) {
-                         var dummy = result[j];
-                         result[j] = result[j + 1];
-                         result[j + 1] = dummy;
-                         dummy = shadow[j];
-                         shadow[j] = shadow[j + 1];
-                         shadow[j + 1] = dummy;
-                     }
-                 }
-                 ;
-             }
-         }
-         ;
-     }
-     var maxCompatible = ([]);
-     for (var i = 0; i < 3; i++) {
-       {
-          if (this.checkPrereqs(/* get */ this.courses[result[i]], student)) {
-              if (!(student.getClassesTaken().slice(0).indexOf((this.courses[result[i]].getName())) >= 0)) {
-                 if (!(maxCompatible.indexOf((result[i])) >= 0)) {
-                     /* add */ (maxCompatible.push(result[i]) > 0);
-                 }
-             }
-         }
-     }
-     ;
- }
- var finalResult = (function (s) { var a = []; while (s-- > 0)
-   a.push(0); return a; })(/* size */ maxCompatible.length);
-   var index = 0;
-   for (var index622 = 0; index622 < maxCompatible.length; index622++) {
-       var val = maxCompatible[index622];
-       {
-          finalResult[index++] = val;
-      }
-  }
-  return finalResult;
-};
+
+    /*private*/
+    Runner.prototype.getMostCompatible = function (values, student) {
+	var result = (function (s) { var a = []; while (s-- > 0)
+	    a.push(0); return a; })(Runner.numRecommended);
+	var shadow = (function (s) { var a = []; while (s-- > 0)
+	    a.push(0); return a; })(Runner.numRecommended);
+	var count = 0;
+	for (var i = 0; i < result.length; i++) {
+	    {
+		for (var j = 0; j < result.length; j++) {
+		    {
+			if (this.checkPrereqs(/* get */ this.courses[j], student)) {
+			    count = j;
+			    break;
+			}
+		    }
+		    ;
+		}
+		result[i] = count;
+		count++;
+	    }
+	    ;
+	}
+	for (var i = 0; i < values.length; i++) {
+	    {
+		for (var j = 0; j < result.length; j++) {
+		    {
+			if (values[i] > shadow[j]) {
+			    var min = 2147483647;
+			    var minIndex = 0;
+			    for (var k = 0; k < result.length; k++) {
+				{
+				    if (shadow[k] < min) {
+					minIndex = k;
+					min = shadow[k];
+				    }
+				}
+				;
+			    }
+			    result[minIndex] = i;
+			    shadow[minIndex] = values[i];
+			    break;
+			}
+		    }
+		    ;
+		}
+	    }
+	    ;
+	}
+	for (var i = 0; i < result.length - 1; i++) {
+	    {
+		for (var j = 0; j < result.length - 1; j++) {
+		    {
+			if (shadow[j] < shadow[j + 1]) {
+			    var dummy = result[j];
+			    result[j] = result[j + 1];
+			    result[j + 1] = dummy;
+			    dummy = shadow[j];
+			    shadow[j] = shadow[j + 1];
+			    shadow[j + 1] = dummy;
+			}
+		    }
+		    ;
+		}
+	    }
+	    ;
+	}
+	var maxCompatible = ([]);
+	for (var i = 0; i < 3; i++) {
+	    {
+		if (this.checkPrereqs(/* get */ this.courses[result[i]], student)) {
+		    if (!(student.getClassesTaken().slice(0).indexOf((this.courses[result[i]].getName())) >= 0)) {
+			if (!(maxCompatible.indexOf((result[i])) >= 0)) {
+			    /* add */ (maxCompatible.push(result[i]) > 0);
+			}
+		    }
+		}
+	    }
+	    ;
+	}
+	var finalResult = (function (s) { var a = []; while (s-- > 0)
+	    a.push(0); return a; })(/* size */ maxCompatible.length);
+	var index = 0;
+	for (var index622 = 0; index622 < maxCompatible.length; index622++) {
+	    var val = maxCompatible[index622];
+	    {
+		finalResult[index++] = val;
+	    }
+	}
+	return finalResult;
+    };
+
         /**
      * Initialize the @students ArrayList from the input csv file.
      *
@@ -228,10 +231,11 @@ Runner.prototype.checkPrereqs = function (course, student) {
         var chrispineClassesTaken = ["CSCI 134", "CSCI 136"];
         var Chrispine = new Student("Chrispine", chrispineTags, 2021, chrispineClassesTaken);
 
-        var victorTags = ["Pre-Med","Surgeon","Doctor","Physician","Research","Medical School"];
-        var victorClassesTaken = ["CSCI 237", "CSCI 256"];
-        var Victor = new Student("Victor", victorTags, 2021, victorClassesTaken);
-        
+
+    var victorTags = ["Pre-Med","Surgeon","Doctor","Physician","Research","Medical School"];
+    var victorClassesTaken = ["CSCI 237", "CSCI 256"];
+    var Victor = new Student("Victor", victorTags, 2021, victorClassesTaken);
+
 
         var sophieTags = ["Finance","Bitcoin","Surgeon","Doctor","Physician","Agriculture"];
         var sophieClassesTaken = ["CSCI 134", "CSCI 136"];
@@ -268,14 +272,12 @@ Runner.prototype.checkPrereqs = function (course, student) {
 // Koku,Media;Advertisement;Social Worker;Chef;CEO;Engineer
 
 
-
 var billTags = ["Software","Finance","Bitcoin","Entrepreneurship","Startup","Artificial Intelligence"];
 var Bill = new Advisor("Bill", billTags,[]);
 (advisorsToMatch.push(Bill) > 0);
 
-
 var melindaTags = ["Pre-Med","Surgeon","Doctor","Physician","Research","Medical School"];
-var Melinda = new Advisor("Melinda", billTags,[]);
+var Melinda = new Advisor("Melinda", melindaTags,[]);
 (advisorsToMatch.push(Melinda) > 0);
 
 var mutaTags = ["Finance","Bitcoin","Surgeon","Doctor","Physician","Agriculture"];
@@ -303,12 +305,13 @@ return advisorsToMatch;
         var count = 0;
         for (var i = 0; i < studentTags.length; i++) {
             {
-                if ((advisorTags.indexOf((studentTags[i])) >= 0)) {
+                if (advisorTags.includes(studentTags[i])){
                     count = count + 1;
                 }
             }
             ;
         }
+
         var matchNum = count / advisorTags.length;
         return new AdvStudCompat(student, advisor, matchNum);
     };
@@ -437,7 +440,7 @@ return advisorsToMatch;
 
         //console.log(compatibilitiesArray);
 
-        
+
         this.sort(compatibilitiesArray, 0, compatibilitiesArray.length - 1);
         for (var i = compatibilitiesArray.length - 1; i >= 0; i--) {
             {
