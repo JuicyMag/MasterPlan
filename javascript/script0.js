@@ -103,10 +103,10 @@ for(var i = 0; i < allSubjectsNames.length; i++){
 loadJSON(function(json) {
   courseData = json;
   for(var i = 0; i < courseData.length; i ++){
-    courseArray.push(new Course(courseData[i].Subject, courseData[i].Number, courseData[i].Attributes, courseData[i].Professor,courseData[i].Title,courseData[i].Description,courseData[i].Tags.split(";"),courseData[i].Timeslot,courseData[i].Prereqs));
+    courseArray.push(new Course(courseData[i].Subject, courseData[i].ClassNumber, courseData[i].Number, courseData[i].Attributes, courseData[i].Professor,courseData[i].Title,courseData[i].Description,courseData[i].Tags.split(";"),courseData[i].Timeslot,courseData[i].Prereqs));
   }
   recommendedCourses = getMostCompatible(getCompatibility(departmentTags.concat(careerTags),Bob),Bob);
-  updateFull(searchByTags);
+  updateFull();
   updateRecommended();
 });
 
@@ -135,7 +135,8 @@ function checkPrereqs(course, student) {
 	var preReqs = course.getPreReqs();
 	var classesTaken = student.getClassesTaken();
 
-
+  if(preReqs.length == 0) return true;
+  if(preReqs[0] == "" || preReqs[0] == "none") return true;
 
   //If any of the classes the student has taken is not found in the list of
   //pre-requisites in the class, return false.
@@ -159,19 +160,18 @@ function checkPrereqs(course, student) {
  * student with each course
  */
 function getCompatibility(studentTags, student) {
-
-
   //Initializes an array with the same length as the total number of courses to 0.
 	var compatibilityValues = (function (s) { var a = []; while (s-- > 0)
 	    a.push(0); return a; })(/* size */ courseArray.length);
-  console.log(courseArray.length);
+
   //For each course,
 	for (var i = 0; i < courseArray.length; i++) {
+
 		var compatibility = 0;
+
 		if (checkPrereqs(/* get */ courseArray[i], student)) {
       //compatibility ++; //added so that courses whose pre-reqs are fulfilled are prioritized.
 	    var courseTags = courseArray[i].getTags();
-
       //Compares tags, adds 1 for every matching tag.
 	    for (var k = 0; k < studentTags.length; k++) {
 		    for (var j = 0; j < courseTags.length; j++) {
@@ -184,6 +184,7 @@ function getCompatibility(studentTags, student) {
 	}
 	return compatibilityValues;
 }
+
 
 /**
  * Returns an array with the indexes of the most compatible courses
@@ -285,7 +286,7 @@ function createClass(course){
         selectButton.className = "btn btn-sm select-button";
         selectButton.innerHTML = "Add";
 
-        if(findCourse(selectedCourses, course.getName())>-1) {
+        if(selectedCourses.indexOf(course)>-1) {
           selectButton.classList.add('selected');
           selectButton.innerHTML = "Added";
         }
@@ -298,7 +299,7 @@ function createClass(course){
         var highlightButton = document.createElement('button');
         highlightButton.className = "btn btn-sm highlight-button";
         highlightButton.innerHTML = "Star";
-        if(findCourse(highlightedCourses, course.getName())>-1) {
+        if(highlightedCourses.indexOf(course)>-1) {
           highlightButton.classList.add('selected');
           highlightButton.innerHTML = "Starred";
         }
@@ -316,6 +317,9 @@ function createClass(course){
         var newClassName = document.createElement('div');
         newClassName.innerHTML = course.getName();
         newClassName.className = "className";
+        var newClassNum = document.createElement('div');
+        newClassNum.innerHTML = course.getCourseNum();
+        newClassNum.className = "classNum hide";
         var newClassDescr = document.createElement('div');
         newClassDescr.innerHTML = course.getDescription();
         newClassDescr.className = "classDescr";
@@ -332,6 +336,7 @@ function createClass(course){
           }*/
         newRowTags.innerHTML = course.getTags().join(", ");
       newClassDescription.appendChild(newClassName);
+      newClassDescription.appendChild(newClassNum);
       newClassDescription.appendChild(newClassDescr);
       newClassDescription.appendChild(newRowTags);
     newClass.appendChild(newTitle);
@@ -350,6 +355,9 @@ function createShortClass(course){
         var newClassName = document.createElement('div');
         newClassName.innerHTML = course.getName();
         newClassName.className = "shortclassName";
+        var newClassNum = document.createElement('div');
+        newClassNum.innerHTML = course.getCourseNum();
+        newClassNum.className = "classNum hide";
         var newClassProf = document.createElement('div');
         newClassProf.innerHTML = course.getProf();
         newClassProf.className = "professor";
@@ -368,7 +376,7 @@ function createShortClass(course){
         var selectButton = document.createElement('button');
         selectButton.className = "btn btn-sm mini-select-button";
         selectButton.innerHTML = "Add";
-        if(findCourse(selectedCourses, course.getName())>-1) {
+        if(selectedCourses.indexOf(course)>-1) {
           selectButton.classList.add('selected');
           selectButton.innerHTML = "Added";
         }
@@ -381,7 +389,7 @@ function createShortClass(course){
         var highlightButton = document.createElement('button');
         highlightButton.className = "btn btn-sm mini-highlight-button";
         highlightButton.innerHTML = "Star";
-        if(findCourse(highlightedCourses, course.getName())>-1) {
+        if(highlightedCourses.indexOf(course)>-1) {
           highlightButton.classList.add('selected');
           highlightButton.innerHTML = "Starred";
         }
@@ -389,14 +397,13 @@ function createShortClass(course){
       selectButtonDiv.appendChild(selectButton);
       highlightButtonDiv.appendChild(highlightButton);
 
-
       newClassDescription.appendChild(selectButtonDiv);
       newClassDescription.appendChild(highlightButtonDiv);
       newClassDescription.appendChild(newClassName);
+      newClassDescription.appendChild(newClassNum);
       newClassDescription.appendChild(newClassProf);
       newClassDescription.appendChild(newClassTime);
       newClassDescription.appendChild(newRowTags);
-
 
     newClass.appendChild(newClassDescription);
 
@@ -426,7 +433,7 @@ function updateTags(){
   }
 
   Bob.updateStudentTags(tags);
-  updateFull(searchByTags);
+  updateFull();
 }
 
 
@@ -448,7 +455,7 @@ $("#search-button").click(function(){
   searchedCourses = searchClasses($("#search-box input")[0].value);
 
   console.log(searchedCourses);
-  updateFull(searchByTags);
+  updateFull();
 });
 
 function searchClasses(input){
@@ -480,7 +487,8 @@ function searchClasses(input){
   }
 
   if(attributes.length == 0) cloneArray = clone.slice(0);
-  console.log(cloneArray.length);
+
+  console.log(cloneArray);
 
   //console.log(input);
   var result = [];
@@ -489,18 +497,19 @@ function searchClasses(input){
     //console.log(courseTitle);
     //console.log(courseTitle.toUpperCase().includes(input.toUpperCase()));
     if(courseTitle.toUpperCase().includes(input.toUpperCase())) {
-      result.push(findCourse(courseArray,courseTitle));
+      result.push(courseArray.indexOf(cloneArray[i]));
     }
   }
 
-  console.log(result.length);
+  console.log(result);
 
 
   return result;
 
 }
 
-$(".tag-element").click(function(){
+$(document).on('click', '.tag-element', function(event) {
+    event.preventDefault();
   if(!$(this)[0].classList.contains('selected')){
     tags.push($(this)[0].innerHTML);
   }
@@ -510,8 +519,12 @@ $(".tag-element").click(function(){
   $(this).toggleClass('selected');
   console.log(tags);
   Bob.updateStudentTags(tags);
-  updateFull(searchByTags);
+  searchedCourses = searchClasses($("#search-box input")[0].value);
+  updateFull();
+  updateTagList();
 });
+
+
 
 $("#unselect-tags").click(function(){
 
@@ -525,7 +538,7 @@ $("#unselect-tags").click(function(){
   }
 
   Bob.updateStudentTags(tags);
-  updateFull(searchByTags);
+  updateFull();
 });
 
 
@@ -540,11 +553,18 @@ $("#unselect-subjects").click(function(){
     subjectElements[i].classList.remove('selected');
   }
 
-  updateFull(searchByTags);
+  updateFull();
 });
 
-$(".subject-element").click(function(){
+$('#expand').on('click', function(){
+    $("#options-container").toggle();
+    $(this).text(function(i, text){
+        return text === "Show More Options" ? "Hide" : "Show More Options";
+    })
+});
 
+$(document).on('click', '.subject-element', function(event) {
+  event.preventDefault();
   var code = allSubjects[allSubjectsNames.indexOf($(this)[0].innerHTML.replace("&amp;","&"))];
   console.log($(this)[0].innerHTML.replace("&amp;","&"));
   console.log(allSubjectsNames.indexOf($(this)[0].innerHTML.replace("&amp;","&")));
@@ -554,14 +574,16 @@ $(".subject-element").click(function(){
     subjects.push(code);
   }
   else{
-    subjects.splice(code,1);
+    subjects.splice(subjects.indexOf(code),1);
   }
   $(this).toggleClass('selected');
   console.log(subjects);
-  Bob.updateStudentTags(subjects);
   searchedCourses = searchClasses($("#search-box input")[0].value);
-  updateFull(searchByTags);
+  updateFull();
+  updateSubjects();
 });
+
+
 
 $("#recommended-button").click(function(){
   $('#notice').text("");
@@ -597,7 +619,7 @@ $(".close-button").click(function(){
   $("#view-subjects-container").addClass("hide");
 });
 
-$("#okay-button").click(function(){
+$(".okay-button").click(function(){
   $("#expanded-schedule-container").addClass("hide");
   $("#view-tags-container").addClass("hide");
   $("#view-subjects-container").addClass("hide");
@@ -632,11 +654,11 @@ $(document).on('click', '.select-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Added"){
     $this.text("Add");
-    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().parent().find(".right").find(".className").text()));
+    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().parent().find(".right").find(".classNum").text()));
   }
   else{
     var conflict = false;
-    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".className").text())];
+    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text())];
     var count = 0;
 
     for(count = 0; count < selectedCourses.length; count++){
@@ -655,7 +677,7 @@ $(document).on('click', '.select-button',function(){
     }
     else{
       $this.text("Added");
-      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".right").find(".className").text())]);
+      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".right").find(".classNum").text())]);
       if(!$this.parent().parent().find(".highlight-button").hasClass('selected'))
         $this.parent().parent().find(".highlight-button").trigger("click");
     }
@@ -663,7 +685,7 @@ $(document).on('click', '.select-button',function(){
   }
   updateSelected();
   updateHighlighted();
-  updateFull(searchByTags);
+  updateFull();
   updateRecommended();
 });
 
@@ -674,14 +696,16 @@ $(document).on('click', '.highlight-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Starred"){
     $this.text("Star");
-    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().parent().find(".right").find(".className").text()));
+    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().parent().find(".right").find(".classNum").text()));
   }
   else{
     $this.text("Starred");
-    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".className").text())]);
+    console.log(findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text()));
+    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text())]);
+
   }
   updateHighlighted();
-  updateFull(searchByTags);
+  updateFull();
   updateRecommended();
 });
 
@@ -693,19 +717,19 @@ $(document).on('click', '.mini-select-button',function(){
   if($this.text() === "Added"){
     $this.text("Add");
       console.log($this.parent().find(".shortclassName").text());
-    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().find(".shortclassName").text()));
+    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().find(".classNum").text()));
   }
   else{
     $this.text("Added");
     console.log($this.parent().parent().find(".shortclassName").text());
-    selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().find(".shortclassName").text())]);
+    selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().find(".classNum").text())]);
     if(!$this.parent().find(".highlight-button").hasClass('selected'))
       $this.parent().find(".highlight-button").trigger("click");
   }
   updateSelected();
   updateHighlighted();
   updateRecommended();
-  updateFull(searchByTags);
+  updateFull();
 });
 
 $(document).on('click', '.mini-highlight-button',function(){
@@ -715,14 +739,14 @@ $(document).on('click', '.mini-highlight-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Starred"){
     $this.text("Star");
-    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().find(".shortclassName").text()));
+    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().find(".shortclassNum").text()));
   }
   else{
     $this.text("Starred");
-    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().find(".shortclassName").text())]);
+    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().find(".shortclassNum").text())]);
   }
   updateHighlighted();
-  updateFull(searchByTags);
+  updateFull();
   updateRecommended();
 });
 
@@ -756,8 +780,10 @@ $(document).on('click', '.back',function(){
 
 
 // no error handling TODO
-function findCourse(array, name){
-  for(var i = 0; i < array.length; i++)  if(array[i].getName()=== name) return i;
+function findCourse(array, courseNum){
+  for(var i = 0; i < array.length; i++)  {
+    if(array[i].getCourseNum().toString()=== courseNum) return i;
+  }
   return -1;
 }
 
@@ -776,48 +802,50 @@ function updateHighlighted(){
     $("#highlighted-course-container")[0].appendChild(createShortClass(highlightedCourses[i]));
   }
 }
-function updateFull(withTags){
+function updateFull(){
   //console.log(withTags);
   $("#all-courses").empty();
-  if(withTags){
-    if(tags.length === 0){
-      //console.log(courseArray.length);
-      for(var i = 0; i < courseArray.length; i++){
-        $("#all-courses")[0].appendChild(createClass(courseArray[i]));
-      }
-      $("#num-courses").text(courseArray.length + " courses found!");
+  console.log(tags.length);
+
+  if($("#search-box input")[0].value === "" && attributes.length == 0 && subjects.length == 0 && tags.length ===0 ){
+    for(var i = 0; i < courseArray.length; i++){
+      $("#all-courses")[0].appendChild(createClass(courseArray[i]));
     }
-
-    else {
-      //console.log(Bob.getTags());
+    $("#num-courses").text(courseArray.length + " courses found!");
+  }
+  else {
+    if(tags.length!==0){
+      console.log("hi");
       var compatibilityValues = getCompatibility(Bob.getTags(), Bob);
-      //console.log(compatibilityValues);
       var mostCompatible = getMostCompatible(compatibilityValues, Bob);
-      //console.log(mostCompatible);
 
+      mostCompatible = mostCompatible.filter(value => searchedCourses.includes(value));
       for(var i = 0; i < mostCompatible.length; i++){
         $("#all-courses")[0].appendChild(createClass(courseArray[mostCompatible[i]]));
       }
-
       $("#num-courses").text(mostCompatible.length + " courses found!");
     }
-  }
 
-  else {
-    if($("#search-box input")[0].value === "" && attributes.length == 0 && subjects.length == 0){
-      for(var i = 0; i < courseArray.length; i++){
-        $("#all-courses")[0].appendChild(createClass(courseArray[i]));
-      }
-      $("#num-courses").text(courseArray.length + " courses found!");
-    }
     else{
-      console.log(searchedCourses);
-      for(var i = 0; i < searchedCourses.length; i++){
-        $("#all-courses")[0].appendChild(createClass(courseArray[searchedCourses[i]]));
+      if(searchedCourses.length != 0){
+        for(var i = 0; i < searchedCourses.length; i++){
+          $("#all-courses")[0].appendChild(createClass(courseArray[searchedCourses[i]]));
+        }
+        $("#num-courses").text(searchedCourses.length + " courses found!");
       }
-      $("#num-courses").text(searchedCourses.length + " courses found!");
+      else if(searchedCourses.length == 0 && $("#search-box input")[0].value !== ""){
+        for(var i = 0; i < searchedCourses.length; i++){
+          $("#all-courses")[0].appendChild(createClass(courseArray[searchedCourses[i]]));
+        }
+        $("#num-courses").text(searchedCourses.length + " courses found!");
+      }
+      else{
+        for(var i = 0; i < courseArray.length; i++){
+          $("#all-courses")[0].appendChild(createClass(courseArray[i]));
+        }
+        $("#num-courses").text(courseArray.length + " courses found!");
+      }
     }
-
   }
 }
 
@@ -931,15 +959,6 @@ $('#choose-tags-button').on('click', function(){
     $("#view-tags-container").removeClass("hide");
 });
 
-$('#expand').on('click', function(){
-    $("#options-container").toggle();
-    console.log('hi');
-    console.log($("#options-container"));
-    $(this).text(function(i, text){
-        return text === "Show More Options" ? "Hide" : "Show More Options";
-    })
-});
-
 $('#expand-subject-button').on('click', function(){
     $("#view-subjects-container").removeClass("hide");
 });
@@ -1001,5 +1020,35 @@ function selectValueHelper(text, source){
       activeNode.removeClass('hide');
       activeNode.children().children().filter('.select-styled').text("Select a tag");
     }
+  }
+}
+
+function updateSubjects(){
+    $("#subject-list").empty();
+    for(var i = 0; i < subjects.length; i++){
+      var newSubject = createSubject(allSubjectsNames[allSubjects.indexOf(subjects[i])]);
+      newSubject.classList.add("selected");
+      $("#subject-list")[0].appendChild(newSubject);
+    }
+    $("#subject-container").empty();
+    for(var i = 0; i < allSubjectsNames.length; i++){
+      var newSubject = createSubject(allSubjectsNames[i]);
+      if(subjects.indexOf(allSubjects[i])!= -1) newSubject.classList.add("selected");
+      $("#subject-container")[0].appendChild(newSubject);
+    }
+
+}
+function updateTagList(){
+  $("#tag-list").empty();
+    for(var i = 0; i < tags.length; i++){
+      var newTag = createTag(tags[i]);
+      newTag.classList.add('selected');
+      $("#tag-list")[0].appendChild(newTag);
+    }
+  $("#tag-container").empty();
+  for(var i = 0; i < allTags.length; i++){
+    var newTag = createTag(allTags[i]);
+    if(tags.indexOf(allTags[i])!=-1) newTag.classList.add("selected");
+    $("#tag-container")[0].appendChild(newTag);
   }
 }

@@ -1,6 +1,7 @@
 [
   {
     "Subject": "AFR",
+    "ClassNumber": 3820,
     "Number": 113,
     "Attributes": "DIV_D2,GBST_GBSTAFR,MUS_MUSW",
     "Professor": "Corinna S. Campbell",
@@ -12,6 +13,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3622,
     "Number": 126,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC",
     "Professor": "Kimberly S. Love",
@@ -23,6 +25,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3236,
     "Number": 164,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Charles B. Dew",
@@ -34,6 +37,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3021,
     "Number": 200,
     "Attributes": "AFR_AFRCORE,AMST_AMSTCOMP,DIV_D2,GBST_GBSTAFR,LATS_LATSCOMP",
     "Professor": "Neil Roberts",
@@ -45,6 +49,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3022,
     "Number": 213,
     "Attributes": "AFR_AFRCORE,DIV_D2,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -56,6 +61,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 4059,
     "Number": 218,
     "Attributes": "DIV_D2,DPE_DPE,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -67,6 +73,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3644,
     "Number": 220,
     "Attributes": "AFR_AFRELEC,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,ENGL_ENGLLHC",
     "Professor": "",
@@ -78,6 +85,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3039,
     "Number": 315,
     "Attributes": "AFR_AFRCORE,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,FMST_FMSTCORE",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -89,6 +97,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3812,
     "Number": 330,
     "Attributes": "DIV_D2,MUS_MUSW",
     "Professor": "Sandra L. Burton",
@@ -100,6 +109,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3453,
     "Number": 331,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Kai M. Green",
@@ -111,6 +121,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3134,
     "Number": 334,
     "Attributes": "DIV_D2",
     "Professor": "Joy A. James",
@@ -122,6 +133,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3145,
     "Number": 343,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,JLST_JLSTELEC,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Joy A. James",
@@ -133,6 +145,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3044,
     "Number": 348,
     "Attributes": "AFR_AFRCORE,DIV_D2,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "Neil Roberts",
@@ -144,6 +157,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3016,
     "Number": 351,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2",
     "Professor": "Anthony Y. Kim",
@@ -155,6 +169,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3286,
     "Number": 365,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,HIST_HISTF",
     "Professor": "Charles B. Dew",
@@ -166,6 +181,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3055,
     "Number": 369,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -177,6 +193,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3927,
     "Number": 382,
     "Attributes": "DIV_D2",
     "Professor": "Prisca Gayles",
@@ -188,6 +205,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3971,
     "Number": 390,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTD",
     "Professor": "Shanti M. Singham",
@@ -199,6 +217,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3882,
     "Number": 405,
     "Attributes": "AFR_AFRCORE,AMST_AMSTCOMP,DIV_D2",
     "Professor": "James A. Manigault-Bryant",
@@ -210,6 +229,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3051,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "James A. Manigault-Bryant",
@@ -221,6 +241,7 @@
   },
   {
     "Subject": "AFR",
+    "ClassNumber": 3052,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "James A. Manigault-Bryant",
@@ -232,6 +253,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3007,
     "Number": 101,
     "Attributes": "DIV_D2,DPE_DPE,EXPE_EXPEREDUC,WAC_WAC",
     "Professor": "Andrew R. Cornell",
@@ -243,6 +265,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3008,
     "Number": 101,
     "Attributes": "DIV_D2,DPE_DPE,EXPE_EXPEREDUC,WAC_WAC",
     "Professor": "Eli Nelson",
@@ -254,6 +277,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3393,
     "Number": 106,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,DPE_DPE,LATS_LATSCORE,WAC_WAC",
     "Professor": "",
@@ -265,6 +289,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3624,
     "Number": 126,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC",
     "Professor": "Kimberly S. Love",
@@ -276,6 +301,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3237,
     "Number": 165,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Charles B. Dew",
@@ -287,6 +313,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3797,
     "Number": 214,
     "Attributes": "DIV_D2",
     "Professor": "Munjulika Tarah",
@@ -298,6 +325,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3640,
     "Number": 218,
     "Attributes": "DIV_D2,DPE_DPE,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -309,6 +337,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3643,
     "Number": 220,
     "Attributes": "AFR_AFRELEC,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,ENGL_ENGLLHC",
     "Professor": "",
@@ -320,6 +349,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3806,
     "Number": 226,
     "Attributes": "DIV_D2",
     "Professor": "Munjulika Tarah",
@@ -331,6 +361,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 4049,
     "Number": 230,
     "Attributes": "DIV_D2,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ezra D. Feldman",
@@ -342,6 +373,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3096,
     "Number": 236,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Olga Shevchenko",
@@ -353,6 +385,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3916,
     "Number": 236,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Barry Goldstein",
@@ -364,6 +397,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3009,
     "Number": 239,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE",
     "Professor": "Anthony Y. Kim",
@@ -375,6 +409,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3407,
     "Number": 240,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,LATS_LATSCORE",
     "Professor": "Maria Elena Cepeda",
@@ -386,6 +421,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3491,
     "Number": 242,
     "Attributes": "AMST_AMSTARTS,DIV_D2,DPE_DPE,GBST_GBSTBORD,WAC_WAC",
     "Professor": "Soledad Fox",
@@ -397,6 +433,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3413,
     "Number": 252,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,EXPE_EXPEREDUC,LATS_LATSCORE",
     "Professor": "MÃ©rida RÃºa",
@@ -408,6 +445,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 4055,
     "Number": 259,
     "Attributes": "DIV_D2,ENVI_ENVIHUM,EVST_EVSTCULHUM,EXPE_EXPEREDUC,HIST_HISTF,WAC_WAC",
     "Professor": "Laura J. Martin",
@@ -419,6 +457,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 4056,
     "Number": 266,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Zaid Adhami",
@@ -430,6 +469,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3256,
     "Number": 284,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF",
     "Professor": "Scott Wong",
@@ -441,6 +481,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3010,
     "Number": 301,
     "Attributes": "DIV_D2",
     "Professor": "Dorothy J. Wang",
@@ -452,6 +493,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3040,
     "Number": 315,
     "Attributes": "AFR_AFRCORE,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,FMST_FMSTCORE",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -463,6 +505,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3011,
     "Number": 324,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF,HIST_HISTG,WAC_WAC",
     "Professor": "Tyler J. Rogers",
@@ -474,6 +517,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 4047,
     "Number": 335,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTSPACE,DIV_D2",
     "Professor": "Dorothy J. Wang",
@@ -485,6 +529,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3416,
     "Number": 339,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2,GBST_GBSTBORD,LATS_LATSCORE,WAC_WAC,WGSS_WGSSDIV,WGSS_WGSSTHRY",
     "Professor": "Maria Elena Cepeda",
@@ -496,6 +541,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3663,
     "Number": 340,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLLHC",
     "Professor": "",
@@ -507,6 +553,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3146,
     "Number": 343,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,JLST_JLSTELEC,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Joy A. James",
@@ -518,6 +565,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3014,
     "Number": 352,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2,DPE_DPE",
     "Professor": "Andrew R. Cornell",
@@ -529,6 +577,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3015,
     "Number": 359,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2",
     "Professor": "Anthony Y. Kim",
@@ -540,6 +589,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3948,
     "Number": 361,
     "Attributes": "DIV_D2,ENGL_ENGLLHC,EXPE_EXPEREDUC",
     "Professor": "",
@@ -551,6 +601,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3287,
     "Number": 365,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,HIST_HISTF",
     "Professor": "Charles B. Dew",
@@ -562,6 +613,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3019,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Cassandra J. Cleghorn",
@@ -573,6 +625,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3018,
     "Number": 405,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTCRIT,AMST_AMSTSEM,DIV_D2,DPE_DPE,WAC_WAC",
     "Professor": "Eli Nelson",
@@ -584,6 +637,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3454,
     "Number": 420,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Kai M. Green",
@@ -595,6 +649,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3306,
     "Number": 468,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTF",
     "Professor": "Scott Wong",
@@ -606,6 +661,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3323,
     "Number": 490,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Karen R. Merrill",
@@ -617,6 +673,7 @@
   },
   {
     "Subject": "AMST",
+    "ClassNumber": 3020,
     "Number": 492,
     "Attributes": "DIV_D2",
     "Professor": "Cassandra J. Cleghorn",
@@ -628,6 +685,7 @@
   },
   {
     "Subject": "ANSO",
+    "ClassNumber": 3064,
     "Number": 205,
     "Attributes": "DIV_D2,EVST_EVSTMETH,EXPE_EXPEREDUC,SCST_SCSTREL",
     "Professor": "David B. Edwards",
@@ -639,6 +697,7 @@
   },
   {
     "Subject": "ANSO",
+    "ClassNumber": 3065,
     "Number": 402,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC",
     "Professor": "Antonia E. Foias",
@@ -650,6 +709,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3066,
     "Number": 101,
     "Attributes": "DIV_D2",
     "Professor": "David B. Edwards",
@@ -661,6 +721,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3248,
     "Number": 134,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Christopher M. B. Nugent",
@@ -672,6 +733,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3067,
     "Number": 233,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA",
     "Professor": "Peter Just",
@@ -683,6 +745,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3385,
     "Number": 255,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,PHIL_PHILREL",
     "Professor": "Georges B. Dreyfus",
@@ -694,6 +757,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3070,
     "Number": 269,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTSEASIA,PHLH_PHLHSOC,WAC_WAC",
     "Professor": "Kim Gutschow",
@@ -705,6 +769,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3071,
     "Number": 281,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -716,6 +781,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3076,
     "Number": 287,
     "Attributes": "DIV_D2",
     "Professor": "Lisa A. Koryushkina",
@@ -727,6 +793,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3078,
     "Number": 334,
     "Attributes": "DIV_D2,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Peter Just",
@@ -738,6 +805,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3451,
     "Number": 337,
     "Attributes": "DIV_D2,DPE_DPE,LATS_LATSORIG",
     "Professor": "Gregory C. Mitchell",
@@ -749,6 +817,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3087,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -760,6 +829,7 @@
   },
   {
     "Subject": "ANTH",
+    "ClassNumber": 3089,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -771,6 +841,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3303,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Radwa M. El Barouni",
@@ -782,6 +853,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3307,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Brahim El Guabli",
@@ -793,6 +865,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3311,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Brahim El Guabli",
@@ -804,6 +877,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3313,
     "Number": 209,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Brahim El Guabli",
@@ -815,6 +889,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3364,
     "Number": 242,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Saadia Yacoob",
@@ -826,6 +901,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3324,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Amal Eqeiq",
@@ -837,6 +913,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3271,
     "Number": 308,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTE,HIST_HISTP,WAC_WAC",
     "Professor": "MagnÃºs T. Bernhardsson",
@@ -848,6 +925,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3516,
     "Number": 346,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Amal Eqeiq",
@@ -859,6 +937,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3976,
     "Number": 416,
     "Attributes": "DIV_D1",
     "Professor": "Radwa M. El Barouni",
@@ -870,6 +949,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3327,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "MagnÃºs T. Bernhardsson",
@@ -881,6 +961,7 @@
   },
   {
     "Subject": "ARAB",
+    "ClassNumber": 3325,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "MagnÃºs T. Bernhardsson",
@@ -892,6 +973,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3029,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Michael J. Lewis",
@@ -903,6 +985,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3030,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -914,6 +997,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3031,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -925,6 +1009,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3032,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -936,6 +1021,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3033,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -947,6 +1033,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3034,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -958,6 +1045,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3035,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -969,6 +1057,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3036,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -980,6 +1069,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3037,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -991,6 +1081,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3038,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -1002,6 +1093,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3041,
     "Number": 210,
     "Attributes": "DIV_D1,DPE_DPE,LATS_LATSORIG",
     "Professor": "Mari Rodriguez Binnie",
@@ -1013,6 +1105,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3951,
     "Number": 228,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Soledad Fox",
@@ -1024,6 +1117,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3097,
     "Number": 237,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Olga Shevchenko",
@@ -1035,6 +1129,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3917,
     "Number": 237,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Barry Goldstein",
@@ -1046,6 +1141,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3042,
     "Number": 249,
     "Attributes": "ARTH_ARTHPST16C,DIV_D1,DPE_DPE",
     "Professor": "Kailani Polzak",
@@ -1057,6 +1153,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 4044,
     "Number": 270,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,GBST_GBSTEASIAN",
     "Professor": "Ju-Yu Scarlett Jang",
@@ -1068,6 +1165,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3986,
     "Number": 272,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -1079,6 +1177,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 4002,
     "Number": 273,
     "Attributes": "DIV_D1",
     "Professor": "Murad K. Mumtaz",
@@ -1090,6 +1189,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3048,
     "Number": 274,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,EXPE_EXPEREDUC,GBST_GBSTEASIAN",
     "Professor": "Ju-Yu Scarlett Jang",
@@ -1101,6 +1201,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3072,
     "Number": 281,
     "Attributes": "DIV_D1",
     "Professor": "Antonia E. Foias",
@@ -1112,6 +1213,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3053,
     "Number": 301,
     "Attributes": "DIV_D1",
     "Professor": "Kailani Polzak",
@@ -1123,6 +1225,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3180,
     "Number": 303,
     "Attributes": "AMST_AMSTSPACE,DIV_D1,LEAD_LEADFAC",
     "Professor": "Michael Conforti",
@@ -1134,6 +1237,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3054,
     "Number": 308,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -1145,6 +1249,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 4048,
     "Number": 335,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTSPACE,DIV_D1",
     "Professor": "Dorothy J. Wang",
@@ -1156,6 +1261,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3447,
     "Number": 348,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Mel Y. Chen",
@@ -1167,6 +1273,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3056,
     "Number": 376,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,WAC_WAC",
     "Professor": "",
@@ -1178,6 +1285,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3170,
     "Number": 400,
     "Attributes": "DIV_D1",
     "Professor": "Julia Bryan-Wilson",
@@ -1189,6 +1297,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3059,
     "Number": 412,
     "Attributes": "ARTH_ARTHPST16C,DIV_D1",
     "Professor": "Mari Rodriguez Binnie",
@@ -1200,6 +1309,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3060,
     "Number": 420,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -1211,6 +1321,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3983,
     "Number": 422,
     "Attributes": "DIV_D1",
     "Professor": "Murad K. Mumtaz",
@@ -1222,6 +1333,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3074,
     "Number": 466,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1",
     "Professor": "Elizabeth P. McGowan",
@@ -1233,6 +1345,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3077,
     "Number": 468,
     "Attributes": "ARTH_ARTHPST16C,DIV_D1,WAC_WAC",
     "Professor": "Carol Ockman",
@@ -1244,6 +1357,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3084,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Carol Ockman",
@@ -1255,6 +1369,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3085,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Elizabeth P. McGowan",
@@ -1266,6 +1381,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3168,
     "Number": 500,
     "Attributes": "DIV_D1",
     "Professor": "Julia Bryan-Wilson",
@@ -1277,6 +1393,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3178,
     "Number": 501,
     "Attributes": "AMST_AMSTSPACE,DIV_D1,LEAD_LEADFAC",
     "Professor": "Michael Conforti",
@@ -1288,6 +1405,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3177,
     "Number": 506,
     "Attributes": "DIV_D1",
     "Professor": "Paul C. Park",
@@ -1299,6 +1417,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3932,
     "Number": 508,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Thomas J. Branchick",
@@ -1310,6 +1429,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3933,
     "Number": 509,
     "Attributes": "DIV_D1",
     "Professor": "Marc Gotlieb",
@@ -1321,6 +1441,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3172,
     "Number": 530,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1",
     "Professor": "Guy M. Hedreen",
@@ -1332,6 +1453,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3185,
     "Number": 547,
     "Attributes": "DIV_D1",
     "Professor": "Marc Gotlieb",
@@ -1343,6 +1465,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3934,
     "Number": 549,
     "Attributes": "DIV_D1",
     "Professor": "Lauren R. Cannady",
@@ -1354,6 +1477,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3935,
     "Number": 563,
     "Attributes": "DIV_D1",
     "Professor": "Victoria Brooks",
@@ -1365,6 +1489,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3928,
     "Number": 587,
     "Attributes": "DIV_D1",
     "Professor": "Kevin M. Murphy",
@@ -1376,6 +1501,7 @@
   },
   {
     "Subject": "ARTH",
+    "ClassNumber": 3186,
     "Number": 596,
     "Attributes": "DIV_D1",
     "Professor": "Peter D. Low",
@@ -1387,6 +1513,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3088,
     "Number": 100,
     "Attributes": "DIV_D1",
     "Professor": "Laylah Ali",
@@ -1398,6 +1525,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3086,
     "Number": 100,
     "Attributes": "DIV_D1",
     "Professor": "Michael A. Glier",
@@ -1409,6 +1537,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 4046,
     "Number": 126,
     "Attributes": "DIV_D1",
     "Professor": "Zak Arctander",
@@ -1420,6 +1549,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3107,
     "Number": 128,
     "Attributes": "DIV_D1",
     "Professor": "Ilana Y. Harris-Babou",
@@ -1431,6 +1561,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3990,
     "Number": 129,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Allana M. Clarke",
@@ -1442,6 +1573,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 4004,
     "Number": 130,
     "Attributes": "DIV_D1",
     "Professor": "Pallavi Sen",
@@ -1453,6 +1585,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3774,
     "Number": 201,
     "Attributes": "DIV_D1",
     "Professor": "David GÃ¼rÃ§ay-Morris",
@@ -1464,6 +1597,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3773,
     "Number": 201,
     "Attributes": "DIV_D1",
     "Professor": "David GÃ¼rÃ§ay-Morris",
@@ -1475,6 +1609,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3108,
     "Number": 220,
     "Attributes": "DIV_D1",
     "Professor": "Ben Benedict",
@@ -1486,6 +1621,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3989,
     "Number": 227,
     "Attributes": "DIV_D1",
     "Professor": "Zak Arctander",
@@ -1497,6 +1633,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3110,
     "Number": 230,
     "Attributes": "DIV_D1",
     "Professor": "Michael A. Glier",
@@ -1508,6 +1645,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3114,
     "Number": 241,
     "Attributes": "DIV_D1",
     "Professor": "Laylah Ali",
@@ -1519,6 +1657,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3116,
     "Number": 260,
     "Attributes": "DIV_D1,FMST_FMSTCORE",
     "Professor": "Ilana Y. Harris-Babou",
@@ -1530,6 +1669,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3050,
     "Number": 274,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,EXPE_EXPEREDUC,GBST_GBSTEASIAN",
     "Professor": "Ju-Yu Scarlett Jang",
@@ -1541,6 +1681,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 4005,
     "Number": 337,
     "Attributes": "DIV_D1",
     "Professor": "Pallavi Sen",
@@ -1552,6 +1693,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3993,
     "Number": 338,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Allana M. Clarke",
@@ -1563,6 +1705,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3117,
     "Number": 385,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Amy D. Podmore",
@@ -1574,6 +1717,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3940,
     "Number": 418,
     "Attributes": "DIV_D1",
     "Professor": "Laylah Ali",
@@ -1585,6 +1729,7 @@
   },
   {
     "Subject": "ARTS",
+    "ClassNumber": 3122,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Amy D. Podmore",
@@ -1596,6 +1741,7 @@
   },
   {
     "Subject": "ASPH",
+    "ClassNumber": 3902,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Frederick W. Strauch",
@@ -1607,6 +1753,7 @@
   },
   {
     "Subject": "ASPH",
+    "ClassNumber": 3901,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Frederick W. Strauch",
@@ -1618,6 +1765,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3230,
     "Number": 117,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,WAC_WAC",
     "Professor": "Aparna Kapadia",
@@ -1629,6 +1777,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3435,
     "Number": 198,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -1640,6 +1789,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3437,
     "Number": 198,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -1651,6 +1801,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3242,
     "Number": 218,
     "Attributes": "DIV_D2,GBST_GBSTEASIAN,HIST_HISTB",
     "Professor": "Eiko Maruko Siniawer",
@@ -1662,6 +1813,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3068,
     "Number": 233,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA",
     "Professor": "Peter Just",
@@ -1673,6 +1825,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3374,
     "Number": 244,
     "Attributes": "DIV_D2,PHIL_PHILREL",
     "Professor": "Georges B. Dreyfus",
@@ -1684,6 +1837,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3505,
     "Number": 254,
     "Attributes": "DIV_D1,GBST_GBSTEASIAN",
     "Professor": "Christopher A. Bolton",
@@ -1695,6 +1849,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3384,
     "Number": 255,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,PHIL_PHILREL",
     "Professor": "Georges B. Dreyfus",
@@ -1706,6 +1861,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3861,
     "Number": 269,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTSEASIA,PHLH_PHLHSOC,WAC_WAC",
     "Professor": "Kim Gutschow",
@@ -1717,6 +1873,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 4045,
     "Number": 270,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,GBST_GBSTEASIAN",
     "Professor": "Ju-Yu Scarlett Jang",
@@ -1728,6 +1885,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3987,
     "Number": 272,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -1739,6 +1897,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 4003,
     "Number": 273,
     "Attributes": "DIV_D1",
     "Professor": "Murad K. Mumtaz",
@@ -1750,6 +1909,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3049,
     "Number": 274,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,EXPE_EXPEREDUC,GBST_GBSTEASIAN",
     "Professor": "Ju-Yu Scarlett Jang",
@@ -1761,6 +1921,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3957,
     "Number": 278,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Susanne Ryuyin Kerekes",
@@ -1772,6 +1933,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3257,
     "Number": 284,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF",
     "Professor": "Scott Wong",
@@ -1783,6 +1945,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3959,
     "Number": 298,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -1794,6 +1957,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3057,
     "Number": 376,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1,WAC_WAC",
     "Professor": "",
@@ -1805,6 +1969,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3295,
     "Number": 389,
     "Attributes": "DIV_D2,HIST_HISTB,HIST_HISTF,LEAD_LEADFOR",
     "Professor": "Jessica Chapman",
@@ -1816,6 +1981,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3298,
     "Number": 391,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,HIST_HISTP,MAST_MASTELEC",
     "Professor": "Aparna Kapadia",
@@ -1827,6 +1993,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3314,
     "Number": 413,
     "Attributes": "DIV_D2,HIST_HISTB,WAC_WAC",
     "Professor": "Anne Reinhardt",
@@ -1838,6 +2005,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3002,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "George T. Crane",
@@ -1849,6 +2017,7 @@
   },
   {
     "Subject": "ASST",
+    "ClassNumber": 3003,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "George T. Crane",
@@ -1860,6 +2029,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3024,
     "Number": 104,
     "Attributes": "DIV_D3",
     "Professor": "Marek Demianski",
@@ -1871,6 +2041,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3025,
     "Number": 104,
     "Attributes": "DIV_D3",
     "Professor": "Steven P. Souza",
@@ -1882,6 +2053,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3026,
     "Number": 104,
     "Attributes": "DIV_D3",
     "Professor": "Steven P. Souza",
@@ -1893,6 +2065,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3027,
     "Number": 104,
     "Attributes": "DIV_D3",
     "Professor": "Steven P. Souza",
@@ -1904,6 +2077,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3028,
     "Number": 104,
     "Attributes": "DIV_D3",
     "Professor": "Steven P. Souza",
@@ -1915,6 +2089,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3043,
     "Number": 330,
     "Attributes": "DIV_D3",
     "Professor": "Karen B. Kwitter",
@@ -1926,6 +2101,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3046,
     "Number": 410,
     "Attributes": "DIV_D3",
     "Professor": "Marek Demianski",
@@ -1937,6 +2113,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 4066,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Karen B. Kwitter",
@@ -1948,6 +2125,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 4068,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Karen B. Kwitter",
@@ -1959,6 +2137,7 @@
   },
   {
     "Subject": "ASTR",
+    "ClassNumber": 3863,
     "Number": 499,
     "Attributes": "DIV_D6",
     "Professor": "Frederick W. Strauch",
@@ -1970,6 +2149,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3136,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -1981,6 +2161,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3137,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -1992,6 +2173,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3138,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2003,6 +2185,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3150,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Pei-Wen Chen",
@@ -2014,6 +2197,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3151,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2025,6 +2209,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3152,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2036,6 +2221,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3153,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2047,6 +2233,7 @@
   },
   {
     "Subject": "BIMO",
+    "ClassNumber": 3162,
     "Number": 401,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,WAC_WAC",
     "Professor": "Robert M. Savage",
@@ -2058,6 +2245,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3263,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Heather Williams",
@@ -2069,6 +2257,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3265,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Robert M. Savage",
@@ -2080,6 +2269,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3266,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Heather Williams",
@@ -2091,6 +2281,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3267,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Derek Dean",
@@ -2102,6 +2293,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3268,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Robert M. Savage",
@@ -2113,6 +2305,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3270,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Ron D. Bassar",
@@ -2124,6 +2317,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3272,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Derek Dean",
@@ -2135,6 +2329,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3273,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Derek Dean",
@@ -2146,6 +2341,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3274,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Ron D. Bassar",
@@ -2157,6 +2353,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3275,
     "Number": 102,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "Derek Dean",
@@ -2168,6 +2365,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3308,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -2179,6 +2377,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3309,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -2190,6 +2389,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3310,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -2201,6 +2401,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3328,
     "Number": 205,
     "Attributes": "DIV_D3",
     "Professor": "Matt E. Carter",
@@ -2212,6 +2413,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3329,
     "Number": 205,
     "Attributes": "DIV_D3",
     "Professor": "Matt E. Carter",
@@ -2223,6 +2425,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3330,
     "Number": 205,
     "Attributes": "DIV_D3",
     "Professor": "Matt E. Carter",
@@ -2234,6 +2437,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3331,
     "Number": 205,
     "Attributes": "DIV_D3",
     "Professor": "Jenna L. MacIntire",
@@ -2245,6 +2449,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3332,
     "Number": 205,
     "Attributes": "DIV_D3",
     "Professor": "Jenna L. MacIntire",
@@ -2256,6 +2461,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3708,
     "Number": 210,
     "Attributes": "DIV_D3,PHLH_PHLHMETH,QFR_QFR",
     "Professor": "Julie C. Blackwood",
@@ -2267,6 +2473,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3590,
     "Number": 211,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MAST_MASTELEC",
     "Professor": "Phoebe A. Cohen",
@@ -2278,6 +2485,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3591,
     "Number": 211,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MAST_MASTELEC",
     "Professor": "Phoebe A. Cohen",
@@ -2289,6 +2497,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3333,
     "Number": 219,
     "Attributes": "DIV_D3,PHLH_PHLHBMED,WAC_WAC",
     "Professor": "Lois M. Banta",
@@ -2300,6 +2509,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3334,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -2311,6 +2521,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3335,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -2322,6 +2533,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3336,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -2333,6 +2545,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3341,
     "Number": 222,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel V. Lynch",
@@ -2344,6 +2557,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3342,
     "Number": 222,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel V. Lynch",
@@ -2355,6 +2569,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3343,
     "Number": 222,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel V. Lynch",
@@ -2366,6 +2581,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3897,
     "Number": 231,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC",
     "Professor": "Tim J. Pusack",
@@ -2377,6 +2593,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3344,
     "Number": 298,
     "Attributes": "DIV_D3",
     "Professor": "Lois M. Banta",
@@ -2388,6 +2605,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3345,
     "Number": 305,
     "Attributes": "BGNP_BGNPREC,BIMO_BIMOELEC,COGS_COGSREL,DIV_D3,QFR_QFR",
     "Professor": "Luana S. Maroja",
@@ -2399,6 +2617,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3346,
     "Number": 305,
     "Attributes": "BGNP_BGNPREC,BIMO_BIMOELEC,COGS_COGSREL,DIV_D3,QFR_QFR",
     "Professor": "Luana S. Maroja",
@@ -2410,6 +2629,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3347,
     "Number": 305,
     "Attributes": "BGNP_BGNPREC,BIMO_BIMOELEC,COGS_COGSREL,DIV_D3,QFR_QFR",
     "Professor": "Luana S. Maroja",
@@ -2421,6 +2641,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3140,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -2432,6 +2653,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3141,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -2443,6 +2665,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3142,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2454,6 +2677,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3154,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Pei-Wen Chen",
@@ -2465,6 +2689,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3155,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2476,6 +2701,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3156,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2487,6 +2713,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3157,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2498,6 +2725,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3348,
     "Number": 330,
     "Attributes": "DIV_D3",
     "Professor": "David W. Loehlin",
@@ -2509,6 +2737,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3349,
     "Number": 330,
     "Attributes": "DIV_D3",
     "Professor": "David W. Loehlin",
@@ -2520,6 +2749,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3350,
     "Number": 330,
     "Attributes": "DIV_D3",
     "Professor": "David W. Loehlin",
@@ -2531,6 +2761,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3351,
     "Number": 413,
     "Attributes": "DIV_D3,WAC_WAC",
     "Professor": "Sonya K. Auer",
@@ -2542,6 +2773,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3352,
     "Number": 413,
     "Attributes": "DIV_D3,WAC_WAC",
     "Professor": "Sonya K. Auer",
@@ -2553,6 +2785,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3353,
     "Number": 414,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,MAST_MASTELEC",
     "Professor": "Claire S. Ting",
@@ -2564,6 +2797,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3354,
     "Number": 414,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,MAST_MASTELEC",
     "Professor": "Claire S. Ting",
@@ -2575,6 +2809,7 @@
   },
   {
     "Subject": "BIOL",
+    "ClassNumber": 3355,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Lois M. Banta",
@@ -2586,6 +2821,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3680,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Jimmy A. Blair",
@@ -2597,6 +2833,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3681,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2608,6 +2845,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3682,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2619,6 +2857,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3683,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2630,6 +2869,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3684,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2641,6 +2881,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3685,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2652,6 +2893,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3686,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2663,6 +2905,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3687,
     "Number": 156,
     "Attributes": "BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2674,6 +2917,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3688,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "John W. Thoman",
@@ -2685,6 +2929,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3689,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "",
@@ -2696,6 +2941,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3690,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "",
@@ -2707,6 +2953,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3691,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "",
@@ -2718,6 +2965,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3692,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "",
@@ -2729,6 +2977,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3693,
     "Number": 256,
     "Attributes": "BIMO_BIMOREQ,DIV_D3",
     "Professor": "",
@@ -2740,6 +2989,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3147,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -2751,6 +3001,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3148,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Bob Rawle",
@@ -2762,6 +3013,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3149,
     "Number": 321,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -2773,6 +3025,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3158,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Pei-Wen Chen",
@@ -2784,6 +3037,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3159,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2795,6 +3049,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3160,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2806,6 +3061,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3161,
     "Number": 322,
     "Attributes": "BGNP_BGNPREL,BIMO_BIMOREQ,DIV_D3,QFR_QFR",
     "Professor": "Janis E. Bravo",
@@ -2817,6 +3073,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3694,
     "Number": 342,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,WAC_WAC",
     "Professor": "David P. Richardson",
@@ -2828,6 +3085,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3697,
     "Number": 342,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,WAC_WAC",
     "Professor": "David P. Richardson",
@@ -2839,6 +3097,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3700,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Lee Y. Park",
@@ -2850,6 +3109,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3705,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Anthony J. Carrasquillo",
@@ -2861,6 +3121,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 4076,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Nathan Cook",
@@ -2872,6 +3133,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3711,
     "Number": 366,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Enrique Peacock-LÃ³pez",
@@ -2883,6 +3145,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3714,
     "Number": 366,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Enrique Peacock-LÃ³pez",
@@ -2894,6 +3157,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3716,
     "Number": 367,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Katie M. Hart",
@@ -2905,6 +3169,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3721,
     "Number": 367,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Katie M. Hart",
@@ -2916,6 +3181,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3722,
     "Number": 367,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Bob Rawle",
@@ -2927,6 +3193,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 4078,
     "Number": 367,
     "Attributes": "BIMO_BIMOELEC,DIV_D3",
     "Professor": "Katie M. Hart",
@@ -2938,6 +3205,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3740,
     "Number": 368,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Enrique Peacock-LÃ³pez",
@@ -2949,6 +3217,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3675,
     "Number": 394,
     "Attributes": "DIV_D3",
     "Professor": "Lee Y. Park",
@@ -2960,6 +3229,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3676,
     "Number": 398,
     "Attributes": "DIV_D3",
     "Professor": "Lee Y. Park",
@@ -2971,6 +3241,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3677,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Lee Y. Park",
@@ -2982,6 +3253,7 @@
   },
   {
     "Subject": "CHEM",
+    "ClassNumber": 3678,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Lee Y. Park",
@@ -2993,6 +3265,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3222,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Cornelius C. Kubler",
@@ -3004,6 +3277,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3223,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Cornelius C. Kubler",
@@ -3015,6 +3289,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3224,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Cornelius C. Kubler",
@@ -3026,6 +3301,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3247,
     "Number": 134,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Christopher M. B. Nugent",
@@ -3037,6 +3313,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3258,
     "Number": 152,
     "Attributes": "DIV_D1",
     "Professor": "Cornelius C. Kubler",
@@ -3048,6 +3325,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3226,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Lu Kou",
@@ -3059,6 +3337,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3228,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Lu Kou",
@@ -3070,6 +3349,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3232,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3081,6 +3361,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3233,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3092,6 +3373,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 4073,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3103,6 +3385,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3245,
     "Number": 312,
     "Attributes": "DIV_D1",
     "Professor": "Christopher M. B. Nugent",
@@ -3114,6 +3397,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3238,
     "Number": 402,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3125,6 +3409,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3240,
     "Number": 402,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3136,6 +3421,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3241,
     "Number": 402,
     "Attributes": "DIV_D1",
     "Professor": "Cecilia Chang",
@@ -3147,6 +3433,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3886,
     "Number": 420,
     "Attributes": "DIV_D1",
     "Professor": "Lu Kou",
@@ -3158,6 +3445,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3260,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "George T. Crane",
@@ -3169,6 +3457,7 @@
   },
   {
     "Subject": "CHIN",
+    "ClassNumber": 3261,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "George T. Crane",
@@ -3180,6 +3469,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3456,
     "Number": 223,
     "Attributes": "DIV_D1,HIST_HISTC,HIST_HISTP",
     "Professor": "Kerry A. Christensen",
@@ -3191,6 +3481,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3458,
     "Number": 226,
     "Attributes": "DIV_D1",
     "Professor": "Sarah E. Olsen",
@@ -3202,6 +3493,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3462,
     "Number": 235,
     "Attributes": "DIV_D1",
     "Professor": "Nicole G. Brown",
@@ -3213,6 +3505,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3173,
     "Number": 236,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1",
     "Professor": "Guy M. Hedreen",
@@ -3224,6 +3517,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3467,
     "Number": 241,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Amanda R. Wilcox",
@@ -3235,6 +3529,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 4053,
     "Number": 306,
     "Attributes": "DIV_D1,PHIL_HIST,WAC_WAC",
     "Professor": "Keith E. McPartland",
@@ -3246,6 +3541,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3075,
     "Number": 466,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D1",
     "Professor": "Elizabeth P. McGowan",
@@ -3257,6 +3553,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 4067,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Edan Dekel",
@@ -3268,6 +3565,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3471,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Edan Dekel",
@@ -3279,6 +3577,7 @@
   },
   {
     "Subject": "CLAS",
+    "ClassNumber": 3472,
     "Number": 499,
     "Attributes": "DIV_D6",
     "Professor": "Edan Dekel",
@@ -3290,6 +3589,7 @@
   },
   {
     "Subject": "CLGR",
+    "ClassNumber": 3473,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Kerry A. Christensen",
@@ -3301,6 +3601,7 @@
   },
   {
     "Subject": "CLGR",
+    "ClassNumber": 3474,
     "Number": 404,
     "Attributes": "DIV_D1",
     "Professor": "Sarah E. Olsen",
@@ -3312,6 +3613,7 @@
   },
   {
     "Subject": "CLLA",
+    "ClassNumber": 3475,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Nicole G. Brown",
@@ -3323,6 +3625,7 @@
   },
   {
     "Subject": "CLLA",
+    "ClassNumber": 3476,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Edan Dekel",
@@ -3334,6 +3637,7 @@
   },
   {
     "Subject": "CLLA",
+    "ClassNumber": 3477,
     "Number": 409,
     "Attributes": "DIV_D1",
     "Professor": "Amanda R. Wilcox",
@@ -3345,6 +3649,7 @@
   },
   {
     "Subject": "CMAJ",
+    "ClassNumber": 3105,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Amanda B. Turner",
@@ -3356,6 +3661,7 @@
   },
   {
     "Subject": "CMAJ",
+    "ClassNumber": 3106,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Amanda B. Turner",
@@ -3367,6 +3673,7 @@
   },
   {
     "Subject": "COGS",
+    "ClassNumber": 4071,
     "Number": 493,
     "Attributes": "DIV_D2",
     "Professor": "Joseph L. Cruz",
@@ -3378,6 +3685,7 @@
   },
   {
     "Subject": "COGS",
+    "ClassNumber": 3005,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Safa R. Zaki",
@@ -3389,6 +3697,7 @@
   },
   {
     "Subject": "COGS",
+    "ClassNumber": 3006,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Safa R. Zaki",
@@ -3400,6 +3709,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3485,
     "Number": 111,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Christopher A. Bolton",
@@ -3411,6 +3721,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3443,
     "Number": 119,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Vivian L. Huang",
@@ -3422,6 +3733,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3249,
     "Number": 134,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Christopher M. B. Nugent",
@@ -3433,6 +3745,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3790,
     "Number": 202,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "James L. Pethica",
@@ -3444,6 +3757,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3735,
     "Number": 204,
     "Attributes": "DIV_D1,GBST_GBSTRUSS",
     "Professor": "Jason A. Cieply",
@@ -3455,6 +3769,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3408,
     "Number": 210,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D1,LATS_LATSCORE",
     "Professor": "Maria Elena Cepeda",
@@ -3466,6 +3781,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3360,
     "Number": 214,
     "Attributes": "DIV_D1,JWST_JWSTCORE",
     "Professor": "Edan Dekel",
@@ -3477,6 +3793,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3459,
     "Number": 226,
     "Attributes": "DIV_D1",
     "Professor": "Sarah E. Olsen",
@@ -3488,6 +3805,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3981,
     "Number": 228,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Zaid Adhami",
@@ -3499,6 +3817,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3315,
     "Number": 234,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Brahim El Guabli",
@@ -3510,6 +3829,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3464,
     "Number": 235,
     "Attributes": "DIV_D1",
     "Professor": "Nicole G. Brown",
@@ -3521,6 +3841,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3488,
     "Number": 237,
     "Attributes": "DIV_D1",
     "Professor": "Sarah M. Allen",
@@ -3532,6 +3853,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3468,
     "Number": 241,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Amanda R. Wilcox",
@@ -3543,6 +3865,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3489,
     "Number": 242,
     "Attributes": "AMST_AMSTARTS,DIV_D1,DPE_DPE,GBST_GBSTBORD,WAC_WAC",
     "Professor": "Soledad Fox",
@@ -3554,6 +3877,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3495,
     "Number": 244,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Michele Monserrati",
@@ -3565,6 +3889,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3503,
     "Number": 264,
     "Attributes": "DIV_D1,GBST_GBSTEASIAN",
     "Professor": "Christopher A. Bolton",
@@ -3576,6 +3901,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3668,
     "Number": 268,
     "Attributes": "DIV_D1,ENGL_ENGLGATE,WAC_WAC",
     "Professor": "Gage C. McWeeny",
@@ -3587,6 +3913,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3737,
     "Number": 270,
     "Attributes": "DIV_D1,PHIL_PHILREL",
     "Professor": "Vladimir Ivantsov",
@@ -3598,6 +3925,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 4060,
     "Number": 286,
     "Attributes": "DIV_D1,DPE_DPE,LATS_LATSORIG,WAC_WAC",
     "Professor": "Roxana A. Blancas Curiel",
@@ -3609,6 +3937,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3739,
     "Number": 287,
     "Attributes": "DIV_D1,INST_INSTRUSS",
     "Professor": "Julie A. Cassiday",
@@ -3620,6 +3949,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3920,
     "Number": 303,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Amy S. Holzapfel",
@@ -3631,6 +3961,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3961,
     "Number": 329,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB",
     "Professor": "Walter Johnston",
@@ -3642,6 +3973,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3742,
     "Number": 331,
     "Attributes": "DIV_D1,JLST_JLSTELEC,WAC_WAC",
     "Professor": "Julie A. Cassiday",
@@ -3653,6 +3985,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3080,
     "Number": 334,
     "Attributes": "DIV_D1,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Peter Just",
@@ -3664,6 +3997,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3507,
     "Number": 340,
     "Attributes": "AMST_AMSTCRIT,DIV_D1,ENGL_ENGLCRIT,WAC_WAC",
     "Professor": "Gail M. Newman",
@@ -3675,6 +4009,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3664,
     "Number": 342,
     "Attributes": "AMST_AMSTCRIT,DIV_D1,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLLHC",
     "Professor": "",
@@ -3686,6 +4021,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3515,
     "Number": 346,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Amal Eqeiq",
@@ -3697,6 +4033,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3521,
     "Number": 350,
     "Attributes": "DIV_D1,ENGL_ENGLLHA",
     "Professor": "Leyla Rouhi",
@@ -3708,6 +4045,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3964,
     "Number": 355,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -3719,6 +4057,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3946,
     "Number": 361,
     "Attributes": "DIV_D1,ENGL_ENGLLHC,EXPE_EXPEREDUC",
     "Professor": "",
@@ -3730,6 +4069,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3658,
     "Number": 373,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB",
     "Professor": "",
@@ -3741,6 +4081,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3527,
     "Number": 398,
     "Attributes": "DIV_D1",
     "Professor": "Christopher M. B. Nugent",
@@ -3752,6 +4093,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3857,
     "Number": 406,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB,ENGL_ENGLLHC",
     "Professor": "Anita R. Sokolsky",
@@ -3763,6 +4105,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3944,
     "Number": 414,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Sophie F. Saint-Just",
@@ -3774,6 +4117,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3859,
     "Number": 416,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Anjuli F. Raza Kolb",
@@ -3785,6 +4129,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3985,
     "Number": 422,
     "Attributes": "DIV_D1",
     "Professor": "Murad K. Mumtaz",
@@ -3796,6 +4141,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3939,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Christopher M. B. Nugent",
@@ -3807,6 +4153,7 @@
   },
   {
     "Subject": "COMP",
+    "ClassNumber": 3528,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Christopher M. B. Nugent",
@@ -3818,6 +4165,7 @@
   },
   {
     "Subject": "CRHE",
+    "ClassNumber": 3433,
     "Number": 102,
     "Attributes": "DIV_D1,JWST_JWSTELEC",
     "Professor": "",
@@ -3829,6 +4177,7 @@
   },
   {
     "Subject": "CRHI",
+    "ClassNumber": 3434,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -3840,6 +4189,7 @@
   },
   {
     "Subject": "CRKO",
+    "ClassNumber": 3436,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -3851,6 +4201,7 @@
   },
   {
     "Subject": "CRKO",
+    "ClassNumber": 3958,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -3862,6 +4213,7 @@
   },
   {
     "Subject": "CRPO",
+    "ClassNumber": 3438,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Jane E. Canova",
@@ -3873,6 +4225,7 @@
   },
   {
     "Subject": "CRSW",
+    "ClassNumber": 3439,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "",
@@ -3884,6 +4237,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3576,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Iris Howley",
@@ -3895,6 +4249,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3577,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -3906,6 +4261,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3578,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Iris Howley",
@@ -3917,6 +4273,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3579,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -3928,6 +4285,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3580,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Iris Howley",
@@ -3939,6 +4297,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3581,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "",
@@ -3950,6 +4309,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3582,
     "Number": 134,
     "Attributes": "BGNP_BGNPREC,COGS_COGSELEC,DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -3961,6 +4321,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3600,
     "Number": 136,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "Daniel W. Barowy",
@@ -3972,6 +4333,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3601,
     "Number": 136,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "Daniel W. Barowy",
@@ -3983,6 +4345,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3602,
     "Number": 136,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "Bill K. Jannen",
@@ -3994,6 +4357,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3603,
     "Number": 136,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "Daniel W. Barowy",
@@ -4005,6 +4369,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3604,
     "Number": 136,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "Bill K. Jannen",
@@ -4016,6 +4381,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3613,
     "Number": 237,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -4027,6 +4393,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3617,
     "Number": 237,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -4038,6 +4405,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3618,
     "Number": 237,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Duane A. Bailey",
@@ -4049,6 +4417,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3620,
     "Number": 256,
     "Attributes": "BGNP_BGNPREC,DIV_D3,QFR_QFR",
     "Professor": "William J. Lenhart",
@@ -4060,6 +4429,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3623,
     "Number": 333,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Bill K. Jannen",
@@ -4071,6 +4441,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3625,
     "Number": 334,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Stephen N. Freund",
@@ -4082,6 +4453,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3626,
     "Number": 398,
     "Attributes": "DIV_D3",
     "Professor": "Jeannie R Albrecht",
@@ -4093,6 +4465,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3627,
     "Number": 432,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Jeannie R Albrecht",
@@ -4104,6 +4477,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3629,
     "Number": 434,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Stephen N. Freund",
@@ -4115,6 +4489,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3630,
     "Number": 434,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Stephen N. Freund",
@@ -4126,6 +4501,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3636,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Jeannie R Albrecht",
@@ -4137,6 +4513,7 @@
   },
   {
     "Subject": "CSCI",
+    "ClassNumber": 3637,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Jeannie R Albrecht",
@@ -4148,6 +4525,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3791,
     "Number": 203,
     "Attributes": "DIV_D1",
     "Professor": "Janine Parker",
@@ -4159,6 +4537,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3931,
     "Number": 204,
     "Attributes": "DIV_D6",
     "Professor": "Janine Parker",
@@ -4170,6 +4549,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3794,
     "Number": 206,
     "Attributes": "DIV_D6",
     "Professor": "Erica Dankmeyer",
@@ -4181,6 +4561,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3795,
     "Number": 214,
     "Attributes": "DIV_D1",
     "Professor": "Munjulika Tarah",
@@ -4192,6 +4573,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3804,
     "Number": 226,
     "Attributes": "DIV_D1",
     "Professor": "Munjulika Tarah",
@@ -4203,6 +4585,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3831,
     "Number": 280,
     "Attributes": "DIV_D1",
     "Professor": "Erica Dankmeyer",
@@ -4214,6 +4597,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3808,
     "Number": 304,
     "Attributes": "DIV_D6",
     "Professor": "Janine Parker",
@@ -4225,6 +4609,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3810,
     "Number": 330,
     "Attributes": "DIV_D1,MUS_MUSW",
     "Professor": "Sandra L. Burton",
@@ -4236,6 +4621,7 @@
   },
   {
     "Subject": "DANC",
+    "ClassNumber": 3809,
     "Number": 398,
     "Attributes": "DIV_D1",
     "Professor": "Sandra L. Burton",
@@ -4247,6 +4633,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3169,
     "Number": 110,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Susan Godlonton",
@@ -4258,6 +4645,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3171,
     "Number": 110,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Don Carlson",
@@ -4269,6 +4657,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3930,
     "Number": 110,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Melinda Petre",
@@ -4280,6 +4669,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3174,
     "Number": 120,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Quamrul H. Ashraf",
@@ -4291,6 +4681,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3175,
     "Number": 120,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Quamrul H. Ashraf",
@@ -4302,6 +4693,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3176,
     "Number": 120,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Steven E. Nafziger",
@@ -4313,6 +4705,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3181,
     "Number": 120,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Gregory P. Casey",
@@ -4324,6 +4717,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3182,
     "Number": 120,
     "Attributes": "DIV_D2,POEC_POECREQ,QFR_QFR",
     "Professor": "Gregory P. Casey",
@@ -4335,6 +4729,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3183,
     "Number": 213,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,POEC_POECCOMP,QFR_QFR",
     "Professor": "Sarah A. Jacobson",
@@ -4346,6 +4741,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3187,
     "Number": 215,
     "Attributes": "DIV_D2,GBST_GBSTECON,MAST_MASTELEC,POEC_POECINTL",
     "Professor": "Will Olney",
@@ -4357,6 +4753,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3592,
     "Number": 229,
     "Attributes": "DIV_D2,POEC_POECAMER,QFR_QFR",
     "Professor": "Don Carlson",
@@ -4368,6 +4765,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3194,
     "Number": 251,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Stephen C. Sheppard",
@@ -4379,6 +4777,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3195,
     "Number": 251,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Stephen C. Sheppard",
@@ -4390,6 +4789,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3198,
     "Number": 252,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Peter J. Montiel",
@@ -4401,6 +4801,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3199,
     "Number": 252,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Peter L. Pedroni",
@@ -4412,6 +4813,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3200,
     "Number": 252,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Greg Phelan",
@@ -4423,6 +4825,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3201,
     "Number": 252,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Greg Phelan",
@@ -4434,6 +4837,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3204,
     "Number": 255,
     "Attributes": "DIV_D2,EVST_EVSTMETH,PHLH_PHLHSTAT,POEC_POECREQ,QFR_QFR",
     "Professor": "Anand V. Swamy",
@@ -4445,6 +4849,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3205,
     "Number": 255,
     "Attributes": "DIV_D2,EVST_EVSTMETH,PHLH_PHLHSTAT,POEC_POECREQ,QFR_QFR",
     "Professor": "Anand V. Swamy",
@@ -4456,6 +4861,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3206,
     "Number": 255,
     "Attributes": "DIV_D2,EVST_EVSTMETH,PHLH_PHLHSTAT,POEC_POECREQ,QFR_QFR",
     "Professor": "William M. Gentry",
@@ -4467,6 +4873,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3207,
     "Number": 255,
     "Attributes": "DIV_D2,EVST_EVSTMETH,PHLH_PHLHSTAT,POEC_POECREQ,QFR_QFR",
     "Professor": "Melinda Petre",
@@ -4478,6 +4885,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3883,
     "Number": 257,
     "Attributes": "DIV_D2,DPE_DPE,POEC_POECAMER",
     "Professor": "Owen Thompson",
@@ -4489,6 +4897,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3227,
     "Number": 352,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECCOMP",
     "Professor": "Gerard Caprio",
@@ -4500,6 +4909,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3208,
     "Number": 357,
     "Attributes": "DIV_D2",
     "Professor": "David J. Zimmerman",
@@ -4511,6 +4921,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3262,
     "Number": 359,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL",
     "Professor": "Peter J. Montiel",
@@ -4522,6 +4933,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3209,
     "Number": 360,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL,QFR_QFR",
     "Professor": "Kenneth N. Kuttner",
@@ -4533,6 +4945,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3210,
     "Number": 362,
     "Attributes": "DIV_D2,GBST_GBSTECON",
     "Professor": "Michael Fortunato",
@@ -4544,6 +4957,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3277,
     "Number": 366,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL",
     "Professor": "Will Olney",
@@ -4555,6 +4969,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3283,
     "Number": 379,
     "Attributes": "DIV_D2,PHLH_PHLHMETH,POEC_POECCOMP,QFR_QFR",
     "Professor": "Susan Godlonton",
@@ -4566,6 +4981,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3244,
     "Number": 389,
     "Attributes": "DIV_D2,POEC_POECCOMP,POEC_POECINTL,QFR_QFR",
     "Professor": "Jon M. Bakija",
@@ -4577,6 +4993,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3211,
     "Number": 390,
     "Attributes": "DIV_D2,POEC_POECCOMP,WAC_WAC",
     "Professor": "Gerard Caprio",
@@ -4588,6 +5005,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3213,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "David J. Zimmerman",
@@ -4599,6 +5017,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3221,
     "Number": 453,
     "Attributes": "DIV_D2,POEC_POECCOMP,QFR_QFR",
     "Professor": "Owen Thompson",
@@ -4610,6 +5029,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3215,
     "Number": 456,
     "Attributes": "DIV_D2,POEC_POECAMER",
     "Professor": "Sara LaLumia",
@@ -4621,6 +5041,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3889,
     "Number": 468,
     "Attributes": "DIV_D2,PHLH_PHLHDECI,PHLH_PHLHSOC,POEC_POECAMER",
     "Professor": "Tara E. Watson",
@@ -4632,6 +5053,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3216,
     "Number": 471,
     "Attributes": "DIV_D2,QFR_QFR",
     "Professor": "Peter L. Pedroni",
@@ -4643,6 +5065,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3217,
     "Number": 477,
     "Attributes": "DIV_D2,MAST_MASTELEC,POEC_POECCOMP,QFR_QFR",
     "Professor": "Sarah A. Jacobson",
@@ -4654,6 +5077,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3219,
     "Number": 492,
     "Attributes": "DIV_D2",
     "Professor": "David J. Zimmerman",
@@ -4665,6 +5089,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3220,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "David J. Zimmerman",
@@ -4676,6 +5101,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3225,
     "Number": 510,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECCOMP",
     "Professor": "Gerard Caprio",
@@ -4687,6 +5113,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3243,
     "Number": 514,
     "Attributes": "DIV_D2,POEC_POECCOMP,POEC_POECINTL,QFR_QFR",
     "Professor": "Jon M. Bakija",
@@ -4698,6 +5125,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3254,
     "Number": 515,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL",
     "Professor": "Peter J. Montiel",
@@ -4709,6 +5137,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3276,
     "Number": 516,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL",
     "Professor": "Will Olney",
@@ -4720,6 +5149,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3282,
     "Number": 523,
     "Attributes": "DIV_D2,PHLH_PHLHMETH,POEC_POECCOMP,QFR_QFR",
     "Professor": "Susan Godlonton",
@@ -4731,6 +5161,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3288,
     "Number": 532,
     "Attributes": "DIV_D2,POEC_POECCOMP",
     "Professor": "Michael Samson",
@@ -4742,6 +5173,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3289,
     "Number": 534,
     "Attributes": "DIV_D2,POEC_POECCOMP",
     "Professor": "Peter S. Heller",
@@ -4753,6 +5185,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3212,
     "Number": 536,
     "Attributes": "DIV_D2,POEC_POECCOMP,WAC_WAC",
     "Professor": "Gerard Caprio",
@@ -4764,6 +5197,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3290,
     "Number": 537,
     "Attributes": "DIV_D2,GBST_GBSTECON,POEC_POECINTL,WAC_WAC",
     "Professor": "Eli Remolona",
@@ -4775,6 +5209,7 @@
   },
   {
     "Subject": "ECON",
+    "ClassNumber": 3848,
     "Number": 540,
     "Attributes": "DIV_D2",
     "Professor": "David J. Zimmerman",
@@ -4786,6 +5221,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3616,
     "Number": 119,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Christopher L. Pye",
@@ -4797,6 +5233,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3486,
     "Number": 120,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Christopher A. Bolton",
@@ -4808,6 +5245,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3619,
     "Number": 123,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "John K. Limon",
@@ -4819,6 +5257,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3621,
     "Number": 126,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Kimberly S. Love",
@@ -4830,6 +5269,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4065,
     "Number": 138,
     "Attributes": "DIV_D1,PHIL_PHILREL,WAC_WAC",
     "Professor": "Bernard J. Rhie",
@@ -4841,6 +5281,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3628,
     "Number": 140,
     "Attributes": "DIV_D1",
     "Professor": "Cassandra J. Cleghorn",
@@ -4852,6 +5293,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4058,
     "Number": 142,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Andrew C. Miller",
@@ -4863,6 +5305,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3631,
     "Number": 150,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Paul C. Park",
@@ -4874,6 +5317,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3632,
     "Number": 150,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "",
@@ -4885,6 +5329,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3954,
     "Number": 153,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Ezra D. Feldman",
@@ -4896,6 +5341,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3633,
     "Number": 162,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Shawn J. Rosenheim",
@@ -4907,6 +5353,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4057,
     "Number": 201,
     "Attributes": "DIV_D1,ENGL_ENGLLHA",
     "Professor": "Andrew C. Miller",
@@ -4918,6 +5365,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3789,
     "Number": 202,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "James L. Pethica",
@@ -4929,6 +5377,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3938,
     "Number": 205,
     "Attributes": "DIV_D1,ENGL_ENGLGATE,WAC_WAC",
     "Professor": "Jessica M. Fisher",
@@ -4940,6 +5389,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3634,
     "Number": 206,
     "Attributes": "ASAM_ASAMREL,DIV_D1,DPE_DPE,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Anjuli F. Raza Kolb",
@@ -4951,6 +5401,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3635,
     "Number": 213,
     "Attributes": "DIV_D1,FMST_FMSTCORE",
     "Professor": "Shawn J. Rosenheim",
@@ -4962,6 +5413,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3638,
     "Number": 216,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "Stephen Fix",
@@ -4973,6 +5425,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3639,
     "Number": 218,
     "Attributes": "DIV_D1,DPE_DPE,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -4984,6 +5437,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3642,
     "Number": 220,
     "Attributes": "AFR_AFRELEC,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D1,ENGL_ENGLLHC",
     "Professor": "",
@@ -4995,6 +5449,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3645,
     "Number": 226,
     "Attributes": "DIV_D1,ENGL_ENGLGATE,ENGL_ENGLLHB,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "James L. Pethica",
@@ -5006,6 +5461,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3646,
     "Number": 229,
     "Attributes": "DIV_D1,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ezra D. Feldman",
@@ -5017,6 +5473,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3896,
     "Number": 231,
     "Attributes": "AMST_AMSTARTS,DIV_D1,ENVI_ENVIHUM,WAC_WAC",
     "Professor": "Mary K. Bercaw Edwards",
@@ -5028,6 +5485,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3098,
     "Number": 237,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Olga Shevchenko",
@@ -5039,6 +5497,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3918,
     "Number": 237,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Barry Goldstein",
@@ -5050,6 +5509,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3647,
     "Number": 246,
     "Attributes": "DIV_D1,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLGATE,ENGL_ENGLLHB,WAC_WAC",
     "Professor": "Walter Johnston",
@@ -5061,6 +5521,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3490,
     "Number": 250,
     "Attributes": "AMST_AMSTARTS,DIV_D1,DPE_DPE,GBST_GBSTBORD,WAC_WAC",
     "Professor": "Soledad Fox",
@@ -5072,6 +5533,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3403,
     "Number": 252,
     "Attributes": "DIV_D1,DPE_DPE,LATS_LATSCORE,WAC_WAC",
     "Professor": "Nelly A. Rosario",
@@ -5083,6 +5545,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3648,
     "Number": 254,
     "Attributes": "DIV_D1,DPE_DPE,ENGL_ENGL1900,ENGL_ENGLGATE,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -5094,6 +5557,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4043,
     "Number": 257,
     "Attributes": "DIV_D1,ENGL_ENGLWRIT,WAC_WAC",
     "Professor": "Cassandra J. Cleghorn",
@@ -5105,6 +5569,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3649,
     "Number": 258,
     "Attributes": "AMST_AMSTARTS,DIV_D1,ENGL_ENGLGATE,ENGL_ENGLLHB,WAC_WAC",
     "Professor": "Anita R. Sokolsky",
@@ -5116,6 +5581,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3667,
     "Number": 263,
     "Attributes": "DIV_D1,ENGL_ENGLGATE,WAC_WAC",
     "Professor": "Gage C. McWeeny",
@@ -5127,6 +5593,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3979,
     "Number": 267,
     "Attributes": "DIV_D1",
     "Professor": "Aracelis Girmay",
@@ -5138,6 +5605,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3980,
     "Number": 268,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Zaid Adhami",
@@ -5149,6 +5617,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3650,
     "Number": 283,
     "Attributes": "DIV_D1,ENGL_ENGLWRIT",
     "Professor": "Andrea Barrett",
@@ -5160,6 +5629,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3523,
     "Number": 303,
     "Attributes": "DIV_D1,ENGL_ENGLLHA",
     "Professor": "Leyla Rouhi",
@@ -5171,6 +5641,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3653,
     "Number": 312,
     "Attributes": "DIV_D1,ENGL_ENGLLHC,EXPE_EXPEREDUC",
     "Professor": "",
@@ -5182,6 +5653,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3654,
     "Number": 315,
     "Attributes": "DIV_D1,ENGL_ENGL1700,ENGL_ENGLLHA",
     "Professor": "Christopher L. Pye",
@@ -5193,6 +5665,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3656,
     "Number": 321,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHA",
     "Professor": "Stephen Fix",
@@ -5204,6 +5677,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3960,
     "Number": 322,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB",
     "Professor": "Walter Johnston",
@@ -5215,6 +5689,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3657,
     "Number": 323,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB",
     "Professor": "",
@@ -5226,6 +5701,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4063,
     "Number": 330,
     "Attributes": "DIV_D1",
     "Professor": "Andrew Sisson",
@@ -5237,6 +5713,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3660,
     "Number": 336,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "John K. Limon",
@@ -5248,6 +5725,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3661,
     "Number": 339,
     "Attributes": "DIV_D1,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLLHA",
     "Professor": "Kimberly S. Love",
@@ -5259,6 +5737,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3662,
     "Number": 340,
     "Attributes": "AMST_AMSTCRIT,DIV_D1,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLLHC",
     "Professor": "",
@@ -5270,6 +5749,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3666,
     "Number": 343,
     "Attributes": "AMST_AMSTARTS,DIV_D1,ENGL_ENGL17-19,WAC_WAC",
     "Professor": "Kathryn R. Kent",
@@ -5281,6 +5761,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3448,
     "Number": 348,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Mel Y. Chen",
@@ -5292,6 +5773,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3965,
     "Number": 349,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -5303,6 +5785,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3017,
     "Number": 357,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D1",
     "Professor": "Anthony Y. Kim",
@@ -5314,6 +5797,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 4062,
     "Number": 359,
     "Attributes": "DIV_D1",
     "Professor": "Andrew Sisson",
@@ -5325,6 +5809,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3669,
     "Number": 360,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "Stephen J. Tifft",
@@ -5336,6 +5821,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3508,
     "Number": 363,
     "Attributes": "AMST_AMSTCRIT,DIV_D1,ENGL_ENGLCRIT,WAC_WAC",
     "Professor": "Gail M. Newman",
@@ -5347,6 +5833,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3743,
     "Number": 371,
     "Attributes": "DIV_D1,JLST_JLSTELEC,WAC_WAC",
     "Professor": "Julie A. Cassiday",
@@ -5358,6 +5845,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3670,
     "Number": 382,
     "Attributes": "DIV_D1,ENGL_ENGLWRIT",
     "Professor": "Jessica M. Fisher",
@@ -5369,6 +5857,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3671,
     "Number": 385,
     "Attributes": "DIV_D1,ENGL_ENGLWRIT",
     "Professor": "Andrea Barrett",
@@ -5380,6 +5869,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3672,
     "Number": 398,
     "Attributes": "DIV_D1",
     "Professor": "Kathryn R. Kent",
@@ -5391,6 +5881,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3856,
     "Number": 402,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT,ENGL_ENGLLHB,ENGL_ENGLLHC",
     "Professor": "Anita R. Sokolsky",
@@ -5402,6 +5893,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3881,
     "Number": 415,
     "Attributes": "DIV_D1,ENGL_ENGLCRIT",
     "Professor": "Stephen J. Tifft",
@@ -5413,6 +5905,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3858,
     "Number": 416,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Anjuli F. Raza Kolb",
@@ -5424,6 +5917,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3455,
     "Number": 420,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Kai M. Green",
@@ -5435,6 +5929,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3860,
     "Number": 450,
     "Attributes": "AMST_AMSTARTS,DIV_D1",
     "Professor": "",
@@ -5446,6 +5941,7 @@
   },
   {
     "Subject": "ENGL",
+    "ClassNumber": 3884,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Kathryn R. Kent",
@@ -5457,6 +5953,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3910,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -5468,6 +5965,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3911,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -5479,6 +5977,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3912,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -5490,6 +5989,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3966,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVICORE,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -5501,6 +6001,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3967,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVICORE,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -5512,6 +6013,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3968,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVICORE,EXPE_EXPEREDUC",
     "Professor": "Anthony J. Carrasquillo",
@@ -5523,6 +6025,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3316,
     "Number": 208,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Brahim El Guabli",
@@ -5534,6 +6037,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3184,
     "Number": 213,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,POEC_POECCOMP,QFR_QFR",
     "Professor": "Sarah A. Jacobson",
@@ -5545,6 +6049,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3596,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -5556,6 +6061,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3597,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -5567,6 +6073,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3598,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -5578,6 +6085,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3876,
     "Number": 218,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Jennifer L. French",
@@ -5589,6 +6097,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3338,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -5600,6 +6109,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3339,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -5611,6 +6121,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3340,
     "Number": 220,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC,PHLH_PHLHNUTR",
     "Professor": "Henry W. Art",
@@ -5622,6 +6133,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3465,
     "Number": 232,
     "Attributes": "DIV_D1",
     "Professor": "Nicole G. Brown",
@@ -5633,6 +6145,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3548,
     "Number": 235,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,ENVI_ENVIHUM,PHIL_PHILREL,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "",
@@ -5644,6 +6157,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3536,
     "Number": 244,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,EVST_EVSTCULHUM,PHIL_VALUE,SCST_SCSTELEC,WAC_WAC",
     "Professor": "Julie A. Pedroni",
@@ -5655,6 +6169,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3539,
     "Number": 248,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,WAC_WAC",
     "Professor": "Pia M. Kohler",
@@ -5666,6 +6181,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3540,
     "Number": 250,
     "Attributes": "DIV_D2,DPE_DPE,ENVI_ENVIHUM,EVST_EVSTCULHUM,EXPE_EXPEREDUC",
     "Professor": "Laura J. Martin",
@@ -5677,6 +6193,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3545,
     "Number": 259,
     "Attributes": "DIV_D2,ENVI_ENVIHUM,EVST_EVSTCULHUM,EXPE_EXPEREDUC,HIST_HISTF,WAC_WAC",
     "Professor": "Laura J. Martin",
@@ -5688,6 +6205,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3549,
     "Number": 303,
     "Attributes": "DIV_D2,ENVI_ENVIHUM,SCST_SCSTREL,WAC_WAC",
     "Professor": "Nicolas C. Howe",
@@ -5699,6 +6217,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3606,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -5710,6 +6229,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3607,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -5721,6 +6241,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3551,
     "Number": 329,
     "Attributes": "DIV_D6,ENVI_ENVIPOL",
     "Professor": "Pia M. Kohler",
@@ -5732,6 +6253,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3898,
     "Number": 351,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,EXPE_EXPEREDUC,POEC_POECINTL",
     "Professor": "Catherine Robinson Hall",
@@ -5743,6 +6265,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3709,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Lee Y. Park",
@@ -5754,6 +6277,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3710,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Anthony J. Carrasquillo",
@@ -5765,6 +6289,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 4077,
     "Number": 364,
     "Attributes": "BIMO_BIMOELEC,DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,MTSC_MTSCCRS",
     "Professor": "Nathan Cook",
@@ -5776,6 +6301,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3218,
     "Number": 376,
     "Attributes": "DIV_D2,MAST_MASTELEC,POEC_POECCOMP,QFR_QFR",
     "Professor": "Sarah A. Jacobson",
@@ -5787,6 +6313,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3552,
     "Number": 398,
     "Attributes": "DIV_D6",
     "Professor": "Henry W. Art",
@@ -5798,6 +6325,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3611,
     "Number": 404,
     "Attributes": "DIV_D3,ENVI_ENVINATW,QFR_QFR",
     "Professor": "Alex A. Apotsos",
@@ -5809,6 +6337,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3553,
     "Number": 412,
     "Attributes": "DIV_D6,EVST_EVSTPRAC,SCST_SCSTELEC,WAC_WAC",
     "Professor": "Nicolas C. Howe",
@@ -5820,6 +6349,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3061,
     "Number": 420,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -5831,6 +6361,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 4006,
     "Number": 423,
     "Attributes": "DIV_D3,WAC_WAC",
     "Professor": "Sonya K. Auer",
@@ -5842,6 +6373,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 4007,
     "Number": 423,
     "Attributes": "DIV_D3,WAC_WAC",
     "Professor": "Sonya K. Auer",
@@ -5853,6 +6385,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3322,
     "Number": 491,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Karen R. Merrill",
@@ -5864,6 +6397,7 @@
   },
   {
     "Subject": "ENVI",
+    "ClassNumber": 3555,
     "Number": 494,
     "Attributes": "DIV_D6",
     "Professor": "Henry W. Art",
@@ -5875,6 +6409,7 @@
   },
   {
     "Subject": "EXPR",
+    "ClassNumber": 3063,
     "Number": 420,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -5886,6 +6421,7 @@
   },
   {
     "Subject": "EXPR",
+    "ClassNumber": 3132,
     "Number": 498,
     "Attributes": "DIV_D6",
     "Professor": "Peter Just",
@@ -5897,6 +6433,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3231,
     "Number": 117,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,WAC_WAC",
     "Professor": "Aparna Kapadia",
@@ -5908,6 +6445,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3796,
     "Number": 215,
     "Attributes": "DIV_D2",
     "Professor": "Munjulika Tarah",
@@ -5919,6 +6457,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3496,
     "Number": 244,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Michele Monserrati",
@@ -5930,6 +6469,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3190,
     "Number": 315,
     "Attributes": "DIV_D2,GBST_GBSTECON,MAST_MASTELEC,POEC_POECINTL",
     "Professor": "Will Olney",
@@ -5941,6 +6481,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3921,
     "Number": 326,
     "Attributes": "DIV_D2,PSCI_PSCIINTL,PSCI_PSCIRES,WAC_WAC",
     "Professor": "Phoebe G. Donnelly",
@@ -5952,6 +6493,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3572,
     "Number": 351,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTLAT,POEC_POECCOMP,PSCI_PSCICOMP,PSCI_PSCIRES,WAC_WAC",
     "Professor": "James E. Mahon",
@@ -5963,6 +6505,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3405,
     "Number": 358,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Saadia Yacoob",
@@ -5974,6 +6517,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3299,
     "Number": 391,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,HIST_HISTP,MAST_MASTELEC",
     "Professor": "Aparna Kapadia",
@@ -5985,6 +6529,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3130,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "James E. Mahon",
@@ -5996,6 +6541,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3062,
     "Number": 420,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Michelle M. Apotsos",
@@ -6007,6 +6553,7 @@
   },
   {
     "Subject": "GBST",
+    "ClassNumber": 3131,
     "Number": 492,
     "Attributes": "DIV_D2",
     "Professor": "James E. Mahon",
@@ -6018,6 +6565,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3907,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -6029,6 +6577,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3908,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -6040,6 +6589,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3909,
     "Number": 100,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC",
     "Professor": "Alice C. Bradley",
@@ -6051,6 +6601,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3583,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Bud Wobus",
@@ -6062,6 +6613,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3584,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Bud Wobus",
@@ -6073,6 +6625,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3585,
     "Number": 102,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Bud Wobus",
@@ -6084,6 +6637,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3586,
     "Number": 202,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MTSC_MTSCCRS",
     "Professor": "Bud Wobus",
@@ -6095,6 +6649,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3587,
     "Number": 202,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MTSC_MTSCCRS",
     "Professor": "Bud Wobus",
@@ -6106,6 +6661,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3895,
     "Number": 210,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC",
     "Professor": "Lisa A. Gilbert",
@@ -6117,6 +6673,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3588,
     "Number": 212,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MAST_MASTELEC",
     "Professor": "Phoebe A. Cohen",
@@ -6128,6 +6685,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3589,
     "Number": 212,
     "Attributes": "DIV_D3,EXPE_EXPEREDUC,MAST_MASTELEC",
     "Professor": "Phoebe A. Cohen",
@@ -6139,6 +6697,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3593,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -6150,6 +6709,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3594,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -6161,6 +6721,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3595,
     "Number": 214,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTMETH,EXPE_EXPEREDUC",
     "Professor": "JosÃ© A. Constantine",
@@ -6172,6 +6733,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3599,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -6183,6 +6745,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3605,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -6194,6 +6757,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3610,
     "Number": 404,
     "Attributes": "DIV_D3,ENVI_ENVINATW,QFR_QFR",
     "Professor": "Alex A. Apotsos",
@@ -6205,6 +6769,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3614,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Mea S. Cook",
@@ -6216,6 +6781,7 @@
   },
   {
     "Subject": "GEOS",
+    "ClassNumber": 3615,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Mea S. Cook",
@@ -6227,6 +6793,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3542,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Natalie E. Lozinski-Veach",
@@ -6238,6 +6805,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3543,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Helga Druxes",
@@ -6249,6 +6817,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3544,
     "Number": 120,
     "Attributes": "DIV_D1",
     "Professor": "Gail M. Newman",
@@ -6260,6 +6829,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3936,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Natalie E. Lozinski-Veach",
@@ -6271,6 +6841,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3937,
     "Number": 316,
     "Attributes": "DIV_D1,GBST_GBSTBORD,WAC_WAC",
     "Professor": "Helga Druxes",
@@ -6282,6 +6853,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3559,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Helga Druxes",
@@ -6293,6 +6865,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3560,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Helga Druxes",
@@ -6304,6 +6877,7 @@
   },
   {
     "Subject": "GERM",
+    "ClassNumber": 3561,
     "Number": 516,
     "Attributes": "DIV_D1",
     "Professor": "Olesya Ivantsova",
@@ -6315,6 +6889,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3229,
     "Number": 117,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,WAC_WAC",
     "Professor": "Aparna Kapadia",
@@ -6326,6 +6901,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3972,
     "Number": 140,
     "Attributes": "DIV_D2,HIST_HISTC,WAC_WAC",
     "Professor": "Yana Skorobogatov",
@@ -6337,6 +6913,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 4074,
     "Number": 152,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF,JLST_JLSTELEC,WAC_WAC",
     "Professor": "Sara Dubow",
@@ -6348,6 +6925,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3234,
     "Number": 162,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTF,WAC_WAC",
     "Professor": "",
@@ -6359,6 +6937,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3235,
     "Number": 164,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Charles B. Dew",
@@ -6370,6 +6949,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3974,
     "Number": 204,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTA",
     "Professor": "Matthew Swagler",
@@ -6381,6 +6961,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3239,
     "Number": 218,
     "Attributes": "DIV_D2,GBST_GBSTEASIAN,HIST_HISTB",
     "Professor": "Eiko Maruko Siniawer",
@@ -6392,6 +6973,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3457,
     "Number": 223,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTP",
     "Professor": "Kerry A. Christensen",
@@ -6403,6 +6985,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3246,
     "Number": 225,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTP",
     "Professor": "",
@@ -6414,6 +6997,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3251,
     "Number": 226,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTP",
     "Professor": "Alexander Bevilacqua",
@@ -6425,6 +7009,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3252,
     "Number": 228,
     "Attributes": "DIV_D2,HIST_HISTC",
     "Professor": "Chris Waters",
@@ -6436,6 +7021,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3253,
     "Number": 253,
     "Attributes": "DIV_D2,HIST_HISTF",
     "Professor": "Sara Dubow",
@@ -6447,6 +7033,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3546,
     "Number": 259,
     "Attributes": "DIV_D2,ENVI_ENVIHUM,EVST_EVSTCULHUM,EXPE_EXPEREDUC,HIST_HISTF,WAC_WAC",
     "Professor": "Laura J. Martin",
@@ -6458,6 +7045,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3255,
     "Number": 284,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF",
     "Professor": "Scott Wong",
@@ -6469,6 +7057,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3259,
     "Number": 301,
     "Attributes": "DIV_D2,PHIL_PHILREL",
     "Professor": "Alexander Bevilacqua",
@@ -6480,6 +7069,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3264,
     "Number": 301,
     "Attributes": "DIV_D2",
     "Professor": "Gretchen Long",
@@ -6491,6 +7081,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3975,
     "Number": 307,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTA",
     "Professor": "Matthew Swagler",
@@ -6502,6 +7093,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3269,
     "Number": 308,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTE,HIST_HISTP,WAC_WAC",
     "Professor": "MagnÃºs T. Bernhardsson",
@@ -6513,6 +7105,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3278,
     "Number": 309,
     "Attributes": "DIV_D2",
     "Professor": "MagnÃºs T. Bernhardsson",
@@ -6524,6 +7117,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3279,
     "Number": 327,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTP",
     "Professor": "",
@@ -6535,6 +7129,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3280,
     "Number": 332,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTC",
     "Professor": "Chris Waters",
@@ -6546,6 +7141,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3284,
     "Number": 340,
     "Attributes": "DIV_D2,HIST_HISTC",
     "Professor": "Shanti M. Singham",
@@ -6557,6 +7153,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3973,
     "Number": 341,
     "Attributes": "DIV_D2,HIST_HISTC",
     "Professor": "Yana Skorobogatov",
@@ -6568,6 +7165,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3900,
     "Number": 352,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,ENVI_ENVIHUM,EXPE_EXPEREDUC,HIST_HISTF,HIST_HISTP,WAC_WAC",
     "Professor": "Alicia C. Maggard",
@@ -6579,6 +7177,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3431,
     "Number": 358,
     "Attributes": "DIV_D2,HIST_HISTF",
     "Professor": "Susan Dunn",
@@ -6590,6 +7189,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3012,
     "Number": 362,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF,HIST_HISTG,WAC_WAC",
     "Professor": "Tyler J. Rogers",
@@ -6601,6 +7201,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3285,
     "Number": 365,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,HIST_HISTF",
     "Professor": "Charles B. Dew",
@@ -6612,6 +7213,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3291,
     "Number": 373,
     "Attributes": "DIV_D2,HIST_HISTF",
     "Professor": "Karen R. Merrill",
@@ -6623,6 +7225,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3292,
     "Number": 385,
     "Attributes": "DIV_D2,HIST_HISTF,LATS_LATSCORE",
     "Professor": "Carmen T. Whalen",
@@ -6634,6 +7237,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3294,
     "Number": 389,
     "Attributes": "DIV_D2,HIST_HISTB,HIST_HISTF,LEAD_LEADFOR",
     "Professor": "Jessica Chapman",
@@ -6645,6 +7249,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3970,
     "Number": 390,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTD",
     "Professor": "Shanti M. Singham",
@@ -6656,6 +7261,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3297,
     "Number": 391,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,HIST_HISTB,HIST_HISTP,MAST_MASTELEC",
     "Professor": "Aparna Kapadia",
@@ -6667,6 +7273,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3427,
     "Number": 393,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTF,HIST_HISTP,LEAD_LEADFAC",
     "Professor": "Susan Dunn",
@@ -6678,6 +7285,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3301,
     "Number": 453,
     "Attributes": "DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "",
@@ -6689,6 +7297,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3305,
     "Number": 468,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTF",
     "Professor": "Scott Wong",
@@ -6700,6 +7309,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3421,
     "Number": 471,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,GBST_GBSTBORD,HIST_HISTF,LATS_LATSSEM,WAC_WAC",
     "Professor": "Carmen T. Whalen",
@@ -6711,6 +7321,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3312,
     "Number": 481,
     "Attributes": "DIV_D2,HIST_HISTB,WAC_WAC",
     "Professor": "Anne Reinhardt",
@@ -6722,6 +7333,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3318,
     "Number": 483,
     "Attributes": "DIV_D2,HIST_HISTF,HIST_HISTG,WAC_WAC",
     "Professor": "Jessica Chapman",
@@ -6733,6 +7345,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3321,
     "Number": 491,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "Karen R. Merrill",
@@ -6744,6 +7357,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 3337,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Eiko Maruko Siniawer",
@@ -6755,6 +7369,7 @@
   },
   {
     "Subject": "HIST",
+    "ClassNumber": 4008,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Anne Reinhardt",
@@ -6766,6 +7381,7 @@
   },
   {
     "Subject": "HSCI",
+    "ClassNumber": 3104,
     "Number": 101,
     "Attributes": "DIV_D2",
     "Professor": "Grant Shoffstall",
@@ -6777,6 +7393,7 @@
   },
   {
     "Subject": "HSCI",
+    "ClassNumber": 3163,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Jason Josephson Storm",
@@ -6788,6 +7405,7 @@
   },
   {
     "Subject": "INTR",
+    "ClassNumber": 3133,
     "Number": 334,
     "Attributes": "DIV_D2",
     "Professor": "Joy A. James",
@@ -6799,6 +7417,7 @@
   },
   {
     "Subject": "INTR",
+    "ClassNumber": 3143,
     "Number": 343,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,JLST_JLSTELEC,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Joy A. James",
@@ -6810,6 +7429,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3366,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Kasumi Yamamoto",
@@ -6821,6 +7441,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3367,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Shinko Kagaya",
@@ -6832,6 +7453,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3368,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Shinko Kagaya",
@@ -6843,6 +7465,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3373,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Mamoru Hatakeyama",
@@ -6854,6 +7477,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3376,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Jinhwa Chang",
@@ -6865,6 +7489,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3377,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Jinhwa Chang",
@@ -6876,6 +7501,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3386,
     "Number": 258,
     "Attributes": "DIV_D1,LING_LING",
     "Professor": "Kasumi Yamamoto",
@@ -6887,6 +7513,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3941,
     "Number": 302,
     "Attributes": "DIV_D1",
     "Professor": "Jinhwa Chang",
@@ -6898,6 +7525,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3395,
     "Number": 402,
     "Attributes": "DIV_D1",
     "Professor": "Shinko Kagaya",
@@ -6909,6 +7537,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3396,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "George T. Crane",
@@ -6920,6 +7549,7 @@
   },
   {
     "Subject": "JAPN",
+    "ClassNumber": 3398,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "George T. Crane",
@@ -6931,6 +7561,7 @@
   },
   {
     "Subject": "JLST",
+    "ClassNumber": 3999,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Alan Hirsch",
@@ -6942,6 +7573,7 @@
   },
   {
     "Subject": "JLST",
+    "ClassNumber": 3165,
     "Number": 401,
     "Attributes": "DIV_D2",
     "Professor": "Alan Hirsch",
@@ -6953,6 +7585,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3359,
     "Number": 202,
     "Attributes": "DIV_D2,JWST_JWSTCORE",
     "Professor": "Edan Dekel",
@@ -6964,6 +7597,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3390,
     "Number": 270,
     "Attributes": "DIV_D2",
     "Professor": "Lawrence M. Wills",
@@ -6975,6 +7609,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3081,
     "Number": 334,
     "Attributes": "DIV_D2,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Peter Just",
@@ -6986,6 +7621,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3402,
     "Number": 492,
     "Attributes": "DIV_D2,JWST_JWSTCAP,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Jeffrey I. Israel",
@@ -6997,6 +7633,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3166,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Edan Dekel",
@@ -7008,6 +7645,7 @@
   },
   {
     "Subject": "JWST",
+    "ClassNumber": 3167,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Edan Dekel",
@@ -7019,6 +7657,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3392,
     "Number": 106,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,DPE_DPE,LATS_LATSCORE,WAC_WAC",
     "Professor": "",
@@ -7030,6 +7669,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3400,
     "Number": 222,
     "Attributes": "DIV_D2,DPE_DPE,LATS_LATSCORE,WAC_WAC",
     "Professor": "Nelly A. Rosario",
@@ -7041,6 +7681,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3406,
     "Number": 240,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,LATS_LATSCORE",
     "Professor": "Maria Elena Cepeda",
@@ -7052,6 +7693,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3412,
     "Number": 252,
     "Attributes": "AMST_AMSTCOMP,AMST_AMSTSPACE,DIV_D2,EXPE_EXPEREDUC,LATS_LATSCORE",
     "Professor": "MÃ©rida RÃºa",
@@ -7063,6 +7705,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3414,
     "Number": 330,
     "Attributes": "DIV_D2,DPE_DPE,LATS_LATSCORE",
     "Professor": "Nelly A. Rosario",
@@ -7074,6 +7717,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3415,
     "Number": 338,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2,GBST_GBSTBORD,LATS_LATSCORE,WAC_WAC,WGSS_WGSSDIV,WGSS_WGSSTHRY",
     "Professor": "Maria Elena Cepeda",
@@ -7085,6 +7729,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3418,
     "Number": 340,
     "Attributes": "DIV_D2,LATS_LATSCORE",
     "Professor": "Shantee Rosado",
@@ -7096,6 +7741,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3293,
     "Number": 385,
     "Attributes": "DIV_D2,HIST_HISTF,LATS_LATSCORE",
     "Professor": "Carmen T. Whalen",
@@ -7107,6 +7753,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3419,
     "Number": 398,
     "Attributes": "DIV_D2,LATS_LATSCORE",
     "Professor": "MÃ©rida RÃºa",
@@ -7118,6 +7765,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3420,
     "Number": 471,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,GBST_GBSTBORD,HIST_HISTF,LATS_LATSSEM,WAC_WAC",
     "Professor": "Carmen T. Whalen",
@@ -7129,6 +7777,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3422,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "MÃ©rida RÃºa",
@@ -7140,6 +7789,7 @@
   },
   {
     "Subject": "LATS",
+    "ClassNumber": 3423,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "MÃ©rida RÃºa",
@@ -7151,6 +7801,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3504,
     "Number": 127,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "James McAllister",
@@ -7162,6 +7813,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3424,
     "Number": 205,
     "Attributes": "DIV_D2,DPE_DPE,LEAD_LEADDOM,LEAD_LEADFAC,PSCI_PSCIAMER",
     "Professor": "Mason B. Williams",
@@ -7173,6 +7825,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3426,
     "Number": 212,
     "Attributes": "DIV_D2,HIST_HISTC,HIST_HISTF,HIST_HISTP,LEAD_LEADFAC",
     "Professor": "Susan Dunn",
@@ -7184,6 +7837,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3525,
     "Number": 215,
     "Attributes": "DIV_D2,LEAD_LEADFAC,POEC_POECAMER",
     "Professor": "Mason B. Williams",
@@ -7195,6 +7849,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3534,
     "Number": 218,
     "Attributes": "DIV_D2,LEAD_LEADDOM,LEAD_LEADFAC,POEC_POECAMER,PSCI_PSCIAMER",
     "Professor": "Nicole E. Mellow",
@@ -7206,6 +7861,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3179,
     "Number": 301,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,LEAD_LEADFAC",
     "Professor": "Michael Conforti",
@@ -7217,6 +7873,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3428,
     "Number": 302,
     "Attributes": "DIV_D2,LEAD_LEADDOM,LEAD_LEADFAC",
     "Professor": "Howard Dean",
@@ -7228,6 +7885,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3430,
     "Number": 325,
     "Attributes": "DIV_D2,HIST_HISTF",
     "Professor": "Susan Dunn",
@@ -7239,6 +7897,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3045,
     "Number": 348,
     "Attributes": "AFR_AFRCORE,DIV_D2,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "Neil Roberts",
@@ -7250,6 +7909,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3953,
     "Number": 367,
     "Attributes": "DIV_D2,LEAD_LEADFAC,LEAD_LEADFOR,PSCI_PSCIINTL",
     "Professor": "Chris Gibson",
@@ -7261,6 +7921,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3296,
     "Number": 389,
     "Attributes": "DIV_D2,HIST_HISTB,HIST_HISTF,LEAD_LEADFOR",
     "Professor": "Jessica Chapman",
@@ -7272,6 +7933,7 @@
   },
   {
     "Subject": "LEAD",
+    "ClassNumber": 3432,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Justin Crowe",
@@ -7283,6 +7945,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3890,
     "Number": 211,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC",
     "Professor": "Lisa A. Gilbert",
@@ -7294,6 +7957,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3891,
     "Number": 231,
     "Attributes": "AMST_AMSTARTS,DIV_D1,ENVI_ENVIHUM,WAC_WAC",
     "Professor": "Mary K. Bercaw Edwards",
@@ -7305,6 +7969,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3892,
     "Number": 311,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EVST_EVSTLIVSYS,EXPE_EXPEREDUC",
     "Professor": "Tim J. Pusack",
@@ -7316,6 +7981,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3608,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -7327,6 +7993,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3609,
     "Number": 324,
     "Attributes": "DIV_D3,ENVI_ENVINATW,EXPE_EXPEREDUC",
     "Professor": "Mea S. Cook",
@@ -7338,6 +8005,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3893,
     "Number": 351,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,EXPE_EXPEREDUC,POEC_POECINTL",
     "Professor": "Catherine Robinson Hall",
@@ -7349,6 +8017,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3894,
     "Number": 352,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,ENVI_ENVIHUM,EXPE_EXPEREDUC,HIST_HISTF,HIST_HISTP,WAC_WAC",
     "Professor": "Alicia C. Maggard",
@@ -7360,6 +8029,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3556,
     "Number": 398,
     "Attributes": "DIV_D6",
     "Professor": "Henry W. Art",
@@ -7371,6 +8041,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3554,
     "Number": 402,
     "Attributes": "DIV_D6,EVST_EVSTPRAC,SCST_SCSTELEC,WAC_WAC",
     "Professor": "Nicolas C. Howe",
@@ -7382,6 +8053,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3612,
     "Number": 404,
     "Attributes": "DIV_D3,ENVI_ENVINATW,QFR_QFR",
     "Professor": "Alex A. Apotsos",
@@ -7393,6 +8065,7 @@
   },
   {
     "Subject": "MAST",
+    "ClassNumber": 3557,
     "Number": 494,
     "Attributes": "DIV_D6",
     "Professor": "Henry W. Art",
@@ -7404,6 +8077,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3695,
     "Number": 130,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Pamela E. Harris",
@@ -7415,6 +8089,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3696,
     "Number": 140,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Susan R. Loepp",
@@ -7426,6 +8101,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3698,
     "Number": 150,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Stewart D. Johnson",
@@ -7437,6 +8113,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3699,
     "Number": 150,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Stewart D. Johnson",
@@ -7448,6 +8125,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3701,
     "Number": 200,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Leo Goldmakher",
@@ -7459,6 +8137,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3702,
     "Number": 200,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Leo Goldmakher",
@@ -7470,6 +8149,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3767,
     "Number": 210,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel P. Aalberts",
@@ -7481,6 +8161,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3703,
     "Number": 250,
     "Attributes": "COGS_COGSREL,DIV_D3,QFR_QFR",
     "Professor": "Thomas A. Garrity",
@@ -7492,6 +8173,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3704,
     "Number": 250,
     "Attributes": "COGS_COGSREL,DIV_D3,QFR_QFR",
     "Professor": "Thomas A. Garrity",
@@ -7503,6 +8185,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3706,
     "Number": 309,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Chad M. Topaz",
@@ -7514,6 +8197,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3707,
     "Number": 310,
     "Attributes": "DIV_D3,PHLH_PHLHMETH,QFR_QFR",
     "Professor": "Julie C. Blackwood",
@@ -7525,6 +8209,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3712,
     "Number": 321,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Colin C. Adams",
@@ -7536,6 +8221,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3713,
     "Number": 334,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Ralph E. Morrison",
@@ -7547,6 +8233,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3673,
     "Number": 341,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Thomas A. Garrity",
@@ -7558,6 +8245,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3715,
     "Number": 350,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Cesar E. Silva",
@@ -7569,6 +8257,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3717,
     "Number": 355,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Allison Pacelli",
@@ -7580,6 +8269,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3718,
     "Number": 355,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Allison Pacelli",
@@ -7591,6 +8281,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3720,
     "Number": 398,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -7602,6 +8293,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3723,
     "Number": 402,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "",
@@ -7613,6 +8305,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3969,
     "Number": 403,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Cesar E. Silva",
@@ -7624,6 +8317,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3724,
     "Number": 411,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Andrew Bydlon",
@@ -7635,6 +8329,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3725,
     "Number": 458,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Pamela E. Harris",
@@ -7646,6 +8341,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3728,
     "Number": 459,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Chad M. Topaz",
@@ -7657,6 +8353,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3719,
     "Number": 487,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Ralph E. Morrison",
@@ -7668,6 +8365,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3729,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -7679,6 +8377,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3730,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -7690,6 +8389,7 @@
   },
   {
     "Subject": "MATH",
+    "ClassNumber": 3732,
     "Number": 499,
     "Attributes": "DIV_D6",
     "Professor": "Susan R. Loepp",
@@ -7701,6 +8401,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3815,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Dylan J. Schneider",
@@ -7712,6 +8413,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3816,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Edwin I. Lawrence",
@@ -7723,6 +8425,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3817,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Edwin I. Lawrence",
@@ -7734,6 +8437,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3818,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Edwin I. Lawrence",
@@ -7745,6 +8449,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3819,
     "Number": 120,
     "Attributes": "DIV_D1,GBST_GBSTAFR,MUS_MUSW",
     "Professor": "Corinna S. Campbell",
@@ -7756,6 +8461,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3888,
     "Number": 179,
     "Attributes": "DIV_D1",
     "Professor": "Jacek H. Blaszkiewicz",
@@ -7767,6 +8473,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3821,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -7778,6 +8485,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3822,
     "Number": 202,
     "Attributes": "DIV_D1",
     "Professor": "Daniel E. Prindle",
@@ -7789,6 +8497,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3823,
     "Number": 205,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Dylan J. Schneider",
@@ -7800,6 +8509,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3824,
     "Number": 206,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Dylan J. Schneider",
@@ -7811,6 +8521,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3825,
     "Number": 210,
     "Attributes": "DIV_D1",
     "Professor": "Ileana Perez Velazquez",
@@ -7822,6 +8533,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3826,
     "Number": 211,
     "Attributes": "AMST_AMSTARTS,DIV_D1,DPE_DPE,MUS_MUSW,WAC_WAC",
     "Professor": "Corinna S. Campbell",
@@ -7833,6 +8545,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3827,
     "Number": 232,
     "Attributes": "DIV_D1",
     "Professor": "Jacek H. Blaszkiewicz",
@@ -7844,6 +8557,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3828,
     "Number": 261,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "M. Jennifer Bloxam",
@@ -7855,6 +8569,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3830,
     "Number": 280,
     "Attributes": "DIV_D1",
     "Professor": "Erica Dankmeyer",
@@ -7866,6 +8581,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3833,
     "Number": 281,
     "Attributes": "DIV_D6",
     "Professor": "Ed Gollin",
@@ -7877,6 +8593,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3832,
     "Number": 291,
     "Attributes": "DIV_D6",
     "Professor": "Ed Gollin",
@@ -7888,6 +8605,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3834,
     "Number": 307,
     "Attributes": "DIV_D1",
     "Professor": "Dylan J. Schneider",
@@ -7899,6 +8617,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3835,
     "Number": 308,
     "Attributes": "DIV_D1",
     "Professor": "Dylan J. Schneider",
@@ -7910,6 +8629,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3836,
     "Number": 309,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Kris Allen",
@@ -7921,6 +8641,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3811,
     "Number": 330,
     "Attributes": "DIV_D1,MUS_MUSW",
     "Professor": "Sandra L. Burton",
@@ -7932,6 +8653,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3837,
     "Number": 381,
     "Attributes": "DIV_D1",
     "Professor": "Lindsay S. Pope",
@@ -7943,6 +8665,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3838,
     "Number": 391,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -7954,6 +8677,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3839,
     "Number": 392,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -7965,6 +8689,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3840,
     "Number": 472,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "M. Jennifer Bloxam",
@@ -7976,6 +8701,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3841,
     "Number": 491,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -7987,6 +8713,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3842,
     "Number": 492,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -7998,6 +8725,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3843,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -8009,6 +8737,7 @@
   },
   {
     "Subject": "MUS",
+    "ClassNumber": 3844,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Ed Gollin",
@@ -8020,6 +8749,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3317,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -8031,6 +8761,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3319,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -8042,6 +8773,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3320,
     "Number": 204,
     "Attributes": "COGS_COGSELEC,DIV_D3,NSCI_NSCIA",
     "Professor": "Manuel A. Morales",
@@ -8053,6 +8785,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3905,
     "Number": 314,
     "Attributes": "DIV_D3,NSCI_NSCIB,PSYC_PSYCAREA1,PSYC_PSYCEMPER",
     "Professor": "Matthew M. Clasen",
@@ -8064,6 +8797,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3906,
     "Number": 314,
     "Attributes": "DIV_D3,NSCI_NSCIB,PSYC_PSYCAREA1,PSYC_PSYCEMPER",
     "Professor": "Matthew M. Clasen",
@@ -8075,6 +8809,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3501,
     "Number": 317,
     "Attributes": "DIV_D3,NSCI_NSCIB,PHLH_PHLHBMED,PHLH_PHLHREPRO,PSYC_PSYCAREA1,PSYC_PSYCEMPER,SCST_SCSTREL",
     "Professor": "Betty Zimmerberg",
@@ -8086,6 +8821,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3502,
     "Number": 317,
     "Attributes": "DIV_D3,NSCI_NSCIB,PHLH_PHLHBMED,PHLH_PHLHREPRO,PSYC_PSYCAREA1,PSYC_PSYCEMPER,SCST_SCSTREL",
     "Professor": "Betty Zimmerberg",
@@ -8097,6 +8833,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3651,
     "Number": 398,
     "Attributes": "DIV_D3",
     "Professor": "Noah J. Sandstrom",
@@ -8108,6 +8845,7 @@
   },
   {
     "Subject": "NSCI",
+    "ClassNumber": 3652,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Noah J. Sandstrom",
@@ -8119,6 +8857,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3109,
     "Number": 116,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Joseph L. Cruz",
@@ -8130,6 +8869,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3111,
     "Number": 119,
     "Attributes": "DIV_D2,LEAD_LEADETH,LGST_LGSTELEC,WAC_WAC",
     "Professor": "Jana Sawicki",
@@ -8141,6 +8881,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3112,
     "Number": 123,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Melissa J. Barry",
@@ -8152,6 +8893,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3113,
     "Number": 126,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Keith E. McPartland",
@@ -8163,6 +8905,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3115,
     "Number": 202,
     "Attributes": "DIV_D2",
     "Professor": "Justin B. Shaddock",
@@ -8174,6 +8917,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3118,
     "Number": 203,
     "Attributes": "DIV_D2,LING_LING,PHIL_M&E,QFR_QFR",
     "Professor": "Steven B. Gerrard",
@@ -8185,6 +8929,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3120,
     "Number": 209,
     "Attributes": "COGS_COGSREL,DIV_D2,HSCI_HSCIELEC,PHIL_M&E,SCST_SCSTELEC",
     "Professor": "Bojana Mladenovic",
@@ -8196,6 +8941,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3121,
     "Number": 212,
     "Attributes": "DIV_D2,PHIL_VALUE,PHLH_PHLHBIOE,WAC_WAC",
     "Professor": "Julie A. Pedroni",
@@ -8207,6 +8953,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3124,
     "Number": 235,
     "Attributes": "DIV_D2,PHIL_VALUE,WAC_WAC",
     "Professor": "Bojana Mladenovic",
@@ -8218,6 +8965,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3125,
     "Number": 243,
     "Attributes": "DIV_D2",
     "Professor": "Steven B. Gerrard",
@@ -8229,6 +8977,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3537,
     "Number": 244,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,EVST_EVSTCULHUM,PHIL_VALUE,SCST_SCSTELEC,WAC_WAC",
     "Professor": "Julie A. Pedroni",
@@ -8240,6 +8989,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 4052,
     "Number": 306,
     "Attributes": "DIV_D2,PHIL_HIST,WAC_WAC",
     "Professor": "Keith E. McPartland",
@@ -8251,6 +9001,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3776,
     "Number": 312,
     "Attributes": "DIV_D2,PHIL_M&E,QFR_QFR",
     "Professor": "Frederick W. Strauch",
@@ -8262,6 +9013,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3126,
     "Number": 328,
     "Attributes": "DIV_D2,PHIL_HIST",
     "Professor": "Melissa J. Barry",
@@ -8273,6 +9025,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3127,
     "Number": 388,
     "Attributes": "COGS_COGSELEC,DIV_D2,PHIL_M&E,WAC_WAC",
     "Professor": "Joseph L. Cruz",
@@ -8284,6 +9037,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3128,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Jana Sawicki",
@@ -8295,6 +9049,7 @@
   },
   {
     "Subject": "PHIL",
+    "ClassNumber": 3129,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Jana Sawicki",
@@ -8306,6 +9061,7 @@
   },
   {
     "Subject": "PHLH",
+    "ClassNumber": 3214,
     "Number": 201,
     "Attributes": "DIV_D6,DPE_DPE,PHLH_PHLHCORE",
     "Professor": "Kiaran Honderich",
@@ -8317,6 +9073,7 @@
   },
   {
     "Subject": "PHLH",
+    "ClassNumber": 3197,
     "Number": 255,
     "Attributes": "DIV_D2,PHLH_PHLHMETH",
     "Professor": "Marion Min-Barron",
@@ -8328,6 +9085,7 @@
   },
   {
     "Subject": "PHLH",
+    "ClassNumber": 3202,
     "Number": 402,
     "Attributes": "DIV_D6,EXPE_EXPEREDUC,PHLH_PHLHCORE",
     "Professor": "Amie A. Hane",
@@ -8339,6 +9097,7 @@
   },
   {
     "Subject": "PHLH",
+    "ClassNumber": 3203,
     "Number": 402,
     "Attributes": "DIV_D6,EXPE_EXPEREDUC,PHLH_PHLHCORE",
     "Professor": "Amie A. Hane",
@@ -8350,6 +9109,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3756,
     "Number": 132,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Savan Kharel",
@@ -8361,6 +9121,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3757,
     "Number": 132,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Savan Kharel",
@@ -8372,6 +9133,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3758,
     "Number": 132,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Savan Kharel",
@@ -8383,6 +9145,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3851,
     "Number": 142,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Charlie Doret",
@@ -8394,6 +9157,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3852,
     "Number": 142,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Charlie Doret",
@@ -8405,6 +9169,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3853,
     "Number": 142,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Charlie Doret",
@@ -8416,6 +9181,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3854,
     "Number": 142,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Charlie Doret",
@@ -8427,6 +9193,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3855,
     "Number": 142,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Charlie Doret",
@@ -8438,6 +9205,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3760,
     "Number": 202,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Katharine E. Jensen",
@@ -8449,6 +9217,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3761,
     "Number": 202,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Katharine E. Jensen",
@@ -8460,6 +9229,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3762,
     "Number": 202,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Katharine E. Jensen",
@@ -8471,6 +9241,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3765,
     "Number": 210,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel P. Aalberts",
@@ -8482,6 +9253,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3769,
     "Number": 302,
     "Attributes": "BGNP_BGNPREL,DIV_D3,QFR_QFR",
     "Professor": "Protik K. Majumder",
@@ -8493,6 +9265,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3770,
     "Number": 302,
     "Attributes": "BGNP_BGNPREL,DIV_D3,QFR_QFR",
     "Professor": "Protik K. Majumder",
@@ -8504,6 +9277,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 4069,
     "Number": 302,
     "Attributes": "BGNP_BGNPREL,DIV_D3,QFR_QFR",
     "Professor": "Protik K. Majumder",
@@ -8515,6 +9289,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3775,
     "Number": 312,
     "Attributes": "DIV_D3,PHIL_M&E,QFR_QFR",
     "Professor": "Frederick W. Strauch",
@@ -8526,6 +9301,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3777,
     "Number": 402,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Catherine Kealhofer",
@@ -8537,6 +9313,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3778,
     "Number": 402,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Catherine Kealhofer",
@@ -8548,6 +9325,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3779,
     "Number": 451,
     "Attributes": "DIV_D3,MTSC_MTSCCRS,QFR_QFR",
     "Professor": "Daniel P. Aalberts",
@@ -8559,6 +9337,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3781,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Frederick W. Strauch",
@@ -8570,6 +9349,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3782,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Frederick W. Strauch",
@@ -8581,6 +9361,7 @@
   },
   {
     "Subject": "PHYS",
+    "ClassNumber": 3783,
     "Number": 499,
     "Attributes": "DIV_D6",
     "Professor": "Frederick W. Strauch",
@@ -8592,6 +9373,7 @@
   },
   {
     "Subject": "POEC",
+    "ClassNumber": 3300,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Sara LaLumia",
@@ -8603,6 +9385,7 @@
   },
   {
     "Subject": "POEC",
+    "ClassNumber": 3304,
     "Number": 402,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC,POEC_POECREQ",
     "Professor": "William M. Gentry",
@@ -8614,6 +9397,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3500,
     "Number": 127,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "James McAllister",
@@ -8625,6 +9409,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3506,
     "Number": 160,
     "Attributes": "DIV_D2,DPE_DPE,POEC_POECINTL,PSCI_PSCIINTL,WAC_WAC",
     "Professor": "Cheryl Shanks",
@@ -8636,6 +9421,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3509,
     "Number": 201,
     "Attributes": "DIV_D2,POEC_POECREQ,PSCI_PSCIAMER",
     "Professor": "Matthew Tokeshi",
@@ -8647,6 +9433,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3510,
     "Number": 202,
     "Attributes": "DIV_D2,POEC_POECREQ,PSCI_PSCIINTL",
     "Professor": "Galen E Jackson",
@@ -8658,6 +9445,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3511,
     "Number": 203,
     "Attributes": "DIV_D2,LEAD_LEADETH,PHIL_PHILREL,POEC_POECREQ,PSCI_PSCITHRY",
     "Professor": "",
@@ -8669,6 +9457,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3513,
     "Number": 204,
     "Attributes": "DIV_D2,POEC_POECREQ,PSCI_PSCICOMP",
     "Professor": "Shervin Malekzadeh",
@@ -8680,6 +9469,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3518,
     "Number": 211,
     "Attributes": "DIV_D2,POEC_POECAMER,PSCI_PSCIAMER",
     "Professor": "Matthew Tokeshi",
@@ -8691,6 +9481,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3425,
     "Number": 212,
     "Attributes": "DIV_D2,DPE_DPE,LEAD_LEADDOM,LEAD_LEADFAC,PSCI_PSCIAMER",
     "Professor": "Mason B. Williams",
@@ -8702,6 +9493,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3524,
     "Number": 215,
     "Attributes": "DIV_D2,LEAD_LEADFAC,POEC_POECAMER",
     "Professor": "Mason B. Williams",
@@ -8713,6 +9505,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3533,
     "Number": 218,
     "Attributes": "DIV_D2,LEAD_LEADDOM,LEAD_LEADFAC,POEC_POECAMER,PSCI_PSCIAMER",
     "Professor": "Nicole E. Mellow",
@@ -8724,6 +9517,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3535,
     "Number": 223,
     "Attributes": "DIV_D2,JLST_JLSTELEC,POEC_POECINTL,PSCI_PSCIINTL",
     "Professor": "Cheryl Shanks",
@@ -8735,6 +9529,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3538,
     "Number": 227,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "Galen E Jackson",
@@ -8746,6 +9541,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3962,
     "Number": 234,
     "Attributes": "DIV_D2,ENGL_ENGLCRIT,ENGL_ENGLLHB",
     "Professor": "Walter Johnston",
@@ -8757,6 +9553,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3547,
     "Number": 235,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,ENVI_ENVIHUM,PHIL_PHILREL,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "",
@@ -8768,6 +9565,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3562,
     "Number": 241,
     "Attributes": "DIV_D2,POEC_POECCOMP,PSCI_PSCIAMER,PSCI_PSCICOMP",
     "Professor": "Darel E. Paul",
@@ -8779,6 +9577,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3564,
     "Number": 247,
     "Attributes": "DIV_D2,GBST_GBSTEASIAN,POEC_POECCOMP,PSCI_PSCICOMP",
     "Professor": "George T. Crane",
@@ -8790,6 +9589,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4064,
     "Number": 260,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC,WGSS_WGSSTHRY",
     "Professor": "Greta F. Snyder",
@@ -8801,6 +9601,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3922,
     "Number": 261,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "Phoebe G. Donnelly",
@@ -8812,6 +9613,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3565,
     "Number": 266,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTLAT,LATS_LATSORIG,LEAD_LEADFOR,PSCI_PSCIINTL",
     "Professor": "James E. Mahon",
@@ -8823,6 +9625,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3566,
     "Number": 274,
     "Attributes": "DIV_D2,PSCI_PSCICOMP,WAC_WAC",
     "Professor": "Shervin Malekzadeh",
@@ -8834,6 +9637,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4061,
     "Number": 275,
     "Attributes": "DIV_D2",
     "Professor": "Phillip J. Webster",
@@ -8845,6 +9649,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3567,
     "Number": 291,
     "Attributes": "DIV_D2,PSCI_PSCIAMER,WAC_WAC",
     "Professor": "Justin Crowe",
@@ -8856,6 +9661,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3429,
     "Number": 302,
     "Attributes": "DIV_D2,LEAD_LEADDOM,LEAD_LEADFAC",
     "Professor": "Howard Dean",
@@ -8867,6 +9673,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3568,
     "Number": 303,
     "Attributes": "DIV_D2",
     "Professor": "Aleksandar Matovski",
@@ -8878,6 +9685,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3913,
     "Number": 316,
     "Attributes": "DIV_D2,POEC_POECAMER,PSCI_PSCIAMER,PSCI_PSCIRES,WAC_WAC",
     "Professor": "Cathy M. Johnson",
@@ -8889,6 +9697,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3899,
     "Number": 319,
     "Attributes": "DIV_D2,ENVI_ENVIPOL,EXPE_EXPEREDUC,POEC_POECINTL",
     "Professor": "Catherine Robinson Hall",
@@ -8900,6 +9709,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3679,
     "Number": 326,
     "Attributes": "DIV_D2,PSCI_PSCIINTL,PSCI_PSCIRES,WAC_WAC",
     "Professor": "Phoebe G. Donnelly",
@@ -8911,6 +9721,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3569,
     "Number": 334,
     "Attributes": "DIV_D2,LGST_LGSTELEC,PSCI_PSCITHRY",
     "Professor": "Nimu Njoya",
@@ -8922,6 +9733,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3570,
     "Number": 345,
     "Attributes": "DIV_D2,GBST_GBSTEASIAN,LEAD_LEADFAC,PSCI_PSCICOMP,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "George T. Crane",
@@ -8933,6 +9745,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3139,
     "Number": 346,
     "Attributes": "DIV_D2",
     "Professor": "Joy A. James",
@@ -8944,6 +9757,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3047,
     "Number": 348,
     "Attributes": "AFR_AFRCORE,DIV_D2,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "Neil Roberts",
@@ -8955,6 +9769,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3571,
     "Number": 351,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTLAT,POEC_POECCOMP,PSCI_PSCICOMP,PSCI_PSCIRES,WAC_WAC",
     "Professor": "James E. Mahon",
@@ -8966,6 +9781,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3573,
     "Number": 359,
     "Attributes": "DIV_D2,DPE_DPE,JLST_JLSTELEC,PSCI_PSCITHRY,WAC_WAC",
     "Professor": "Nimu Njoya",
@@ -8977,6 +9793,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3952,
     "Number": 367,
     "Attributes": "DIV_D2,LEAD_LEADFAC,LEAD_LEADFOR,PSCI_PSCIINTL",
     "Professor": "Chris Gibson",
@@ -8988,6 +9805,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3401,
     "Number": 375,
     "Attributes": "DIV_D2,JWST_JWSTCAP,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Jeffrey I. Israel",
@@ -8999,6 +9817,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4011,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "James McAllister",
@@ -9010,6 +9829,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3574,
     "Number": 410,
     "Attributes": "AMST_AMSTSPACE,DIV_D2,PSCI_PSCIAMER,PSCI_PSCIRES",
     "Professor": "",
@@ -9021,6 +9841,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3949,
     "Number": 410,
     "Attributes": "DIV_D2,PSCI_PSCIAMER",
     "Professor": "Nicole E. Mellow",
@@ -9032,6 +9853,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 3575,
     "Number": 420,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "Darel E. Paul",
@@ -9043,6 +9865,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4070,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Cathy M. Johnson",
@@ -9054,6 +9877,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4012,
     "Number": 496,
     "Attributes": "DIV_D2",
     "Professor": "James McAllister",
@@ -9065,6 +9889,7 @@
   },
   {
     "Subject": "PSCI",
+    "ClassNumber": 4013,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "James McAllister",
@@ -9076,6 +9901,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3478,
     "Number": 101,
     "Attributes": "DIV_D2,NSCI_NSCIREQ,TEAC_TEACSEQ",
     "Professor": "Noah J. Sandstrom",
@@ -9087,6 +9913,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3479,
     "Number": 201,
     "Attributes": "COGS_COGSREL,DIV_D2,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Safa R. Zaki",
@@ -9098,6 +9925,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3480,
     "Number": 201,
     "Attributes": "COGS_COGSREL,DIV_D2,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Safa R. Zaki",
@@ -9109,6 +9937,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3483,
     "Number": 201,
     "Attributes": "COGS_COGSREL,DIV_D2,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Kris N. Kirby",
@@ -9120,6 +9949,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3484,
     "Number": 201,
     "Attributes": "COGS_COGSREL,DIV_D2,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Kris N. Kirby",
@@ -9131,6 +9961,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3487,
     "Number": 221,
     "Attributes": "COGS_COGSELEC,DIV_D2,PSYC_PSYC200",
     "Professor": "Nate Kornell",
@@ -9142,6 +9973,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3493,
     "Number": 242,
     "Attributes": "DIV_D2,PSYC_PSYC200,TEAC_TEACSEQ",
     "Professor": "Amanda N. Bergold",
@@ -9153,6 +9985,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3494,
     "Number": 252,
     "Attributes": "DIV_D2,PSYC_PSYC200",
     "Professor": "Dan Norton",
@@ -9164,6 +9997,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3387,
     "Number": 258,
     "Attributes": "DIV_D2,LING_LING",
     "Professor": "Kasumi Yamamoto",
@@ -9175,6 +10009,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3497,
     "Number": 272,
     "Attributes": "DIV_D2,PSYC_PSYC200,TEAC_TEACSEQ",
     "Professor": "Susan L. Engel",
@@ -9186,6 +10021,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3903,
     "Number": 314,
     "Attributes": "DIV_D2,NSCI_NSCIB,PSYC_PSYCAREA1,PSYC_PSYCEMPER",
     "Professor": "Matthew M. Clasen",
@@ -9197,6 +10033,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3904,
     "Number": 314,
     "Attributes": "DIV_D2,NSCI_NSCIB,PSYC_PSYCAREA1,PSYC_PSYCEMPER",
     "Professor": "Matthew M. Clasen",
@@ -9208,6 +10045,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3498,
     "Number": 317,
     "Attributes": "DIV_D3,NSCI_NSCIB,PHLH_PHLHBMED,PHLH_PHLHREPRO,PSYC_PSYCAREA1,PSYC_PSYCEMPER,SCST_SCSTREL",
     "Professor": "Betty Zimmerberg",
@@ -9219,6 +10057,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3499,
     "Number": 317,
     "Attributes": "DIV_D3,NSCI_NSCIB,PHLH_PHLHBMED,PHLH_PHLHREPRO,PSYC_PSYCAREA1,PSYC_PSYCEMPER,SCST_SCSTREL",
     "Professor": "Betty Zimmerberg",
@@ -9230,6 +10069,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3512,
     "Number": 335,
     "Attributes": "DIV_D2,PHLH_PHLHBMED,PHLH_PHLHREPRO,PSYC_PSYCAREA3,WAC_WAC",
     "Professor": "Amie A. Hane",
@@ -9241,6 +10081,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3514,
     "Number": 341,
     "Attributes": "AMST_AMSTCOMP,ASAM_ASAMREL,DIV_D2,PSYC_PSYCAREA4,PSYC_PSYCEMPER,TEAC_TEACREL,WAC_WAC",
     "Professor": "Steven Fein",
@@ -9252,6 +10093,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3517,
     "Number": 341,
     "Attributes": "AMST_AMSTCOMP,ASAM_ASAMREL,DIV_D2,PSYC_PSYCAREA4,PSYC_PSYCEMPER,TEAC_TEACREL,WAC_WAC",
     "Professor": "Steven Fein",
@@ -9263,6 +10105,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3929,
     "Number": 349,
     "Attributes": "DIV_D2,PSYC_PSYCAREA4",
     "Professor": "Amanda N. Bergold",
@@ -9274,6 +10117,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3526,
     "Number": 355,
     "Attributes": "DIV_D2,PSYC_PSYCAREA5,PSYC_PSYCEMPER",
     "Professor": "Laurie Heatherington",
@@ -9285,6 +10129,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3529,
     "Number": 355,
     "Attributes": "DIV_D2,PSYC_PSYCAREA5,PSYC_PSYCEMPER",
     "Professor": "Laurie Heatherington",
@@ -9296,6 +10141,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3530,
     "Number": 359,
     "Attributes": "DIV_D2,PSYC_PSYCAREA5",
     "Professor": "Nicole T. Harrington",
@@ -9307,6 +10153,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3531,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Steven Fein",
@@ -9318,6 +10165,7 @@
   },
   {
     "Subject": "PSYC",
+    "ClassNumber": 3532,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Steven Fein",
@@ -9329,6 +10177,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3356,
     "Number": 104,
     "Attributes": "DIV_D2",
     "Professor": "Jeffrey I. Israel",
@@ -9340,6 +10189,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3250,
     "Number": 134,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Christopher M. B. Nugent",
@@ -9351,6 +10201,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3357,
     "Number": 200,
     "Attributes": "DIV_D2",
     "Professor": "Zaid Adhami",
@@ -9362,6 +10213,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3358,
     "Number": 202,
     "Attributes": "DIV_D2,JWST_JWSTCORE",
     "Professor": "Edan Dekel",
@@ -9373,6 +10225,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3466,
     "Number": 235,
     "Attributes": "DIV_D2",
     "Professor": "Nicole G. Brown",
@@ -9384,6 +10237,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3363,
     "Number": 242,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Saadia Yacoob",
@@ -9395,6 +10249,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3372,
     "Number": 244,
     "Attributes": "DIV_D2,PHIL_PHILREL",
     "Professor": "Georges B. Dreyfus",
@@ -9406,6 +10261,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3058,
     "Number": 252,
     "Attributes": "ARTH_ARTHPRE16C,DIV_D2,WAC_WAC",
     "Professor": "",
@@ -9417,6 +10273,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3069,
     "Number": 253,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA",
     "Professor": "Peter Just",
@@ -9428,6 +10285,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3383,
     "Number": 255,
     "Attributes": "DIV_D2,GBST_GBSTSEASIA,PHIL_PHILREL",
     "Professor": "Georges B. Dreyfus",
@@ -9439,6 +10297,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3388,
     "Number": 266,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Zaid Adhami",
@@ -9450,6 +10309,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3862,
     "Number": 269,
     "Attributes": "DIV_D2,DPE_DPE,GBST_GBSTSEASIA,PHLH_PHLHSOC,WAC_WAC",
     "Professor": "Kim Gutschow",
@@ -9461,6 +10321,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3389,
     "Number": 270,
     "Attributes": "DIV_D2",
     "Professor": "Lawrence M. Wills",
@@ -9472,6 +10333,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3988,
     "Number": 272,
     "Attributes": "DIV_D2",
     "Professor": "",
@@ -9483,6 +10345,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3394,
     "Number": 275,
     "Attributes": "DIV_D2",
     "Professor": "Phillip J. Webster",
@@ -9494,6 +10357,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3956,
     "Number": 278,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Susanne Ryuyin Kerekes",
@@ -9505,6 +10369,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3073,
     "Number": 280,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -9516,6 +10381,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3397,
     "Number": 313,
     "Attributes": "DIV_D2",
     "Professor": "Phillip J. Webster",
@@ -9527,6 +10393,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3655,
     "Number": 319,
     "Attributes": "DIV_D2,ENGL_ENGL1700,ENGL_ENGLLHA",
     "Professor": "Christopher L. Pye",
@@ -9538,6 +10405,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3399,
     "Number": 330,
     "Attributes": "DIV_D2,JWST_JWSTCAP,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Jeffrey I. Israel",
@@ -9549,6 +10417,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3082,
     "Number": 334,
     "Attributes": "DIV_D2,JWST_JWSTCORE,WAC_WAC",
     "Professor": "Peter Just",
@@ -9560,6 +10429,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3404,
     "Number": 358,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Saadia Yacoob",
@@ -9571,6 +10441,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3947,
     "Number": 361,
     "Attributes": "DIV_D2,ENGL_ENGLLHC,EXPE_EXPEREDUC",
     "Professor": "",
@@ -9582,6 +10453,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3409,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Jason Josephson Storm",
@@ -9593,6 +10465,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3984,
     "Number": 422,
     "Attributes": "DIV_D2",
     "Professor": "Murad K. Mumtaz",
@@ -9604,6 +10477,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3410,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Jason Josephson Storm",
@@ -9615,6 +10489,7 @@
   },
   {
     "Subject": "REL",
+    "ClassNumber": 3411,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Jason Josephson Storm",
@@ -9626,6 +10501,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3864,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Sophie F. Saint-Just",
@@ -9637,6 +10513,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3865,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Carl B. Cornell",
@@ -9648,6 +10525,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3845,
     "Number": 106,
     "Attributes": "DIV_D1",
     "Professor": "Brian Martin",
@@ -9659,6 +10537,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3977,
     "Number": 220,
     "Attributes": "DIV_D1",
     "Professor": "Theresa Brock",
@@ -9670,6 +10549,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3846,
     "Number": 224,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Brian Martin",
@@ -9681,6 +10561,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3978,
     "Number": 310,
     "Attributes": "DIV_D1",
     "Professor": "Theresa Brock",
@@ -9692,6 +10573,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3943,
     "Number": 414,
     "Attributes": "DIV_D1,DPE_DPE,WAC_WAC",
     "Professor": "Sophie F. Saint-Just",
@@ -9703,6 +10585,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3877,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Jennifer L. French",
@@ -9714,6 +10597,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3878,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Jennifer L. French",
@@ -9725,6 +10609,7 @@
   },
   {
     "Subject": "RLFR",
+    "ClassNumber": 3887,
     "Number": 512,
     "Attributes": "DIV_D1",
     "Professor": "Pramila Kolekar",
@@ -9736,6 +10621,7 @@
   },
   {
     "Subject": "RLIT",
+    "ClassNumber": 3867,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Michele Monserrati",
@@ -9747,6 +10633,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3945,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Leyla Rouhi",
@@ -9758,6 +10645,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3868,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Carolina Melgarejo-Torres",
@@ -9769,6 +10657,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3869,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Carolina Melgarejo-Torres",
@@ -9780,6 +10669,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3870,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Carolina Melgarejo-Torres",
@@ -9791,6 +10681,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3871,
     "Number": 104,
     "Attributes": "DIV_D1",
     "Professor": "Carolina Melgarejo-Torres",
@@ -9802,6 +10693,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3872,
     "Number": 200,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Gene H. Bell-Villada",
@@ -9813,6 +10705,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3873,
     "Number": 200,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Gene H. Bell-Villada",
@@ -9824,6 +10717,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3875,
     "Number": 214,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Jennifer L. French",
@@ -9835,6 +10729,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3950,
     "Number": 228,
     "Attributes": "DIV_D1,WAC_WAC",
     "Professor": "Soledad Fox",
@@ -9846,6 +10741,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 4051,
     "Number": 274,
     "Attributes": "DIV_D1,DPE_DPE,LATS_LATSORIG,WAC_WAC",
     "Professor": "Roxana A. Blancas Curiel",
@@ -9857,6 +10753,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3522,
     "Number": 303,
     "Attributes": "DIV_D1,ENGL_ENGLLHA",
     "Professor": "Leyla Rouhi",
@@ -9868,6 +10765,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3874,
     "Number": 319,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Gene H. Bell-Villada",
@@ -9879,6 +10777,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3879,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Jennifer L. French",
@@ -9890,6 +10789,7 @@
   },
   {
     "Subject": "RLSP",
+    "ClassNumber": 3880,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Jennifer L. French",
@@ -9901,6 +10801,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3726,
     "Number": 102,
     "Attributes": "DIV_D1",
     "Professor": "Jason A. Cieply",
@@ -9912,6 +10813,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3991,
     "Number": 140,
     "Attributes": "DIV_D1,HIST_HISTC,WAC_WAC",
     "Professor": "Yana Skorobogatov",
@@ -9923,6 +10825,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3731,
     "Number": 152,
     "Attributes": "DIV_D1",
     "Professor": "Vladimir Ivantsov",
@@ -9934,6 +10837,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3734,
     "Number": 204,
     "Attributes": "DIV_D1,GBST_GBSTRUSS",
     "Professor": "Jason A. Cieply",
@@ -9945,6 +10849,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3736,
     "Number": 222,
     "Attributes": "DIV_D1,PHIL_PHILREL",
     "Professor": "Vladimir Ivantsov",
@@ -9956,6 +10861,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3733,
     "Number": 252,
     "Attributes": "DIV_D1",
     "Professor": "Vladimir Ivantsov",
@@ -9967,6 +10873,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3738,
     "Number": 275,
     "Attributes": "DIV_D1,INST_INSTRUSS",
     "Professor": "Julie A. Cassiday",
@@ -9978,6 +10885,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3741,
     "Number": 331,
     "Attributes": "DIV_D1,JLST_JLSTELEC,WAC_WAC",
     "Professor": "Julie A. Cassiday",
@@ -9989,6 +10897,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3992,
     "Number": 341,
     "Attributes": "DIV_D1,HIST_HISTC",
     "Professor": "Yana Skorobogatov",
@@ -10000,6 +10909,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3744,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Helga Druxes",
@@ -10011,6 +10921,7 @@
   },
   {
     "Subject": "RUSS",
+    "ClassNumber": 3745,
     "Number": 498,
     "Attributes": "DIV_D1",
     "Professor": "Helga Druxes",
@@ -10022,6 +10933,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3103,
     "Number": 101,
     "Attributes": "DIV_D2",
     "Professor": "Grant Shoffstall",
@@ -10033,6 +10945,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3955,
     "Number": 153,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Ezra D. Feldman",
@@ -10044,6 +10957,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3996,
     "Number": 209,
     "Attributes": "COGS_COGSREL,DIV_D2,HSCI_HSCIELEC,PHIL_M&E,SCST_SCSTELEC",
     "Professor": "Bojana Mladenovic",
@@ -10055,6 +10969,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3998,
     "Number": 210,
     "Attributes": "DIV_D2",
     "Professor": "Nicholas Carr",
@@ -10066,6 +10981,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3995,
     "Number": 212,
     "Attributes": "DIV_D2,PHIL_VALUE,PHLH_PHLHBIOE,WAC_WAC",
     "Professor": "Julie A. Pedroni",
@@ -10077,6 +10993,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 4001,
     "Number": 213,
     "Attributes": "AFR_AFRCORE,DIV_D2,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -10088,6 +11005,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3541,
     "Number": 250,
     "Attributes": "DIV_D2,DPE_DPE,ENVI_ENVIHUM,EVST_EVSTCULHUM,EXPE_EXPEREDUC",
     "Professor": "Laura J. Martin",
@@ -10099,6 +11017,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3994,
     "Number": 312,
     "Attributes": "DIV_D2,PHIL_M&E,QFR_QFR",
     "Professor": "Frederick W. Strauch",
@@ -10110,6 +11029,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 4000,
     "Number": 315,
     "Attributes": "AFR_AFRCORE,AMST_AMSTARTS,AMST_AMSTCOMP,DIV_D2,FMST_FMSTCORE",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -10121,6 +11041,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 3982,
     "Number": 348,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Mel Y. Chen",
@@ -10132,6 +11053,7 @@
   },
   {
     "Subject": "SCST",
+    "ClassNumber": 4014,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Jason Josephson Storm",
@@ -10143,6 +11065,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3090,
     "Number": 101,
     "Attributes": "DIV_D2",
     "Professor": "Grant Shoffstall",
@@ -10154,6 +11077,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3091,
     "Number": 201,
     "Attributes": "DIV_D2",
     "Professor": "Grant Shoffstall",
@@ -10165,6 +11089,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3092,
     "Number": 210,
     "Attributes": "DIV_D2",
     "Professor": "Nicholas Carr",
@@ -10176,6 +11101,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3093,
     "Number": 221,
     "Attributes": "DIV_D2",
     "Professor": "Marketa Rulikova",
@@ -10187,6 +11113,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3094,
     "Number": 234,
     "Attributes": "DIV_D2",
     "Professor": "Ben Snyder",
@@ -10198,6 +11125,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3095,
     "Number": 236,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Olga Shevchenko",
@@ -10209,6 +11137,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3914,
     "Number": 236,
     "Attributes": "DIV_D2,EXPE_EXPEREDUC,FMST_FMSTREL",
     "Professor": "Barry Goldstein",
@@ -10220,6 +11149,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3563,
     "Number": 241,
     "Attributes": "DIV_D2,POEC_POECCOMP,PSCI_PSCIAMER,PSCI_PSCICOMP",
     "Professor": "Darel E. Paul",
@@ -10231,6 +11161,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3550,
     "Number": 303,
     "Attributes": "DIV_D2,ENVI_ENVIHUM,SCST_SCSTREL,WAC_WAC",
     "Professor": "Nicolas C. Howe",
@@ -10242,6 +11173,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 4050,
     "Number": 314,
     "Attributes": "DIV_D2,DPE_DPE,WGSS_WGSSDIV",
     "Professor": "Greta F. Snyder",
@@ -10253,6 +11185,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3099,
     "Number": 324,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Olga Shevchenko",
@@ -10264,6 +11197,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3100,
     "Number": 372,
     "Attributes": "DIV_D2",
     "Professor": "Ben Snyder",
@@ -10275,6 +11209,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3101,
     "Number": 398,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -10286,6 +11221,7 @@
   },
   {
     "Subject": "SOC",
+    "ClassNumber": 3102,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Antonia E. Foias",
@@ -10297,6 +11233,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3746,
     "Number": 101,
     "Attributes": "BGNP_BGNPREC,COGS_COGSREL,DIV_D3,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Xizhen Cai",
@@ -10308,6 +11245,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3747,
     "Number": 161,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Richard D. De Veaux",
@@ -10319,6 +11257,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3748,
     "Number": 201,
     "Attributes": "BGNP_BGNPREC,COGS_COGSREL,DIV_D3,EVST_EVSTMETH,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Anna M. Plantinga",
@@ -10330,6 +11269,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3749,
     "Number": 201,
     "Attributes": "BGNP_BGNPREC,COGS_COGSREL,DIV_D3,EVST_EVSTMETH,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Laurie L. Tupper",
@@ -10341,6 +11281,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3750,
     "Number": 202,
     "Attributes": "DIV_D3,EVST_EVSTMETH,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Daniel B. Turek",
@@ -10352,6 +11293,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3674,
     "Number": 341,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Thomas A. Garrity",
@@ -10363,6 +11305,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3753,
     "Number": 346,
     "Attributes": "DIV_D3,EVST_EVSTMETH,QFR_QFR",
     "Professor": "Laurie L. Tupper",
@@ -10374,6 +11317,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3754,
     "Number": 355,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Xizhen Cai",
@@ -10385,6 +11329,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3755,
     "Number": 360,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Daniel B. Turek",
@@ -10396,6 +11341,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3759,
     "Number": 372,
     "Attributes": "DIV_D3,PHLH_PHLHSTAT,QFR_QFR",
     "Professor": "Anna M. Plantinga",
@@ -10407,6 +11353,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3763,
     "Number": 398,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -10418,6 +11365,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3764,
     "Number": 442,
     "Attributes": "DIV_D3,QFR_QFR",
     "Professor": "Richard D. De Veaux",
@@ -10429,6 +11377,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3766,
     "Number": 494,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -10440,6 +11389,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3768,
     "Number": 498,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -10451,6 +11401,7 @@
   },
   {
     "Subject": "STAT",
+    "ClassNumber": 3780,
     "Number": 499,
     "Attributes": "DIV_D3",
     "Professor": "Susan R. Loepp",
@@ -10462,6 +11413,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 4009,
     "Number": 129,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Allana M. Clarke",
@@ -10473,6 +11425,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3771,
     "Number": 201,
     "Attributes": "DIV_D1",
     "Professor": "David GÃ¼rÃ§ay-Morris",
@@ -10484,6 +11437,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3772,
     "Number": 201,
     "Attributes": "DIV_D1",
     "Professor": "David GÃ¼rÃ§ay-Morris",
@@ -10495,6 +11449,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3784,
     "Number": 204,
     "Attributes": "DIV_D1,PERF_PERFELEC",
     "Professor": "Robert E. Baker-White",
@@ -10506,6 +11461,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3785,
     "Number": 206,
     "Attributes": "DIV_D1",
     "Professor": "Robert E. Baker-White",
@@ -10517,6 +11473,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3786,
     "Number": 207,
     "Attributes": "DIV_D1",
     "Professor": "Omar A. Sangare",
@@ -10528,6 +11485,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3798,
     "Number": 215,
     "Attributes": "DIV_D1",
     "Professor": "Munjulika Tarah",
@@ -10539,6 +11497,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3787,
     "Number": 222,
     "Attributes": "DIV_D1",
     "Professor": "Omar A. Sangare",
@@ -10550,6 +11509,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3807,
     "Number": 226,
     "Attributes": "DIV_D1",
     "Professor": "Munjulika Tarah",
@@ -10561,6 +11521,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3788,
     "Number": 229,
     "Attributes": "DIV_D1,ENGL_ENGLLHC",
     "Professor": "James L. Pethica",
@@ -10572,6 +11533,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3792,
     "Number": 240,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Shayok Misha Chowdhury",
@@ -10583,6 +11545,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3799,
     "Number": 286,
     "Attributes": "DIV_D1",
     "Professor": "Bobby McElver",
@@ -10594,6 +11557,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3926,
     "Number": 290,
     "Attributes": "DIV_D6",
     "Professor": "Amy S. Holzapfel",
@@ -10605,6 +11569,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3919,
     "Number": 301,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Amy S. Holzapfel",
@@ -10616,6 +11581,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 4010,
     "Number": 338,
     "Attributes": "DIV_D1,DPE_DPE",
     "Professor": "Allana M. Clarke",
@@ -10627,6 +11593,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3963,
     "Number": 345,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -10638,6 +11605,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3119,
     "Number": 385,
     "Attributes": "DIV_D1,EXPE_EXPEREDUC",
     "Professor": "Amy D. Podmore",
@@ -10649,6 +11617,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3801,
     "Number": 398,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -10660,6 +11629,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3802,
     "Number": 455,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -10671,6 +11641,7 @@
   },
   {
     "Subject": "THEA",
+    "ClassNumber": 3803,
     "Number": 494,
     "Attributes": "DIV_D1",
     "Professor": "Amy S. Holzapfel",
@@ -10682,6 +11653,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3440,
     "Number": 101,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,DPE_DPE",
     "Professor": "Vivian L. Huang",
@@ -10693,6 +11665,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3441,
     "Number": 101,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,DPE_DPE",
     "Professor": "Kai M. Green",
@@ -10704,6 +11677,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3442,
     "Number": 119,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Vivian L. Huang",
@@ -10715,6 +11689,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 4075,
     "Number": 152,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF,JLST_JLSTELEC,WAC_WAC",
     "Professor": "Sara Dubow",
@@ -10726,6 +11701,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3444,
     "Number": 202,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,DPE_DPE,WGSS_WGSSDIV,WGSS_WGSSTHRY",
     "Professor": "Gregory C. Mitchell",
@@ -10737,6 +11713,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3123,
     "Number": 212,
     "Attributes": "DIV_D2,PHIL_VALUE,PHLH_PHLHBIOE,WAC_WAC",
     "Professor": "Julie A. Pedroni",
@@ -10748,6 +11725,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3023,
     "Number": 213,
     "Attributes": "AFR_AFRCORE,DIV_D2,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Rhon S. Manigault-Bryant",
@@ -10759,6 +11737,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3641,
     "Number": 218,
     "Attributes": "DIV_D2,DPE_DPE,ENGL_ENGLGATE,ENGL_ENGLLHC,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -10770,6 +11749,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3847,
     "Number": 224,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Brian Martin",
@@ -10781,6 +11761,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3805,
     "Number": 226,
     "Attributes": "DIV_D2",
     "Professor": "Munjulika Tarah",
@@ -10792,6 +11773,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3793,
     "Number": 237,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Shayok Misha Chowdhury",
@@ -10803,6 +11785,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3469,
     "Number": 241,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "Amanda R. Wilcox",
@@ -10814,6 +11797,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3365,
     "Number": 242,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Saadia Yacoob",
@@ -10825,6 +11809,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3445,
     "Number": 260,
     "Attributes": "DIV_D2,DPE_DPE,WAC_WAC,WGSS_WGSSTHRY",
     "Professor": "Greta F. Snyder",
@@ -10836,6 +11821,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3829,
     "Number": 261,
     "Attributes": "DIV_D2,WAC_WAC",
     "Professor": "M. Jennifer Bloxam",
@@ -10847,6 +11833,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3923,
     "Number": 262,
     "Attributes": "DIV_D2,PSCI_PSCIINTL",
     "Professor": "Phoebe G. Donnelly",
@@ -10858,6 +11845,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3915,
     "Number": 274,
     "Attributes": "DIV_D2,DPE_DPE,ENGL_ENGL1900,ENGL_ENGLGATE,WAC_WAC",
     "Professor": "Ianna Hawkins Owen",
@@ -10869,6 +11857,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 4054,
     "Number": 275,
     "Attributes": "DIV_D2,DPE_DPE,LATS_LATSORIG,WAC_WAC",
     "Professor": "Roxana A. Blancas Curiel",
@@ -10880,6 +11869,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 4015,
     "Number": 303,
     "Attributes": "DIV_D2",
     "Professor": "Phillip J. Webster",
@@ -10891,6 +11881,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3449,
     "Number": 314,
     "Attributes": "DIV_D2,DPE_DPE,WGSS_WGSSDIV",
     "Professor": "Greta F. Snyder",
@@ -10902,6 +11893,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3013,
     "Number": 324,
     "Attributes": "AMST_AMSTCOMP,DIV_D2,DPE_DPE,HIST_HISTF,HIST_HISTG,WAC_WAC",
     "Professor": "Tyler J. Rogers",
@@ -10913,6 +11905,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3281,
     "Number": 331,
     "Attributes": "DIV_D2,DPE_DPE,HIST_HISTC",
     "Professor": "Chris Waters",
@@ -10924,6 +11917,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3450,
     "Number": 337,
     "Attributes": "DIV_D2,DPE_DPE,LATS_LATSORIG",
     "Professor": "Gregory C. Mitchell",
@@ -10935,6 +11929,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3417,
     "Number": 338,
     "Attributes": "AMST_AMSTARTS,AMST_AMSTCOMP,AMST_AMSTCRIT,DIV_D2,GBST_GBSTBORD,LATS_LATSCORE,WAC_WAC,WGSS_WGSSDIV,WGSS_WGSSTHRY",
     "Professor": "Maria Elena Cepeda",
@@ -10946,6 +11941,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3519,
     "Number": 339,
     "Attributes": "AMST_AMSTCOMP,ASAM_ASAMREL,DIV_D2,PSYC_PSYCAREA4,PSYC_PSYCEMPER,TEAC_TEACREL,WAC_WAC",
     "Professor": "Steven Fein",
@@ -10957,6 +11953,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3520,
     "Number": 339,
     "Attributes": "AMST_AMSTCOMP,ASAM_ASAMREL,DIV_D2,PSYC_PSYCAREA4,PSYC_PSYCEMPER,TEAC_TEACREL,WAC_WAC",
     "Professor": "Steven Fein",
@@ -10968,6 +11965,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3665,
     "Number": 340,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,DPE_DPE,ENGL_ENGLCRIT,ENGL_ENGLLHC",
     "Professor": "",
@@ -10979,6 +11977,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3144,
     "Number": 343,
     "Attributes": "AMST_AMSTCRIT,DIV_D2,JLST_JLSTELEC,WAC_WAC,WGSS_WGSSDIV",
     "Professor": "Joy A. James",
@@ -10990,6 +11989,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3446,
     "Number": 348,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Mel Y. Chen",
@@ -11001,6 +12001,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3452,
     "Number": 420,
     "Attributes": "DIV_D2,DPE_DPE",
     "Professor": "Kai M. Green",
@@ -11012,6 +12013,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3302,
     "Number": 453,
     "Attributes": "DIV_D2,HIST_HISTF,WAC_WAC",
     "Professor": "",
@@ -11023,6 +12025,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3079,
     "Number": 468,
     "Attributes": "ARTH_ARTHPST16C,DIV_D2,WAC_WAC",
     "Professor": "Carol Ockman",
@@ -11034,6 +12037,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3460,
     "Number": 492,
     "Attributes": "DIV_D2",
     "Professor": "Alison A. Case",
@@ -11045,6 +12049,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3461,
     "Number": 494,
     "Attributes": "DIV_D2",
     "Professor": "Alison A. Case",
@@ -11056,6 +12061,7 @@
   },
   {
     "Subject": "WGSS",
+    "ClassNumber": 3463,
     "Number": 498,
     "Attributes": "DIV_D2",
     "Professor": "Alison A. Case",

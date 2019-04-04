@@ -12,9 +12,11 @@
  * @class
  */
 var Course = (function () {
-    function Course(subject, number, attributes, prof, name, description, tags, timeslotsString, preReqs) {
+    function Course(subject, courseNum, number, attributes, prof, name, description, tags, timeslotsString, preReqs) {
       if (this.subject === undefined)
     	    this.subject = null;
+      if (this.courseNum === undefined)
+          this.courseNum = null;
       if (this.number === undefined)
     	    this.number = null;
     	if (this.attributes === undefined)
@@ -32,6 +34,7 @@ var Course = (function () {
     	if (this.preReqs === undefined)
     	    this.preReqs = null;
       this.subject = subject;
+      this.courseNum = courseNum;
       this.number = number;
       this.attributes = attributes.split(",");
     	this.name = name;
@@ -155,6 +158,13 @@ var Course = (function () {
      */
     Course.prototype.getSubject = function () {
 	return this.subject;
+    };
+
+    /**
+     * TODO
+     */
+    Course.prototype.getCourseNum = function () {
+	return this.courseNum;
     };
 
           /**

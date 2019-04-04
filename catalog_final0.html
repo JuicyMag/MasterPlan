@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/catalog_final0.css">
+</head>
+
+<title>
+	Williams College Course Recommender
+</title>
+
+<body>
+	<nav class="navbar navbar-default">
+		<a class="navbar-brand" href="#">Williams</a>
+		<a class="menubarButton" href="#">Advisors</a>
+		<a class="menubarButton" href="#">Profile</a>
+	</nav>
+
+  <div class = "row mt-5 mb-2">
+		<div class="col col-lg-2 ">
+		</div>
+    <div class = "row" id = "title">
+      Course Scheduler
+    </div>
+    <div class="col col-lg-2 ">
+		</div>
+  </div>
+
+	<div id = "content-container" class="row container.fluid lower">
+
+    <div id = "wrapper" class = "row full-width">
+      <div id = "course-list-nav" class = "row">
+        <div class = "col col-lg-2">
+        </div>
+        <div class = "col">
+          <button id = "all-courses-button" class = "courses-nav-btn">All courses</btn>
+        </div>
+
+        <div class = "col">
+          <button id = "recommended-button" class = "courses-nav-btn">Recommended</btn>
+        </div>
+
+        <div class = "col">
+          <button id = "shopping-cart-button" class = "courses-nav-btn">Shopping Cart</btn>
+        </div>
+        <div class = "col col-lg-2">
+        </div>
+      </div>
+
+    <div class = "row full-width">
+      <div class = "col col-lg-2">
+      </div>
+      <div class = "col">
+          <div class="search">
+         <div class = "fixed-container">
+
+
+          <div id = "search-options">
+
+
+                <div id = "search-box" class = "container row">
+                  <input id = "search-input" class="form-control" type="text" placeholder="Enter your search query">
+                  <button id = "search-button">Search</button>
+                  <button id = "expand">Show More Options</button>
+                </div>
+
+              <div id = "options-container" class = "hide">
+
+                <div id = "dist-row" class="row">
+                  <div class="custom-control custom-checkbox col">
+                    <input type="checkbox" class="custom-control-input" id="dpe">
+                    <label class="custom-control-label" for="dpe">Diversity, Power, Equality (DPE)</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col">
+                    <input type="checkbox" class="custom-control-input" id="wi">
+                    <label class="custom-control-label" for="wi">Writing Intensive (WI)</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col">
+                    <input type="checkbox" class="custom-control-input" id="qfr">
+                    <label class="custom-control-label" for="qfr">Quantitative/Formal Reasoning (QFR)</label>
+                  </div>
+                </div>
+
+          			<div class="row">
+                  <button id = "expand-subject-button" >Select Department</button>
+                </div>
+                <div id = "subject-list">
+                </div>
+                 <div class = "row">
+                   <button id = "choose-tags-button">Add Tags</button>
+                 </div>
+                  <div id = "tag-list">
+                  </div>
+               </div>
+
+              <!-- <div id = "choose-tags" class = "row">
+                  <button id = "choose-tags-button" class = "full-width">View Tags</button>
+              </div> -->
+                <div id = "num-courses"style = "text-align:center;">
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class = "col col-lg-2">
+      </div>
+    </div>
+
+  </div>
+
+    <div class = "row full-width ">
+
+  		<div class="col col-lg-2 ">
+  		</div>
+
+      <!-- <div class = "col col-lg-1">
+      </div> -->
+
+      <div class = "col course-list-container">
+  <!--
+        <div id = "course-list-nav" class = "row">
+          <div class = "col">
+            <button id = "all-courses-button" class = "courses-nav-btn">All courses</btn>
+          </div>
+          <div class = "col">
+            <button id = "shopping-cart-button" class = "courses-nav-btn">Shopping Cart</btn>
+          </div>
+        </div> -->
+
+
+
+        <div id = "notice" class = "row">
+        </div>
+
+
+        <div class = "row course-list">
+
+          <div id = "all-courses-container" class = "col">
+        		<div id = "all-courses" class="col classes">
+
+        		</div>
+          </div>
+
+          <div id = "recommended-courses" class = "col classes hide">
+          </div>
+
+          <div id = "shopping-cart" class="col classes hide">
+            <div class = "row">
+                    <div id = "schedule" class = "hide full-width">
+                      <div id = "mini-schedule" >
+                        <div id = "mini-weekly-calendar" >
+                           <h5>Weekly Schedule</h5>
+                             <table id = "mini-week" class = "table top-buffer" >
+                               <thead>
+                                 <tr id = "day-headers">
+                                   <th scope = "col"></th>
+                                   <th scope = "col">M</th>
+                                   <th scope = "col">T</th>
+                                   <th scope = "col">W</th>
+                                   <th scope = "col">T</th>
+                                   <th scope = "col">F</th>
+                                 </tr>
+                               </thead>
+
+
+                               <tbody>
+                                  <tr id = "mini-calendar-hours">
+                                  </tr>
+
+                              </tbody>
+                            </table>
+                         </div>
+                      </div>
+              </div>
+            </div>
+
+            <div class = "row">
+
+            <div id = "selected-courses" class = "col col-lg-6">
+              <h5 class = "shopping-header">Added Courses:</h5>
+                <div id = "selected-course-container">
+                </div>
+            </div>
+
+            <div id = "highlighted-courses" class = "col col-lg-6">
+              <h5 class = "shopping-header">Starred Courses:</h5>
+              <div id = "highlighted-course-container">
+              </div>
+            </div>
+
+          </div>
+      		</div>
+
+
+        </div>
+
+      </div>
+      <div class="col col-lg-2 ">
+  		</div>
+    </div>
+
+
+
+      <div id = "view-subjects-container" class = "row hide">
+        <div id = "view-subjects">
+           <h1>All Subjects</h1>
+            <div id = "subject-container">
+              <div class = "row">
+                <button class = "tag btn btn-outline-dark selected" disabled>Selected</button>
+                <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
+              </div>
+            </div>
+           <button class = "mt-5" id = "unselect-subjects">Unselect All</button>
+           <button class = "mt-5 fright okay-button"> Okay</button>
+         </div>
+
+
+
+         <button class = "close-button">Close</button>
+      </div>
+
+      <div id = "view-tags-container" class = "row hide">
+        <div id = "view-tags">
+           <h1>All Tags</h1>
+            <div id = "tag-container">
+              <div class = "row">
+                <button class = "tag btn btn-outline-dark selected" disabled>Selected</button>
+                <button class = "tag btn btn-outline-dark" disabled>Unselected</button>
+              </div>
+            </div>
+           <button class = "mt-5" id = "unselect-tags">Unselect All</button>
+           <button class = "mt-5 fright okay-button"> Okay</button>
+         </div>
+
+
+
+         <button class = "close-button">Close</button>
+      </div>
+
+	</div>
+
+    <!-- Bootstrap scripts -->
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src = "javascript/Course.js"></script>
+    <script src = "javascript/Schedule.js"></script>
+    <script src = "javascript/Scheduler.js"></script>
+    <script src = "javascript/Student.js"></script>
+    <script src = "javascript/script0.js"></script>
+
+
+</body>
+
+
+</html>
