@@ -27,6 +27,17 @@ nav .navbar-brand {
 .navbar .navbar-brand {
   font-weight: 500; }
 
+#subject-list .btn, #tag-list .btn{
+  float:left;
+}
+
+#subject-list, #tag-list{
+  clear:both;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-bottom: 2.5%
+}
+
 #wrapper{
     position: sticky;
   position: -webkit-sticky;
