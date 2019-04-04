@@ -73,11 +73,10 @@
 			newTag.innerHTML = input;
 			newTag.addEventListener("click", function (evt) {
 
-				if(newTag.hasClass("active")) {
-					newTag.classList.remove("active")
-				} else 
-				newTag.className += "active";
-
+				if(newTag.classList.contains("active")) {
+					newTag.className += " active";
+					//newTag.classList.remove("active");
+				}
 			});
 			return newTag;
 		}
