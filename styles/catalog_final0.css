@@ -73,7 +73,7 @@ nav .navbar-brand {
     border: 1px solid #6F4993;
     padding: 10px;
     margin-bottom: 15px;
-    min-height: 140px;}
+    min-height: 80px;}
   .classes .left {
     text-align: right;
     letter-spacing: 1px; }
@@ -97,10 +97,19 @@ nav .navbar-brand {
       letter-spacing: 3px; }
     .classes .right .classDescr {
       font-weight: lighter;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      margin-top: 15px;}
 
 .tag{
   margin: 6px;
+}
+
+.professor, .classTime{
+  display: inline-block;
+}
+
+.classTime{
+  padding-left: 15px;
 }
 
 .tags {
@@ -303,7 +312,7 @@ span {
 .select-button{
   background-color: #a56ddf;
   position: absolute;
-  right: 20px;
+  right: 100px;
   color: #ffffff;
 }
 
@@ -323,9 +332,17 @@ span {
 .highlight-button{
   background-color: #a56ddf;
   position: absolute;
-  right: 100px;
+  right: 170px;
   color: #ffffff;
 }
+
+.show-button{
+  background-color: #a56ddf;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+}
+
 
 .mini-highlight-button{
   background-color: #a56ddf;
@@ -527,7 +544,7 @@ span {
   color: #000;
 }
 
-#dist-row{
+#dist-row, #div-row{
   height: 2rem;
 }
 

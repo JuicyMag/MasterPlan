@@ -21,7 +21,7 @@ var recommendedCourses = [1,6,8,28,35] //Recommended Courses: TODO: remove hardc
 var highlightedCourses = []; //Highlighted Courses
 var searchedCourses = [];
 
-var allTags ="network engineering , mathematical science , education , ESSENTIALS , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , math graduate school , us politics ,  microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , Tags ,  systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , finacial markets , science , integration , shakespeare , social justice , performance analysis , inequalities , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up ,  quantitative trading , asset managment , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , entrepreneur , contemporary metaphysics ,  private equity , Women’s Gender and Sexuality Studies , social sciences ,  ESSENTIAL , logic , intro class , statistics , number theory , physics gradute school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , mathematics graudate school , ethics , research , finace , sustainibility , publication , global economics , women gender sexuality studies , africana studies , big data , programming , climate change , law , quantitative trading , political economy , history , engineering , datascience , micro economics , modelling , public policy , political science , macroeconomics ,  global economics , systems engineering , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , sociology , renaissance , cost benefit analysis , corporate finance , banking , playwrighting , Sociology  ,  business , critical thinking , psychology , advanced macroeconomics , applied math , data analysis , race , political science graduate school , private equity , gender studies , quantum theory , technology , meritocracy , app development , economics , statistician , behavioral psychology , social psychology , regression , ecosystems , macroecnomics , feminism , arguments , monetary economics , finance , applied mathematics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
+var allTags ="network engineering , mathematical science , education , ESSENTIALS , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , math graduate school , us politics , microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , Tags , systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , finacial markets , science , integration , shakespeare , social justice , performance analysis , inequalities , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up , quantitative trading , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , entrepreneur , contemporary metaphysics , private equity , Women’s, Gender, and Sexuality Studies , social sciences , logic , intro class , statistics , number theory , physics gradute school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , mathematics graudate school , ethics , research , finace , sustainibility , publication , global economics , africana studies , big data , programming , climate change , law , political economy , history , engineering , datascience , micro economics , modelling , public policy , political science , macroeconomics , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , sociology , renaissance , cost benefit analysis , corporate finance , banking , playwrighting , Sociology , critical thinking , psychology , advanced macroeconomics , applied math , data analysis , race , political science graduate school , gender studies , quantum theory , technology , meritocracy , app development , economics , statistician , behavioral psychology , social psychology , regression , ecosystems , macroecnomics , feminism , arguments , monetary economics , finance , applied mathematics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
 var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ASST","ASTR","ASPH","BIMO","BIOL","CHEM","CHIN","CLAS","COGS","COMP","CSCI","CMAJ","CRLA","DANC","ECON","ENGL","ENVI","EXPR","RLFR","GEOS","GERM","GBST","CLGR","CRHE","CRHI","HIST","HSCI","INTR","RLIT","JAPN","JWST","JLST","CRKO","CLLA","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHYS","POEC","PSCI","CRPO","PSYC","PHLH","REL","RLSP","ARTS","CRSW","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
 var allSubjectsNames = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy",  "Physics", "Political Economy", "Political Science","Portugese", "Psychology","Public Health", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
@@ -31,6 +31,7 @@ var scheduler = new Scheduler([]);
 var courseArray = [];
 var courseData = [];
 var attributes = [];
+var divisions = [];
 
 //Number of Courses to Recommend.
 const numRecommended = 5;
@@ -265,7 +266,95 @@ function getMostCompatible(values, student) {
 	return finalResult;
 }
 
+function createClass(course){
+  var newClass = document.createElement('div');
+    newClass.className = "row class col";
 
+      var newClassDescription = document.createElement('div');
+      newClassDescription.className = "col right";
+        var newClassName = document.createElement('div');
+        newClassName.innerHTML = course.getName();
+        newClassName.className = "className";
+        var newClassNum = document.createElement('div');
+        newClassNum.innerHTML = course.getCourseNum();
+        newClassNum.className = "classNum hide";
+        var newClassDescr = document.createElement('div');
+        newClassDescr.innerHTML = course.getDescription();
+        newClassDescr.className = "classDescr hide";
+        var newRowTags = document.createElement('div');
+        newRowTags.className = "tags";
+        newRowTags.innerHTML = course.getTags().join(", ");
+
+
+        var newTitle = document.createElement('div');
+        newTitle.className = "";
+          var newClassProf = document.createElement('div');
+          newClassProf.innerHTML = course.getProf();
+          newClassProf.className = "professor";
+          var newClassTime = document.createElement('div');
+          newClassTime.innerHTML = course.getTimeslotString().split("; ")[0];
+          newClassTime.className = "classTime";
+
+          var selectButtonDiv = document.createElement('div');
+          selectButtonDiv.className = "row";
+          selectButtonDiv.style.display ="inline-block";
+
+          var selectButton = document.createElement('button');
+          selectButton.className = "btn btn-sm select-button";
+          selectButton.innerHTML = "Add";
+
+          if(selectedCourses.indexOf(course)>-1) {
+            selectButton.classList.add('selected');
+            selectButton.innerHTML = "Added";
+          }
+
+          var highlightButtonDiv = document.createElement('div');
+          highlightButtonDiv.style.display ="inline-block";
+          highlightButtonDiv.style.overflow = "hidden";
+          highlightButtonDiv.className = "row";
+
+          var highlightButton = document.createElement('button');
+          highlightButton.className = "btn btn-sm highlight-button";
+          highlightButton.innerHTML = "Star";
+          if(highlightedCourses.indexOf(course)>-1) {
+            highlightButton.classList.add('selected');
+            highlightButton.innerHTML = "Starred";
+          }
+
+          var showButtonDiv = document.createElement('div');
+          showButtonDiv.style.display ="inline-block";
+          showButtonDiv.style.overflow = "hidden";
+          showButtonDiv.className = "row";
+
+          var showButton = document.createElement('button');
+          showButton.className = "btn btn-sm show-button";
+          showButton.innerHTML = "Show";
+
+        selectButtonDiv.appendChild(selectButton);
+        highlightButtonDiv.appendChild(highlightButton);
+        showButtonDiv.appendChild(showButton);
+
+      newTitle.appendChild(newClassProf);
+      newTitle.appendChild(newClassTime);
+      //newTitle.appendChild(highlightButtonDiv);
+      //newTitle.appendChild(selectButtonDiv);
+
+      newClassName.appendChild(highlightButtonDiv);
+      newClassName.appendChild(selectButtonDiv);
+      newClassName.appendChild(showButtonDiv);
+
+      newClassDescription.appendChild(newClassName);
+      newClassDescription.appendChild(newTitle);
+      newClassDescription.appendChild(newRowTags);
+      newClassDescription.appendChild(newClassNum);
+      newClassDescription.appendChild(newClassDescr);
+
+    newClass.appendChild(newClassDescription);
+
+    return newClass;
+}
+
+/*
 function createClass(course){
   var newClass = document.createElement('div');
     newClass.className = "row class";
@@ -325,15 +414,7 @@ function createClass(course){
         newClassDescr.className = "classDescr";
         var newRowTags = document.createElement('div');
         newRowTags.className = "row tags";
-          /*for(var j = 0; j < course.getTags().length; j++){
-            if(course.getTags()[j]===""){
-              continue;
-            }
-            var newTag = document.createElement('div');
-            newTag.className = "course-tag";
-            newTag.innerHTML = course.getTags()[j];
-            newRowTags.appendChild(newTag);
-          }*/
+
         newRowTags.innerHTML = course.getTags().join(", ");
       newClassDescription.appendChild(newClassName);
       newClassDescription.appendChild(newClassNum);
@@ -343,7 +424,7 @@ function createClass(course){
     newClass.appendChild(newClassDescription);
 
     return newClass;
-}
+}*/
 
 
 function createShortClass(course){
@@ -478,6 +559,12 @@ function searchClasses(input){
   if($('#qfr').is(':checked')) attributes.push("QFR_QFR");
   if($('#wi').is(':checked')) attributes.push("WAC_WAC");
 
+  divisions = [];
+  if($('#div1').is(':checked')) divisions.push("DIV_D1");
+  if($('#div2').is(':checked')) divisions.push("DIV_D2");
+  if($('#div3').is(':checked')) divisions.push("DIV_D3");
+
+
   for(var i = 0; i < clone.length; i++){
     var check = false;
     for(var j = 0; j < attributes.length; j++){
@@ -488,20 +575,29 @@ function searchClasses(input){
 
   if(attributes.length == 0) cloneArray = clone.slice(0);
 
-  console.log(cloneArray);
+  clone = [];
+
+  for(var i = 0; i < cloneArray.length; i++){
+    var check = false;
+    for(var j = 0; j < divisions.length; j++){
+      if(cloneArray[i].getAttributes().includes(divisions[j])) check = true;
+    }
+    if(check) clone.push(cloneArray[i]);
+  }
+
+  if(divisions.length == 0) clone = cloneArray.slice(0);
+
 
   //console.log(input);
   var result = [];
-  for(var i = 0; i < cloneArray.length; i++){
-    var courseTitle = cloneArray[i].getName();
+  for(var i = 0; i < clone.length; i++){
+    var courseTitle = clone[i].getName();
     //console.log(courseTitle);
     //console.log(courseTitle.toUpperCase().includes(input.toUpperCase()));
     if(courseTitle.toUpperCase().includes(input.toUpperCase())) {
-      result.push(courseArray.indexOf(cloneArray[i]));
+      result.push(courseArray.indexOf(clone[i]));
     }
   }
-
-  console.log(result);
 
 
   return result;
@@ -654,11 +750,11 @@ $(document).on('click', '.select-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Added"){
     $this.text("Add");
-    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().parent().find(".right").find(".classNum").text()));
+    selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().parent().find(".classNum").text()));
   }
   else{
     var conflict = false;
-    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text())];
+    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".classNum").text())];
     var count = 0;
 
     for(count = 0; count < selectedCourses.length; count++){
@@ -677,7 +773,7 @@ $(document).on('click', '.select-button',function(){
     }
     else{
       $this.text("Added");
-      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".right").find(".classNum").text())]);
+      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().parent().find(".classNum").text())]);
       if(!$this.parent().parent().find(".highlight-button").hasClass('selected'))
         $this.parent().parent().find(".highlight-button").trigger("click");
     }
@@ -689,6 +785,20 @@ $(document).on('click', '.select-button',function(){
   updateRecommended();
 });
 
+$(document).on('click', '.show-button',function(){
+  $('#notice').text("");
+
+  if($(this).text() === 'Show'){
+    $(this).text("Hide");
+    $(this).parent().parent().parent().find(".classDescr").toggle();
+  }
+  else{
+    $(this).text("Show");
+    $(this).parent().parent().parent().find(".classDescr").toggle();
+  }
+
+})
+
 $(document).on('click', '.highlight-button',function(){
   $('#notice').text("");
 
@@ -696,12 +806,12 @@ $(document).on('click', '.highlight-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Starred"){
     $this.text("Star");
-    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().parent().find(".right").find(".classNum").text()));
+    highlightedCourses.splice(findCourse(highlightedCourses, 1, $this.parent().parent().parent().find(".classNum").text()));
   }
   else{
     $this.text("Starred");
     console.log(findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text()));
-    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".right").find(".classNum").text())]);
+    highlightedCourses.push(courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".classNum").text())]);
 
   }
   updateHighlighted();
@@ -807,7 +917,8 @@ function updateFull(){
   $("#all-courses").empty();
   console.log(tags.length);
 
-  if($("#search-box input")[0].value === "" && attributes.length == 0 && subjects.length == 0 && tags.length ===0 ){
+
+  if($("#search-box input")[0].value === "" && attributes.length == 0 && divisions.length == 0&& subjects.length == 0 && tags.length ===0 ){
     for(var i = 0; i < courseArray.length; i++){
       $("#all-courses")[0].appendChild(createClass(courseArray[i]));
     }
