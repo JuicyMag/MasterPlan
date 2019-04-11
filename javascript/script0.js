@@ -21,7 +21,7 @@ var recommendedCourses = [1,6,8,28,35] //Recommended Courses: TODO: remove hardc
 var highlightedCourses = []; //Highlighted Courses
 var searchedCourses = [];
 
-var allTags ="network engineering , mathematical science , education , ESSENTIALS , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , math graduate school , us politics , microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , Tags , systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , finacial markets , science , integration , shakespeare , social justice , performance analysis , inequalities , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up , quantitative trading , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , entrepreneur , contemporary metaphysics , private equity , Women’s, Gender, and Sexuality Studies , social sciences , logic , intro class , statistics , number theory , physics gradute school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , mathematics graudate school , ethics , research , finace , sustainibility , publication , global economics , africana studies , big data , programming , climate change , law , political economy , history , engineering , datascience , micro economics , modelling , public policy , political science , macroeconomics , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , sociology , renaissance , cost benefit analysis , corporate finance , banking , playwrighting , Sociology , critical thinking , psychology , advanced macroeconomics , applied math , data analysis , race , political science graduate school , gender studies , quantum theory , technology , meritocracy , app development , economics , statistician , behavioral psychology , social psychology , regression , ecosystems , macroecnomics , feminism , arguments , monetary economics , finance , applied mathematics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
+var allTags ="network engineering , mathematical science , education , ESSENTIALS , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , math graduate school , us politics , microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , Tags , systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , finacial markets , science , integration , shakespeare , social justice , performance analysis , inequalities , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up , quantitative trading , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , entrepreneur , contemporary metaphysics , private equity , Womens, Gender, and Sexuality Studies , social sciences , logic , intro class , statistics , number theory , physics gradute school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , mathematics graudate school , ethics , research , finace , sustainibility , publication , global economics , africana studies , big data , programming , climate change , law , political economy , history , engineering , datascience , micro economics , modelling , public policy , political science , macroeconomics , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , sociology , renaissance , cost benefit analysis , corporate finance , banking , playwrighting , Sociology , critical thinking , psychology , advanced macroeconomics , data analysis , race , political science graduate school , gender studies , quantum theory , technology , meritocracy , app development , economics , statistician , behavioral psychology , social psychology , regression , ecosystems , macroecnomics , feminism , arguments , monetary economics , finance , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
 var allSubjects = ["AFR","AMST","ANSO","ANTH","ARAB","ARTH","ASST","ASTR","ASPH","BIMO","BIOL","CHEM","CHIN","CLAS","COGS","COMP","CSCI","CMAJ","CRLA","DANC","ECON","ENGL","ENVI","EXPR","RLFR","GEOS","GERM","GBST","CLGR","CRHE","CRHI","HIST","HSCI","INTR","RLIT","JAPN","JWST","JLST","CRKO","CLLA","LATS","LEAD","MAST","MATH","MUS","NSCI","PHIL","PHYS","POEC","PSCI","CRPO","PSYC","PHLH","REL","RLSP","ARTS","CRSW","RUSS","SCST","SOC","SPEC","STAT","THEA","WGSS"];
 var allSubjectsNames = ["Africana Studies", "American Studies", "Anthropology & Sociology", "Anthropology", "Arabic Studies", "Art History","Asian Studies", "Astronomy",  "Astrophysics", "Biochemistry & Molecular Biology", "Biology", "Chemistry", "Chinese", "Classics", "Cognitive Science", "Comparative Literature","Computer Science",  "Contract Major", "Critical Languages",  "Dance", "Economics", "English", "Environmental Studies", "Experiential Studies", "French", "Geosciences", "German","Global Studies", "Greek", "Hebrew", "Hindi", "History", "History of Science", "Interdisciplinary Studies","Italian", "Japanese", "Jewish Studies","Justice & Law Studies",  "Korean", "Latin","Latina/o Studies", "Leadership Studies", "Maritime Studies", "Mathematics", "Music", "Neuroscience", "Philosophy",  "Physics", "Political Economy", "Political Science","Portugese", "Psychology","Public Health", "Religion", "Spanish", "Studio Art", "Swahili", "Russian", "Science & Technology Studies", "Sociology", "Special", "Statistics", "Theatre", "Women's, Gender & Sexuality Studies"];
 
@@ -826,20 +826,40 @@ $(document).on('click', '.mini-select-button',function(){
   $this.toggleClass('selected');
   if($this.text() === "Added"){
     $this.text("Add");
-      console.log($this.parent().find(".shortclassName").text());
     selectedCourses.splice(findCourse(selectedCourses, 1, $this.parent().parent().find(".classNum").text()));
   }
   else{
-    $this.text("Added");
-    console.log($this.parent().parent().find(".shortclassName").text());
-    selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().find(".classNum").text())]);
-    if(!$this.parent().find(".highlight-button").hasClass('selected'))
-      $this.parent().find(".highlight-button").trigger("click");
+    var conflict = false;
+    var thisCourse = courseArray[findCourse(courseArray, $this.parent().parent().parent().find(".classNum").text())];
+    var count = 0;
+
+    for(count = 0; count < selectedCourses.length; count++){
+
+      if(checkConflicts(thisCourse, selectedCourses[count])){
+        conflict = true;
+        break;
+      }
+    }
+
+    if(conflict){
+      var s = "Failed to add " + thisCourse.getSubject() + " " + thisCourse.getNumber() + " due to conflict with " +
+                        selectedCourses[count].getSubject() + " " + selectedCourses[count].getNumber() + "!";
+      
+      $('#notice').text(s);
+
+    }
+    else{
+      $this.text("Added");
+      selectedCourses.push(courseArray[findCourse(courseArray,      $this.parent().parent().find(".classNum").text())]);
+      if(!$this.parent().find(".highlight-button").hasClass('selected'))
+        $this.parent().find(".highlight-button").trigger("click");
+    }
+
   }
   updateSelected();
   updateHighlighted();
-  updateRecommended();
   updateFull();
+  updateRecommended();
 });
 
 $(document).on('click', '.mini-highlight-button',function(){
