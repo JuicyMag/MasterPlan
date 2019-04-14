@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Form3</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/Form1.css">
+	<link rel="stylesheet" href="styles/navbar.css">
+
+
+</head>
+
+<body>
+	<nav class= "navbar navbar-default">
+		<a class="navbar-brand" href="#">Williams</a>
+	</nav><br>
+
+	<div class="progress" style="height:30px">
+   <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Welcome!</div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Deparment Interests</div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div>
+
+
+   </div>
+	<div style="text-align:center" class="mt-5">
+		<h4> Select your Career Interests </h4>
+	</div>
+
+	<div class="row justify-content-center">
+		<form id="tag-space">
+			
+
+			<div id="space" data-toggle="buttons">
+
+			</div>
+			
+
+		</form>
+	</div>
+	<div class="container-fluid row mt-3 buttons">  
+				<div class="col"> 
+				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
+			</div>
+			<div class="col">
+				<button id="deselectBtn" class="btn btn-dark">Deselect All</button>
+			</div>
+			<div class="col">
+				<button id="submitBtn" type="submit" value=" Send" class="btn btn-dark">Next</button> 
+			</div>
+			</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+		// var departmentTags = decodeURIComponent(window.location.search);
+		// 	deparmentTags = departmentTags.substring(1);
+		// var departments = departmentTags.split("&");
+		// console.log(departments);
+		
+		var tagList ="network engineering , mathematical science , education , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , us politics , microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , science , integration , shakespeare , social justice , performance analysis , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up , quantitative trading , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , contemporary metaphysics , private equity , social sciences , logic , statistics , number theory , physics graduate school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , ethics , research , finance , sustainibility , publication , global economics , africana studies , big data , programming , climate change , law , political economy , history , engineering , datascience , public policy , political science , macroeconomics , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , renaissance , cost benefit analysis , corporate finance , banking , playwriting , Sociology , critical thinking , psychology , advanced macroeconomics , race , political science graduate school , gender studies , quantum theory , technology , meritocracy , app development , economics , behavioral psychology , social psychology , regression , ecosystems , feminism , arguments , monetary economics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
+
+
+		function createTag(input){
+			var newTag = document.createElement('label');
+			newTag.setAttribute("id", input);
+			newTag.className = "tag btn btn-outline-dark";
+			newTag.innerHTML = input;
+			newTag.addEventListener("click", function (evt) {
+
+				if(newTag.classList.contains("active")) {
+					newTag.className += " active";
+					//newTag.classList.remove("active");
+				}
+			});
+			return newTag;
+		}
+
+		for(var i = 0; i < tagList.length; i++){
+			$("#space")[0].appendChild(createTag(tagList[i]));
+		}
+
+		submitBtn.addEventListener("click", function (evt) {
+			var tagList = getTags();
+			var previousTags = decodeURIComponent(window.location.search);
+			evt.preventDefault();  
+			window.location = "AdvisorMatching.html" + previousTags + tagList;
+			return false;
+		});
+		prevBtn.addEventListener("click", function (evt) {
+			evt.preventDefault();  
+			window.location = "Form2Student.html";
+			return false;
+		});
+		deselectBtn.addEventListener("click", function (evt){
+			var tags = document.getElementById("tag-space").querySelectorAll(".tag");
+			for (var i = 0; i < tags.length; i++) {
+				tags[i].classList.remove("active");
+			}
+		});
+
+		function getTags(){
+			var activeTags = document.getElementById("tag-space").querySelectorAll(".active");
+			var tagList = "&*&";
+			for (var i = 0; i < activeTags.length; i++){
+				tagList += activeTags[i].id;
+				if(i < activeTags.length - 1) tagList += "&";
+			}
+			return tagList;
+		}
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
