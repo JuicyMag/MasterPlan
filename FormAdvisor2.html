@@ -28,8 +28,8 @@
 	</nav><br>
 
 	 <div class="progress" style="height:30px">
-     <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Welcome!</div>
-  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Department Interests</div>
+     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Department Interests</div>
 
    </div>
 	<div style="text-align:center" class="mt-5">
@@ -88,12 +88,12 @@
 		submitBtn.addEventListener("click", function (evt) {
 			var tagList = getTags();
 			evt.preventDefault();  
-			window.location = "Form3.html" + tagList;
+			window.location = "FormAdvisor3.html" + tagList;
 			return false;
 		});
 		prevBtn.addEventListener("click", function (evt) {
 			evt.preventDefault();  
-			window.location = "Form1.html";
+			window.location = "FormAdvisor1.html";
 			return false;
 		});
 		deselectBtn.addEventListener("click", function (evt){

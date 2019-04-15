@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Form3</title>
+	<title>Form1</title>
 	<meta name="description" content="The HTML5 Herald">
 	<meta name="author" content="SitePoint">
 
@@ -29,9 +29,9 @@
 	</nav><br>
 
 	<div class="progress" style="height:30px">
-   <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"> Welcome!</div>
-  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Deparment Interests</div>
-    <div class="progress-bar bg-info" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div>
+   <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div>
+ <!--  <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Deparment Interests</div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Career Interests</div> -->
 
 
    </div>
@@ -52,8 +52,8 @@
 	</div>
 	<div class="container-fluid row mt-3 buttons">  
 				<div class="col"> 
-				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
-			</div>
+<!-- 				<button id="prevBtn" type="submit" value=" Send" class="btn btn-dark">Previous</button>
+ -->			</div>
 			<div class="col">
 				<button id="deselectBtn" class="btn btn-dark">Deselect All</button>
 			</div>
@@ -73,7 +73,7 @@
 		// var departments = departmentTags.split("&");
 		// console.log(departments);
 		
-		var tagList ="network engineering , mathematical science , education , modeling , software , computer science graduate school , developmental economics , systems architecture , calculus , cryptocurrencies , welfare economics , nuclear physics , equity , differential equations , theatre , us politics , microeconomics , Science and Technology Studies , econometrics , music , social issues , english , graduate school , software engineering , web development , systems engineering , africa , anthropology , data analytics , environmental , biology , neuroscience , hardware engineering , volumes , music history , philosophy , animation , inequality , science , integration , shakespeare , social justice , performance analysis , computational mathematics , electromagnetism , racial equality , economics graduate school , teaching , science graduate school , medical research , computer science , physics , music of the world , special relativity , power , political issues , financial markets , chemistry , immigration , venture capital , start up , quantitative trading , business , middle ages , consulting , globalization , ESSENTIAL , entrepreneurship , mathematics graduate school , comparative politics , contemporary metaphysics , private equity , social sciences , logic , statistics , number theory , physics graduate school , applied mathematics , leadership studies , wall street , asset management , global development , graphics , law school , ethics , research , finance , sustainibility , publication , global economics , africana studies , big data , programming , climate change , law , political economy , history , engineering , datascience , public policy , political science , macroeconomics , proof based mathematics , taxation , politics , literary imitation , cognitive psychology , natural resources , mathematics , renaissance , cost benefit analysis , corporate finance , banking , playwriting , Sociology , critical thinking , psychology , advanced macroeconomics , race , political science graduate school , gender studies , quantum theory , technology , meritocracy , app development , economics , behavioral psychology , social psychology , regression , ecosystems , feminism , arguments , monetary economics , legal system".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
+		var tagList ="Engineering , Medical School (pre-med) , Law School , PhD Program , Business (Finance, Investment Banking, Consulting,Entrepreneurship) , Technology (Software Development, Data science) , Teaching , Research , Journalism , Government , Marketing , Unsure".toLowerCase().replace(/\b\w/g, l => l.toUpperCase()).split(" , ").sort();
 
 
 		function createTag(input){
@@ -99,14 +99,15 @@
 			var tagList = getTags();
 			var previousTags = decodeURIComponent(window.location.search);
 			evt.preventDefault();  
-			window.location = "AdvisorMatching.html" + previousTags + tagList;
+			window.location = "FormStudent2.html" ;
+			// + previousTags + tagList;
 			return false;
 		});
-		prevBtn.addEventListener("click", function (evt) {
-			evt.preventDefault();  
-			window.location = "Form2.html";
-			return false;
-		});
+		// prevBtn.addEventListener("click", function (evt) {
+		// 	evt.preventDefault();  
+		// 	window.location = "FormStudent2.html";
+		// 	return false;
+		// });
 		deselectBtn.addEventListener("click", function (evt){
 			var tags = document.getElementById("tag-space").querySelectorAll(".tag");
 			for (var i = 0; i < tags.length; i++) {
